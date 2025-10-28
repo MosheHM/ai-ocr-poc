@@ -1,3 +1,4 @@
+from datetime import time
 import os
 import json
 from pathlib import Path
@@ -48,8 +49,8 @@ Example output format:
 
 class InvoiceExtractor:
     def __init__(self, api_key: str):
-        self.client = genai.Client(api_key=api_key)
-        
+        self.client: genai.Client = genai.Client(api_key=api_key)
+
     def extract_from_pdf(self, pdf_path: str) -> dict:
         """Extract invoice data from PDF using Gemini API"""
         with open(pdf_path, 'rb') as f:
@@ -71,17 +72,22 @@ class InvoiceExtractor:
             ]
         )
         
-        result_text = response.text.strip()
-        # Remove markdown code blocks if present
-        if result_text.startswith("```json"):
-            result_text = result_text[7:]
-        if result_text.startswith("```"):
-            result_text = result_text[3:]
-        if result_text.endswith("```"):
-            result_text = result_text[:-3]
         
-        return json.loads(result_text.strip())
-    
+        result_text = response.text.strip()
+        
+        def remove_code_blocks(text: str) -> str:
+            """Remove markdown code blocks from text"""
+            if text.startswith("```json"):
+                text = text[7:]
+            if text.startswith("```"):
+                text = text[3:]
+            if text.endswith("```"):
+                text = text[:-3]
+            return text.strip()
+
+
+        return json.loads(remove_code_blocks(result_text).strip())
+
     def calculate_score(self, extracted: dict, ground_truth: dict) -> dict:
         """Calculate accuracy score by comparing extracted data with ground truth"""
         results = {
@@ -175,8 +181,8 @@ def main():
         except Exception as e:
             print(f"Error processing {pdf_file.name}: {e}")
             continue
-    
-    output_file = data_dir / "extraction_results.json"
+
+    output_file = data_dir / f"extraction_results_{int(time.time())}.json"
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(all_results, f, indent=2, ensure_ascii=False)
     
