@@ -80,7 +80,6 @@ class InvoiceExtractor:
         if result_text.endswith("```"):
             result_text = result_text[:-3]
         
-        print(f"Extracted JSON: {result_text}")
         return json.loads(result_text.strip())
     
     def calculate_score(self, extracted: dict, ground_truth: dict) -> dict:
@@ -100,13 +99,11 @@ class InvoiceExtractor:
         else:
             gt_fields = ground_truth
         
-        # Compare each field in the extracted data
         for field_name in extracted.keys():
             if field_name in gt_fields:
                 extracted_value = extracted[field_name]
                 gt_value = gt_fields[field_name]
                 
-                # Direct comparison without normalization
                 is_correct = extracted_value == gt_value
                 
                 results['field_comparison'][field_name] = {
@@ -119,7 +116,6 @@ class InvoiceExtractor:
                 if is_correct:
                     results['correct_fields'] += 1
         
-        # Calculate score
         if results['total_fields'] > 0:
             results['score'] = (results['correct_fields'] / results['total_fields']) * 100
         
@@ -129,14 +125,11 @@ class InvoiceExtractor:
         """Process a PDF-TXT pair and return extraction results with score"""
         print(f"Processing: {Path(pdf_path).name}")
         
-        # Extract data from PDF
         extracted_data = self.extract_from_pdf(pdf_path)
         
-        # Load ground truth from TXT file containing JSON data
         with open(txt_path, 'r', encoding='utf-8') as f:
             ground_truth = json.load(f)
         
-        # Calculate score
         results = self.calculate_score(extracted_data, ground_truth)
         
         return results
@@ -175,8 +168,7 @@ def main():
                 "txt_file": txt_file.name,
                 "results": results
             })
-            print(f"Results for {pdf_file.name}:")
-            print(f"  results: {results}")
+
             print(f"  Score: {results['score']:.2%} ({results['correct_fields']}/{results['total_fields']} fields correct)")
             print()
             
