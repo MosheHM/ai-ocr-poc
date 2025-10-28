@@ -1,6 +1,6 @@
 """Validator module for assessing extraction performance against ground truth."""
 from typing import Dict, Any, Optional
-from ..types import ExtractionResult, ValidationResult, DocumentType
+from modules.types import ExtractionResult, ValidationResult, DocumentType
 
 
 class PerformanceValidator:

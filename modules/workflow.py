@@ -2,18 +2,18 @@
 import logging
 from typing import List, Dict, Any, Optional
 from pathlib import Path
-from ..types import (
+from modules.types import (
     DocumentType,
     PageClassification,
     ExtractionResult,
     ValidationResult,
     ProcessingResult
 )
-from ..llm.client import GeminiLLMClient
-from ..document_classifier import PDFDocumentClassifier
-from ..extractors import ExtractorFactory
-from ..validators import PerformanceValidator
-from ..utils import split_pdf_to_pages, get_pdf_page_count
+from modules.llm.client import GeminiLLMClient
+from modules.document_classifier import PDFDocumentClassifier
+from modules.extractors import ExtractorFactory
+from modules.validators import PerformanceValidator
+from modules.utils import split_pdf_to_pages, get_pdf_page_count
 
 
 # Configure logging

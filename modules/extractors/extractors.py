@@ -1,8 +1,8 @@
 """Base extractor class and type-specific extractors."""
 from abc import ABC, abstractmethod
 from typing import Dict, Any
-from ..types import DocumentType, ExtractionResult
-from ..llm.client import GeminiLLMClient
+from modules.types import DocumentType, ExtractionResult
+from modules.llm.client import GeminiLLMClient
 
 
 class BaseExtractor(ABC):

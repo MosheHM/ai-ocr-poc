@@ -1,9 +1,9 @@
 """Document classifier module for identifying document types."""
 import json
 from typing import List
-from ..types import DocumentType, PageClassification
-from ..llm.client import GeminiLLMClient
-from ..utils.pdf_utils import split_pdf_to_pages
+from modules.types import DocumentType, PageClassification
+from modules.llm.client import GeminiLLMClient
+from modules.utils.pdf_utils import split_pdf_to_pages
 
 
 CLASSIFICATION_PROMPT = """You are a specialized AI assistant for classifying shipping and logistics documents.
