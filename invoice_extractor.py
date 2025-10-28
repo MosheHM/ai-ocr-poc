@@ -4,18 +4,45 @@ from pathlib import Path
 from google import genai
 from google.genai import types
 
-SYSTEM_PROMPT = """You are an expert invoice data extraction system. Extract the following fields from the invoice:
+# System prompt with format validation instructions
+SYSTEM_PROMPT = """You are an AI assistant specialized in extracting structured data from invoices.
 
+Extract the following fields from the invoice and return them as a JSON object:
+
+
+REQUIRED RETURN FIELDS AND FORMATS( THE FORMAT IS JUST FOR RETURN VALIDATION, NOT FOR EXTRACTION):
+- INVOICE_NO: Extract as-is, preserving all characters including slashes (e.g., "0004833/E", "INV-25-0026439")
+- INVOICE_DATE: Format as YYYYMMDDHHMMSSSS (16 digits)
+  * Convert any date format to: YYYYMMDD00000000
+  * Example: "30.07.2025" becomes "2025073000000000"
+  * Example: "30/07/2025" becomes "2025073000000000"
+  * Example: "July 30, 2025" becomes "2025073000000000"
+  * Always pad with 00000000 at the end for time portion
+- CURRENCY_ID: 3-letter currency code in uppercase (e.g., "EUR", "USD", "GBP")
+- INCOTERMS: INCOTERMS code in uppercase (e.g., "FCA", "FOB", "CIF", "EXW")
+  * Do NOT include location details or additional text
+  * Just the code: "FCA" not "FCA Duisburg, stock Buhlmann"
+- INVOICE_AMOUNT: number (integer or float) without currency symbols
+  * Example: 7632.00 or 7632
+- CUSTOMER_ID: Extract as-is (e.g., "D004345")
+
+CRITICAL FORMAT RULES:
+1. INVOICE_DATE must be exactly 16 digits: YYYYMMDD00000000
+2. INCOTERMS must be ONLY the code (3 letters usually), no location or extra text
+3. INVOICE_AMOUNT must be a number type, not a string
+4. Preserve exact formatting for INVOICE_NO (keep slashes, dashes, etc.)
+5. Return ONLY valid JSON with these exact field names
+6. If a field is not found, omit it from the response
+
+Example output format:
 {
-    "INVOICE_NO": null,
-    "INVOICE_DATE": null,
-    "CURRENCY_ID": null,
-    "INCOTERMS": null,
-    "INVOICE_AMOUNT": null,
-    "CUSTOMER_ID": null
+    "INVOICE_NO": "0004833/E",
+    "INVOICE_DATE": "2025073000000000",
+    "CURRENCY_ID": "EUR",
+    "INCOTERMS": "FCA",
+    "INVOICE_AMOUNT": 7632.00,
+    "CUSTOMER_ID": "D004345"
 }
-
-Return ONLY a valid JSON object with these exact field names. If a field is not found, use null as the value.
 """
 
 
@@ -67,27 +94,34 @@ class InvoiceExtractor:
             "score": 0.0
         }
         
-        for field in ground_truth.keys():
-            results["total_fields"] += 1
-            extracted_value = extracted.get(field)
-            truth_value = ground_truth.get(field)
-            
-            # Normalize values for comparison
-            extracted_norm = str(extracted_value).strip().lower() if extracted_value is not None else None
-            truth_norm = str(truth_value).strip().lower() if truth_value is not None else None
-            
-            is_correct = extracted_norm == truth_norm
-            if is_correct:
-                results["correct_fields"] += 1
-            
-            results["field_comparison"][field] = {
-                "extracted": extracted_value,
-                "ground_truth": truth_value,
-                "correct": is_correct
-            }
+        # Extract the actual field values from ground_truth OCC object
+        if 'OCC' in ground_truth:
+            gt_fields = ground_truth['OCC']
+        else:
+            gt_fields = ground_truth
         
-        if results["total_fields"] > 0:
-            results["score"] = results["correct_fields"] / results["total_fields"]
+        # Compare each field in the extracted data
+        for field_name in extracted.keys():
+            if field_name in gt_fields:
+                extracted_value = extracted[field_name]
+                gt_value = gt_fields[field_name]
+                
+                # Direct comparison without normalization
+                is_correct = extracted_value == gt_value
+                
+                results['field_comparison'][field_name] = {
+                    'extracted': extracted_value,
+                    'ground_truth': gt_value,
+                    'correct': is_correct
+                }
+                
+                results['total_fields'] += 1
+                if is_correct:
+                    results['correct_fields'] += 1
+        
+        # Calculate score
+        if results['total_fields'] > 0:
+            results['score'] = (results['correct_fields'] / results['total_fields']) * 100
         
         return results
     
