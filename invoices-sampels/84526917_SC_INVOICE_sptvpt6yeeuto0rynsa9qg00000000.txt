@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84526917,
+   "COM_ID" : "sptvpt6yeeuto0rynsa9qg00000000",
+   "CREATE_DATE" : "2025080515081100",
+   "UPDATE_DATE" : "2025080515081800",
+   "CREATE_BY" : "ALYAGONS",
+   "UPDATE_BY" : "ALYAGONS",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 2,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025073000000000",
+   "INVOICE_NO" : "X700296",
+   "INVOICE_AMOUNT" : 1325.6,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "2445059",
+   "INCOTERMS" : "",
+   "ORIGIN_ID" : "US",
+   "MORE" : "",
+   "SELLER_ID" : "227008a9-8b6a-4908-a36e-9a45c3eb7893",
+   "SELLER_NAME" : "IPCS Inc"
+ }
+}

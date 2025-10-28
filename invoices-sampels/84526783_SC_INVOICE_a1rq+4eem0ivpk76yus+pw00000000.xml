@@ -1,0 +1,85 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>+uzaziv6x0qfyfge8kxdkw00000000</ParentComId>
+ <Owner>ORIAN</Owner>
+ <User>ETIZ</User>
+ <FilePath>\\ScansSrv\DMClients\ETIZ\Preview\P_CGD-5088357-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526783</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\15812\tmp_ney15dm6y0e_d34tpwj0mq\5ef032b4-d378-4bc5-8b4b-d908cdbb808b.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>117</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+    <MetaData>
+     <Id>55</Id>
+     <Name>תאריך החשבון</Name>
+     <Value>7/17/2025 12:00:00 AM</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>a1rq+4eem0ivpk76yus+pw00000000</FilingComId>
+   <FilingFileRef>CGD-5088358</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>ETIZ</User>
+   <Owner>ETIZ</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\a1rq+4eem0ivpk76yus+pw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526783</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\15812\tmp_ney15dm6y0e_d34tpwj0mq\1ee4a0ef-16e4-47f1-8908-1038a5b19f49.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>ncxprkqh6eebqyvyfuomkg00000000</FilingComId>
+   <FilingFileRef>CGD-5088359</FilingFileRef>
+   <FilingDesc>Packing List</FilingDesc>
+   <User>ETIZ</User>
+   <Owner>ETIZ</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\ncxprkqh6eebqyvyfuomkg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526783</PrimaryNum>
+   <DocType>FWA</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\15812\tmp_ney15dm6y0e_d34tpwj0mq\e9fd4004-2b0e-4677-8e9f-7d661b0276c6.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>zws62peipuyhj7xwih1d7g00000000</FilingComId>
+   <FilingFileRef>CGD-5088360</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>ETIZ</User>
+   <Owner>ETIZ</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\zws62peipuyhj7xwih1d7g00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FWA</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

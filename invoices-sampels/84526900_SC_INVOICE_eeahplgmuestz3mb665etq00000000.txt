@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84526900,
+   "COM_ID" : "eeahplgmuestz3mb665etq00000000",
+   "CREATE_DATE" : "2025080509020700",
+   "UPDATE_DATE" : "2025080509021400",
+   "CREATE_BY" : "SOPHIEK",
+   "UPDATE_BY" : "SOPHIEK",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 2,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025080100000000",
+   "INVOICE_NO" : "GSLOG-01\/08\/25-105041",
+   "INVOICE_AMOUNT" : 15451.17,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "2039297",
+   "INCOTERMS" : "DAP",
+   "ORIGIN_ID" : "IE",
+   "MORE" : "",
+   "SELLER_ID" : "653b16e3-1399-442a-9842-21802f99b73e",
+   "SELLER_NAME" : "EMC Information Systems International"
+ }
+}

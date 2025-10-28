@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82400943,
+   "COM_ID" : "suufx+nh6kaa+qagyisduq00000000",
+   "CREATE_DATE" : "2025080314123600",
+   "UPDATE_DATE" : "2025080314131000",
+   "CREATE_BY" : "ALEXANDERM",
+   "UPDATE_BY" : "ALEXANDERM",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 3,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "",
+   "INVOICE_NO" : "NUMBER:AP250630003",
+   "INVOICE_AMOUNT" : 52698.38,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "2115739",
+   "INCOTERMS" : "FOB",
+   "ORIGIN_ID" : "CN",
+   "MORE" : "",
+   "SELLER_ID" : "8f8813cb-a8eb-4b8d-8a4b-f567e81f0e3a",
+   "SELLER_NAME" : "SELLER:DEGSON PTE.LTD."
+ }
+}

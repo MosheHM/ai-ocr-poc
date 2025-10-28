@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82401179,
+   "COM_ID" : "lvuoo0vh1uogki4nqi1szq00000000",
+   "CREATE_DATE" : "2025080508215000",
+   "UPDATE_DATE" : "2025080508220500",
+   "CREATE_BY" : "ALYAGONS",
+   "UPDATE_BY" : "ALYAGONS",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072100000000",
+   "INVOICE_NO" : "HJ20250721",
+   "INVOICE_AMOUNT" : 23522.15,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "3582736",
+   "INCOTERMS" : "FOB",
+   "ORIGIN_ID" : "HK",
+   "MORE" : "",
+   "SELLER_ID" : "1666c5fb-7370-4ec7-b2c8-b7b284d0032b",
+   "SELLER_NAME" : "HENJO INDUSTRAIL CO.,LTD"
+ }
+}

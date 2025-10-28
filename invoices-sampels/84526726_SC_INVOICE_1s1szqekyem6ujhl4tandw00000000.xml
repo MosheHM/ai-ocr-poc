@@ -1,0 +1,43 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>zjdvmjqtj0kgz66z6n+c3q00000000</ParentComId>
+ <Owner>SIMAD</Owner>
+ <User>SIMAD</User>
+ <FilePath>\\ScansSrv\DMClients\simad\Preview\P_CGD-5090295-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526726</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\51460\tmp_05z24de+tkmmtxepdspsrw\bfcce604-dd13-4fb6-a1e2-c3b28ee526ef.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>138</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+    <MetaData>
+     <Id>55</Id>
+     <Name>תאריך החשבון</Name>
+     <Value>7/30/2025 12:00:00 AM</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>1s1szqekyem6ujhl4tandw00000000</FilingComId>
+   <FilingFileRef>CGD-5090308</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>SIMAD</User>
+   <Owner>SIMAD</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\1s1szqekyem6ujhl4tandw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

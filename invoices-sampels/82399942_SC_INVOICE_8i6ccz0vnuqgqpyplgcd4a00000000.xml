@@ -1,0 +1,62 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>apeykjsaqumtevo59rpefw00000000</ParentComId>
+ <Owner>ORIAN</Owner>
+ <User>GILAG</User>
+ <FilePath>\\ScansSrv\DMClients\gilag\Preview\P_CGD-5090030-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82399942</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\20252\tmp_igfawjb68u+dyyrqjpjorw\c92fc6ca-35a2-41d6-8d36-45a7633d67fe.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>51025</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>8i6ccz0vnuqgqpyplgcd4a00000000</FilingComId>
+   <FilingFileRef>CGD-5091420</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>GILAG</User>
+   <Owner>GILAG</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\8i6ccz0vnuqgqpyplgcd4a00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82399942</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\20252\tmp_igfawjb68u+dyyrqjpjorw\673d12f7-a859-43a9-85db-522727c9aaaf.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>baiobyxtguytl2nhf34ipa00000000</FilingComId>
+   <FilingFileRef>CGD-5091422</FilingFileRef>
+   <FilingDesc>Packing List</FilingDesc>
+   <User>GILAG</User>
+   <Owner>GILAG</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\baiobyxtguytl2nhf34ipa00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

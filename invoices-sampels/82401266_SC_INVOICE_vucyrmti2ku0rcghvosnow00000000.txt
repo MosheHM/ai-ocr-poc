@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82401266,
+   "COM_ID" : "vucyrmti2ku0rcghvosnow00000000",
+   "CREATE_DATE" : "2025080311111100",
+   "UPDATE_DATE" : "2025080311111800",
+   "CREATE_BY" : "ALEXANDERM",
+   "UPDATE_BY" : "ALEXANDERM",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025071400000000",
+   "INVOICE_NO" : "8687",
+   "INVOICE_AMOUNT" : 3507.84,
+   "CURRENCY_ID" : "GBP",
+   "CUSTOMS_SUPPLIER_ID" : "2435192",
+   "INCOTERMS" : "",
+   "ORIGIN_ID" : "GB",
+   "MORE" : "",
+   "SELLER_ID" : "34638632-2c01-40ff-af53-ea696849c3d6",
+   "SELLER_NAME" : "Pentre Group Ltd"
+ }
+}

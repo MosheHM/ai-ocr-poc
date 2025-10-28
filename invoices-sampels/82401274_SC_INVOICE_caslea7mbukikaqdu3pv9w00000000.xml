@@ -1,0 +1,176 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>pdjryo1lgkm3dbyqbpropw00000000</ParentComId>
+ <Owner>DEBYB</Owner>
+ <User>DEBYB</User>
+ <FilePath>\\ScansSrv\DMClients\DEBYBA\Preview\P_CGD-5088566-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401274</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\28588\tmp_attdtavvokkm_j2q+k7eua\cd116062-c947-4fd8-84e4-4cc30141d434.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>2200900358</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>caslea7mbukikaqdu3pv9w00000000</FilingComId>
+   <FilingFileRef>CGD-5088575</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>DEBYB</User>
+   <Owner>DEBYB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\caslea7mbukikaqdu3pv9w00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401274</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\28588\tmp_attdtavvokkm_j2q+k7eua\2a406713-5d39-4079-a65b-7f1a4203c61a.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>25000845</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>jbegoguese6huef7lm465g00000000</FilingComId>
+   <FilingFileRef>CGD-5088576</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>DEBYB</User>
+   <Owner>DEBYB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\jbegoguese6huef7lm465g00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401274</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\28588\tmp_attdtavvokkm_j2q+k7eua\b084eeaf-5087-48d1-a9da-d788f3965b5a.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>7</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>8</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>9</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>2900008571</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>6ji0ovewv0iken50mnn0sw00000000</FilingComId>
+   <FilingFileRef>CGD-5088577</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>DEBYB</User>
+   <Owner>DEBYB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\6ji0ovewv0iken50mnn0sw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401274</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\28588\tmp_attdtavvokkm_j2q+k7eua\79dcf2d6-6f28-471b-b2bf-e0835d3b108c.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>5</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>6</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>kmn+ngqlcumndump_qm_ng00000000</FilingComId>
+   <FilingFileRef>CGD-5088578</FilingFileRef>
+   <FilingDesc>Packing List</FilingDesc>
+   <User>DEBYB</User>
+   <Owner>DEBYB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\kmn+ngqlcumndump_qm_ng00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401274</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\28588\tmp_attdtavvokkm_j2q+k7eua\23f60196-1233-4293-9fe9-609fd5b7cada.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>10</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>11</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>8do59e1xnkqf9ya0zvcv_w00000000</FilingComId>
+   <FilingFileRef>CGD-5088580</FilingFileRef>
+   <FilingDesc>Packing List</FilingDesc>
+   <User>DEBYB</User>
+   <Owner>DEBYB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\8do59e1xnkqf9ya0zvcv_w00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401274</PrimaryNum>
+   <DocType>FWA</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\28588\tmp_attdtavvokkm_j2q+k7eua\5fc27de0-9a9e-40ac-bc7a-7b03e89f0589.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>nts0qynycuiawcejrbqj7w00000000</FilingComId>
+   <FilingFileRef>CGD-5088581</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>DEBYB</User>
+   <Owner>DEBYB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\nts0qynycuiawcejrbqj7w00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FWA</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

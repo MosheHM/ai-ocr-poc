@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84526897,
+   "COM_ID" : "roefitofsuewo7k7igovfg00000000",
+   "CREATE_DATE" : "2025080508521300",
+   "UPDATE_DATE" : "2025080508562900",
+   "CREATE_BY" : "ALYAGONS",
+   "UPDATE_BY" : "ALYAGONS",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025080400000000",
+   "INVOICE_NO" : "SGIN053-0825",
+   "INVOICE_AMOUNT" : 16673.47,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "3530396",
+   "INCOTERMS" : "",
+   "ORIGIN_ID" : "LK",
+   "MORE" : "",
+   "SELLER_ID" : "42270601-1b04-4a47-b8da-a9863f24dde5",
+   "SELLER_NAME" : "SEAMAX GLOBAL (PVT) LTD"
+ }
+}

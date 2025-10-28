@@ -1,0 +1,1094 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>ulynbhkykuaka4xjwizyya00000000</ParentComId>
+ <Owner>INBARB</Owner>
+ <User>INBARB</User>
+ <FilePath>\\ScansSrv\DMClients\inbarb\Preview\P_CGD-5088915-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\be1989ab-fbf9-4fb7-85b0-bcc578903c84.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>5</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>dchn1btyc0cu34krb8vxxq00000000</FilingComId>
+   <FilingFileRef>CGD-5088925</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\dchn1btyc0cu34krb8vxxq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\428398dc-ed90-4714-8dfd-a670074c10de.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>7</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>biyxz1x9hkarloiztqvx6q00000000</FilingComId>
+   <FilingFileRef>CGD-5088927</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\biyxz1x9hkarloiztqvx6q00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\a5c1922b-55a6-415a-b029-28f54e73f4eb.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>9</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>uqqhnjzgxuuis8hz3bv0la00000000</FilingComId>
+   <FilingFileRef>CGD-5088928</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\uqqhnjzgxuuis8hz3bv0la00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\aec32185-4b90-40c8-9351-34bf62234bd2.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>10</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>+71ck0veoekvsktbgbjwog00000000</FilingComId>
+   <FilingFileRef>CGD-5088929</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\+71ck0veoekvsktbgbjwog00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\72059194-740a-4311-848c-54ae075f7c05.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>11</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>matmd2h6jekozesfibvgiq00000000</FilingComId>
+   <FilingFileRef>CGD-5088931</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\matmd2h6jekozesfibvgiq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\ab3d2127-f21f-4122-a554-97963b8bfa63.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>12</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>yq7qfy7mc02llhkgsoz+5q00000000</FilingComId>
+   <FilingFileRef>CGD-5088932</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\yq7qfy7mc02llhkgsoz+5q00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\ada2464c-9ad7-4c12-b7d5-4f2ebd1a945e.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>13</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>hn5p30esruoxfqo4vx3ioq00000000</FilingComId>
+   <FilingFileRef>CGD-5088933</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\hn5p30esruoxfqo4vx3ioq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\ce3ce71b-213e-44b5-91de-5190a16834f8.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>14</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>c7+wyyzhyuklo0drik5_2g00000000</FilingComId>
+   <FilingFileRef>CGD-5088934</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\c7+wyyzhyuklo0drik5_2g00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\0f84531d-1dc9-49f5-864d-d53d374f6e64.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>15</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>tbttnte6a02hsiai+5hxrq00000000</FilingComId>
+   <FilingFileRef>CGD-5088935</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\tbttnte6a02hsiai+5hxrq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\e1a83226-abd1-4191-910c-57dcc4e0a2a2.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>16</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>_4sfmehe30iksc5ssa6yug00000000</FilingComId>
+   <FilingFileRef>CGD-5088936</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\_4sfmehe30iksc5ssa6yug00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\899e388a-f5d7-4b5d-a5c9-588758504d38.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>18</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>lb5gh9+exe6ftky030hniq00000000</FilingComId>
+   <FilingFileRef>CGD-5088937</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\lb5gh9+exe6ftky030hniq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\5044e414-2036-40e2-837a-a18a9a1d822d.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>19</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>izspraxkkuaresnjsghfpw00000000</FilingComId>
+   <FilingFileRef>CGD-5088938</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\izspraxkkuaresnjsghfpw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\2ed040c6-adbf-47ad-be0b-5ea66b6ccc99.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>21</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>ipmpjc3sxesulucenansvq00000000</FilingComId>
+   <FilingFileRef>CGD-5088940</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\ipmpjc3sxesulucenansvq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\1ccff8d4-3ed7-4b63-aedd-d0c612f0c4f9.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>22</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>zhcggt4wseiaqxhcvvfvqw00000000</FilingComId>
+   <FilingFileRef>CGD-5088941</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\zhcggt4wseiaqxhcvvfvqw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\b9dbcc4e-c322-4bf8-9d7c-2e11b00937df.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>23</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>7xyxxynokukwawewvsdlzq00000000</FilingComId>
+   <FilingFileRef>CGD-5088942</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\7xyxxynokukwawewvsdlzq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\f1a6b9f0-244a-44ec-93da-140342f284bd.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>25</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>e4a8d13ul0q7faonzt_1mq00000000</FilingComId>
+   <FilingFileRef>CGD-5088943</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\e4a8d13ul0q7faonzt_1mq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\bab015cd-a6b2-453b-8c22-ab8ef595bc87.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>26</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>vludjvb7muizznmuwzo3pq00000000</FilingComId>
+   <FilingFileRef>CGD-5088944</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\vludjvb7muizznmuwzo3pq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\536b8847-2251-491c-a19e-8954d1df35db.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>27</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>j5ur5gzi3kgmh1umzsqbrw00000000</FilingComId>
+   <FilingFileRef>CGD-5088945</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\j5ur5gzi3kgmh1umzsqbrw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\cebee3de-d0fe-4b25-a578-0734db34ff13.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>28</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>to_75q4vfuwpuysx8eztew00000000</FilingComId>
+   <FilingFileRef>CGD-5088946</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\to_75q4vfuwpuysx8eztew00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\27ffe971-6cde-43bf-99a4-8f4114d2b786.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>29</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>b37juu_82u+4jwxwsm+3gq00000000</FilingComId>
+   <FilingFileRef>CGD-5088949</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\b37juu_82u+4jwxwsm+3gq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\ebfbb50c-00c3-4e91-a2f0-c924897da2cb.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>31</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>85zc_tkljukuq4pmpfdpmq00000000</FilingComId>
+   <FilingFileRef>CGD-5088950</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\85zc_tkljukuq4pmpfdpmq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\d7b4162b-5aee-419f-817f-b1078552d8fc.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>32</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>ewxkwbnfkkqxjfcezrxnia00000000</FilingComId>
+   <FilingFileRef>CGD-5088951</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\ewxkwbnfkkqxjfcezrxnia00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\f9b55365-0288-4f7c-8566-66e162eaf068.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>33</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>mei2yunej0kcyqzeuftazq00000000</FilingComId>
+   <FilingFileRef>CGD-5088953</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\mei2yunej0kcyqzeuftazq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\984b5251-dcc8-41bb-a248-4e8c095c303b.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>34</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>uwbxh6iksuojjf4aerbdew00000000</FilingComId>
+   <FilingFileRef>CGD-5088954</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\uwbxh6iksuojjf4aerbdew00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\729fa942-9d6f-4fac-b51f-3779163275dd.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>35</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>up_vqshfu0a6uhndcjfefq00000000</FilingComId>
+   <FilingFileRef>CGD-5088955</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\up_vqshfu0a6uhndcjfefq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\c013f48f-95e2-4374-b1c1-555c34b3586f.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>36</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>+ltlpjyetkggcbordnjg5g00000000</FilingComId>
+   <FilingFileRef>CGD-5088956</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\+ltlpjyetkggcbordnjg5g00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\a8844e24-2788-4f6a-99cd-219b0a014e11.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>38</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>acbhvmwf5k+hso4xqsn2wa00000000</FilingComId>
+   <FilingFileRef>CGD-5088957</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\acbhvmwf5k+hso4xqsn2wa00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\1d89d361-a408-47ed-9327-bd5c918c555b.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>39</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>hhadgbkqt0sk8bzs1wyc4q00000000</FilingComId>
+   <FilingFileRef>CGD-5088958</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\hhadgbkqt0sk8bzs1wyc4q00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\bf375ab6-a6f7-40bc-bc59-d7871fd0ed8f.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>40</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>+raricjksuiag4795ky0zg00000000</FilingComId>
+   <FilingFileRef>CGD-5088959</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\+raricjksuiag4795ky0zg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\4bd37b6f-27de-41bc-955b-54c40fd1ad0f.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>41</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>u0blhvvuvucmduz4wcvexa00000000</FilingComId>
+   <FilingFileRef>CGD-5088960</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\u0blhvvuvucmduz4wcvexa00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\e12bae90-63ca-4285-a45e-d445324f4353.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>42</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>fmg3dygxbe6gbtxgczbprq00000000</FilingComId>
+   <FilingFileRef>CGD-5088961</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\fmg3dygxbe6gbtxgczbprq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\c6391796-4ca4-46dc-9d13-0e83f6684f47.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>43</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>41ikjbr5c0eyyt+aiflj4a00000000</FilingComId>
+   <FilingFileRef>CGD-5088962</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\41ikjbr5c0eyyt+aiflj4a00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\b79d73ef-ac86-4afc-8ebf-7c6f8814c7d4.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>44</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>evunuj2mcemjmgrh5n8qbw00000000</FilingComId>
+   <FilingFileRef>CGD-5088963</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\evunuj2mcemjmgrh5n8qbw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\c2a83878-d44a-493d-9f01-ae49efd3b9ee.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>46</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>czlahlhckesh9s62x4yxew00000000</FilingComId>
+   <FilingFileRef>CGD-5088964</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\czlahlhckesh9s62x4yxew00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\737ccf9f-47f2-4b77-b410-7351c558a3d0.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>47</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>o0kn4r8f4eo+vkswpdyxbq00000000</FilingComId>
+   <FilingFileRef>CGD-5088965</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\o0kn4r8f4eo+vkswpdyxbq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\6044e5a4-21cb-4f92-ab0b-ef7eecb1491d.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>48</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>++e8tb6s3ekkwevzyte12w00000000</FilingComId>
+   <FilingFileRef>CGD-5088967</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\++e8tb6s3ekkwevzyte12w00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\28d1d945-6e37-4b15-a299-262b901ff310.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>49</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>afju8tppvuopy7q81ts9rw00000000</FilingComId>
+   <FilingFileRef>CGD-5088969</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\afju8tppvuopy7q81ts9rw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\79521fb0-69d5-43ef-a28f-bd7b0b149aef.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>50</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>tlr2+e1xduawv+qq_ukpqq00000000</FilingComId>
+   <FilingFileRef>CGD-5088971</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\tlr2+e1xduawv+qq_ukpqq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526552</PrimaryNum>
+   <DocType>FWA</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16848\tmp_rgivgwxghuasetnoi1ha3a\fb18d7f7-e04d-4042-a7de-249ecc45ef43.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>gdlvgykgnei8v_muerqhwa00000000</FilingComId>
+   <FilingFileRef>CGD-5088972</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\gdlvgykgnei8v_muerqhwa00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FWA</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

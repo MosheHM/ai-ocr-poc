@@ -1,0 +1,97 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>34dcjyfbjeuvvz3nsmheuq00000000</ParentComId>
+ <Owner>NAOMIEA</Owner>
+ <User>NAOMIEA</User>
+ <FilePath>\\ScansSrv\DMClients\NAOMIEA\Preview\P_CGD-5091122-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401342</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\31144\tmp_90zvvivpxuwfkqv4frqlmg\2ea47201-0b31-4073-a352-46aecdaa110b.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>90</Rotate>
+    </Page>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>90</Rotate>
+    </Page>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>5475</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+    <MetaData>
+     <Id>55</Id>
+     <Name>תאריך החשבון</Name>
+     <Value>7/29/2025 12:00:00 AM</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>erz4d+tqo0u5lbb_nlh+tw00000000</FilingComId>
+   <FilingFileRef>CGD-5091124</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>NAOMIEA</User>
+   <Owner>NAOMIEA</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\erz4d+tqo0u5lbb_nlh+tw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401342</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\31144\tmp_90zvvivpxuwfkqv4frqlmg\48a87ff6-f8f0-4cb5-b0b0-092bac157e2e.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>5</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>6</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>zb1ec5n_b0qiajoc9llmkq00000000</FilingComId>
+   <FilingFileRef>CGD-5091126</FilingFileRef>
+   <FilingDesc>Packing List</FilingDesc>
+   <User>NAOMIEA</User>
+   <Owner>NAOMIEA</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\zb1ec5n_b0qiajoc9llmkq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401342</PrimaryNum>
+   <DocType>FWA</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\31144\tmp_90zvvivpxuwfkqv4frqlmg\cbdacb7e-a7d6-4e93-8d8d-cc4cf78266b6.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>to9axnra00o7_yjlm0f0bg00000000</FilingComId>
+   <FilingFileRef>CGD-5091127</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>NAOMIEA</User>
+   <Owner>NAOMIEA</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\to9axnra00o7_yjlm0f0bg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FWA</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

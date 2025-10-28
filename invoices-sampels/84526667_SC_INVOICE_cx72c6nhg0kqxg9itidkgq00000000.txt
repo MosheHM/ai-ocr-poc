@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84526667,
+   "COM_ID" : "cx72c6nhg0kqxg9itidkgq00000000",
+   "CREATE_DATE" : "2025080308440600",
+   "UPDATE_DATE" : "2025080308445000",
+   "CREATE_BY" : "ALEXANDERM",
+   "UPDATE_BY" : "ALEXANDERM",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 2,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072500000000",
+   "INVOICE_NO" : "E2707798",
+   "INVOICE_AMOUNT" : 128,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "2849529",
+   "INCOTERMS" : "",
+   "ORIGIN_ID" : "US",
+   "MORE" : "",
+   "SELLER_ID" : "32db5b5b-d39f-476c-b45c-402be54eb628",
+   "SELLER_NAME" : "HS Hardware Specialty Co., Inc."
+ }
+}

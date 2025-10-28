@@ -1,0 +1,65 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>hufzaxgyn0ioqsqu+yaexa00000000</ParentComId>
+ <Owner>RACHELV</Owner>
+ <User>RACHELV</User>
+ <FilePath>\\ScansSrv\DMClients\RACHELV\Preview\P_CGD-5087760-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526713</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\23380\tmp_gpc_6jkopkgrz4tmci08yw\b941da3e-ab29-4a8d-b378-73c3d0b987d0.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>28</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>3109829</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>tq_gift4ek2so0xbxisuiq00000000</FilingComId>
+   <FilingFileRef>CGD-5087764</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>RACHELV</User>
+   <Owner>RACHELV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\tq_gift4ek2so0xbxisuiq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526713</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\23380\tmp_gpc_6jkopkgrz4tmci08yw\bd8d74b7-4185-4acf-9e13-f119d6e79b74.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>29</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>3109832</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>vyqjqn6jiu2peifxioxo_q00000000</FilingComId>
+   <FilingFileRef>CGD-5087765</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>RACHELV</User>
+   <Owner>RACHELV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\vyqjqn6jiu2peifxioxo_q00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82401356,
+   "COM_ID" : "gnm2fxw5wks37bmhdxya1q00000000",
+   "CREATE_DATE" : "2025080415380200",
+   "UPDATE_DATE" : "2025080415391800",
+   "CREATE_BY" : "SOPHIEK",
+   "UPDATE_BY" : "SOPHIEK",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 5,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025070700000000",
+   "INVOICE_NO" : "125002386",
+   "INVOICE_AMOUNT" : 8892.37,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "",
+   "INCOTERMS" : "",
+   "ORIGIN_ID" : "",
+   "MORE" : "",
+   "SELLER_ID" : "41bdc75c-c4f2-40f2-a1f3-9f7662c453e6",
+   "SELLER_NAME" : "Mitsubishi Chemical Advanced Materials NV"
+ }
+}

@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84526663,
+   "COM_ID" : "ej0wji_mouko_apzzmn1zw00000000",
+   "CREATE_DATE" : "2025080509320800",
+   "UPDATE_DATE" : "2025080509323700",
+   "CREATE_BY" : "SOPHIEK",
+   "UPDATE_BY" : "SOPHIEK",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 2,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025073000000000",
+   "INVOICE_NO" : "0004858\/G",
+   "INVOICE_AMOUNT" : 8220,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "2047961",
+   "INCOTERMS" : "",
+   "ORIGIN_ID" : "IT",
+   "MORE" : "",
+   "SELLER_ID" : "2aba8e5d-8394-4a2c-8a87-7872f6aa4c5d",
+   "SELLER_NAME" : "Euroitalia S.r.l."
+ }
+}

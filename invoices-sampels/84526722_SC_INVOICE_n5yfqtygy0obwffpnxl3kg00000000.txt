@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84526722,
+   "COM_ID" : "n5yfqtygy0obwffpnxl3kg00000000",
+   "CREATE_DATE" : "2025080316305100",
+   "UPDATE_DATE" : "2025080516193000",
+   "CREATE_BY" : "CHENN",
+   "UPDATE_BY" : "CHENN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 2,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072500000000",
+   "INVOICE_NO" : "25402207",
+   "INVOICE_AMOUNT" : 32621.76,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "2985557",
+   "INCOTERMS" : "",
+   "ORIGIN_ID" : "IT",
+   "MORE" : "",
+   "SELLER_ID" : "6012d8d1-719e-454e-a6b1-3f8a342a407c",
+   "SELLER_NAME" : "P.R. S.p.a."
+ }
+}
