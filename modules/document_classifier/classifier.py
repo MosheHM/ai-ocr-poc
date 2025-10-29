@@ -4,35 +4,7 @@ from typing import List
 from modules.types import DocumentType, PageClassification
 from modules.llm.client import GeminiLLMClient
 from modules.utils.pdf_utils import split_pdf_to_pages
-
-
-CLASSIFICATION_PROMPT = """You are a specialized AI assistant for classifying shipping and logistics documents.
-
-Your task is to identify the type of document shown in the image.
-
-DOCUMENT TYPES:
-1. Invoice - Commercial invoice for payment
-2. OBL - Ocean Bill of Lading (sea freight)
-3. HAWB - House Air Waybill (air freight)
-4. Packing List - Detailed list of package contents
-
-Analyze the document carefully and identify its type based on:
-- Document title and headers
-- Layout and structure
-- Key fields and terminology used
-- Standard formats for each document type
-
-Return ONLY a JSON object with this exact format:
-{
-    "document_type": "Invoice" | "OBL" | "HAWB" | "Packing List",
-    "confidence": 0.95
-}
-
-IMPORTANT:
-- document_type must be exactly one of: "Invoice", "OBL", "HAWB", "Packing List"
-- confidence should be a number between 0 and 1
-- Return ONLY valid JSON, no additional text
-"""
+from modules.prompts import get_classification_prompt
 
 
 class PDFDocumentClassifier:
@@ -58,7 +30,7 @@ class PDFDocumentClassifier:
         """
         try:
             response = self.llm_client.generate_json_content(
-                prompt=CLASSIFICATION_PROMPT,
+                prompt=get_classification_prompt(),
                 image_data=page_image,
                 mime_type="application/pdf"
             )
