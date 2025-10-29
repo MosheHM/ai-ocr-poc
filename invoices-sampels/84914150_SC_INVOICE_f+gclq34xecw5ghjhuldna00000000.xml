@@ -1,0 +1,105 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>srsddctqnkoulzgn5u1utg00000000</ParentComId>
+ <Owner>HODAYAI</Owner>
+ <User>HODAYAI</User>
+ <FilePath>\\ASRVFiles\DMClient\HodayaI\Preview\P_CLT-2046303-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84914150</PrimaryNum>
+   <DocType>1IN</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\6956\tmp_y0vrzs2rek6ktziydtr0jw\2a7f68ea-ed8a-4029-85f6-f4e640f7ecec.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>f+gclq34xecw5ghjhuldna00000000</FilingComId>
+   <FilingFileRef>SHR-1530087</FilingFileRef>
+   <FilingDesc>Invoice SHR</FilingDesc>
+   <User>HODAYAI</User>
+   <Owner>HODAYAI</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D07\f+gclq34xecw5ghjhuldna00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1IN</FilingDocTypeCode>
+   <FilingDocTypeName>Invoice SHR</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84914150</PrimaryNum>
+   <DocType>1IN</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\6956\tmp_y0vrzs2rek6ktziydtr0jw\f54dfea1-3484-44c2-b0e6-409265271d8f.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>5</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>6</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>_nvvo2mgdu2dwzyuzcjrlw00000000</FilingComId>
+   <FilingFileRef>SHR-1530088</FilingFileRef>
+   <FilingDesc>Invoice SHR</FilingDesc>
+   <User>HODAYAI</User>
+   <Owner>HODAYAI</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D07\_nvvo2mgdu2dwzyuzcjrlw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1IN</FilingDocTypeCode>
+   <FilingDocTypeName>Invoice SHR</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84914150</PrimaryNum>
+   <DocType>1IN</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\6956\tmp_y0vrzs2rek6ktziydtr0jw\1d1ac6a2-451f-4c44-8a7a-932fd046e51d.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>11</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>12</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>loed__2baegeihsxy9hzew00000000</FilingComId>
+   <FilingFileRef>SHR-1530089</FilingFileRef>
+   <FilingDesc>Invoice SHR</FilingDesc>
+   <User>HODAYAI</User>
+   <Owner>HODAYAI</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D07\loed__2baegeihsxy9hzew00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1IN</FilingDocTypeCode>
+   <FilingDocTypeName>Invoice SHR</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84914150</PrimaryNum>
+   <DocType>1BL</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\6956\tmp_y0vrzs2rek6ktziydtr0jw\3c69e950-e3a2-4469-b579-2c3e9cf1b4d8.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>lpw5nh8fgkeho0izhh9j0q00000000</FilingComId>
+   <FilingFileRef>SHR-1530090</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>HODAYAI</User>
+   <Owner>HODAYAI</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D07\lpw5nh8fgkeho0izhh9j0q00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1BL</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

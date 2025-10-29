@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82913909,
+   "COM_ID" : "b0zcuf7cneimc4vj9jsaoq00000000",
+   "CREATE_DATE" : "2025080516105600",
+   "UPDATE_DATE" : "2025080516115000",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025080100000000",
+   "INVOICE_NO" : "FE\/25100244",
+   "INVOICE_AMOUNT" : 105600,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "3100490",
+   "INCOTERMS" : "CIF",
+   "ORIGIN_ID" : "ES",
+   "MORE" : "",
+   "SELLER_ID" : "62cf2a5c-3627-4ed7-ba92-cb1c26f77903",
+   "SELLER_NAME" : "ACEITES GARC?A DE LA CRUZ S.L."
+ }
+}

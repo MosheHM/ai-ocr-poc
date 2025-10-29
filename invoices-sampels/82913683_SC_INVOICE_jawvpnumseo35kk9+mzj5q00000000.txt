@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82913683,
+   "COM_ID" : "jawvpnumseo35kk9+mzj5q00000000",
+   "CREATE_DATE" : "2025080416182800",
+   "UPDATE_DATE" : "2025080416183400",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072900000000",
+   "INVOICE_NO" : "4100036805",
+   "INVOICE_AMOUNT" : 33320,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "",
+   "INCOTERMS" : "CFR",
+   "ORIGIN_ID" : "",
+   "MORE" : "",
+   "SELLER_ID" : "e421d306-028f-48a6-8153-146d9a49cfe3",
+   "SELLER_NAME" : "SK GEO CENTRIC CO., LTD."
+ }
+}

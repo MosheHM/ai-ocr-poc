@@ -4,19 +4,10 @@ from typing import Optional, Literal
 from google import genai
 from google.genai import types
 
+from modules.types import GeminiModel
 
-# Supported Gemini models (maintained list)
-SUPPORTED_GEMINI_MODELS = [
-    "gemini-2.0-flash-exp",
-    "gemini-1.5-flash",
-    "gemini-1.5-flash-8b",
-    "gemini-1.5-pro",
-    "gemini-2.5-flash",
-]
 
-# Default model to use when not specified
-DEFAULT_MODEL = "gemini-2.5-flash"
-
+DEFAULT_MODEL = GeminiModel.GEMINI_2_5_FLASH
 
 class GeminiLLMClient:
     """Client for Google Gemini API."""
@@ -32,18 +23,18 @@ class GeminiLLMClient:
     def generate_content(
         self,
         prompt: str,
+        model: Optional[GeminiModel],
         image_data: Optional[bytes] = None,
         mime_type: Optional[str] = None,
-        model: Optional[str] = None
     ) -> str:
         """Generate content using Gemini API.
         
         Args:
             prompt: The text prompt
             image_data: Optional image/PDF data
-            mime_type: MIME type of the image data
             model: Model to use. If not specified, uses DEFAULT_MODEL.
                    Must be one of SUPPORTED_GEMINI_MODELS.
+            mime_type: MIME type of the image data
         
         Returns:
             Generated text response
@@ -51,20 +42,17 @@ class GeminiLLMClient:
         Raises:
             ValueError: If model is not in SUPPORTED_GEMINI_MODELS
         """
-        # Use default model if none specified
         if model is None:
             model = DEFAULT_MODEL
         
-        # Validate model
-        if model not in SUPPORTED_GEMINI_MODELS:
+        if model not in GeminiModel:
             raise ValueError(
                 f"Unsupported model: {model}. "
-                f"Supported models: {', '.join(SUPPORTED_GEMINI_MODELS)}"
+                f"Supported models: {', '.join(GeminiModel)}"
             )
         
         parts = []
         
-        # Add image/PDF data if provided
         if image_data and mime_type:
             parts.append(
                 types.Part.from_bytes(
@@ -73,10 +61,9 @@ class GeminiLLMClient:
                 )
             )
         
-        # Add text prompt
+        
         parts.append(types.Part.from_text(text=prompt))
         
-        # Generate content
         response = self.client.models.generate_content(
             model=model,
             contents=[

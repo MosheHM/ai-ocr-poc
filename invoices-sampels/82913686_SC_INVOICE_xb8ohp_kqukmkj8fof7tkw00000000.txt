@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82913686,
+   "COM_ID" : "xb8ohp_kqukmkj8fof7tkw00000000",
+   "CREATE_DATE" : "2025080713314200",
+   "UPDATE_DATE" : "2025080713575400",
+   "CREATE_BY" : "RAVITM",
+   "UPDATE_BY" : "RAVITM",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025073100000000",
+   "INVOICE_NO" : "7316227",
+   "INVOICE_AMOUNT" : 71845.8,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "2580716",
+   "INCOTERMS" : "",
+   "ORIGIN_ID" : "DE",
+   "MORE" : "",
+   "SELLER_ID" : "2d69ffaf-487d-493d-b053-5a9c18834673",
+   "SELLER_NAME" : "Alfred Ritter GmbH & Co.KG"
+ }
+}

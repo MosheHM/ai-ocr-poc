@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82913674,
+   "COM_ID" : "kivlj1lnr0qvzmo92uaycg00000000",
+   "CREATE_DATE" : "2025080412523100",
+   "UPDATE_DATE" : "2025080412531000",
+   "CREATE_BY" : "SHOSHG",
+   "UPDATE_BY" : "SHOSHG",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025071400000000",
+   "INVOICE_NO" : "SH250697T",
+   "INVOICE_AMOUNT" : 83774.4,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "3341543",
+   "INCOTERMS" : "FOB",
+   "ORIGIN_ID" : "CN",
+   "MORE" : "",
+   "SELLER_ID" : "1d04f986-3f9e-4ea5-a50b-73dee90aa54c",
+   "SELLER_NAME" : "SHANGHAI SUNHO NEW MATERIALS CO., LTD"
+ }
+}

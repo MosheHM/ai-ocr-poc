@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82912926,
+   "COM_ID" : "lsojhps2qkub4_kg0xk7yg00000000",
+   "CREATE_DATE" : "2025080416241800",
+   "UPDATE_DATE" : "2025080416244000",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025071700000000",
+   "INVOICE_NO" : "AYTS2025018",
+   "INVOICE_AMOUNT" : 11853.2,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "",
+   "INCOTERMS" : "FOB",
+   "ORIGIN_ID" : "",
+   "MORE" : "",
+   "SELLER_ID" : "bf5467eb-9eb0-4cd6-9c48-cefee90721a9",
+   "SELLER_NAME" : "NINGBO ARTCHAINE IMP.&EXP.CO.,LTD"
+ }
+}

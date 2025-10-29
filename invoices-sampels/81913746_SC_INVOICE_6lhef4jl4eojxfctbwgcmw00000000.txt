@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 81913746,
+   "COM_ID" : "6lhef4jl4eojxfctbwgcmw00000000",
+   "CREATE_DATE" : "2025080416155100",
+   "UPDATE_DATE" : "2025080416161600",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 2,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025073100000000",
+   "INVOICE_NO" : "1995113147",
+   "INVOICE_AMOUNT" : 14111.02,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "",
+   "INCOTERMS" : "CPT",
+   "ORIGIN_ID" : "",
+   "MORE" : "",
+   "SELLER_ID" : "ca44ef6a-1062-430d-9ec1-49da1276eca2",
+   "SELLER_NAME" : "UPM Sales Oy"
+ }
+}

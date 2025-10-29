@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82913973,
+   "COM_ID" : "ebd1tbsd1u+s9ktu7nyima00000000",
+   "CREATE_DATE" : "2025080609253200",
+   "UPDATE_DATE" : "2025080609253800",
+   "CREATE_BY" : "SHOSHG",
+   "UPDATE_BY" : "SHOSHG",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025052100000000",
+   "INVOICE_NO" : "313309",
+   "INVOICE_AMOUNT" : 5319.3,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "3131589",
+   "INCOTERMS" : "FOB",
+   "ORIGIN_ID" : "CN",
+   "MORE" : "",
+   "SELLER_ID" : "c64b9661-f637-43b4-bb3a-465d809fa15c",
+   "SELLER_NAME" : "HAINING TIANYI TEXTILE TECHNOLOGY CO.,LTD"
+ }
+}

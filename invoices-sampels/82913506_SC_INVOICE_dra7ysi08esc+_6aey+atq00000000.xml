@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>6zcwinh9wegf3ddyso+uca00000000</ParentComId>
+ <Owner>YIRATS</Owner>
+ <User>YIRATS</User>
+ <FilePath>\\ASRVFiles\DMClient\yirats\Preview\P_CLT-2044543-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82913506</PrimaryNum>
+   <DocType>1IN</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\12100\tmp_il+lsuf7ruc34r+gt__kkw\e1e5a6e3-90a1-49a1-a3ee-f767433df4fb.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>dra7ysi08esc+_6aey+atq00000000</FilingComId>
+   <FilingFileRef>SHR-1526805</FilingFileRef>
+   <FilingDesc>Invoice SHR</FilingDesc>
+   <User>YIRATS</User>
+   <Owner>YIRATS</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\dra7ysi08esc+_6aey+atq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1IN</FilingDocTypeCode>
+   <FilingDocTypeName>Invoice SHR</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

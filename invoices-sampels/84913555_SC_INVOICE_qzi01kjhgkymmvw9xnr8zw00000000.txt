@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84913555,
+   "COM_ID" : "qzi01kjhgkymmvw9xnr8zw00000000",
+   "CREATE_DATE" : "2025080314094700",
+   "UPDATE_DATE" : "2025080314095100",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072400000000",
+   "INVOICE_NO" : "JDL\/GW\/25\/708",
+   "INVOICE_AMOUNT" : 14322,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "3096373",
+   "INCOTERMS" : "CFR",
+   "ORIGIN_ID" : "IN",
+   "MORE" : "",
+   "SELLER_ID" : "cfb1da41-088b-44e0-a476-93b4440d415d",
+   "SELLER_NAME" : "International Textile Procurement Services Ltd."
+ }
+}

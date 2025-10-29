@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84913631,
+   "COM_ID" : "edu0cpf700+acg9bl_barw00000000",
+   "CREATE_DATE" : "2025080416075400",
+   "UPDATE_DATE" : "2025080416130900",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 2,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072600000000",
+   "INVOICE_NO" : "BYDEUIL0001W2507",
+   "INVOICE_AMOUNT" : 1689.18,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "3048756",
+   "INCOTERMS" : "EXW",
+   "ORIGIN_ID" : "CN",
+   "MORE" : "",
+   "SELLER_ID" : "acb47fc8-f28c-4e7f-acea-9ab92bfb74a7",
+   "SELLER_NAME" : "BYD AUTO INDUSTRY CO., LTD"
+ }
+}

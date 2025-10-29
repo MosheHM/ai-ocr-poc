@@ -1,0 +1,72 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>qdqbpfa_ieqxp_elqolhdq00000000</ParentComId>
+ <Owner>RACHELE</Owner>
+ <User>RACHELE</User>
+ <FilePath>\\ASRVFiles\DMClient\rachele\Preview\P_CLT-2046064-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84913762</PrimaryNum>
+   <DocType>1IN</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\9512\tmp_vhaun+nn7uslej3jgawsmg\e74babf4-727f-4352-a2b8-bd07aa0995bb.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>fu3hfbind0ufxjhnoaknvg00000000</FilingComId>
+   <FilingFileRef>SHR-1529674</FilingFileRef>
+   <FilingDesc>Invoice SHR</FilingDesc>
+   <User>RACHELE</User>
+   <Owner>RACHELE</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D06\fu3hfbind0ufxjhnoaknvg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1IN</FilingDocTypeCode>
+   <FilingDocTypeName>Invoice SHR</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84913762</PrimaryNum>
+   <DocType>1IN</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\9512\tmp_vhaun+nn7uslej3jgawsmg\df76bdf4-4cb5-4234-9a4a-117a8391c56b.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>6u1d3hd4tk2vzn5jhltf1g00000000</FilingComId>
+   <FilingFileRef>SHR-1529675</FilingFileRef>
+   <FilingDesc>Invoice SHR</FilingDesc>
+   <User>RACHELE</User>
+   <Owner>RACHELE</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D06\6u1d3hd4tk2vzn5jhltf1g00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1IN</FilingDocTypeCode>
+   <FilingDocTypeName>Invoice SHR</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84913762</PrimaryNum>
+   <DocType>1IN</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\9512\tmp_vhaun+nn7uslej3jgawsmg\4612623c-38e4-4501-a0ea-bde8346df719.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>tmeei72hqkw3yexgzdjs5q00000000</FilingComId>
+   <FilingFileRef>SHR-1529676</FilingFileRef>
+   <FilingDesc>Invoice SHR</FilingDesc>
+   <User>RACHELE</User>
+   <Owner>RACHELE</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D06\tmeei72hqkw3yexgzdjs5q00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1IN</FilingDocTypeCode>
+   <FilingDocTypeName>Invoice SHR</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

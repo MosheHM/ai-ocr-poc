@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82913672,
+   "COM_ID" : "vzese3dgluiwqnyg0xpt3q00000000",
+   "CREATE_DATE" : "2025080410590800",
+   "UPDATE_DATE" : "2025080411000900",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 2,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072900000000",
+   "INVOICE_NO" : "FV25-2263",
+   "INVOICE_AMOUNT" : 32858,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "3147514",
+   "INCOTERMS" : "FOB",
+   "ORIGIN_ID" : "ES",
+   "MORE" : "",
+   "SELLER_ID" : "914d3ca8-f811-4c38-8d52-0f74629c9d0c",
+   "SELLER_NAME" : "MAGDALENAS LAZARO, S.A."
+ }
+}

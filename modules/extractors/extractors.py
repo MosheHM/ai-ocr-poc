@@ -1,6 +1,5 @@
 """Base extractor class and type-specific extractors."""
 from abc import ABC, abstractmethod
-from typing import Dict, Any
 from modules.types import DocumentType, ExtractionResult
 from modules.llm.client import GeminiLLMClient
 
@@ -37,7 +36,6 @@ class BaseExtractor(ABC):
             ExtractionResult containing extracted data
         """
         try:
-            # Call LLM with the system prompt
             response = self.llm_client.generate_json_content(
                 prompt=self.get_system_prompt(),
                 image_data=page_image,

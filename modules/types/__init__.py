@@ -4,6 +4,15 @@ from dataclasses import dataclass
 from enum import Enum
 
 
+class GeminiModel(str, Enum):
+    """Supported Gemini models."""
+    GEMINI_2_0_FLASH_EXP = "gemini-2.0-flash-exp"
+    GEMINI_1_5_FLASH = "gemini-1.5-flash"
+    GEMINI_1_5_FLASH_8B = "gemini-1.5-flash-8b"
+    GEMINI_1_5_PRO = "gemini-1.5-pro"
+    GEMINI_2_5_FLASH = "gemini-2.5-flash"
+
+
 class DocumentType(str, Enum):
     """Supported document types."""
     INVOICE = "Invoice"

@@ -57,18 +57,15 @@ class PDFDocumentClassifier:
             PageClassification result
         """
         try:
-            # Call LLM to classify the page
             response = self.llm_client.generate_json_content(
                 prompt=CLASSIFICATION_PROMPT,
                 image_data=page_image,
                 mime_type="application/pdf"
             )
             
-            # Parse response
             doc_type_str = response.get("document_type", "Unknown")
             confidence = response.get("confidence", 0.0)
             
-            # Map string to DocumentType enum
             try:
                 doc_type = DocumentType(doc_type_str)
             except ValueError:
@@ -100,9 +97,4 @@ class PDFDocumentClassifier:
         # Split PDF into individual pages
         pages = split_pdf_to_pages(pdf_path)
         
-        classifications = []
-        for page_num, page_data in enumerate(pages, start=1):
-            classification = self.classify_page(page_data, page_num)
-            classifications.append(classification)
-        
-        return classifications
+        return [self.classify_page(page_data, page_num) for page_num, page_data in enumerate(pages, start=1)]

@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 81913587,
+   "COM_ID" : "teurbtjorkompq74w_4q5g00000000",
+   "CREATE_DATE" : "2025080408474400",
+   "UPDATE_DATE" : "2025080408475000",
+   "CREATE_BY" : "SHOSHG",
+   "UPDATE_BY" : "SHOSHG",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 2,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025071800000000",
+   "INVOICE_NO" : "9620031830",
+   "INVOICE_AMOUNT" : 59000,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "2666324",
+   "INCOTERMS" : "CIF",
+   "ORIGIN_ID" : "SG",
+   "MORE" : "",
+   "SELLER_ID" : "82b8fb0e-7b6b-415c-9014-bb4af4251005",
+   "SELLER_NAME" : "Global Amines Company Pte"
+ }
+}

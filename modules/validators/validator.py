@@ -21,7 +21,7 @@ class PerformanceValidator:
             ValidationResult with comparison details
         """
         if ground_truth is None or not extracted.success:
-            # No ground truth or extraction failed
+
             return ValidationResult(
                 page_number=extracted.page_number,
                 document_type=extracted.document_type,
@@ -39,13 +39,9 @@ class PerformanceValidator:
         field_comparison = {}
         total_fields = 0
         correct_fields = 0
-        
-        # Get expected fields for this document type
-        expected_fields = []
-        if extracted.document_type in DOCUMENT_SCHEMAS:
-            expected_fields = list(DOCUMENT_SCHEMAS[extracted.document_type].keys())
-        
-        # Compare each extracted field with ground truth
+
+        expected_fields = list(DOCUMENT_SCHEMAS[extracted.document_type].keys()) if extracted.document_type in DOCUMENT_SCHEMAS else []
+
         for field_name, extracted_value in extracted.data.items():
             if field_name in gt_fields:
                 gt_value = gt_fields[field_name]
@@ -100,19 +96,15 @@ class PerformanceValidator:
         Returns:
             True if values match, False otherwise
         """
-        # Handle None/null values
         if extracted is None and ground_truth is None:
             return True
         if extracted is None or ground_truth is None:
             return False
         
-        # Handle numeric comparisons (allow for float precision)
         if isinstance(extracted, (int, float)) and isinstance(ground_truth, (int, float)):
             return abs(float(extracted) - float(ground_truth)) < 0.01
         
-        # Handle string comparisons (case-insensitive for some fields)
         if isinstance(extracted, str) and isinstance(ground_truth, str):
             return extracted.strip() == ground_truth.strip()
         
-        # Default: exact match
         return extracted == ground_truth

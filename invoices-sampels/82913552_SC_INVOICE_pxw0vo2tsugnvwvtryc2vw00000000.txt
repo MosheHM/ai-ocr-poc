@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82913552,
+   "COM_ID" : "pxw0vo2tsugnvwvtryc2vw00000000",
+   "CREATE_DATE" : "2025080313341600",
+   "UPDATE_DATE" : "2025080313343100",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072800000000",
+   "INVOICE_NO" : "TI2002000406",
+   "INVOICE_AMOUNT" : 18824.4,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "2020190",
+   "INCOTERMS" : "FOB",
+   "ORIGIN_ID" : "GR",
+   "MORE" : "",
+   "SELLER_ID" : "97de1641-9d93-4db9-8d0c-20d598fdb62b",
+   "SELLER_NAME" : "ELBISCO INDUSTRIAL AND COMMERCIAL FOOD SA"
+ }
+}
