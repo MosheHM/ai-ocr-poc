@@ -4,7 +4,7 @@ import json
 import argparse
 from pathlib import Path
 from datetime import datetime
-from modules.workflow import DocumentProcessor
+from modules.workflows import ExtractionWorkflow, ValidationWorkflow
 
 
 def main():
@@ -61,12 +61,18 @@ def main():
             except Exception as e:
                 print(f"Warning: Failed to load ground truth: {e}")
     
-    # Process the document
-    processor = DocumentProcessor(api_key)
-    result = processor.process_document(str(pdf_path), ground_truth)
+    # Choose workflow based on whether ground truth is provided
+    if ground_truth:
+        # Use validation workflow
+        workflow = ValidationWorkflow(api_key)
+        result = workflow.process_document(str(pdf_path), ground_truth)
+    else:
+        # Use extraction-only workflow (faster, for daily use)
+        workflow = ExtractionWorkflow(api_key)
+        result = workflow.process_document(str(pdf_path))
     
     # Generate and print report
-    report = processor.generate_report(result)
+    report = workflow.generate_report(result)
     print(report)
     
     # Save results if output path specified
