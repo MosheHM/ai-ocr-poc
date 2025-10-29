@@ -159,6 +159,7 @@ def main():
         return
     
     all_results = []
+    mismatches = []
     
     for pdf_file in pdf_files:
         txt_file = pdf_file.with_suffix('.txt')
@@ -176,6 +177,23 @@ def main():
             })
 
             print(f"  Score: {results['score']:.2%} ({results['correct_fields']}/{results['total_fields']} fields correct)")
+            
+            if results['score'] < 100:
+                pdf_mismatches = []
+                for field_name, comparison in results['field_comparison'].items():
+                    if not comparison['correct']:
+                        pdf_mismatches.append({
+                            "field": field_name,
+                            "extracted_value": comparison['extracted'],
+                            "ground_truth_value": comparison['ground_truth']
+                        })
+                
+                if pdf_mismatches:
+                    mismatches.append({
+                        "pdf_name": pdf_file.name,
+                        "mismatched_fields": pdf_mismatches
+                    })
+            
             print()
             
         except Exception as e:
@@ -191,6 +209,12 @@ def main():
     if all_results:
         avg_score = sum(r['results']['score'] for r in all_results) / len(all_results)
         print(f"\nOverall Average Score: {avg_score:.2%}")
+    
+    if mismatches:
+        print("\n" + "="*80)
+        print("MISMATCHED FIELDS (Score < 100%):")
+        print("="*80)
+        print(json.dumps(mismatches, indent=2, ensure_ascii=False))
 
 
 if __name__ == "__main__":
