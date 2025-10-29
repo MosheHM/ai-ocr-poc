@@ -1,8 +1,21 @@
 """LLM client module for interacting with Google Gemini API."""
 import json
-from typing import Optional
+from typing import Optional, Literal
 from google import genai
 from google.genai import types
+
+
+# Supported Gemini models (maintained list)
+SUPPORTED_GEMINI_MODELS = [
+    "gemini-2.0-flash-exp",
+    "gemini-1.5-flash",
+    "gemini-1.5-flash-8b",
+    "gemini-1.5-pro",
+    "gemini-2.5-flash",
+]
+
+# Default model to use when not specified
+DEFAULT_MODEL = "gemini-2.5-flash"
 
 
 class GeminiLLMClient:
@@ -21,7 +34,7 @@ class GeminiLLMClient:
         prompt: str,
         image_data: Optional[bytes] = None,
         mime_type: Optional[str] = None,
-        model: str = "gemini-2.5-flash"
+        model: Optional[str] = None
     ) -> str:
         """Generate content using Gemini API.
         
@@ -29,11 +42,26 @@ class GeminiLLMClient:
             prompt: The text prompt
             image_data: Optional image/PDF data
             mime_type: MIME type of the image data
-            model: Model to use (default: gemini-2.5-flash)
+            model: Model to use. If not specified, uses DEFAULT_MODEL.
+                   Must be one of SUPPORTED_GEMINI_MODELS.
         
         Returns:
             Generated text response
+            
+        Raises:
+            ValueError: If model is not in SUPPORTED_GEMINI_MODELS
         """
+        # Use default model if none specified
+        if model is None:
+            model = DEFAULT_MODEL
+        
+        # Validate model
+        if model not in SUPPORTED_GEMINI_MODELS:
+            raise ValueError(
+                f"Unsupported model: {model}. "
+                f"Supported models: {', '.join(SUPPORTED_GEMINI_MODELS)}"
+            )
+        
         parts = []
         
         # Add image/PDF data if provided
@@ -66,7 +94,7 @@ class GeminiLLMClient:
         prompt: str,
         image_data: Optional[bytes] = None,
         mime_type: Optional[str] = None,
-        model: str = "gemini-2.5-flash"
+        model: Optional[str] = None
     ) -> dict:
         """Generate JSON content using Gemini API.
         
@@ -74,10 +102,14 @@ class GeminiLLMClient:
             prompt: The text prompt
             image_data: Optional image/PDF data
             mime_type: MIME type of the image data
-            model: Model to use
+            model: Model to use. If not specified, uses DEFAULT_MODEL.
+                   Must be one of SUPPORTED_GEMINI_MODELS.
         
         Returns:
             Parsed JSON response
+            
+        Raises:
+            ValueError: If model is not supported or JSON parsing fails
         """
         response_text = self.generate_content(
             prompt=prompt,

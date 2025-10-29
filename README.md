@@ -177,6 +177,30 @@ The system provides comprehensive error handling:
 
 ## Development
 
+### Configuring the LLM Model
+
+The system uses Google Gemini models for classification and extraction. The default model is `gemini-2.5-flash`, but you can configure it:
+
+**Supported Models:**
+- `gemini-2.0-flash-exp`
+- `gemini-1.5-flash`
+- `gemini-1.5-flash-8b`
+- `gemini-1.5-pro`
+- `gemini-2.5-flash` (default)
+
+To use a different model:
+```python
+from modules.llm import GeminiLLMClient
+
+client = GeminiLLMClient(api_key)
+response = client.generate_content(
+    prompt="Your prompt",
+    model="gemini-1.5-pro"  # Specify model
+)
+```
+
+The model list is maintained in `modules/llm/client.py` (`SUPPORTED_GEMINI_MODELS`).
+
 ### Adding a New Document Type
 
 1. Add enum value to `DocumentType` in `modules/types/__init__.py`
