@@ -105,6 +105,10 @@ class InvoiceExtractor:
         else:
             gt_fields = ground_truth
         
+        # Define the expected fields that should be extracted
+        expected_fields = ['INVOICE_NO', 'INVOICE_DATE', 'CURRENCY_ID', 'INCOTERMS', 'INVOICE_AMOUNT', 'CUSTOMER_ID']
+        
+        # Compare extracted fields with ground truth
         for field_name in extracted.keys():
             if field_name in gt_fields:
                 extracted_value = extracted[field_name]
@@ -121,6 +125,20 @@ class InvoiceExtractor:
                 results['total_fields'] += 1
                 if is_correct:
                     results['correct_fields'] += 1
+        
+        # Check for fields in ground truth that are missing from extraction
+        # This includes fields that the model didn't recognize, even if ground truth is empty
+        for field_name in expected_fields:
+            if field_name in gt_fields and field_name not in extracted:
+                gt_value = gt_fields[field_name]
+                
+                results['field_comparison'][field_name] = {
+                    'extracted': None,
+                    'ground_truth': gt_value,
+                    'correct': False
+                }
+                
+                results['total_fields'] += 1
         
         if results['total_fields'] > 0:
             results['score'] = (results['correct_fields'] / results['total_fields']) * 100
