@@ -1,0 +1,59 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>42plxlimeumqffnx4fw73a00000000</ParentComId>
+ <Owner>MEITALJ</Owner>
+ <User>MEITALJ</User>
+ <FilePath>\\ASRVFiles\DMClient\meitalj\Preview\P_CLT-2044878-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84913527</PrimaryNum>
+   <DocType>1IN</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\20212\tmp_x_m+k5lfge6tawwpblyona\6e46712e-cdd3-48c7-bee9-250b19ca5100.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>5x8dlxemtu2ysmjgqu_s5w00000000</FilingComId>
+   <FilingFileRef>SHR-1527380</FilingFileRef>
+   <FilingDesc>Invoice SHR</FilingDesc>
+   <User>MEITALJ</User>
+   <Owner>MEITALJ</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\5x8dlxemtu2ysmjgqu_s5w00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1IN</FilingDocTypeCode>
+   <FilingDocTypeName>Invoice SHR</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84913527</PrimaryNum>
+   <DocType>1PL</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\20212\tmp_x_m+k5lfge6tawwpblyona\af50ea33-5bf5-4d07-8520-0f97d1b965dd.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>g_tg+h3fukuwx302nfuvpg00000000</FilingComId>
+   <FilingFileRef>SHR-1527381</FilingFileRef>
+   <FilingDesc>Packing List SHR</FilingDesc>
+   <User>MEITALJ</User>
+   <Owner>MEITALJ</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\g_tg+h3fukuwx302nfuvpg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1PL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List SHR</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

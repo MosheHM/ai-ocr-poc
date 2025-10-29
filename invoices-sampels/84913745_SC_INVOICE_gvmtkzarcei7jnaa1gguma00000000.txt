@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84913745,
+   "COM_ID" : "gvmtkzarcei7jnaa1gguma00000000",
+   "CREATE_DATE" : "2025080415431100",
+   "UPDATE_DATE" : "2025080415495500",
+   "CREATE_BY" : "RAVITM",
+   "UPDATE_BY" : "FADWAA",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 7,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072800000000",
+   "INVOICE_NO" : "9103654667",
+   "INVOICE_AMOUNT" : 20101.81,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "3268464",
+   "INCOTERMS" : "CIP",
+   "ORIGIN_ID" : "AE",
+   "MORE" : "",
+   "SELLER_ID" : "98da6417-f7cb-4d6e-916b-3e9deaf83e14",
+   "SELLER_NAME" : "SAMSUNG GULF ELECTRONICS FZE"
+ }
+}

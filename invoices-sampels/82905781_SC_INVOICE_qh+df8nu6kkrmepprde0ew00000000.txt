@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82905781,
+   "COM_ID" : "qh+df8nu6kkrmepprde0ew00000000",
+   "CREATE_DATE" : "2025080313500600",
+   "UPDATE_DATE" : "2025080313501200",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025051500000000",
+   "INVOICE_NO" : "2258ESH092",
+   "INVOICE_AMOUNT" : 17991.2,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "",
+   "INCOTERMS" : "FOB",
+   "ORIGIN_ID" : "",
+   "MORE" : "",
+   "SELLER_ID" : "8c63c6c6-30b2-4945-813c-945a50747a28",
+   "SELLER_NAME" : "HONG KONG SINO-HARVEST PACKING COMPANY LIMITED"
+ }
+}

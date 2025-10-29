@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 81914063,
+   "COM_ID" : "s7j6jsatge2fuhjxhpuj_q00000000",
+   "CREATE_DATE" : "2025080614000900",
+   "UPDATE_DATE" : "2025080614010700",
+   "CREATE_BY" : "RAVITM",
+   "UPDATE_BY" : "RAVITM",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 3,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072200000000",
+   "INVOICE_NO" : "2003612565",
+   "INVOICE_AMOUNT" : 44244,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "3010749",
+   "INCOTERMS" : "CIF",
+   "ORIGIN_ID" : "NL",
+   "MORE" : "",
+   "SELLER_ID" : "d0f641cf-68e4-4382-a144-30930cdc36f8",
+   "SELLER_NAME" : "Flint CPS Inks Netherlands"
+ }
+}

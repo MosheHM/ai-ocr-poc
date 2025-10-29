@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84913556,
+   "COM_ID" : "4vgiosfzyegoa2zyot4fow00000000",
+   "CREATE_DATE" : "2025080314124800",
+   "UPDATE_DATE" : "2025080314132600",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025080100000000",
+   "INVOICE_NO" : "155",
+   "INVOICE_AMOUNT" : 116646.02,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "2028390",
+   "INCOTERMS" : "",
+   "ORIGIN_ID" : "IT",
+   "MORE" : "",
+   "SELLER_ID" : "32f891cb-ddbe-482d-a3ac-fc5cb01cd620",
+   "SELLER_NAME" : "INGROSSO OREFICERIA OROLOGERIA"
+ }
+}

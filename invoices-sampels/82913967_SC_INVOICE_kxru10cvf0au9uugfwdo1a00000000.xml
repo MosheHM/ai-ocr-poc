@@ -1,0 +1,72 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>tgy57ielpkk+pznjid_haq00000000</ParentComId>
+ <Owner>SHANIYM</Owner>
+ <User>SHANIYM</User>
+ <FilePath>\\ASRVFiles\DMClient\Shaniy\Preview\P_SHR-1529295-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82913967</PrimaryNum>
+   <DocType>1IN</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\9252\tmp_nj3wka5fg0mxacjxakymvw\5ad6a543-d33d-43a1-a644-be30490ca263.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>kxru10cvf0au9uugfwdo1a00000000</FilingComId>
+   <FilingFileRef>SHR-1529300</FilingFileRef>
+   <FilingDesc>Invoice SHR</FilingDesc>
+   <User>SHANIYM</User>
+   <Owner>SHANIYM</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D06\kxru10cvf0au9uugfwdo1a00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1IN</FilingDocTypeCode>
+   <FilingDocTypeName>Invoice SHR</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82913967</PrimaryNum>
+   <DocType>1PL</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\9252\tmp_nj3wka5fg0mxacjxakymvw\38fd75b3-f8d1-4bf1-b4ed-b3795db0e8e2.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>hefrmrqya0ui0mmckpaiwq00000000</FilingComId>
+   <FilingFileRef>SHR-1529302</FilingFileRef>
+   <FilingDesc>Packing List SHR</FilingDesc>
+   <User>SHANIYM</User>
+   <Owner>SHANIYM</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D06\hefrmrqya0ui0mmckpaiwq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1PL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List SHR</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82913967</PrimaryNum>
+   <DocType>1BL</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\9252\tmp_nj3wka5fg0mxacjxakymvw\7326e0e4-fa2b-42e4-93e6-05952b82c425.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>wavpmghw6u6vzo9l3q2ykg00000000</FilingComId>
+   <FilingFileRef>SHR-1529303</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>SHANIYM</User>
+   <Owner>SHANIYM</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D06\wavpmghw6u6vzo9l3q2ykg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1BL</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

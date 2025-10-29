@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84914106,
+   "COM_ID" : "m9l5at1uy02lkumliiiykg00000000",
+   "CREATE_DATE" : "2025080710574800",
+   "UPDATE_DATE" : "2025080710583200",
+   "CREATE_BY" : "RAVITM",
+   "UPDATE_BY" : "RAVITM",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 2,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072900000000",
+   "INVOICE_NO" : "60668695",
+   "INVOICE_AMOUNT" : 2458.4,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "3257554",
+   "INCOTERMS" : "EXW",
+   "ORIGIN_ID" : "DE",
+   "MORE" : "",
+   "SELLER_ID" : "9bdb715b-2f43-4e67-9664-5d41964ba42e",
+   "SELLER_NAME" : "E-T-A Elektrotechnische Apparate GmbH"
+ }
+}

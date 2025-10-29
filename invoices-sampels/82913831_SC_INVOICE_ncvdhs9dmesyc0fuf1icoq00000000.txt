@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82913831,
+   "COM_ID" : "ncvdhs9dmesyc0fuf1icoq00000000",
+   "CREATE_DATE" : "2025080511285700",
+   "UPDATE_DATE" : "2025080511302100",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 2,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025060500000000",
+   "INVOICE_NO" : "9101023280",
+   "INVOICE_AMOUNT" : 203322,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "2422669",
+   "INCOTERMS" : "",
+   "ORIGIN_ID" : "IN",
+   "MORE" : "",
+   "SELLER_ID" : "c19d9416-1bdb-404c-8d78-5dce2a870250",
+   "SELLER_NAME" : "LT Foods Ltd"
+ }
+}

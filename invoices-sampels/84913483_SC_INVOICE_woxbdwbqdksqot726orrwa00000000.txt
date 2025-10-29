@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84913483,
+   "COM_ID" : "woxbdwbqdksqot726orrwa00000000",
+   "CREATE_DATE" : "2025080411264400",
+   "UPDATE_DATE" : "2025080411273700",
+   "CREATE_BY" : "RAVITM",
+   "UPDATE_BY" : "RAVITM",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 3,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072800000000",
+   "INVOICE_NO" : "0034066368600115587",
+   "INVOICE_AMOUNT" : 206567.2,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "3243542",
+   "INCOTERMS" : "FCA",
+   "ORIGIN_ID" : "NL",
+   "MORE" : "",
+   "SELLER_ID" : "2447b806-cf89-4739-98b8-8abd334a02ef",
+   "SELLER_NAME" : "Intuitive Surgical SARL"
+ }
+}

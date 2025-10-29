@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84914170,
+   "COM_ID" : "lqwgn1ffuuapncvu47ehfw00000000",
+   "CREATE_DATE" : "2025080710221700",
+   "UPDATE_DATE" : "2025080710235100",
+   "CREATE_BY" : "SHOSHG",
+   "UPDATE_BY" : "SHOSHG",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025080600000000",
+   "INVOICE_NO" : "6900383065",
+   "INVOICE_AMOUNT" : 30130,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "3003326",
+   "INCOTERMS" : "CIP",
+   "ORIGIN_ID" : "KR",
+   "MORE" : "",
+   "SELLER_ID" : "c3971399-e85b-4b2a-8784-2428cfeef271",
+   "SELLER_NAME" : "SAMSUNG ELECTRONICS CO., LTD"
+ }
+}

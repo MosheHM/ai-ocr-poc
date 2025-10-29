@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84913532,
+   "COM_ID" : "ygk0jkw9c0yvyhgjpdza8q00000000",
+   "CREATE_DATE" : "2025080313242200",
+   "UPDATE_DATE" : "2025080313245900",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025073100000000",
+   "INVOICE_NO" : "367",
+   "INVOICE_AMOUNT" : 90414.91,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "2029512",
+   "INCOTERMS" : "",
+   "ORIGIN_ID" : "IT",
+   "MORE" : "",
+   "SELLER_ID" : "ec9b4cf6-21f9-4bbf-b9f3-ff8cd007f3eb",
+   "SELLER_NAME" : "MAGNET S.r.l."
+ }
+}

@@ -1,0 +1,63 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>wj+emvhktu6ucrsybi18hw00000000</ParentComId>
+ <Owner>AMITAL</Owner>
+ <User>AGAME</User>
+ <FilePath>\\ASRVFiles\DMClient\AgamE\Preview\P_CLT-2045517-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82913427</PrimaryNum>
+   <DocType>1IN</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\31736\tmp_w_imrlfvvuizz3_nzprq+q\45822154-1ade-49ae-8421-252d00144ca7.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>88mkqhrcqk2zxz_1z5qbjq00000000</FilingComId>
+   <FilingFileRef>SHR-1530617</FilingFileRef>
+   <FilingDesc>Invoice SHR</FilingDesc>
+   <User>AGAME</User>
+   <Owner>AGAME</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D07\88mkqhrcqk2zxz_1z5qbjq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1IN</FilingDocTypeCode>
+   <FilingDocTypeName>Invoice SHR</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82913427</PrimaryNum>
+   <DocType>1BL</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\31736\tmp_w_imrlfvvuizz3_nzprq+q\be729357-eab6-4477-924c-a13266fc753c.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>5</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>upwtsgumsuonyd+bu6+3yg00000000</FilingComId>
+   <FilingFileRef>SHR-1530619</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>AGAME</User>
+   <Owner>AGAME</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D07\upwtsgumsuonyd+bu6+3yg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1BL</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

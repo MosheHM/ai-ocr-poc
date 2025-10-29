@@ -180,7 +180,7 @@ def main():
             
         except Exception as e:
             print(f"Error processing {pdf_file.name}: {e}")
-            continue
+            
 
     output_file = data_dir / f"extraction_results_{int(time.time())}.json"
     with open(output_file, 'w', encoding='utf-8') as f:
