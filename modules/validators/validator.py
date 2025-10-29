@@ -1,6 +1,6 @@
 """Validator module for assessing extraction performance against ground truth."""
 from typing import Dict, Any, Optional
-from modules.types import ExtractionResult, ValidationResult, DocumentType
+from modules.types import ExtractionResult, ValidationResult, DocumentType, DOCUMENT_SCHEMAS
 
 
 class PerformanceValidator:
@@ -40,6 +40,11 @@ class PerformanceValidator:
         total_fields = 0
         correct_fields = 0
         
+        # Get expected fields for this document type
+        expected_fields = []
+        if extracted.document_type in DOCUMENT_SCHEMAS:
+            expected_fields = list(DOCUMENT_SCHEMAS[extracted.document_type].keys())
+        
         # Compare each extracted field with ground truth
         for field_name, extracted_value in extracted.data.items():
             if field_name in gt_fields:
@@ -55,6 +60,20 @@ class PerformanceValidator:
                 total_fields += 1
                 if is_correct:
                     correct_fields += 1
+        
+        # Check for fields in ground truth that are missing from extraction
+        # This includes fields that the model didn't recognize, even if ground truth is empty
+        for field_name in expected_fields:
+            if field_name in gt_fields and field_name not in extracted.data:
+                gt_value = gt_fields[field_name]
+                
+                field_comparison[field_name] = {
+                    'extracted': None,
+                    'ground_truth': gt_value,
+                    'correct': False
+                }
+                
+                total_fields += 1
         
         # Calculate score
         score = (correct_fields / total_fields * 100) if total_fields > 0 else 0.0

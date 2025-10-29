@@ -80,7 +80,7 @@ def example_validation():
     print("Example 3: Validation Against Ground Truth")
     print("=" * 70)
     
-    # Create sample extraction
+    # Create sample extraction with some missing fields
     extraction = ExtractionResult(
         page_number=1,
         document_type=DocumentType.INVOICE,
@@ -90,19 +90,19 @@ def example_validation():
             "CURRENCY_ID": "EUR",
             "INCOTERMS": "FCA",
             "INVOICE_AMOUNT": 7632.00,
-            "CUSTOMER_ID": "D004345"
+            # CUSTOMER_ID is missing - will be tracked
         },
         success=True
     )
     
-    # Ground truth with one intentional error
+    # Ground truth with one intentional error and missing field
     ground_truth = {
         "INVOICE_NO": "0004833/E",
         "INVOICE_DATE": "2025073000000000",
         "CURRENCY_ID": "EUR",
         "INCOTERMS": "FOB",  # Different from extracted
         "INVOICE_AMOUNT": 7632.00,
-        "CUSTOMER_ID": "D004345"
+        "CUSTOMER_ID": "D004345"  # Missing from extraction
     }
     
     # Validate
@@ -119,10 +119,16 @@ def example_validation():
         extracted = comparison['extracted']
         expected = comparison['ground_truth']
         
-        if comparison['correct']:
+        if extracted is None:
+            # Field was not extracted
+            print(f"  {status} {field}: NOT EXTRACTED (expected: {expected})")
+        elif comparison['correct']:
             print(f"  {status} {field}: {extracted}")
         else:
             print(f"  {status} {field}: {extracted} (expected: {expected})")
+    
+    print("\n📝 Note: Missing fields are now tracked even when not extracted,")
+    print("   making model blind spots visible for better performance assessment.")
 
 
 def example_error_handling():
