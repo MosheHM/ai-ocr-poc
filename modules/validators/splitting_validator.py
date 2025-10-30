@@ -11,6 +11,7 @@ DOCTYPE_MAPPING = {
     'FPL': DocumentType.PACKING_LIST,  # Packing List
     'OBL': DocumentType.OBL,  # Ocean Bill of Lading
     'HAWB': DocumentType.HAWB,  # House Air Waybill
+    'FWA': DocumentType.HAWB,  # Waybill (map to HAWB as closest match)
 }
 
 # Reverse mapping for display
@@ -19,6 +20,7 @@ DOCTYPE_NAME_MAPPING = {
     'Packing List': DocumentType.PACKING_LIST,
     'Ocean Bill of Lading': DocumentType.OBL,
     'House Air Waybill': DocumentType.HAWB,
+    'Waybill': DocumentType.HAWB,  # Map to HAWB as closest match
 }
 
 
