@@ -125,8 +125,14 @@ class ExtractionWorkflow(BaseWorkflow):
             lines.append(f"  {page_info} ({ext.document_type.value}): {status}")
             if ext.success:
                 lines.append(f"    Fields extracted: {len(ext.data)}")
-                for key, value in ext.data.items():
-                    lines.append(f"      - {key}: {value}")
+                if isinstance(ext.data, dict):
+                    for key, value in ext.data.items():
+                        lines.append(f"      - {key}: {value}")
+                elif isinstance(ext.data, list):
+                    for item in ext.data:
+                        lines.append(f"      - {item}")
+                else:
+                    lines.append(f"      - {ext.data}")
             else:
                 lines.append(f"    Error: {ext.error_message}")
         lines.append("")

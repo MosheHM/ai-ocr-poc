@@ -21,11 +21,18 @@ class DocumentType(str, Enum):
     PACKING_LIST = "Packing List"
     UNKNOWN = "Unknown"
 
+@dataclass
+class PageRange:
+    """Represents a range of pages."""
+    page_start: int
+    page_end: int
+    total_pages: int
+
 
 @dataclass
 class PageClassification:
     """Classification result for a single page."""
-    page_number: int
+    page_number: PageRange
     document_type: DocumentType
     confidence: Optional[float] = None
 
@@ -46,10 +53,11 @@ class DocumentInstance:
         return f"{self.start_page}-{self.end_page}"
 
 
+
 @dataclass
 class ExtractionResult:
     """Result of data extraction from a page or document instance."""
-    page_number: int  # For single page, or start page for multi-page
+    page_number: PageRange
     document_type: DocumentType
     data: Dict[str, Any]
     success: bool
@@ -61,7 +69,7 @@ class ExtractionResult:
 @dataclass
 class ValidationResult:
     """Result of validating extracted data against ground truth."""
-    page_number: int
+    page_number: PageRange
     document_type: DocumentType
     extracted: Dict[str, Any]
     ground_truth: Optional[Dict[str, Any]]

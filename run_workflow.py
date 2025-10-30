@@ -14,7 +14,7 @@ def main():
         return 1
     
     # Define the PDF path
-    pdf_path = Path(__file__).parent / "sampels" / "81124344_ORG_x9cp+3yx40mttjvnrwzffg00000000.PDF"
+    pdf_path = Path(__file__).parent / "sampels" / "combined-sampels" / "81124344_ORG_x9cp+3yx40mttjvnrwzffg00000000.PDF"
     
     # Validate PDF exists
     if not pdf_path.exists():
