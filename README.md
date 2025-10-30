@@ -13,6 +13,8 @@ This application uses Google's Gemini API to:
 
 - **Multi-page PDF Processing**: Handles PDFs with multiple pages of different document types
 - **Automatic Classification**: AI-powered identification of document types
+- **Document Instance Grouping**: Automatically groups consecutive pages of the same type into document instances
+- **Document Summary**: Clear reporting of how many documents of each type exist and which pages they occupy
 - **Type-specific Extraction**: Specialized extractors for each document type with tailored schemas
 - **Performance Validation**: Compares extracted data against ground truth with detailed scoring
 - **Error Handling**: Comprehensive error handling with detailed feedback
@@ -85,6 +87,18 @@ Specify output file:
 python main.py path/to/document.pdf --output results.json
 ```
 
+### Demonstration Script
+
+To see a demonstration of the document summary feature:
+```bash
+python demo_summary.py
+```
+
+This shows how the system handles a 10-page PDF with multiple invoices and packing lists, displaying:
+- Document counts by type
+- Page ranges for each document instance
+- JSON output format
+
 ### Legacy Invoice Extractor
 
 The original invoice-only extractor is still available:
@@ -103,12 +117,18 @@ The system follows a three-stage pipeline:
    - Returns document type and confidence score
    - Supported types: Invoice, OBL, HAWB, Packing List
 
-2. **Extraction Phase**
+2. **Document Grouping Phase**
+   - Consecutive pages of the same type are grouped into document instances
+   - For example, pages 1-3 classified as Invoice become one Invoice instance
+   - Enables accurate counting of distinct documents in multi-page PDFs
+
+3. **Extraction Phase**
    - Data is extracted using type-specific extractors
    - Each extractor has a specialized system prompt
+   - Multi-page documents are processed as a single unit
    - Returns structured JSON data
 
-3. **Validation Phase** (Optional)
+4. **Validation Phase** (Optional)
    - Extracted data is compared against ground truth
    - Field-by-field comparison with scoring
    - Detailed mismatch reporting
@@ -117,13 +137,31 @@ The system follows a three-stage pipeline:
 
 ### Console Report
 Human-readable processing report showing:
+- **Document Summary**: Count of each document type and page ranges
 - Page classifications with confidence scores
-- Extraction results for each page
+- Extraction results for each document instance
 - Validation scores (if ground truth provided)
 - Detailed error messages
 
+Example console output:
+```
+Document Summary:
+--------------------------------------------------------------------------------
+  Invoice: 3 document(s)
+  Packing List: 2 document(s)
+
+Document Instances:
+  1. Invoice - pages 1-3
+  2. Packing List - page 4
+  3. Invoice - pages 5-6
+  4. Packing List - pages 7-9
+  5. Invoice - page 10
+```
+
 ### JSON Results File
 Machine-readable results containing:
+- Document summary with counts by type
+- Document instances with page ranges
 - All page classifications
 - All extracted data
 - Validation metrics and field comparisons
@@ -133,9 +171,25 @@ Example output structure:
 ```json
 {
   "pdf_path": "document.pdf",
-  "total_pages": 3,
+  "total_pages": 10,
   "success": true,
   "overall_score": 95.5,
+  "document_summary": {
+    "total_documents": 5,
+    "documents_by_type": {
+      "Invoice": 3,
+      "Packing List": 2
+    }
+  },
+  "document_instances": [
+    {
+      "document_type": "Invoice",
+      "start_page": 1,
+      "end_page": 3,
+      "page_count": 3,
+      "page_range": "1-3"
+    }
+  ],
   "classifications": [...],
   "extractions": [...],
   "validations": [...]
