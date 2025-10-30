@@ -88,7 +88,8 @@ def check_sample_data():
         print(f"✗ Sample directory not found: {samples_dir}")
         return None
     
-    pdf_files = list(samples_dir.glob("*.PDF"))
+    # Use case-insensitive pattern to match both .pdf and .PDF
+    pdf_files = list(samples_dir.glob("*.[Pp][Dd][Ff]"))
     
     if not pdf_files:
         print(f"✗ No PDF files found in {samples_dir}")
@@ -153,8 +154,8 @@ def run_full_test(pdf_path, ground_truth_path=None):
     print()
     
     try:
-        # Import workflow
-        from modules.workflows import ValidationWorkflow, ExtractionWorkflow
+        # Import workflow modules
+        from modules.workflows import ExtractionWorkflow, ValidationWorkflow
         import json
         
         # Load ground truth if provided
