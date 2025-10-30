@@ -1,4 +1,4 @@
 """LLM module initialization."""
-from .client import GeminiLLMClient, SUPPORTED_GEMINI_MODELS, DEFAULT_MODEL
+from .client import GeminiLLMClient, DEFAULT_MODEL
 
-__all__ = ['GeminiLLMClient', 'SUPPORTED_GEMINI_MODELS', 'DEFAULT_MODEL']
+__all__ = ['GeminiLLMClient', 'DEFAULT_MODEL']
