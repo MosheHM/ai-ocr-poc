@@ -1,4 +1,4 @@
-from datetime import time
+import time
 import os
 import json
 from pathlib import Path
@@ -105,6 +105,8 @@ class InvoiceExtractor:
         else:
             gt_fields = ground_truth
         
+        expected_fields = ['INVOICE_NO', 'INVOICE_DATE', 'CURRENCY_ID', 'INCOTERMS', 'INVOICE_AMOUNT', 'CUSTOMER_ID']
+        
         for field_name in extracted.keys():
             if field_name in gt_fields:
                 extracted_value = extracted[field_name]
@@ -121,6 +123,19 @@ class InvoiceExtractor:
                 results['total_fields'] += 1
                 if is_correct:
                     results['correct_fields'] += 1
+        
+
+        for field_name in expected_fields:
+            if field_name in gt_fields and field_name not in extracted:
+                gt_value = gt_fields[field_name]
+                
+                results['field_comparison'][field_name] = {
+                    'extracted': None,
+                    'ground_truth': gt_value,
+                    'correct': False
+                }
+                
+                results['total_fields'] += 1
         
         if results['total_fields'] > 0:
             results['score'] = (results['correct_fields'] / results['total_fields']) * 100
@@ -159,10 +174,13 @@ def main():
         return
     
     all_results = []
-    
-    for pdf_file in pdf_files:
+    mismatches = []
+
+    for i, pdf_file in enumerate(pdf_files):
         txt_file = pdf_file.with_suffix('.txt')
         
+        if i > 1400:
+            break
         if not txt_file.exists():
             print(f"Warning: No matching TXT file for {pdf_file.name}, skipping...")
             continue
@@ -176,11 +194,28 @@ def main():
             })
 
             print(f"  Score: {results['score']:.2%} ({results['correct_fields']}/{results['total_fields']} fields correct)")
+            
+            if results['score'] < 100:
+                pdf_mismatches = []
+                for field_name, comparison in results['field_comparison'].items():
+                    if not comparison['correct']:
+                        pdf_mismatches.append({
+                            "field": field_name,
+                            "extracted_value": comparison['extracted'],
+                            "ground_truth_value": comparison['ground_truth']
+                        })
+                
+                if pdf_mismatches:
+                    mismatches.append({
+                        "pdf_name": pdf_file.name,
+                        "mismatched_fields": pdf_mismatches
+                    })
+            
             print()
             
         except Exception as e:
             print(f"Error processing {pdf_file.name}: {e}")
-            continue
+            
 
     output_file = data_dir / f"extraction_results_{int(time.time())}.json"
     with open(output_file, 'w', encoding='utf-8') as f:
@@ -191,6 +226,12 @@ def main():
     if all_results:
         avg_score = sum(r['results']['score'] for r in all_results) / len(all_results)
         print(f"\nOverall Average Score: {avg_score:.2%}")
+    
+    if mismatches:
+        output_file = data_dir / f"mismatched_fields_{int(time.time())}.json"
+        with open(output_file, 'w', encoding='utf-8') as f:
+            json.dump(mismatches, f, indent=2, ensure_ascii=False)
+        print(f"\nMismatched fields saved to: {output_file}")
 
 
 if __name__ == "__main__":
