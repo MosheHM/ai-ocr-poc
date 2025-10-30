@@ -90,6 +90,20 @@ def main():
             'total_pages': result.total_pages,
             'success': result.success,
             'overall_score': result.overall_score,
+            'document_summary': {
+                'total_documents': len(result.document_instances),
+                'documents_by_type': {}
+            },
+            'document_instances': [
+                {
+                    'document_type': doc.document_type.value,
+                    'start_page': doc.start_page,
+                    'end_page': doc.end_page,
+                    'page_count': len(doc.page_numbers),
+                    'page_range': doc.page_range
+                }
+                for doc in result.document_instances
+            ],
             'classifications': [
                 {
                     'page_number': c.page_number,
@@ -104,7 +118,9 @@ def main():
                     'document_type': e.document_type.value,
                     'data': e.data,
                     'success': e.success,
-                    'error_message': e.error_message
+                    'error_message': e.error_message,
+                    'page_count': e.page_count,
+                    'page_range': e.page_range
                 }
                 for e in result.extractions
             ],
@@ -121,6 +137,11 @@ def main():
             ] if result.validations else [],
             'errors': result.errors
         }
+        
+        # Count documents by type
+        from collections import Counter
+        doc_type_counts = Counter(doc.document_type.value for doc in result.document_instances)
+        result_dict['document_summary']['documents_by_type'] = dict(doc_type_counts)
         
         with open(output_path, 'w', encoding='utf-8') as f:
             json.dump(result_dict, f, indent=2, ensure_ascii=False)

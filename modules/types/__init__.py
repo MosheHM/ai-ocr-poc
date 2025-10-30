@@ -82,10 +82,13 @@ class ProcessingResult:
     overall_score: Optional[float] = None
     success: bool = True
     errors: List[str] = None
+    document_instances: List[DocumentInstance] = None
     
     def __post_init__(self):
         if self.errors is None:
             self.errors = []
+        if self.document_instances is None:
+            self.document_instances = []
 
 
 class LLMProvider(Protocol):

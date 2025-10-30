@@ -68,7 +68,9 @@ class ValidationWorkflow(BaseWorkflow):
             
             # Step 2: Extract data from document instances (multi-page aware)
             logger.info("Step 2: Grouping pages and extracting data from document instances...")
-            result.extractions = self._extract_document_instances(pdf_path, result.classifications)
+            result.extractions, result.document_instances = self._extract_document_instances(
+                pdf_path, result.classifications
+            )
             
             # Step 3: Validate extractions if ground truth is provided
             if ground_truth:
@@ -139,6 +141,28 @@ class ValidationWorkflow(BaseWorkflow):
         lines.append("=" * 80)
         lines.append(f"Total Pages: {result.total_pages}")
         lines.append(f"Success: {result.success}")
+        lines.append("")
+        
+        # Document Summary - NEW SECTION
+        lines.append("Document Summary:")
+        lines.append("-" * 80)
+        
+        # Count documents by type
+        from collections import Counter
+        doc_type_counts = Counter(doc.document_type for doc in result.document_instances)
+        
+        # Display summary with counts
+        for doc_type, count in doc_type_counts.items():
+            lines.append(f"  {doc_type.value}: {count} document(s)")
+        
+        lines.append("")
+        lines.append("Document Instances:")
+        
+        # Number each document instance
+        for i, doc_instance in enumerate(result.document_instances, 1):
+            page_info = f"page {doc_instance.page_range}" if doc_instance.start_page == doc_instance.end_page else f"pages {doc_instance.page_range}"
+            lines.append(f"  {i}. {doc_instance.document_type.value} - {page_info}")
+        
         lines.append("")
         
         # Classifications
