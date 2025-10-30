@@ -165,7 +165,7 @@ class BaseWorkflow(ABC):
         self,
         pdf_path: str,
         classifications: List[PageClassification]
-    ) -> List[ExtractionResult]:
+    ) -> tuple[List[ExtractionResult], List[DocumentInstance]]:
         """Extract data from document instances (multi-page documents).
         
         This method groups consecutive pages of the same type into document instances
@@ -182,7 +182,7 @@ class BaseWorkflow(ABC):
             classifications: Page classifications
         
         Returns:
-            List of extraction results (one per document instance)
+            Tuple of (extraction results, document instances)
         """
         extractions = []
         
@@ -259,4 +259,4 @@ class BaseWorkflow(ABC):
                     page_range=doc_instance.page_range
                 ))
         
-        return extractions
+        return extractions, document_instances
