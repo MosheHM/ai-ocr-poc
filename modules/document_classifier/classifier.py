@@ -68,5 +68,5 @@ class PDFDocumentClassifier:
         """
         # Split PDF into individual pages
         pages = split_pdf_to_pages(pdf_path)
-        
+
         return [self.classify_page(page_data, page_num) for page_num, page_data in enumerate(pages, start=1)]

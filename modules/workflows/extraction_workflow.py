@@ -88,7 +88,7 @@ class ExtractionWorkflow(BaseWorkflow):
         for cls in result.classifications:
             lines.append(
                 f"  Page {cls.page_number}: {cls.document_type.value} "
-                f"(confidence: {cls.confidence:.2f if cls.confidence else 0.0:.2f})"
+                f"(confidence: {(cls.confidence or 0.0):.2f})"
             )
         lines.append("")
         
