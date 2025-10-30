@@ -113,7 +113,7 @@ This processes all PDFs in the `invoices-sampels` folder.
 
 Validate PDF splitting results against XML ground truth files:
 ```bash
-# Validate all PDFs in combined-samples directory
+# Validate all PDFs in sampels/combined-sampels directory
 python validate_splitting.py
 
 # Validate a specific PDF

@@ -74,7 +74,7 @@ result = workflow.process_document_with_xml_ground_truth(
 Use the `validate_splitting.py` script to validate PDFs against XML ground truth:
 
 ```bash
-# Validate all PDFs in the samples directory
+# Validate all PDFs in the sampels/combined-sampels directory
 python validate_splitting.py
 
 # Validate a specific PDF
