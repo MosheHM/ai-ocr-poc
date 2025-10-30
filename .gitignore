@@ -4,9 +4,6 @@ __pycache__/
 *$py.class
 *.so
 .Python
-env/
-venv/
-ENV/
 build/
 develop-eggs/
 dist/
@@ -23,6 +20,11 @@ wheels/
 .installed.cfg
 *.egg
 
+# Virtual environments
+venv/
+ENV/
+env/
+
 # IDE
 .vscode/
 .idea/
@@ -34,5 +36,11 @@ wheels/
 .DS_Store
 Thumbs.db
 
-# Project specific
+# Test results
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Results and temporary files
+results_*.json
 extraction_results_*.json
