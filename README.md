@@ -110,7 +110,7 @@ This processes all PDFs in the `invoices-sampels` folder.
 
 ## Processing Pipeline
 
-The system follows a three-stage pipeline:
+The system follows a four-stage pipeline:
 
 1. **Classification Phase**
    - Each page is analyzed by an AI classifier
@@ -137,9 +137,9 @@ The system follows a three-stage pipeline:
 
 ### Console Report
 Human-readable processing report showing:
-- **Document Summary**: Count of each document type and page ranges
-- Page classifications with confidence scores
-- Extraction results for each document instance
+- **Document Summary**: Count of each document type and page ranges for each document instance
+- Page-by-page classifications with confidence scores
+- Extraction results for each document instance (grouped pages)
 - Validation scores (if ground truth provided)
 - Detailed error messages
 
