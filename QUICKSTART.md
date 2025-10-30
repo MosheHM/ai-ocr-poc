@@ -27,6 +27,19 @@ set GEMINI_API_KEY=your-api-key-here
 
 ## Basic Usage
 
+### Quick Check
+
+Verify the POC is installed and working correctly:
+```bash
+python run_workflow.py
+```
+
+This performs a quick system check:
+- Verifies all dependencies are installed
+- Checks that modules are available
+- Runs basic functionality tests (no API key required)
+- Shows available sample files
+
 ### Process a PDF document
 ```bash
 python main.py path/to/document.pdf
