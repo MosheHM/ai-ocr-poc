@@ -68,6 +68,15 @@ set GEMINI_API_KEY=your-api-key-here
 
 ## Usage
 
+### Quick Check
+
+Verify the POC is installed and working correctly:
+```bash
+python run_workflow.py
+```
+
+This will check dependencies, verify modules, and run basic tests (no API key required).
+
 ### New Modular System
 
 Process a PDF document with automatic page classification:
