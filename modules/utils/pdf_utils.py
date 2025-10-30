@@ -59,3 +59,40 @@ def get_pdf_page_count(pdf_path: str) -> int:
         return len(reader.pages)
     except Exception:
         return 1
+
+
+def combine_pdf_pages(pdf_path: str, page_numbers: List[int]) -> bytes:
+    """Combine multiple pages from a PDF into a single PDF.
+    
+    Args:
+        pdf_path: Path to the PDF file
+        page_numbers: List of page numbers to combine (1-indexed)
+    
+    Returns:
+        Bytes of the combined PDF
+    """
+    if PdfReader is None or PdfWriter is None:
+        with open(pdf_path, 'rb') as f:
+            return f.read()
+    
+    try:
+        reader = PdfReader(pdf_path)
+        writer = PdfWriter()
+        
+        for page_num in page_numbers:
+            # Convert to 0-indexed
+            page_index = page_num - 1
+            if 0 <= page_index < len(reader.pages):
+                writer.add_page(reader.pages[page_index])
+        
+        output = io.BytesIO()
+        writer.write(output)
+        output.seek(0)
+        
+        return output.read()
+        
+    except Exception as e:
+        print(f"Warning: Could not combine PDF pages: {e}")
+        with open(pdf_path, 'rb') as f:
+            return f.read()
+

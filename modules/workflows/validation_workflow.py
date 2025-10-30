@@ -34,8 +34,9 @@ class ValidationWorkflow(BaseWorkflow):
         
         Pipeline steps:
         1. Classify each page to identify document type
-        2. Extract data from each page using type-specific extractors
-        3. Validate extracted data against ground truth
+        2. Group consecutive pages of same type into document instances
+        3. Extract data from each document instance (multi-page extraction)
+        4. Validate extracted data against ground truth
         
         Args:
             pdf_path: Path to the PDF file
@@ -65,9 +66,9 @@ class ValidationWorkflow(BaseWorkflow):
             logger.info("Step 1: Classifying pages...")
             result.classifications = self._classify_pages(pdf_path)
             
-            # Step 2: Extract data from each page
-            logger.info("Step 2: Extracting data from pages...")
-            result.extractions = self._extract_pages(pdf_path, result.classifications)
+            # Step 2: Extract data from document instances (multi-page aware)
+            logger.info("Step 2: Grouping pages and extracting data from document instances...")
+            result.extractions = self._extract_document_instances(pdf_path, result.classifications)
             
             # Step 3: Validate extractions if ground truth is provided
             if ground_truth:
@@ -151,11 +152,12 @@ class ValidationWorkflow(BaseWorkflow):
         lines.append("")
         
         # Extractions
-        lines.append("Data Extractions:")
+        lines.append("Extracted Documents:")
         lines.append("-" * 80)
         for ext in result.extractions:
             status = "✓ Success" if ext.success else "✗ Failed"
-            lines.append(f"  Page {ext.page_number} ({ext.document_type.value}): {status}")
+            page_info = f"Pages {ext.page_range}" if ext.page_range else f"Page {ext.page_number}"
+            lines.append(f"  {page_info} ({ext.document_type.value}): {status}")
             if ext.success:
                 lines.append(f"    Fields extracted: {len(ext.data)}")
                 for key, value in ext.data.items():

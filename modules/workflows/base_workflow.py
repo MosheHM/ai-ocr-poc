@@ -8,12 +8,13 @@ from modules.types import (
     PageClassification,
     ExtractionResult,
     ValidationResult,
-    ProcessingResult
+    ProcessingResult,
+    DocumentInstance
 )
 from modules.llm.client import GeminiLLMClient
 from modules.document_classifier import PDFDocumentClassifier
 from modules.extractors import ExtractorFactory
-from modules.utils import split_pdf_to_pages, get_pdf_page_count
+from modules.utils import split_pdf_to_pages, get_pdf_page_count, combine_pdf_pages, group_pages_into_documents
 
 
 # Configure logging
@@ -52,9 +53,20 @@ class BaseWorkflow(ABC):
     def _classify_pages(self, pdf_path: str) -> List[PageClassification]:
         """Classify all pages in a document.
         
-        Note: Each page is classified independently. A PDF with 5 pages where
-        pages 1-2 are invoices and pages 3-5 are packing lists will result in
-        5 separate classifications (2 Invoice + 3 Packing List).
+        Note: Each page is classified independently to identify its document type.
+        Consecutive pages of the same type are later grouped into document instances.
+        
+        For example, a 5-page PDF where pages 1-2 are invoices and pages 3-5 are 
+        packing lists will be classified as:
+        - Page 1: Invoice
+        - Page 2: Invoice  
+        - Page 3: Packing List
+        - Page 4: Packing List
+        - Page 5: Packing List
+        
+        These will then be grouped into 2 document instances:
+        - Document 1: Invoice (pages 1-2)
+        - Document 2: Packing List (pages 3-5)
         
         Args:
             pdf_path: Path to the PDF file
@@ -145,6 +157,106 @@ class BaseWorkflow(ABC):
                     data={},
                     success=False,
                     error_message=str(e)
+                ))
+        
+        return extractions
+    
+    def _extract_document_instances(
+        self,
+        pdf_path: str,
+        classifications: List[PageClassification]
+    ) -> List[ExtractionResult]:
+        """Extract data from document instances (multi-page documents).
+        
+        This method groups consecutive pages of the same type into document instances
+        and extracts data from each instance as a whole, rather than treating each
+        page independently.
+        
+        For example, if pages 1-2 are classified as Invoice and pages 3-5 as Packing List:
+        - Creates combined PDF for pages 1-2 and extracts as one Invoice
+        - Creates combined PDF for pages 3-5 and extracts as one Packing List
+        - Returns 2 extraction results instead of 5
+        
+        Args:
+            pdf_path: Path to the PDF file
+            classifications: Page classifications
+        
+        Returns:
+            List of extraction results (one per document instance)
+        """
+        extractions = []
+        
+        # Group consecutive pages of the same type
+        document_instances = group_pages_into_documents(classifications)
+        
+        logger.info(f"Grouped {len(classifications)} pages into {len(document_instances)} document instances")
+        
+        for doc_instance in document_instances:
+            try:
+                # Log the document instance
+                logger.info(
+                    f"Processing document instance: {doc_instance.document_type.value} "
+                    f"(pages {doc_instance.page_range})"
+                )
+                
+                # Skip unknown document types
+                if doc_instance.document_type == DocumentType.UNKNOWN:
+                    logger.warning(
+                        f"Document instance (pages {doc_instance.page_range}): "
+                        f"Skipping extraction for unknown type"
+                    )
+                    extractions.append(ExtractionResult(
+                        page_number=doc_instance.start_page,
+                        document_type=doc_instance.document_type,
+                        data={},
+                        success=False,
+                        error_message="Unknown document type",
+                        page_count=len(doc_instance.page_numbers),
+                        page_range=doc_instance.page_range
+                    ))
+                    continue
+                
+                # Combine pages into single PDF for extraction
+                combined_pdf = combine_pdf_pages(pdf_path, doc_instance.page_numbers)
+                
+                # Create appropriate extractor
+                extractor = ExtractorFactory.create_extractor(
+                    doc_instance.document_type,
+                    self.llm_client
+                )
+                
+                # Extract data from the combined document
+                extraction = extractor.extract(combined_pdf, doc_instance.start_page)
+                
+                # Update extraction result with multi-page info
+                extraction.page_count = len(doc_instance.page_numbers)
+                extraction.page_range = doc_instance.page_range
+                
+                extractions.append(extraction)
+                
+                if extraction.success:
+                    logger.info(
+                        f"Document instance (pages {doc_instance.page_range}): "
+                        f"Extracted {len(extraction.data)} fields"
+                    )
+                else:
+                    logger.warning(
+                        f"Document instance (pages {doc_instance.page_range}): "
+                        f"Extraction failed - {extraction.error_message}"
+                    )
+            
+            except Exception as e:
+                logger.error(
+                    f"Error extracting document instance (pages {doc_instance.page_range}): {e}"
+                )
+                extractions.append(ExtractionResult(
+                    page_number=doc_instance.start_page,
+                    document_type=doc_instance.document_type,
+                    data={},
+                    success=False,
+                    error_message=str(e),
+                    page_count=len(doc_instance.page_numbers),
+                    page_range=doc_instance.page_range
                 ))
         
         return extractions

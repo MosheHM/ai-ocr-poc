@@ -31,13 +31,31 @@ class PageClassification:
 
 
 @dataclass
+class DocumentInstance:
+    """Represents a single document that may span multiple pages."""
+    document_type: DocumentType
+    start_page: int
+    end_page: int
+    page_numbers: List[int]
+    
+    @property
+    def page_range(self) -> str:
+        """Get a human-readable page range."""
+        if self.start_page == self.end_page:
+            return str(self.start_page)
+        return f"{self.start_page}-{self.end_page}"
+
+
+@dataclass
 class ExtractionResult:
-    """Result of data extraction from a page."""
-    page_number: int
+    """Result of data extraction from a page or document instance."""
+    page_number: int  # For single page, or start page for multi-page
     document_type: DocumentType
     data: Dict[str, Any]
     success: bool
     error_message: Optional[str] = None
+    page_count: int = 1  # Number of pages in this document
+    page_range: Optional[str] = None  # Human-readable page range (e.g., "1-2")
 
 
 @dataclass
