@@ -1,0 +1,77 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>3s_nsub17eslih7xjljolg00000000</ParentComId>
+ <Owner>ORIAN</Owner>
+ <User>ETIZ</User>
+ <FilePath>\\ScansSrv\DMClients\ETIZ\Preview\P_CGD-5090298-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82400997</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\33236\tmp_ixuyx_ftyewn796mkmqxlq\4d51a4ba-67fa-4b1e-9271-095651621c8e.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>2546</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+    <MetaData>
+     <Id>55</Id>
+     <Name>תאריך החשבון</Name>
+     <Value>6/18/2025 12:00:00 AM</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>fmmwbefr6em8ti0ddjccna00000000</FilingComId>
+   <FilingFileRef>CGD-5090318</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>ETIZ</User>
+   <Owner>ETIZ</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\fmmwbefr6em8ti0ddjccna00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82400997</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\33236\tmp_ixuyx_ftyewn796mkmqxlq\1217e454-dd71-4b3e-8e5e-33870c8ec53d.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>2544</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+    <MetaData>
+     <Id>55</Id>
+     <Name>תאריך החשבון</Name>
+     <Value>6/18/2025 12:00:00 AM</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>vqhprbsrh0m6f7zw8bzaza00000000</FilingComId>
+   <FilingFileRef>CGD-5090319</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>ETIZ</User>
+   <Owner>ETIZ</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\vqhprbsrh0m6f7zw8bzaza00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

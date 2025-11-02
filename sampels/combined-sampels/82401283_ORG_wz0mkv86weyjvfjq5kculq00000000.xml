@@ -1,0 +1,84 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>wz0mkv86weyjvfjq5kculq00000000</ParentComId>
+ <Owner>CHELIO</Owner>
+ <User>CHELIO</User>
+ <FilePath>\\ScansSrv\DMClients\CHELIO\Preview\P_CGD-5089163-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401283</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\13624\tmp_lvuwyxl+_0i2f8x_swyf5a\ad066ea3-81e8-4400-94ca-9223fbfc6e64.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>5</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>6</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>7</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>3062358668</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+    <MetaData>
+     <Id>55</Id>
+     <Name>תאריך החשבון</Name>
+     <Value>6/27/2025 12:00:00 AM</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>qodusrqmmkodj1cp_blhlq00000000</FilingComId>
+   <FilingFileRef>CGD-5090336</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>CHELIO</User>
+   <Owner>CHELIO</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\qodusrqmmkodj1cp_blhlq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401283</PrimaryNum>
+   <DocType>FWA</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\13624\tmp_lvuwyxl+_0i2f8x_swyf5a\668cebd4-e54c-469c-bc2a-56c3d4604562.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>vgjeodyuoeqstn_oskyxcq00000000</FilingComId>
+   <FilingFileRef>CGD-5090337</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>CHELIO</User>
+   <Owner>CHELIO</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\vgjeodyuoeqstn_oskyxcq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FWA</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

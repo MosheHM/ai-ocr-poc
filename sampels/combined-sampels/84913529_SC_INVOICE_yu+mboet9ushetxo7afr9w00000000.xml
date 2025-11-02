@@ -1,0 +1,59 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>rgnvhjbnluw9rqnawusoqg00000000</ParentComId>
+ <Owner>DANIELC</Owner>
+ <User>DANIELC</User>
+ <FilePath>\\ASRVFiles\DMClient\Danielae\Preview\P_SHR-1528204-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84913529</PrimaryNum>
+   <DocType>1IN</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\14028\tmp_46deuhfd6kkxdzc3bocp6g\e1b25d59-86d4-4fc0-a75e-dbbfde8ce3c7.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>yu+mboet9ushetxo7afr9w00000000</FilingComId>
+   <FilingFileRef>SHR-1528220</FilingFileRef>
+   <FilingDesc>Invoice SHR</FilingDesc>
+   <User>DANIELC</User>
+   <Owner>DANIELC</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\yu+mboet9ushetxo7afr9w00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1IN</FilingDocTypeCode>
+   <FilingDocTypeName>Invoice SHR</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84913529</PrimaryNum>
+   <DocType>1BL</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\14028\tmp_46deuhfd6kkxdzc3bocp6g\f196fc95-0d5f-43d3-8287-399ba4ac4148.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>mkcaciqixegzr8hqq4a9mw00000000</FilingComId>
+   <FilingFileRef>SHR-1528221</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>DANIELC</User>
+   <Owner>DANIELC</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\mkcaciqixegzr8hqq4a9mw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1BL</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

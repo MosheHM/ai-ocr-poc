@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>zqv9d4ovv0skbu3fdfjbdw00000000</ParentComId>
+ <Owner>DANIELS</Owner>
+ <User>DANIELS</User>
+ <FilePath>\\ScansSrv\DMClients\daniels\Preview\P_CGD-5092001-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401147</PrimaryNum>
+   <DocType>FWA</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\35996\tmp_cwyrban_guaspft2g8gduw\72a549fe-f834-4c4d-8c7f-2ab12bc49aa7.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>xssc2dbbzeouyvvxk0scfa00000000</FilingComId>
+   <FilingFileRef>CGD-5092004</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>DANIELS</User>
+   <Owner>DANIELS</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\xssc2dbbzeouyvvxk0scfa00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FWA</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

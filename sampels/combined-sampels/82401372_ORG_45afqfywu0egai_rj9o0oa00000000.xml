@@ -1,0 +1,83 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>45afqfywu0egai_rj9o0oa00000000</ParentComId>
+ <Owner>ORIAN</Owner>
+ <User>GILAC</User>
+ <FilePath>\\ScansSrv\DMClients\GILAC\Preview\P_CGD-5092027-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401372</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\29260\tmp_ekssipiotuu7mf7esaveow\f696698c-1aae-46f2-a2e1-f83f5044c693.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1071096491</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>edjryyrmy0u80p4uktskew00000000</FilingComId>
+   <FilingFileRef>CGD-5092039</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>GILAC</User>
+   <Owner>GILAC</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\edjryyrmy0u80p4uktskew00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401372</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\29260\tmp_ekssipiotuu7mf7esaveow\d25f6822-8dd7-4e45-bcd6-a62323b09e40.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>itdsu0_e80ckwh8he0zwfg00000000</FilingComId>
+   <FilingFileRef>CGD-5092041</FilingFileRef>
+   <FilingDesc>Packing List</FilingDesc>
+   <User>GILAC</User>
+   <Owner>GILAC</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\itdsu0_e80ckwh8he0zwfg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401372</PrimaryNum>
+   <DocType>FCR</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\29260\tmp_ekssipiotuu7mf7esaveow\1c104aff-99fe-486e-b9d6-55969424d0e1.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>bhr4ibdjquslasjkkpkbkw00000000</FilingComId>
+   <FilingFileRef>CGD-5092044</FilingFileRef>
+   <FilingDesc>Certificate</FilingDesc>
+   <User>GILAC</User>
+   <Owner>GILAC</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\bhr4ibdjquslasjkkpkbkw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FCR</FilingDocTypeCode>
+   <FilingDocTypeName>Certificate</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

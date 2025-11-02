@@ -1,0 +1,114 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>7oczwsxkkeazsofgousgtq00000000</ParentComId>
+ <Owner>HADASF</Owner>
+ <User>HADASF</User>
+ <FilePath>\\ScansSrv\DMClients\HadasF\Preview\P_CGD-5091269-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401357</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\27792\tmp_sde7rpumfukj4cxz8ci5+q\1a04aa68-12bc-49df-8cf5-85e401a4870f.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>010135</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+    <MetaData>
+     <Id>55</Id>
+     <Name>תאריך החשבון</Name>
+     <Value>7/9/2025 12:00:00 AM</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>eecj5loahkstcs8jbnnhyg00000000</FilingComId>
+   <FilingFileRef>CGD-5091272</FilingFileRef>
+   <FilingDesc/>
+   <User/>
+   <Owner/>
+   <FilingMessage/>
+   <FilingDocTypeCode/>
+   <FilingDocTypeName/>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401357</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\27792\tmp_sde7rpumfukj4cxz8ci5+q\21603422-16e5-49c5-96d9-ebb7a26aba3d.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>crt0tlftauqfn5hvj0xxbw00000000</FilingComId>
+   <FilingFileRef>CGD-5091359</FilingFileRef>
+   <FilingDesc>Packing List</FilingDesc>
+   <User>HADASF</User>
+   <Owner>HADASF</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\crt0tlftauqfn5hvj0xxbw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401357</PrimaryNum>
+   <DocType>OTH</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\27792\tmp_sde7rpumfukj4cxz8ci5+q\73f1b3f5-f524-4ac9-a3ff-3147db0acbfb.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>8i2paoof2uuwxij9rkfrgq00000000</FilingComId>
+   <FilingFileRef>CGD-5091273</FilingFileRef>
+   <FilingDesc/>
+   <User>HADASF</User>
+   <Owner>HADASF</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\crt0tlftauqfn5hvj0xxbw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401357</PrimaryNum>
+   <DocType>FWA</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\27792\tmp_sde7rpumfukj4cxz8ci5+q\92e06b26-d173-4072-b4f0-7b6f936535f6.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>5</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>6</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>x+vgwwx+z0mwveoz2p8wew00000000</FilingComId>
+   <FilingFileRef>CGD-5091274</FilingFileRef>
+   <FilingDesc/>
+   <User>HADASF</User>
+   <Owner>HADASF</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\crt0tlftauqfn5hvj0xxbw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

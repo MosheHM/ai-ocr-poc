@@ -1,0 +1,43 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>u44vywng6k6laopdpdw+ew00000000</ParentComId>
+ <Owner>HADASF</Owner>
+ <User>HADASF</User>
+ <FilePath>\\ScansSrv\DMClients\HadasF\Preview\P_CGD-5090592-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>81124315</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\27792\tmp_u1amvdmwhuovb4yxuoncnq\4652686f-deb3-429e-bc32-c56e389f9f90.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>-90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>405</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+    <MetaData>
+     <Id>55</Id>
+     <Name>תאריך החשבון</Name>
+     <Value>7/29/2025 12:00:00 AM</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>shxkue1vfk6go8thzm4tpw00000000</FilingComId>
+   <FilingFileRef>CGD-5090593</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>HADASF</User>
+   <Owner>HADASF</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\shxkue1vfk6go8thzm4tpw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>fkg8apekl06w_znk_rvzfg00000000</ParentComId>
+ <Owner>MALIO</Owner>
+ <User>MALIO</User>
+ <FilePath>\\ScansSrv\DMClients\MALIO\Preview\P_CGD-5091993-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>81124347</PrimaryNum>
+   <DocType>OTH</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\50848\tmp_nlkygkunsek1aiwrge+bhq\73b18928-aa22-49d7-a885-eeaf9e364ddc.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>8o5zav+3p0+hxve+jka6ww00000000</FilingComId>
+   <FilingFileRef>CGD-5091994</FilingFileRef>
+   <FilingDesc>OTHER FOR CUSTOMS</FilingDesc>
+   <User>MALIO</User>
+   <Owner>MALIO</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\8o5zav+3p0+hxve+jka6ww00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>OTH</FilingDocTypeCode>
+   <FilingDocTypeName>OTHER FOR CUSTOMS</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

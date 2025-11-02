@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82913846,
+   "COM_ID" : "nkvgq4dfpes90ixt991wiw00000000",
+   "CREATE_DATE" : "2025080512514000",
+   "UPDATE_DATE" : "2025080512541900",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072800000000",
+   "INVOICE_NO" : "010072\/25",
+   "INVOICE_AMOUNT" : 40824,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "",
+   "INCOTERMS" : "",
+   "ORIGIN_ID" : "",
+   "MORE" : "",
+   "SELLER_ID" : "48b5ce84-1c8b-4fca-b603-200ffa93f7a4",
+   "SELLER_NAME" : "ACETUM"
+ }
+}

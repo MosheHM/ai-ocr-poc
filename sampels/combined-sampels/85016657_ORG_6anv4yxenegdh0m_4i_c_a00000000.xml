@@ -1,0 +1,79 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>6anv4yxenegdh0m_4i_c_a00000000</ParentComId>
+ <Owner>DANIELAM</Owner>
+ <User>DANIELAM</User>
+ <FilePath>\\ScansSrv\DMClients\danielam\Preview\P_CGD-5089508-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>85016657</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\32256\tmp_mrn1oijcp0ad_edb5txapg\45584ad3-6060-48c4-b159-464f3d924bdb.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>254000110</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>j7b2ujj9duwh6klccbhxia00000000</FilingComId>
+   <FilingFileRef>CGD-5089512</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>DANIELAM</User>
+   <Owner>DANIELAM</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\j7b2ujj9duwh6klccbhxia00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>85016657</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\32256\tmp_mrn1oijcp0ad_edb5txapg\e7bcfa0d-9457-4c53-adfc-239018db7ae1.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>obg+tikickadyy2bt2g4tq00000000</FilingComId>
+   <FilingFileRef>CGD-5089513</FilingFileRef>
+   <FilingDesc>Packing List</FilingDesc>
+   <User>DANIELAM</User>
+   <Owner>DANIELAM</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\obg+tikickadyy2bt2g4tq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>85016657</PrimaryNum>
+   <DocType>FCR</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\32256\tmp_mrn1oijcp0ad_edb5txapg\8a71648e-c9a2-40cd-9fd4-96b5715483bd.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>ky5v3by540kg8mh7ju4bcq00000000</FilingComId>
+   <FilingFileRef>CGD-5089514</FilingFileRef>
+   <FilingDesc>Certificate</FilingDesc>
+   <User>DANIELAM</User>
+   <Owner>DANIELAM</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\ky5v3by540kg8mh7ju4bcq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FCR</FilingDocTypeCode>
+   <FilingDocTypeName>Certificate</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

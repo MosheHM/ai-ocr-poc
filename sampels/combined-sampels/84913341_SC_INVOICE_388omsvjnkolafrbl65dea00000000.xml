@@ -1,0 +1,79 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>pprwi40j1kuhavjagpkbag00000000</ParentComId>
+ <Owner>SHARONH</Owner>
+ <User>SHARONH</User>
+ <FilePath>\\ASRVFiles\DMClient\SharonH\Preview\P_CLT-2044757-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84913341</PrimaryNum>
+   <DocType>1IN</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\14500\tmp_botrbteggecnpwrgk7tg+w\f936a875-cd16-4093-9379-99045b9ca57e.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>5</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>6</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>7</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>8</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>388omsvjnkolafrbl65dea00000000</FilingComId>
+   <FilingFileRef>SHR-1527260</FilingFileRef>
+   <FilingDesc>Invoice SHR</FilingDesc>
+   <User>SHARONH</User>
+   <Owner>SHARONH</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\388omsvjnkolafrbl65dea00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1IN</FilingDocTypeCode>
+   <FilingDocTypeName>Invoice SHR</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84913341</PrimaryNum>
+   <DocType>1PL</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\14500\tmp_botrbteggecnpwrgk7tg+w\4cee70d5-22fe-4f66-ae76-871dbdbaf6d4.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>17</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>dtsyg10oo0whakmhfvejng00000000</FilingComId>
+   <FilingFileRef>SHR-1527261</FilingFileRef>
+   <FilingDesc>Packing List SHR</FilingDesc>
+   <User>SHARONH</User>
+   <Owner>SHARONH</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\dtsyg10oo0whakmhfvejng00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1PL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List SHR</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

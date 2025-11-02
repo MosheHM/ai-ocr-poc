@@ -475,9 +475,9 @@ def main():
     
     # Process combined-sampels directory (has ORG files)
     samples_dir = Path(__file__).parent / 'sampels' / 'combined-sampels'
-    # Split documents are in invoices-sampels directory
-    split_docs_dir = Path(__file__).parent / 'sampels' / 'invoices-sampels'
-    
+    # Split documents are in combined-sampels directory
+    split_docs_dir = Path(__file__).parent / 'sampels' / 'combined-sampels'
+
     if not samples_dir.exists():
         print(f"Error: Samples directory not found: {samples_dir}")
         return

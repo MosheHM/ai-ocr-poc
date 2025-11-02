@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82401271,
+   "COM_ID" : "u5yovv2uquwkkgh+w4hw7w00000000",
+   "CREATE_DATE" : "2025080313021500",
+   "UPDATE_DATE" : "2025080313021900",
+   "CREATE_BY" : "ALEXANDERM",
+   "UPDATE_BY" : "ALEXANDERM",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 2,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025071700000000",
+   "INVOICE_NO" : "C01\/25003117",
+   "INVOICE_AMOUNT" : 50364.65,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "2712181",
+   "INCOTERMS" : "DAP",
+   "ORIGIN_ID" : "IT",
+   "MORE" : "",
+   "SELLER_ID" : "30cbe96a-1e03-4c70-a527-4d13b39670f9",
+   "SELLER_NAME" : "WAY-SRL (Window Automation industry S.r.l) a socio"
+ }
+}

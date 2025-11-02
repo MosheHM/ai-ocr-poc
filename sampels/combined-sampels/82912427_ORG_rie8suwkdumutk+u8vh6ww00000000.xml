@@ -1,0 +1,34 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>rie8suwkdumutk+u8vh6ww00000000</ParentComId>
+ <Owner>SYSTEM</Owner>
+ <User>LINT</User>
+ <FilePath>\\ASRVFiles\DMClient\lint\Preview\P_CLT-2045557-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82912427</PrimaryNum>
+   <DocType>PKD</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\17184\tmp_3okbonrvf0ew6exioqgsdw\33f5318c-4bfe-4d28-9666-e26cee1c96f6.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>jf+t_ctyqe6mysneqma6+w00000000</FilingComId>
+   <FilingFileRef>SHR-1528728</FilingFileRef>
+   <FilingDesc>Pkudat Mesira</FilingDesc>
+   <User>LINT</User>
+   <Owner>LINT</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\jf+t_ctyqe6mysneqma6+w00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>PKD</FilingDocTypeCode>
+   <FilingDocTypeName>Pkudat Mesira</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

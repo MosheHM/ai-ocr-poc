@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84526676,
+   "COM_ID" : "ljotv+deekixwueom_kbja00000000",
+   "CREATE_DATE" : "2025080408392500",
+   "UPDATE_DATE" : "2025080410365700",
+   "CREATE_BY" : "ALYAGONS",
+   "UPDATE_BY" : "ALYAGONS",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 3,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072300000000",
+   "INVOICE_NO" : "100153240",
+   "INVOICE_AMOUNT" : 1300.68,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "2073579",
+   "INCOTERMS" : "FCA",
+   "ORIGIN_ID" : "DE",
+   "MORE" : "",
+   "SELLER_ID" : "4e07abe7-3fff-40b5-b330-4a26365cd56c",
+   "SELLER_NAME" : "Lenze Service GmbH"
+ }
+}

@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82401179,
+   "COM_ID" : "osxt+gxfe0kixsuppbohgw00000000",
+   "CREATE_DATE" : "2025080508213500",
+   "UPDATE_DATE" : "2025080508220500",
+   "CREATE_BY" : "ALYAGONS",
+   "UPDATE_BY" : "ALYAGONS",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072100000000",
+   "INVOICE_NO" : "CA-2039",
+   "INVOICE_AMOUNT" : 63214.08,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "",
+   "INCOTERMS" : "FOB",
+   "ORIGIN_ID" : "",
+   "MORE" : "",
+   "SELLER_ID" : "ff5931cc-5fc7-4a7d-992c-f875e67c72b4",
+   "SELLER_NAME" : "BAILI TRADE CO.,LTD OF SHAXI ZHONGSHAN."
+ }
+}

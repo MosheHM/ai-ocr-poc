@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82912951,
+   "COM_ID" : "7f4uczaiw0wyljwxnnr10w00000000",
+   "CREATE_DATE" : "2025080614583600",
+   "UPDATE_DATE" : "2025081013305600",
+   "CREATE_BY" : "RAVITM",
+   "UPDATE_BY" : "RAVITM",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025071800000000",
+   "INVOICE_NO" : "134\/V5\/25",
+   "INVOICE_AMOUNT" : 6442.5,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "3726484",
+   "INCOTERMS" : "FCA",
+   "ORIGIN_ID" : "IT",
+   "MORE" : "",
+   "SELLER_ID" : "bf8672fb-3a55-4868-83f4-45f6ad1f8f85",
+   "SELLER_NAME" : "SCAIP S.p.A."
+ }
+}

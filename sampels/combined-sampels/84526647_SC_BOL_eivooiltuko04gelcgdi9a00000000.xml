@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>e0jgvdlhpe633scmeqeajg00000000</ParentComId>
+ <Owner>AVIVAC</Owner>
+ <User>AVIVAC</User>
+ <FilePath>\\ScansSrv\DMClients\AVIVAC\Preview\P_CGD-5087569-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526647</PrimaryNum>
+   <DocType>FWA</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\23960\tmp_ty08+7zau0ucyox2ueocpq\4a3d59e0-7e61-4531-9051-fb0d72c68681.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>eivooiltuko04gelcgdi9a00000000</FilingComId>
+   <FilingFileRef>CGD-5087573</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>AVIVAC</User>
+   <Owner>AVIVAC</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\eivooiltuko04gelcgdi9a00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FWA</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 81913987,
+   "COM_ID" : "epe_ubcmieo7o7vz+x43tq00000000",
+   "CREATE_DATE" : "2025080610463100",
+   "UPDATE_DATE" : "2025080610471700",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025070900000000",
+   "INVOICE_NO" : "HL20250511-1",
+   "INVOICE_AMOUNT" : 3900,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "",
+   "INCOTERMS" : "FOB",
+   "ORIGIN_ID" : "",
+   "MORE" : "",
+   "SELLER_ID" : "70169dfc-4031-4739-a92e-2b3eb481abb6",
+   "SELLER_NAME" : "Haolian Machinery Co.,Ltd"
+ }
+}

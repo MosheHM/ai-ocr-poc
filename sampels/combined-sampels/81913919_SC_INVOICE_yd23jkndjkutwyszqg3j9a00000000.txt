@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 81913919,
+   "COM_ID" : "yd23jkndjkutwyszqg3j9a00000000",
+   "CREATE_DATE" : "2025080608200100",
+   "UPDATE_DATE" : "2025080608211100",
+   "CREATE_BY" : "RAVITM",
+   "UPDATE_BY" : "RAVITM",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 2,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025071600000000",
+   "INVOICE_NO" : "1743347",
+   "INVOICE_AMOUNT" : 1386,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "3170325",
+   "INCOTERMS" : "FOB",
+   "ORIGIN_ID" : "DE",
+   "MORE" : "",
+   "SELLER_ID" : "7e6a6a96-ade3-45c0-8070-d5e177483c3e",
+   "SELLER_NAME" : "R?chling Industrial SE & Co. KG"
+ }
+}

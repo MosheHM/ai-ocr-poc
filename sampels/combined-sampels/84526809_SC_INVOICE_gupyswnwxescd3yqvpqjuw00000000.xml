@@ -1,0 +1,43 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>yk34_tqlwka138ixyut6xw00000000</ParentComId>
+ <Owner>LILACH</Owner>
+ <User>LILACH</User>
+ <FilePath>\\ScansSrv\DMClients\lilach\Preview\P_CGD-5089117-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526809</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\36544\tmp_jaw0+uwvteot+uaufmmdyq\2ae105e8-9a99-44f7-9416-bbccf0fdcb26.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>71025</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+    <MetaData>
+     <Id>55</Id>
+     <Name>תאריך החשבון</Name>
+     <Value>7/10/2025 12:00:00 AM</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>gupyswnwxescd3yqvpqjuw00000000</FilingComId>
+   <FilingFileRef>CGD-5089134</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>LILACH</User>
+   <Owner>LILACH</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\gupyswnwxescd3yqvpqjuw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

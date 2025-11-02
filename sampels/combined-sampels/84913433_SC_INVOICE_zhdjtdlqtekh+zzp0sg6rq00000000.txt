@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84913433,
+   "COM_ID" : "zhdjtdlqtekh+zzp0sg6rq00000000",
+   "CREATE_DATE" : "2025080309491000",
+   "UPDATE_DATE" : "2025080310005600",
+   "CREATE_BY" : "RAVITM",
+   "UPDATE_BY" : "RAVITM",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072900000000",
+   "INVOICE_NO" : "QBC5982575",
+   "INVOICE_AMOUNT" : 3275.64,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "3346691",
+   "INCOTERMS" : "CPT",
+   "ORIGIN_ID" : "IE",
+   "MORE" : "",
+   "SELLER_ID" : "f67a8123-e9e8-4bec-b4ce-810152ff948e",
+   "SELLER_NAME" : "Apple Distribution International"
+ }
+}

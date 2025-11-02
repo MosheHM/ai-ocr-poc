@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82913728,
+   "COM_ID" : "qehjtkui2kmeoqt8vs1dkg00000000",
+   "CREATE_DATE" : "2025080416144100",
+   "UPDATE_DATE" : "2025080416145300",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025033000000000",
+   "INVOICE_NO" : "73",
+   "INVOICE_AMOUNT" : 10000,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "2444894",
+   "INCOTERMS" : "CIF",
+   "ORIGIN_ID" : "DE",
+   "MORE" : "",
+   "SELLER_ID" : "9b163f75-d622-4c25-8df1-e8ebaa9db8a0",
+   "SELLER_NAME" : "ARNOLD ANDR? GmbH"
+ }
+}

@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>enehfw570ki5ihdvacjf9g00000000</ParentComId>
+ <Owner>ROYC</Owner>
+ <User>YAAKOVC</User>
+ <FilePath>\\ASRVFiles\DMClient\YaakovC\Preview\P_SHR-1527728-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>81912712</PrimaryNum>
+   <DocType>1OT</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\28460\tmp_iftwuqa4tkoxlulrroxk6a\eeb8b38f-35fa-4b6a-8560-dd2c0fe8bbd3.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>bipqgimlkkyfmh33low4_w00000000</FilingComId>
+   <FilingFileRef>SHR-1527835</FilingFileRef>
+   <FilingDesc>Others SHR</FilingDesc>
+   <User>YAAKOVC</User>
+   <Owner>YAAKOVC</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\bipqgimlkkyfmh33low4_w00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1OT</FilingDocTypeCode>
+   <FilingDocTypeName>Others SHR</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

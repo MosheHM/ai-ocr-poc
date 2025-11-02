@@ -1,0 +1,114 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>qvk2jn4dukwl79ycwfofeg00000000</ParentComId>
+ <Owner>NIRNS</Owner>
+ <User>NIRNS</User>
+ <FilePath>\\ScansSrv\DMClients\NIRNS\Preview\P_CGD-5090347-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>81124377</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\6040\tmp_79tjkxdeo0k0_b7gwd4r3a\8163cdcd-7c7d-4f1e-9fe5-52590f293130.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>9465000</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+    <MetaData>
+     <Id>55</Id>
+     <Name>תאריך החשבון</Name>
+     <Value>7/3/2025 12:00:00 AM</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>qboaqf3q1uogbyt67mzlyg00000000</FilingComId>
+   <FilingFileRef>CGD-5090351</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>NIRNS</User>
+   <Owner>NIRNS</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\qboaqf3q1uogbyt67mzlyg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>81124377</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\6040\tmp_79tjkxdeo0k0_b7gwd4r3a\1ac6c6cc-a088-4c6d-a77d-d3d771de8a22.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>5</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>6</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>cxm4b127f0aqcou9q2srqa00000000</FilingComId>
+   <FilingFileRef>CGD-5090352</FilingFileRef>
+   <FilingDesc>Packing List</FilingDesc>
+   <User>NIRNS</User>
+   <Owner>NIRNS</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\cxm4b127f0aqcou9q2srqa00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>81124377</PrimaryNum>
+   <DocType>FWA</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\6040\tmp_79tjkxdeo0k0_b7gwd4r3a\211452de-d07c-4c25-9043-1cc926917dc0.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>4eb4chmpje2fqrniwaihiw00000000</FilingComId>
+   <FilingFileRef>CGD-5090354</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>NIRNS</User>
+   <Owner>NIRNS</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\4eb4chmpje2fqrniwaihiw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FWA</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>81124377</PrimaryNum>
+   <DocType>FGE</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\6040\tmp_79tjkxdeo0k0_b7gwd4r3a\22fc9e55-baa3-49b6-8350-320b0c2d52eb.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>jtjmk++h2umrh97ojsyecg00000000</FilingComId>
+   <FilingFileRef>CGD-5090355</FilingFileRef>
+   <FilingDesc>Analiza</FilingDesc>
+   <User>NIRNS</User>
+   <Owner>NIRNS</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\jtjmk++h2umrh97ojsyecg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FGE</FilingDocTypeCode>
+   <FilingDocTypeName>Analiza</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

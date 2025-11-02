@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82913740,
+   "COM_ID" : "9oimfrg220glqcjcvsw0_a00000000",
+   "CREATE_DATE" : "2025080415552800",
+   "UPDATE_DATE" : "2025080416250900",
+   "CREATE_BY" : "RAVITM",
+   "UPDATE_BY" : "RAVITM",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025070700000000",
+   "INVOICE_NO" : "CISX2025070711",
+   "INVOICE_AMOUNT" : 618,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "3673473",
+   "INCOTERMS" : "",
+   "ORIGIN_ID" : "CN",
+   "MORE" : "",
+   "SELLER_ID" : "4bc0ecd8-7bfa-4bbb-928c-fc9c41f4da3d",
+   "SELLER_NAME" : "SHANDONG YACHENG PETROLEUM TECHNOLOGY CO.,LTD."
+ }
+}

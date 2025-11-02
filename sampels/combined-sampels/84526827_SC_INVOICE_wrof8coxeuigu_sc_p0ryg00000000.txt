@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84526827,
+   "COM_ID" : "wrof8coxeuigu_sc_p0ryg00000000",
+   "CREATE_DATE" : "2025080416083400",
+   "UPDATE_DATE" : "2025080416090000",
+   "CREATE_BY" : "CHENN",
+   "UPDATE_BY" : "CHENN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025073000000000",
+   "INVOICE_NO" : "153",
+   "INVOICE_AMOUNT" : 5600,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "2031549",
+   "INCOTERMS" : "",
+   "ORIGIN_ID" : "",
+   "MORE" : "",
+   "SELLER_ID" : "80c31e40-cf7d-4109-8d2e-cfa52a886d62",
+   "SELLER_NAME" : "Calcarrificio Mary sti"
+ }
+}

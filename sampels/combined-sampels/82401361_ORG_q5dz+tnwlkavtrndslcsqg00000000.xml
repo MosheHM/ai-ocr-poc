@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>q5dz+tnwlkavtrndslcsqg00000000</ParentComId>
+ <Owner>CHELIO</Owner>
+ <User>CHELIO</User>
+ <FilePath>\\ScansSrv\DMClients\CHELIO\Preview\P_CGD-5091487-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401361</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\54708\tmp_oy+zplk1ae2jssnpnc1f2w\96e484a7-ed3a-4596-a05e-cf68b38f6d49.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>dxptfktzj0gfbod_umh_ea00000000</FilingComId>
+   <FilingFileRef>CGD-5091499</FilingFileRef>
+   <FilingDesc>Packing List</FilingDesc>
+   <User>CHELIO</User>
+   <Owner>CHELIO</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\dxptfktzj0gfbod_umh_ea00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

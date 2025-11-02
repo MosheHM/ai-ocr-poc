@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>ypdqlelx2uwb0nkmsq3jag00000000</ParentComId>
+ <Owner>MALIO</Owner>
+ <User>MALIO</User>
+ <FilePath>\\ScansSrv\DMClients\MALIO\Preview\P_CGD-5089360-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>81124347</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34732\tmp_gptshxcme0sv7on7r40daq\98b19555-28a7-4091-9edb-1bed09f7917d.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>i5vreqbjvk62l5_hoxsljq00000000</FilingComId>
+   <FilingFileRef>CGD-5089363</FilingFileRef>
+   <FilingDesc>Packing List</FilingDesc>
+   <User>MALIO</User>
+   <Owner>MALIO</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\i5vreqbjvk62l5_hoxsljq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

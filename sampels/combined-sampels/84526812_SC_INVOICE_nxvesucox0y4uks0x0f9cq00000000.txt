@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84526812,
+   "COM_ID" : "nxvesucox0y4uks0x0f9cq00000000",
+   "CREATE_DATE" : "2025080316055200",
+   "UPDATE_DATE" : "2025080408063000",
+   "CREATE_BY" : "ALYAGONS",
+   "UPDATE_BY" : "ALYAGONS",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025071800000000",
+   "INVOICE_NO" : "TOA-Standard-71825-a512",
+   "INVOICE_AMOUNT" : 584.78,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "3420545",
+   "INCOTERMS" : "FCA",
+   "ORIGIN_ID" : "US",
+   "MORE" : "",
+   "SELLER_ID" : "dab595e2-56ce-4c9d-94a0-543451f6906b",
+   "SELLER_NAME" : "Amazon Data Services, Inc."
+ }
+}

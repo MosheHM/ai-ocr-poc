@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>8lokb1ncnuu2l7jos1lmvq00000000</ParentComId>
+ <Owner>ORIAN</Owner>
+ <User>ERAND</User>
+ <FilePath>\\ScansSrv\DMClients\ERAND\Preview\P_CGD-5091608-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526869</PrimaryNum>
+   <DocType>OTH</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\56692\tmp_c6b0htoyokkhe3igcav4uq\044f1963-944d-4537-85fc-d46ebe122a70.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>sdlne9x5okwfgooqe4sq1w00000000</FilingComId>
+   <FilingFileRef>CGD-5091610</FilingFileRef>
+   <FilingDesc>OTHER FOR CUSTOMS</FilingDesc>
+   <User>ERAND</User>
+   <Owner>ERAND</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\sdlne9x5okwfgooqe4sq1w00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>OTH</FilingDocTypeCode>
+   <FilingDocTypeName>OTHER FOR CUSTOMS</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

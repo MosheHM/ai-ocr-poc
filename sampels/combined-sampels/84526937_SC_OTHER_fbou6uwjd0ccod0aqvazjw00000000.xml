@@ -1,0 +1,110 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>hks4vudihuari3c+_5qqma00000000</ParentComId>
+ <Owner>ORIAN</Owner>
+ <User>YAFITK</User>
+ <FilePath>\\ScansSrv\DMClients\YAFITKR\Preview\P_CGD-5093136-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526937</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16752\tmp_q25i85w4ekmcyq2tmurofg\b716c7ba-2bdd-4d39-bb0e-29fd7ccad386.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+    <MetaData>
+     <Id>55</Id>
+     <Name>תאריך החשבון</Name>
+     <Value>8/1/2025 12:00:00 AM</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>ntwkkassd0ul05jomyamqa00000000</FilingComId>
+   <FilingFileRef>CGD-5097831</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>YAFITK</User>
+   <Owner>YAFITK</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D07\ntwkkassd0ul05jomyamqa00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526937</PrimaryNum>
+   <DocType>OTH</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16752\tmp_q25i85w4ekmcyq2tmurofg\32189593-cbd3-4a57-b197-f2134b95d877.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>5</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>j7st3yiwhuo1nbepvxwufa00000000</FilingComId>
+   <FilingFileRef>CGD-5097832</FilingFileRef>
+   <FilingDesc>OTHER FOR CUSTOMS</FilingDesc>
+   <User>YAFITK</User>
+   <Owner>YAFITK</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D07\j7st3yiwhuo1nbepvxwufa00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>OTH</FilingDocTypeCode>
+   <FilingDocTypeName>OTHER FOR CUSTOMS</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526937</PrimaryNum>
+   <DocType>OTH</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16752\tmp_q25i85w4ekmcyq2tmurofg\9f83d66d-ff8e-442b-a489-96a48a1b7fa9.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>fbou6uwjd0ccod0aqvazjw00000000</FilingComId>
+   <FilingFileRef>CGD-5097833</FilingFileRef>
+   <FilingDesc>OTHER FOR CUSTOMS</FilingDesc>
+   <User>YAFITK</User>
+   <Owner>YAFITK</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D07\fbou6uwjd0ccod0aqvazjw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>OTH</FilingDocTypeCode>
+   <FilingDocTypeName>OTHER FOR CUSTOMS</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526937</PrimaryNum>
+   <DocType>FWA</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\16752\tmp_q25i85w4ekmcyq2tmurofg\f9fb07a4-1f05-4ff4-8a2a-058033354fc0.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>oavuj+heducsmmjxjiborg00000000</FilingComId>
+   <FilingFileRef>CGD-5097834</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>YAFITK</User>
+   <Owner>YAFITK</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D07\oavuj+heducsmmjxjiborg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FWA</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

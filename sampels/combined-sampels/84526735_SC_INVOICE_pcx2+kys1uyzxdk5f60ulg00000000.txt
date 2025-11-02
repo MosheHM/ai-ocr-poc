@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84526735,
+   "COM_ID" : "pcx2+kys1uyzxdk5f60ulg00000000",
+   "CREATE_DATE" : "2025080314033100",
+   "UPDATE_DATE" : "2025080314054200",
+   "CREATE_BY" : "ALEXANDERM",
+   "UPDATE_BY" : "ALEXANDERM",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 3,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072100000000",
+   "INVOICE_NO" : "1143683239",
+   "INVOICE_AMOUNT" : 18419.46,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "2440268",
+   "INCOTERMS" : "FCA",
+   "ORIGIN_ID" : "DE",
+   "MORE" : "",
+   "SELLER_ID" : "44ff7abe-ad48-41c2-a102-94b32e7999a9",
+   "SELLER_NAME" : "ZEISS"
+ }
+}

@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82913547,
+   "COM_ID" : "nt8n48ho4kaahjjx0g1oda00000000",
+   "CREATE_DATE" : "2025080515254000",
+   "UPDATE_DATE" : "2025080515270600",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 3,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025071800000000",
+   "INVOICE_NO" : "25004806",
+   "INVOICE_AMOUNT" : 2703,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "3042600",
+   "INCOTERMS" : "",
+   "ORIGIN_ID" : "DE",
+   "MORE" : "",
+   "SELLER_ID" : "b2cdaf9b-7d2d-4191-beef-1ce8f9f56691",
+   "SELLER_NAME" : "VIANIA Dessous GmbH"
+ }
+}

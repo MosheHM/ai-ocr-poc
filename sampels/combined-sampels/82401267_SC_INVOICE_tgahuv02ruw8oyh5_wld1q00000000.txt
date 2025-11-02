@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82401267,
+   "COM_ID" : "tgahuv02ruw8oyh5_wld1q00000000",
+   "CREATE_DATE" : "2025080313124200",
+   "UPDATE_DATE" : "2025080313125300",
+   "CREATE_BY" : "ALEXANDERM",
+   "UPDATE_BY" : "ALEXANDERM",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 2,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025071800000000",
+   "INVOICE_NO" : "0000022832",
+   "INVOICE_AMOUNT" : 20149.5,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "2556950",
+   "INCOTERMS" : "FOB",
+   "ORIGIN_ID" : "GB",
+   "MORE" : "",
+   "SELLER_ID" : "85b9cc29-3e53-4f09-ba5b-49f765dab800",
+   "SELLER_NAME" : "ISCA UK Ltd"
+ }
+}

@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84526879,
+   "COM_ID" : "medbwfdkdke0j2iqwnyqyw00000000",
+   "CREATE_DATE" : "2025080416564800",
+   "UPDATE_DATE" : "2025080416591100",
+   "CREATE_BY" : "ALYAGONS",
+   "UPDATE_BY" : "ALYAGONS",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 3,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072500000000",
+   "INVOICE_NO" : "5262",
+   "INVOICE_AMOUNT" : 44063.8,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "2161365",
+   "INCOTERMS" : "",
+   "ORIGIN_ID" : "US",
+   "MORE" : "",
+   "SELLER_ID" : "238d55a3-c147-4798-b12b-c2ad3514947e",
+   "SELLER_NAME" : "PrecisionMedical"
+ }
+}

@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84913713,
+   "COM_ID" : "dinbs81xwkcshodvnv7jha00000000",
+   "CREATE_DATE" : "2025080415145000",
+   "UPDATE_DATE" : "2025080415263900",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025073100000000",
+   "INVOICE_NO" : "HI\/2367",
+   "INVOICE_AMOUNT" : 1717.8,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "3671896",
+   "INCOTERMS" : "",
+   "ORIGIN_ID" : "RO",
+   "MORE" : "",
+   "SELLER_ID" : "4129b352-0f0d-44ff-aaca-c74125b2b2e9",
+   "SELLER_NAME" : "HANNA INSTRUMENTS SRL"
+ }
+}

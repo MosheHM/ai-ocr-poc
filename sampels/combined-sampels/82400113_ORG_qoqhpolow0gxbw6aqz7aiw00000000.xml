@@ -1,0 +1,72 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>qoqhpolow0gxbw6aqz7aiw00000000</ParentComId>
+ <Owner>HADASF</Owner>
+ <User>HADASF</User>
+ <FilePath>\\ScansSrv\DMClients\HadasF\Preview\P_CGD-5092560-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82400113</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\55508\tmp_wkuwg6j9jkkx6rjuuy+9mw\6c759f28-9589-4dd5-98eb-61b5f5d3e207.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>9943461994</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+    <MetaData>
+     <Id>55</Id>
+     <Name>תאריך החשבון</Name>
+     <Value>6/26/2025 12:00:00 AM</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>xcovvtiuyeafeg9qbxb44q00000000</FilingComId>
+   <FilingFileRef>CGD-5092822</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>HADASF</User>
+   <Owner>HADASF</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\xcovvtiuyeafeg9qbxb44q00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82400113</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\55508\tmp_wkuwg6j9jkkx6rjuuy+9mw\e2ac7fd8-1958-44f5-80ad-b593ef6b9c8b.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>cveaywqzleg28qlgrwjwua00000000</FilingComId>
+   <FilingFileRef>CGD-5092823</FilingFileRef>
+   <FilingDesc>Packing List</FilingDesc>
+   <User>HADASF</User>
+   <Owner>HADASF</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\cveaywqzleg28qlgrwjwua00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

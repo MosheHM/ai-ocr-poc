@@ -1,0 +1,58 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>6vcfn_mxt0uest4pd5bnkg00000000</ParentComId>
+ <Owner>DALIAB</Owner>
+ <User>DALIAB</User>
+ <FilePath>\\ScansSrv\DMClients\Daliab\Preview\P_CGD-5090097-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401070</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\41400\tmp_byhcbgx9g0wxjgs0enejiw\3ab094e8-2582-405b-966e-a56402e03d64.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>2judgvsrr0wuuvbyaalaeg00000000</FilingComId>
+   <FilingFileRef>CGD-5090100</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>DALIAB</User>
+   <Owner>DALIAB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\2judgvsrr0wuuvbyaalaeg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401070</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\41400\tmp_byhcbgx9g0wxjgs0enejiw\50962384-330b-419a-a055-c5764e432e5e.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>665a7btfpu+yjyytso+kqa00000000</FilingComId>
+   <FilingFileRef>CGD-5090101</FilingFileRef>
+   <FilingDesc>Packing List</FilingDesc>
+   <User>DALIAB</User>
+   <Owner>DALIAB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\665a7btfpu+yjyytso+kqa00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

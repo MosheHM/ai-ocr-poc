@@ -1,0 +1,34 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>4rzxzooao0uru63h3rw7dq00000000</ParentComId>
+ <Owner>IRYNAH</Owner>
+ <User>YAAKOVC</User>
+ <FilePath>\\ASRVFiles\DMClient\YaakovC\Preview\P_CLT-2046440-1_2.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>81914209</PrimaryNum>
+   <DocType>1BL</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\15208\tmp_i7pvkzcxz0g1jlhspnlojq\e9d6f119-4e42-4e51-8c2d-d97f3aabeb53.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>vybgq015m0i_fpb8gsqjya00000000</FilingComId>
+   <FilingFileRef>SHR-1532183</FilingFileRef>
+   <FilingDesc/>
+   <User/>
+   <Owner/>
+   <FilingMessage/>
+   <FilingDocTypeCode/>
+   <FilingDocTypeName/>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

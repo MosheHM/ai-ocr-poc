@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84526884,
+   "COM_ID" : "exxjyeyaxeo3plqcwk+bzq00000000",
+   "CREATE_DATE" : "2025080508295200",
+   "UPDATE_DATE" : "2025080508301100",
+   "CREATE_BY" : "ALYAGONS",
+   "UPDATE_BY" : "ALYAGONS",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025080400000000",
+   "INVOICE_NO" : "32346888",
+   "INVOICE_AMOUNT" : 7506.48,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "2841481",
+   "INCOTERMS" : "",
+   "ORIGIN_ID" : "NL",
+   "MORE" : "",
+   "SELLER_ID" : "7f70d65c-b7ac-4c02-a7e4-a3ef630cb04c",
+   "SELLER_NAME" : "Fix Fisch B.V."
+ }
+}

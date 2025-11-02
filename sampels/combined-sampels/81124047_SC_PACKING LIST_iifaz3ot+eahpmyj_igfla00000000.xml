@@ -1,0 +1,58 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>pxutqxvrveky75v6dwhymg00000000</ParentComId>
+ <Owner>GEULAK</Owner>
+ <User>GEULAK</User>
+ <FilePath>\\ScansSrv\DMClients\geulak\Preview\P_CGD-5091094-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>81124047</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\17860\tmp__lqnfg89dewrspehuyjwfq\9e3b5dab-a4b1-4966-aaec-ffb2a699177c.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>25124</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>0octf9bv+eil78skwlng1a00000000</FilingComId>
+   <FilingFileRef>CGD-5091098</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>GEULAK</User>
+   <Owner>GEULAK</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\0octf9bv+eil78skwlng1a00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>81124047</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\17860\tmp__lqnfg89dewrspehuyjwfq\c44bad9e-4e86-4dea-9021-aa28d5c5b99c.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>41</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>iifaz3ot+eahpmyj_igfla00000000</FilingComId>
+   <FilingFileRef>CGD-5091099</FilingFileRef>
+   <FilingDesc>Packing List</FilingDesc>
+   <User>GEULAK</User>
+   <Owner>GEULAK</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\iifaz3ot+eahpmyj_igfla00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

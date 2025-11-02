@@ -1,0 +1,85 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>de8a93c_i0qhflm2s94f5a00000000</ParentComId>
+ <Owner>ORIAN</Owner>
+ <User>YAFITK</User>
+ <FilePath>\\ScansSrv\DMClients\YAFITKR\Preview\P_CGD-5088445-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>81124346</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\12764\tmp_n2jbip5gzk2nw63uzqhgbw\7c988886-932c-42ce-8ccc-7f76c04c8f85.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>25002689</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+    <MetaData>
+     <Id>55</Id>
+     <Name>תאריך החשבון</Name>
+     <Value>7/28/2025 12:00:00 AM</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>hrk07g6t+ei77nede4avug00000000</FilingComId>
+   <FilingFileRef>CGD-5088460</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>YAFITK</User>
+   <Owner>YAFITK</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\hrk07g6t+ei77nede4avug00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>81124346</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\12764\tmp_n2jbip5gzk2nw63uzqhgbw\87de3c80-2451-4497-9e73-fbb75950a2f1.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>lcw1kahpgkgpuzztcdunkw00000000</FilingComId>
+   <FilingFileRef>CGD-5088461</FilingFileRef>
+   <FilingDesc>Packing List</FilingDesc>
+   <User>YAFITK</User>
+   <Owner>YAFITK</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\lcw1kahpgkgpuzztcdunkw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>81124346</PrimaryNum>
+   <DocType>FWA</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\12764\tmp_n2jbip5gzk2nw63uzqhgbw\c60c6201-c042-4926-b779-0104ff786661.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>qfs0iu9hjeojoq8vjr+58w00000000</FilingComId>
+   <FilingFileRef>CGD-5088464</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>YAFITK</User>
+   <Owner>YAFITK</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\qfs0iu9hjeojoq8vjr+58w00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FWA</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

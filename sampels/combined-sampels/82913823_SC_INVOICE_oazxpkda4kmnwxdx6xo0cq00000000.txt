@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82913823,
+   "COM_ID" : "oazxpkda4kmnwxdx6xo0cq00000000",
+   "CREATE_DATE" : "2025080510513400",
+   "UPDATE_DATE" : "2025080510522400",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 2,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025073100000000",
+   "INVOICE_NO" : "FJ202560009805",
+   "INVOICE_AMOUNT" : 246683.96,
+   "CURRENCY_ID" : "ILS",
+   "CUSTOMS_SUPPLIER_ID" : "2072260",
+   "INCOTERMS" : "CIP",
+   "ORIGIN_ID" : "LU",
+   "MORE" : "",
+   "SELLER_ID" : "31400f38-c1c6-4f2f-b126-1da2884b345b",
+   "SELLER_NAME" : "FERRERO TRADING LUX S.A."
+ }
+}

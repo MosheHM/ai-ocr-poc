@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 81913591,
+   "COM_ID" : "mooxls8a7eyyzxoghd1czg00000000",
+   "CREATE_DATE" : "2025080316221000",
+   "UPDATE_DATE" : "2025080316222700",
+   "CREATE_BY" : "RAVITM",
+   "UPDATE_BY" : "RAVITM",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 2,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072500000000",
+   "INVOICE_NO" : "5070124",
+   "INVOICE_AMOUNT" : 194457.95,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "2984088",
+   "INCOTERMS" : "FOB",
+   "ORIGIN_ID" : "SG",
+   "MORE" : "",
+   "SELLER_ID" : "6eea589d-dba0-4523-b50d-50f54371dae9",
+   "SELLER_NAME" : "Kawarin Enterprise Pte Ltd"
+ }
+}

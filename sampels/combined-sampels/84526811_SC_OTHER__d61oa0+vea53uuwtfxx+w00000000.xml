@@ -1,0 +1,108 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>kiviaqilskazcny1ihtb8g00000000</ParentComId>
+ <Owner>DALIAB</Owner>
+ <User>DALIAB</User>
+ <FilePath>\\ScansSrv\DMClients\Daliab\Preview\P_CGD-5089180-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526811</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\26588\tmp_9hqmxczua0ino+huozm5vq\4db0a549-da21-4fdf-b31a-ebbd346916a2.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>6</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>6i9thbhl60ihbcwuejavtq00000000</FilingComId>
+   <FilingFileRef>CGD-5089208</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>DALIAB</User>
+   <Owner>DALIAB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\6i9thbhl60ihbcwuejavtq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526811</PrimaryNum>
+   <DocType>OTH</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\26588\tmp_9hqmxczua0ino+huozm5vq\26f59b41-0fc6-4049-8fb1-54cc5a524383.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>2v27_ophq0+mbvdjkkwhmw00000000</FilingComId>
+   <FilingFileRef>CGD-5089209</FilingFileRef>
+   <FilingDesc>OTHER FOR CUSTOMS</FilingDesc>
+   <User>DALIAB</User>
+   <Owner>DALIAB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\2v27_ophq0+mbvdjkkwhmw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>OTH</FilingDocTypeCode>
+   <FilingDocTypeName>OTHER FOR CUSTOMS</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526811</PrimaryNum>
+   <DocType>OTH</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\26588\tmp_9hqmxczua0ino+huozm5vq\58503c77-82c5-4e88-b0e3-bd8a1cd1962d.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>7</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>8</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>_d61oa0+vea53uuwtfxx+w00000000</FilingComId>
+   <FilingFileRef>CGD-5089212</FilingFileRef>
+   <FilingDesc>OTHER FOR CUSTOMS</FilingDesc>
+   <User>DALIAB</User>
+   <Owner>DALIAB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\_d61oa0+vea53uuwtfxx+w00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>OTH</FilingDocTypeCode>
+   <FilingDocTypeName>OTHER FOR CUSTOMS</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526811</PrimaryNum>
+   <DocType>FWA</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\26588\tmp_9hqmxczua0ino+huozm5vq\dbac3da4-4f65-427a-b344-f1c12e1ba0eb.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>gscrgt0lsku2swyvx+njzq00000000</FilingComId>
+   <FilingFileRef>CGD-5089214</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>DALIAB</User>
+   <Owner>DALIAB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\gscrgt0lsku2swyvx+njzq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FWA</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

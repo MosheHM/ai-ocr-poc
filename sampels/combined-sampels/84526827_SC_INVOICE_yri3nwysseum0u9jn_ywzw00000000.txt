@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84526827,
+   "COM_ID" : "yri3nwysseum0u9jn_ywzw00000000",
+   "CREATE_DATE" : "2025080416085300",
+   "UPDATE_DATE" : "2025080416090000",
+   "CREATE_BY" : "CHENN",
+   "UPDATE_BY" : "CHENN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025073000000000",
+   "INVOICE_NO" : "FW25011-19",
+   "INVOICE_AMOUNT" : 9947,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "3679375",
+   "INCOTERMS" : "EXW",
+   "ORIGIN_ID" : "IT",
+   "MORE" : "",
+   "SELLER_ID" : "b97e7c27-62a8-4dde-90ce-dec2c384434f",
+   "SELLER_NAME" : "Aequus Media Inc."
+ }
+}

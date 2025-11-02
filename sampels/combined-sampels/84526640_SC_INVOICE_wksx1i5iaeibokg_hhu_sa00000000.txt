@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84526640,
+   "COM_ID" : "wksx1i5iaeibokg_hhu_sa00000000",
+   "CREATE_DATE" : "2025080309043400",
+   "UPDATE_DATE" : "2025080309044800",
+   "CREATE_BY" : "ALEXANDERM",
+   "UPDATE_BY" : "ALEXANDERM",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 4,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025073100000000",
+   "INVOICE_NO" : "2245808\n527193,527194,527209,527210",
+   "INVOICE_AMOUNT" : 75315.64,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "3259951",
+   "INCOTERMS" : "EXW",
+   "ORIGIN_ID" : "TW",
+   "MORE" : "",
+   "SELLER_ID" : "7926a21f-6a1f-492a-9d26-f0ce93d4c397",
+   "SELLER_NAME" : "Fortinet Inc."
+ }
+}

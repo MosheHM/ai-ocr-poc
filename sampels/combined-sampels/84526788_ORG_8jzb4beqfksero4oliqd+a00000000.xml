@@ -1,0 +1,79 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>8jzb4beqfksero4oliqd+a00000000</ParentComId>
+ <Owner>ORIAN</Owner>
+ <User>LIATD</User>
+ <FilePath>\\ScansSrv\DMClients\LIATD\Preview\P_CGD-5088418-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526788</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\24276\tmp_p_bx4y_qguoxpbwwp+9ktq\ca612d50-ebf8-4261-8e6e-91b0b1806d42.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>113829</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>o0ll+ph9mkwtpl_9xesp1a00000000</FilingComId>
+   <FilingFileRef>CGD-5088426</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>LIATD</User>
+   <Owner>LIATD</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\o0ll+ph9mkwtpl_9xesp1a00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526788</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\24276\tmp_p_bx4y_qguoxpbwwp+9ktq\40d0aeee-abfd-4b69-a4fe-bea6eace79a7.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>qswatwtaleub4ognnsy1pa00000000</FilingComId>
+   <FilingFileRef>CGD-5088428</FilingFileRef>
+   <FilingDesc>Packing List</FilingDesc>
+   <User>LIATD</User>
+   <Owner>LIATD</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\qswatwtaleub4ognnsy1pa00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526788</PrimaryNum>
+   <DocType>FWA</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\24276\tmp_p_bx4y_qguoxpbwwp+9ktq\fcac6600-bd87-454b-b09b-f8879dec3cf4.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>4r9ijbp8cu+ox8ybd6m6zw00000000</FilingComId>
+   <FilingFileRef>CGD-5088429</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>LIATD</User>
+   <Owner>LIATD</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\4r9ijbp8cu+ox8ybd6m6zw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FWA</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

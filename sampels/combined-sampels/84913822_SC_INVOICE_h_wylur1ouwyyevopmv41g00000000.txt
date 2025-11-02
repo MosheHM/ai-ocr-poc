@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84913822,
+   "COM_ID" : "h_wylur1ouwyyevopmv41g00000000",
+   "CREATE_DATE" : "2025080511055700",
+   "UPDATE_DATE" : "2025080511061500",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 2,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025073000000000",
+   "INVOICE_NO" : "20745",
+   "INVOICE_AMOUNT" : 8135,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "2684563",
+   "INCOTERMS" : "EXW",
+   "ORIGIN_ID" : "FR",
+   "MORE" : "",
+   "SELLER_ID" : "e13b5ff5-6ef8-4ded-afd6-e4bab0502c18",
+   "SELLER_NAME" : "iLsa \nDiagnostics"
+ }
+}
