@@ -82,6 +82,13 @@ With ground truth validation:
 python main.py path/to/document.pdf --ground-truth path/to/ground_truth.json
 ```
 
+**NEW:** Conditional validation mode (only processes PDFs with .txt ground truth files):
+```bash
+python main.py path/to/document.pdf --validate-txt
+```
+
+This mode automatically detects `.txt` ground truth files and only processes documents that have them, saving API quota. See [CONDITIONAL_VALIDATION.md](CONDITIONAL_VALIDATION.md) for details.
+
 Specify output file:
 ```bash
 python main.py path/to/document.pdf --output results.json

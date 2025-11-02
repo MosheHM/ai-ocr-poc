@@ -23,6 +23,11 @@ def main():
         help='Path to ground truth JSON file for validation (optional)'
     )
     parser.add_argument(
+        '--validate-txt',
+        action='store_true',
+        help='Enable validation mode: only process PDFs with .txt ground truth files'
+    )
+    parser.add_argument(
         '--output',
         type=str,
         help='Path to save results JSON file (optional)'
@@ -61,9 +66,9 @@ def main():
             except Exception as e:
                 print(f"Warning: Failed to load ground truth: {e}")
     
-    # Choose workflow based on whether ground truth is provided
-    if ground_truth:
-        # Use validation workflow
+    # Choose workflow based on whether validation is requested
+    if args.validate_txt or ground_truth:
+        # Use validation workflow (will check for .txt files automatically)
         workflow = ValidationWorkflow(api_key)
         result = workflow.process_document(str(pdf_path), ground_truth)
     else:
@@ -84,11 +89,15 @@ def main():
         output_path = pdf_path.parent / f"results_{pdf_path.stem}_{timestamp}.json"
     
     try:
+        # Check if processing was skipped
+        skipped = any("No .txt ground truth file" in err for err in result.errors)
+        
         # Convert result to dict for JSON serialization
         result_dict = {
             'pdf_path': result.pdf_path,
             'total_pages': result.total_pages,
             'success': result.success,
+            'skipped': skipped,
             'overall_score': result.overall_score,
             'document_summary': {
                 'total_documents': len(result.document_instances),

@@ -3,9 +3,13 @@ import logging
 from typing import Dict, Any, Optional, List
 from pathlib import Path
 from modules.types import ProcessingResult, ExtractionResult, ValidationResult
-from modules.utils import get_pdf_page_count
+from modules.utils import get_pdf_page_count, find_ground_truth_txt, load_ground_truth_from_txt
 from modules.validators import PerformanceValidator
 from .base_workflow import BaseWorkflow, logger
+
+
+# Error message constant for consistency
+SKIP_MESSAGE = "No .txt ground truth file found. Extraction skipped to avoid unnecessary API calls."
 
 
 class ValidationWorkflow(BaseWorkflow):
@@ -32,24 +36,30 @@ class ValidationWorkflow(BaseWorkflow):
     ) -> ProcessingResult:
         """Process a document with validation.
         
+        This method now checks for the existence of a .txt ground truth file.
+        If no .txt file exists, the extraction is skipped to avoid unnecessary 
+        Gemini API calls.
+        
         Pipeline steps:
-        1. Classify each page to identify document type
-        2. Group consecutive pages of same type into document instances
-        3. Extract data from each document instance (multi-page extraction)
-        4. Validate extracted data against ground truth
+        1. Check for .txt ground truth file
+        2. If .txt exists:
+           a. Load ground truth from .txt file
+           b. Classify each page to identify document type
+           c. Group consecutive pages of same type into document instances
+           d. Extract data from each document instance (multi-page extraction)
+           e. Validate extracted data against ground truth
+        3. If .txt doesn't exist:
+           a. Skip extraction and report as skipped
         
         Args:
             pdf_path: Path to the PDF file
-            ground_truth: Ground truth data for validation (required)
+            ground_truth: Ground truth data for validation (optional, will be loaded from .txt if not provided)
             **kwargs: Additional options
         
         Returns:
             ProcessingResult with classifications, extractions, and validations
         """
         logger.info(f"Starting validation workflow for: {pdf_path}")
-        
-        if ground_truth is None:
-            logger.warning("No ground truth provided - validation will be skipped")
         
         result = ProcessingResult(
             pdf_path=pdf_path,
@@ -62,6 +72,28 @@ class ValidationWorkflow(BaseWorkflow):
         )
         
         try:
+            # Check for .txt ground truth file
+            txt_path = find_ground_truth_txt(pdf_path)
+            
+            if txt_path is None:
+                # No .txt file found - skip extraction
+                logger.info(f"No .txt ground truth file found for {pdf_path}. Skipping extraction.")
+                result.errors.append(SKIP_MESSAGE)
+                result.success = True  # This is not an error, just skipped
+                return result
+            
+            logger.info(f"Found .txt ground truth file: {txt_path}")
+            
+            # Load ground truth from .txt file if not provided
+            if ground_truth is None:
+                ground_truth = load_ground_truth_from_txt(txt_path)
+                if ground_truth is None:
+                    logger.error(f"Failed to load ground truth from {txt_path}")
+                    result.errors.append(f"Failed to load ground truth from {txt_path}")
+                    result.success = False
+                    return result
+                logger.info("Ground truth loaded from .txt file")
+            
             # Step 1: Classify all pages
             logger.info("Step 1: Classifying pages...")
             result.classifications = self._classify_pages(pdf_path)
@@ -72,18 +104,17 @@ class ValidationWorkflow(BaseWorkflow):
                 pdf_path, result.classifications
             )
             
-            # Step 3: Validate extractions if ground truth is provided
-            if ground_truth:
-                logger.info("Step 3: Validating extractions...")
-                result.validations = self._validate_extractions(
-                    result.extractions,
-                    ground_truth
-                )
-                
-                # Calculate overall score
-                if result.validations:
-                    total_score = sum(v.score for v in result.validations)
-                    result.overall_score = total_score / len(result.validations)
+            # Step 3: Validate extractions
+            logger.info("Step 3: Validating extractions...")
+            result.validations = self._validate_extractions(
+                result.extractions,
+                ground_truth
+            )
+            
+            # Calculate overall score
+            if result.validations:
+                total_score = sum(v.score for v in result.validations)
+                result.overall_score = total_score / len(result.validations)
             
             logger.info(f"Validation workflow complete. Success: {result.success}")
             
@@ -143,101 +174,117 @@ class ValidationWorkflow(BaseWorkflow):
         lines.append(f"Success: {result.success}")
         lines.append("")
         
-        # Document Summary - NEW SECTION
-        lines.append("Document Summary:")
-        lines.append("-" * 80)
+        # Check if processing was skipped due to missing .txt file
+        skipped = any("No .txt ground truth file" in err for err in result.errors)
         
-        # Count documents by type
-        from collections import Counter
-        doc_type_counts = Counter(doc.document_type for doc in result.document_instances)
-        
-        # Display summary with counts
-        for doc_type, count in doc_type_counts.items():
-            lines.append(f"  {doc_type.value}: {count} document(s)")
-        
-        lines.append("")
-        lines.append("Document Instances:")
-        
-        # Number each document instance
-        for i, doc_instance in enumerate(result.document_instances, 1):
-            page_info = f"page {doc_instance.page_range}" if doc_instance.start_page == doc_instance.end_page else f"pages {doc_instance.page_range}"
-            lines.append(f"  {i}. {doc_instance.document_type.value} - {page_info}")
-        
-        lines.append("")
-        
-        # Classifications
-        lines.append("Page Classifications:")
-        lines.append("-" * 80)
-        for cls in result.classifications:
-            lines.append(
-                f"  Page {cls.page_number}: {cls.document_type.value} "
-                f"(confidence: {cls.confidence:.2f if cls.confidence else 0.0:.2f})"
-            )
-        lines.append("")
-        
-        # Extractions
-        lines.append("Extracted Documents:")
-        lines.append("-" * 80)
-        for ext in result.extractions:
-            status = "✓ Success" if ext.success else "✗ Failed"
-            page_info = f"Pages {ext.page_range}" if ext.page_range else f"Page {ext.page_number}"
-            lines.append(f"  {page_info} ({ext.document_type.value}): {status}")
-            if ext.success:
-                lines.append(f"    Fields extracted: {len(ext.data)}")
-                for key, value in ext.data.items():
-                    lines.append(f"      - {key}: {value}")
-            else:
-                lines.append(f"    Error: {ext.error_message}")
-        lines.append("")
-        
-        # Validations
-        if result.validations:
-            lines.append("Validation Results:")
+        if skipped:
+            lines.append("Processing Status:")
             lines.append("-" * 80)
-            for val in result.validations:
-                lines.append(
-                    f"  Page {val.page_number}: Score {val.score:.2f}% "
-                    f"({val.correct_fields}/{val.total_fields} correct)"
-                )
-                if val.field_comparison:
-                    # Separate calculation fields from regular fields
-                    calc_fields = {k: v for k, v in val.field_comparison.items() if v.get('is_calculation', False)}
-                    regular_fields = {k: v for k, v in val.field_comparison.items() if not v.get('is_calculation', False)}
-                    
-                    # Display regular fields first
-                    for field, comparison in regular_fields.items():
-                        status = "✓" if comparison['correct'] else "✗"
-                        extracted = comparison['extracted']
-                        expected = comparison['ground_truth']
+            lines.append("⚠ SKIPPED: No .txt ground truth file found.")
+            lines.append("Extraction was not performed to avoid unnecessary Gemini API calls.")
+            lines.append("")
+            lines.append("Note: Only documents with .txt ground truth files are processed")
+            lines.append("in validation mode for quality assurance and testing.")
+            lines.append("")
+        else:
+            # Document Summary - NEW SECTION
+            lines.append("Document Summary:")
+            lines.append("-" * 80)
+            
+            # Count documents by type
+            from collections import Counter
+            doc_type_counts = Counter(doc.document_type for doc in result.document_instances)
+            
+            # Display summary with counts
+            for doc_type, count in doc_type_counts.items():
+                lines.append(f"  {doc_type.value}: {count} document(s)")
+            
+            lines.append("")
+            lines.append("Document Instances:")
+            
+            # Number each document instance
+            for i, doc_instance in enumerate(result.document_instances, 1):
+                page_info = f"page {doc_instance.page_range}" if doc_instance.start_page == doc_instance.end_page else f"pages {doc_instance.page_range}"
+                lines.append(f"  {i}. {doc_instance.document_type.value} - {page_info}")
+            
+            lines.append("")
+            
+            # Classifications
+            if result.classifications:
+                lines.append("Page Classifications:")
+                lines.append("-" * 80)
+                for cls in result.classifications:
+                    confidence = cls.confidence if cls.confidence else 0.0
+                    lines.append(
+                        f"  Page {cls.page_number}: {cls.document_type.value} "
+                        f"(confidence: {confidence:.2f})"
+                    )
+                lines.append("")
+            
+            # Extractions
+            if result.extractions:
+                lines.append("Extracted Documents:")
+                lines.append("-" * 80)
+                for ext in result.extractions:
+                    status = "✓ Success" if ext.success else "✗ Failed"
+                    page_info = f"Pages {ext.page_range}" if ext.page_range else f"Page {ext.page_number}"
+                    lines.append(f"  {page_info} ({ext.document_type.value}): {status}")
+                    if ext.success:
+                        lines.append(f"    Fields extracted: {len(ext.data)}")
+                        for key, value in ext.data.items():
+                            lines.append(f"      - {key}: {value}")
+                    else:
+                        lines.append(f"    Error: {ext.error_message}")
+                lines.append("")
+            
+            # Validations
+            if result.validations:
+                lines.append("Validation Results:")
+                lines.append("-" * 80)
+                for val in result.validations:
+                    lines.append(
+                        f"  Page {val.page_number}: Score {val.score:.2f}% "
+                        f"({val.correct_fields}/{val.total_fields} correct)"
+                    )
+                    if val.field_comparison:
+                        # Separate calculation fields from regular fields
+                        calc_fields = {k: v for k, v in val.field_comparison.items() if v.get('is_calculation', False)}
+                        regular_fields = {k: v for k, v in val.field_comparison.items() if not v.get('is_calculation', False)}
                         
-                        if extracted is None:
-                            lines.append(f"    {status} {field}: NOT EXTRACTED (expected: {expected})")
-                        elif comparison['correct']:
-                            lines.append(f"    {status} {field}: {extracted}")
-                        else:
-                            lines.append(
-                                f"    {status} {field}: {extracted} (expected: {expected}) [MISMATCH]"
-                            )
-                    
-                    # Display calculation fields separately with special marking
-                    if calc_fields:
-                        lines.append("")
-                        lines.append("    Calculation Validations:")
-                        for field, comparison in calc_fields.items():
+                        # Display regular fields first
+                        for field, comparison in regular_fields.items():
                             status = "✓" if comparison['correct'] else "✗"
                             extracted = comparison['extracted']
                             expected = comparison['ground_truth']
                             
-                            if comparison['correct']:
-                                lines.append(f"    {status} {field} (calc): {extracted} [CORRECT]")
+                            if extracted is None:
+                                lines.append(f"    {status} {field}: NOT EXTRACTED (expected: {expected})")
+                            elif comparison['correct']:
+                                lines.append(f"    {status} {field}: {extracted}")
                             else:
                                 lines.append(
-                                    f"    {status} {field} (calc): {extracted} (expected: {expected}) [MISMATCH]"
+                                    f"    {status} {field}: {extracted} (expected: {expected}) [MISMATCH]"
                                 )
-            
-            if result.overall_score is not None:
-                lines.append("")
-                lines.append(f"Overall Score: {result.overall_score:.2f}%")
+                        
+                        # Display calculation fields separately with special marking
+                        if calc_fields:
+                            lines.append("")
+                            lines.append("    Calculation Validations:")
+                            for field, comparison in calc_fields.items():
+                                status = "✓" if comparison['correct'] else "✗"
+                                extracted = comparison['extracted']
+                                expected = comparison['ground_truth']
+                                
+                                if comparison['correct']:
+                                    lines.append(f"    {status} {field} (calc): {extracted} [CORRECT]")
+                                else:
+                                    lines.append(
+                                        f"    {status} {field} (calc): {extracted} (expected: {expected}) [MISMATCH]"
+                                    )
+                
+                if result.overall_score is not None:
+                    lines.append("")
+                    lines.append(f"Overall Score: {result.overall_score:.2f}%")
         
         # Errors
         if result.errors:
