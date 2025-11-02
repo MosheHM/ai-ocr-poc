@@ -89,11 +89,15 @@ def main():
         output_path = pdf_path.parent / f"results_{pdf_path.stem}_{timestamp}.json"
     
     try:
+        # Check if processing was skipped
+        skipped = any("No .txt ground truth file" in err for err in result.errors)
+        
         # Convert result to dict for JSON serialization
         result_dict = {
             'pdf_path': result.pdf_path,
             'total_pages': result.total_pages,
             'success': result.success,
+            'skipped': skipped,
             'overall_score': result.overall_score,
             'document_summary': {
                 'total_documents': len(result.document_instances),
