@@ -71,6 +71,17 @@ class PerformanceValidator:
                 
                 total_fields += 1
         
+        # Validate calculated fields (e.g., XML calculations for amounts)
+        calculation_result = self._validate_calculations(extracted.data, gt_fields, extracted.document_type)
+        if calculation_result:
+            # Add calculation validation to field comparison
+            for calc_field, calc_info in calculation_result.items():
+                if calc_field not in field_comparison:
+                    field_comparison[calc_field] = calc_info
+                    total_fields += 1
+                    if calc_info['correct']:
+                        correct_fields += 1
+        
         # Calculate score
         score = (correct_fields / total_fields * 100) if total_fields > 0 else 0.0
         
@@ -84,6 +95,58 @@ class PerformanceValidator:
             correct_fields=correct_fields,
             score=score
         )
+    
+    def _validate_calculations(
+        self,
+        extracted: Dict[str, Any],
+        ground_truth: Dict[str, Any],
+        document_type: DocumentType
+    ) -> Optional[Dict[str, Dict[str, Any]]]:
+        """Validate calculated fields in XML/document data.
+        
+        For invoices and similar documents, validates that calculated amounts
+        match the ground truth. If incorrect, adds to mismatch tracking.
+        
+        Args:
+            extracted: Extracted data
+            ground_truth: Ground truth data
+            document_type: Type of document
+        
+        Returns:
+            Dictionary of calculation validation results, or None if no calculations to validate
+        """
+        calculation_results = {}
+        
+        # Define calculation fields by document type
+        calculation_fields = {
+            DocumentType.INVOICE: ['INVOICE_AMOUNT'],
+            DocumentType.OBL: ['WEIGHT', 'VOLUME'],
+            DocumentType.HAWB: ['WEIGHT', 'PIECES'],
+            DocumentType.PACKING_LIST: ['WEIGHT', 'PIECES']
+        }
+        
+        if document_type not in calculation_fields:
+            return None
+        
+        fields_to_validate = calculation_fields[document_type]
+        
+        for field_name in fields_to_validate:
+            # Only validate if field exists in ground truth and was extracted
+            if field_name in ground_truth and field_name in extracted:
+                extracted_value = extracted[field_name]
+                gt_value = ground_truth[field_name]
+                
+                # Validate the calculation
+                is_correct = self._compare_values(extracted_value, gt_value)
+                
+                calculation_results[field_name] = {
+                    'extracted': extracted_value,
+                    'ground_truth': gt_value,
+                    'correct': is_correct,
+                    'is_calculation': True
+                }
+        
+        return calculation_results if calculation_results else None
     
     @staticmethod
     def _compare_values(extracted: Any, ground_truth: Any) -> bool:

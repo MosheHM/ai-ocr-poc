@@ -200,7 +200,12 @@ class ValidationWorkflow(BaseWorkflow):
                     f"({val.correct_fields}/{val.total_fields} correct)"
                 )
                 if val.field_comparison:
-                    for field, comparison in val.field_comparison.items():
+                    # Separate calculation fields from regular fields
+                    calc_fields = {k: v for k, v in val.field_comparison.items() if v.get('is_calculation', False)}
+                    regular_fields = {k: v for k, v in val.field_comparison.items() if not v.get('is_calculation', False)}
+                    
+                    # Display regular fields first
+                    for field, comparison in regular_fields.items():
                         status = "✓" if comparison['correct'] else "✗"
                         extracted = comparison['extracted']
                         expected = comparison['ground_truth']
@@ -211,8 +216,24 @@ class ValidationWorkflow(BaseWorkflow):
                             lines.append(f"    {status} {field}: {extracted}")
                         else:
                             lines.append(
-                                f"    {status} {field}: {extracted} (expected: {expected})"
+                                f"    {status} {field}: {extracted} (expected: {expected}) [MISMATCH]"
                             )
+                    
+                    # Display calculation fields separately with special marking
+                    if calc_fields:
+                        lines.append("")
+                        lines.append("    Calculation Validations:")
+                        for field, comparison in calc_fields.items():
+                            status = "✓" if comparison['correct'] else "✗"
+                            extracted = comparison['extracted']
+                            expected = comparison['ground_truth']
+                            
+                            if comparison['correct']:
+                                lines.append(f"    {status} {field} (calc): {extracted} [CORRECT]")
+                            else:
+                                lines.append(
+                                    f"    {status} {field} (calc): {extracted} (expected: {expected}) [MISMATCH]"
+                                )
             
             if result.overall_score is not None:
                 lines.append("")
