@@ -2,8 +2,12 @@
 from typing import List, Optional, Dict, Any
 import io
 import json
+import logging
 from pathlib import Path
 from pypdf import PdfReader, PdfWriter
+
+
+logger = logging.getLogger(__name__)
 
 
 
@@ -39,7 +43,7 @@ def split_pdf_to_pages(pdf_path: str) -> List[bytes]:
         return pages
         
     except Exception as e:
-        print(f"Warning: Could not split PDF into pages: {e}")
+        logger.warning(f"Could not split PDF into pages: {e}")
         with open(pdf_path, 'rb') as f:
             return [f.read()]
 
@@ -94,7 +98,7 @@ def combine_pdf_pages(pdf_path: str, page_numbers: List[int]) -> bytes:
         return output.read()
         
     except Exception as e:
-        print(f"Warning: Could not combine PDF pages: {e}")
+        logger.warning(f"Could not combine PDF pages: {e}")
         with open(pdf_path, 'rb') as f:
             return f.read()
 
@@ -142,6 +146,6 @@ def load_ground_truth_from_txt(txt_path: str) -> Optional[Dict[str, Any]]:
         return data
     
     except Exception as e:
-        print(f"Warning: Could not load ground truth from {txt_path}: {e}")
+        logger.warning(f"Could not load ground truth from {txt_path}: {e}")
         return None
 

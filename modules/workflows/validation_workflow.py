@@ -8,6 +8,10 @@ from modules.validators import PerformanceValidator
 from .base_workflow import BaseWorkflow, logger
 
 
+# Error message constant for consistency
+SKIP_MESSAGE = "No .txt ground truth file found. Extraction skipped to avoid unnecessary API calls."
+
+
 class ValidationWorkflow(BaseWorkflow):
     """Workflow for extracting data with validation against ground truth.
     
@@ -74,7 +78,7 @@ class ValidationWorkflow(BaseWorkflow):
             if txt_path is None:
                 # No .txt file found - skip extraction
                 logger.info(f"No .txt ground truth file found for {pdf_path}. Skipping extraction.")
-                result.errors.append(f"No .txt ground truth file found. Extraction skipped to avoid unnecessary API calls.")
+                result.errors.append(SKIP_MESSAGE)
                 result.success = True  # This is not an error, just skipped
                 return result
             
