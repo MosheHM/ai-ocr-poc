@@ -3,7 +3,7 @@ import logging
 from typing import Dict, Any, Optional, List
 from pathlib import Path
 from modules.types import ProcessingResult, ExtractionResult, ValidationResult
-from modules.utils import get_pdf_page_count
+from modules.utils import get_pdf_page_count, find_ground_truth_txt, load_ground_truth_from_txt
 from modules.validators import PerformanceValidator
 from .base_workflow import BaseWorkflow, logger
 
@@ -32,24 +32,30 @@ class ValidationWorkflow(BaseWorkflow):
     ) -> ProcessingResult:
         """Process a document with validation.
         
+        This method now checks for the existence of a .txt ground truth file.
+        If no .txt file exists, the extraction is skipped to avoid unnecessary 
+        Gemini API calls.
+        
         Pipeline steps:
-        1. Classify each page to identify document type
-        2. Group consecutive pages of same type into document instances
-        3. Extract data from each document instance (multi-page extraction)
-        4. Validate extracted data against ground truth
+        1. Check for .txt ground truth file
+        2. If .txt exists:
+           a. Load ground truth from .txt file
+           b. Classify each page to identify document type
+           c. Group consecutive pages of same type into document instances
+           d. Extract data from each document instance (multi-page extraction)
+           e. Validate extracted data against ground truth
+        3. If .txt doesn't exist:
+           a. Skip extraction and report as skipped
         
         Args:
             pdf_path: Path to the PDF file
-            ground_truth: Ground truth data for validation (required)
+            ground_truth: Ground truth data for validation (optional, will be loaded from .txt if not provided)
             **kwargs: Additional options
         
         Returns:
             ProcessingResult with classifications, extractions, and validations
         """
         logger.info(f"Starting validation workflow for: {pdf_path}")
-        
-        if ground_truth is None:
-            logger.warning("No ground truth provided - validation will be skipped")
         
         result = ProcessingResult(
             pdf_path=pdf_path,
@@ -62,6 +68,28 @@ class ValidationWorkflow(BaseWorkflow):
         )
         
         try:
+            # Check for .txt ground truth file
+            txt_path = find_ground_truth_txt(pdf_path)
+            
+            if txt_path is None:
+                # No .txt file found - skip extraction
+                logger.info(f"No .txt ground truth file found for {pdf_path}. Skipping extraction.")
+                result.errors.append(f"No .txt ground truth file found. Extraction skipped to avoid unnecessary API calls.")
+                result.success = True  # This is not an error, just skipped
+                return result
+            
+            logger.info(f"Found .txt ground truth file: {txt_path}")
+            
+            # Load ground truth from .txt file if not provided
+            if ground_truth is None:
+                ground_truth = load_ground_truth_from_txt(txt_path)
+                if ground_truth is None:
+                    logger.error(f"Failed to load ground truth from {txt_path}")
+                    result.errors.append(f"Failed to load ground truth from {txt_path}")
+                    result.success = False
+                    return result
+                logger.info("Ground truth loaded from .txt file")
+            
             # Step 1: Classify all pages
             logger.info("Step 1: Classifying pages...")
             result.classifications = self._classify_pages(pdf_path)
@@ -72,18 +100,17 @@ class ValidationWorkflow(BaseWorkflow):
                 pdf_path, result.classifications
             )
             
-            # Step 3: Validate extractions if ground truth is provided
-            if ground_truth:
-                logger.info("Step 3: Validating extractions...")
-                result.validations = self._validate_extractions(
-                    result.extractions,
-                    ground_truth
-                )
-                
-                # Calculate overall score
-                if result.validations:
-                    total_score = sum(v.score for v in result.validations)
-                    result.overall_score = total_score / len(result.validations)
+            # Step 3: Validate extractions
+            logger.info("Step 3: Validating extractions...")
+            result.validations = self._validate_extractions(
+                result.extractions,
+                ground_truth
+            )
+            
+            # Calculate overall score
+            if result.validations:
+                total_score = sum(v.score for v in result.validations)
+                result.overall_score = total_score / len(result.validations)
             
             logger.info(f"Validation workflow complete. Success: {result.success}")
             

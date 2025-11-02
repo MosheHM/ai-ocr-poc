@@ -1,6 +1,8 @@
 """PDF utility functions."""
-from typing import List
+from typing import List, Optional, Dict, Any
 import io
+import json
+from pathlib import Path
 from pypdf import PdfReader, PdfWriter
 
 
@@ -95,4 +97,51 @@ def combine_pdf_pages(pdf_path: str, page_numbers: List[int]) -> bytes:
         print(f"Warning: Could not combine PDF pages: {e}")
         with open(pdf_path, 'rb') as f:
             return f.read()
+
+
+def find_ground_truth_txt(pdf_path: str) -> Optional[str]:
+    """Find ground truth .txt file for a given PDF path.
+    
+    The .txt file should have the same base name as the PDF file.
+    For example: invoice.PDF -> invoice.txt
+    
+    Args:
+        pdf_path: Path to the PDF file
+    
+    Returns:
+        Path to the .txt file if it exists, None otherwise
+    """
+    pdf_file = Path(pdf_path)
+    txt_file = pdf_file.with_suffix('.txt')
+    
+    if txt_file.exists():
+        return str(txt_file)
+    
+    return None
+
+
+def load_ground_truth_from_txt(txt_path: str) -> Optional[Dict[str, Any]]:
+    """Load ground truth data from a .txt file (JSON format).
+    
+    The .txt file should contain JSON data, optionally wrapped in an 'OCC' object.
+    
+    Args:
+        txt_path: Path to the .txt file
+    
+    Returns:
+        Dictionary containing ground truth data, or None if file cannot be loaded
+    """
+    try:
+        with open(txt_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        # Handle OCC wrapper if present
+        if 'OCC' in data:
+            return data['OCC']
+        
+        return data
+    
+    except Exception as e:
+        print(f"Warning: Could not load ground truth from {txt_path}: {e}")
+        return None
 
