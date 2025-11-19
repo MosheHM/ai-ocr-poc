@@ -44,3 +44,4 @@ htmlcov/
 # Results and temporary files
 results_*.json
 extraction_results_*.json
+/samples/split_output/
