@@ -1,8 +1,0 @@
-{
-    "Invoice Number": "12345",
-    "Date": "2024-01-15",
-    "Currency": "USD",
-    "Incoterms": "FOB",
-    "Total": "1500.00",
-    "Client": "Acme Corporation"
-}
