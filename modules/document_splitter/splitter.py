@@ -29,6 +29,7 @@ For each detected document, extract the data according to the specific schema be
 
 COMMON FIELDS (Required for ALL types):
 - DOC_TYPE: One of ["INVOICE", "OBL", "HAWB", "PACKING_LIST"]
+- DOC_TYPE_CONFIDENCE: Float between 0 and 1 indicating confidence in the document type classification (e.g., 0.95 for high confidence, 0.6 for uncertain)
 - TOTAL_PAGES: Integer (count of pages for this specific document)
 - START_PAGE_NO: Integer (1-based page number where this document starts in the PDF)
 - END_PAGE_NO: Integer (1-based page number where this document ends in the PDF)
@@ -71,6 +72,7 @@ TYPE 4: PACKING LIST
 [
     {
         "DOC_TYPE": "INVOICE",
+        "DOC_TYPE_CONFIDENCE": 0.95,
         "INVOICE_NO": "0004833/E",
         "INVOICE_DATE": "2025073000000000",
         "CURRENCY_ID": "EUR",
@@ -83,6 +85,7 @@ TYPE 4: PACKING LIST
     },
     {
         "DOC_TYPE": "PACKING_LIST",
+        "DOC_TYPE_CONFIDENCE": 0.88,
         "CUSTOMER_NAME": "DEF Manufacturing",
         "PIECES": 100,
         "WEIGHT": 2500.0,
