@@ -58,10 +58,23 @@ PDF Input → Classification (Gemini AI) → Document Grouping → Extraction �
 - `modules/types/` - All type definitions, enums, protocols, and `DOCUMENT_SCHEMAS`
 - `modules/llm/client.py` - `GeminiLLMClient` for API calls
 - `modules/document_classifier/` - `PDFDocumentClassifier` for page type identification
+- `modules/document_splitter/` - `DocumentSplitter` for splitting PDFs by document type
 - `modules/extractors/` - Type-specific extractors with `ExtractorFactory`
 - `modules/validators/` - `PerformanceValidator` for ground truth comparison
 - `modules/prompts/` - `.txt` prompt files with `PromptLoader` (cached via `@lru_cache`)
 - `modules/utils/` - PDF manipulation and document grouping utilities
+
+**Document Splitting** (`modules/document_splitter/`):
+```python
+from modules import split_and_extract_documents
+
+# Split PDF into separate files by document type
+result = split_and_extract_documents(
+    "combined_docs.pdf",
+    "output/split_docs"
+)
+# Returns JSON with file locations for each extracted document
+```
 
 ### Design Patterns
 - **Factory Pattern** - `ExtractorFactory.create_extractor()` for type-specific extractors
