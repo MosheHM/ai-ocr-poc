@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>zbnyagfg9uaarxyve4n8ka00000000</ParentComId>
+ <Owner>ILANAG</Owner>
+ <User>ILANAG</User>
+ <FilePath>\\ScansSrv\DMClients\ilanag\Preview\P_CGD-5090837-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526854</PrimaryNum>
+   <DocType>FWA</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\14944\tmp_wlknxtjxsuiik2giqftjlg\2defa3f1-d7c8-4ddf-a3d4-b8b61836bd33.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>lrmaapxgp0ejumomsowmkq00000000</FilingComId>
+   <FilingFileRef>CGD-5090846</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>ILANAG</User>
+   <Owner>ILANAG</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\lrmaapxgp0ejumomsowmkq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FWA</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

@@ -1,0 +1,37 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>avm7o5eil0ktch43iqf2hq00000000</ParentComId>
+ <Owner>ORIAN</Owner>
+ <User>LARISAV</User>
+ <FilePath>\\ScansSrv\DMClients\larisav\Preview\P_CGD-5090236-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526847</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\15204\tmp_otsj4hxya0mjp55hap16rw\b721632e-f5f1-4262-bd2c-7cb5b2d23ed1.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>202</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>mzhs7lk1rkcrxjddq_cjig00000000</FilingComId>
+   <FilingFileRef>CGD-5090962</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>LARISAV</User>
+   <Owner>LARISAV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\mzhs7lk1rkcrxjddq_cjig00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

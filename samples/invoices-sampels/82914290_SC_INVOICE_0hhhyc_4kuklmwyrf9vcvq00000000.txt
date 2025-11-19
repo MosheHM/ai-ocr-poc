@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82914290,
+   "COM_ID" : "0hhhyc_4kuklmwyrf9vcvq00000000",
+   "CREATE_DATE" : "2025080716032400",
+   "UPDATE_DATE" : "2025080716040300",
+   "CREATE_BY" : "SHOSHG",
+   "UPDATE_BY" : "SHOSHG",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 2,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072500000000",
+   "INVOICE_NO" : "8004912613",
+   "INVOICE_AMOUNT" : 10494,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "3292172",
+   "INCOTERMS" : "CIF",
+   "ORIGIN_ID" : "DE",
+   "MORE" : "",
+   "SELLER_ID" : "5496939b-574b-4aa7-ac39-dca9c7668c1b",
+   "SELLER_NAME" : "Evonik Operations GmbH"
+ }
+}

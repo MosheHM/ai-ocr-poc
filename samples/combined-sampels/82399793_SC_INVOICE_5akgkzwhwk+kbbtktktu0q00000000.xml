@@ -1,0 +1,64 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>r2o8x49ccucpl7o2djpuqq00000000</ParentComId>
+ <Owner>ORIAN</Owner>
+ <User>ETIZ</User>
+ <FilePath>\\ScansSrv\DMClients\ETIZ\Preview\P_CGD-5091251-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82399793</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\33236\tmp_jlpthx0k5ew8y59polqqzg\3b597d95-5eed-4472-9afd-d9b22c8865f9.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1403</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+    <MetaData>
+     <Id>55</Id>
+     <Name>תאריך החשבון</Name>
+     <Value>6/25/2025 12:00:00 AM</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>5akgkzwhwk+kbbtktktu0q00000000</FilingComId>
+   <FilingFileRef>CGD-5091256</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>ETIZ</User>
+   <Owner>ETIZ</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\5akgkzwhwk+kbbtktktu0q00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82399793</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\33236\tmp_jlpthx0k5ew8y59polqqzg\01f23135-7a01-4827-9fb9-f3f7ddcb00ec.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>_pb3b5yyseql4uv8tjzxlg00000000</FilingComId>
+   <FilingFileRef>CGD-5091257</FilingFileRef>
+   <FilingDesc>Packing List</FilingDesc>
+   <User>ETIZ</User>
+   <Owner>ETIZ</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\_pb3b5yyseql4uv8tjzxlg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>dlbcdyi5keoedxdcnwmdra00000000</ParentComId>
+ <Owner>SYSTEM</Owner>
+ <User>YEHUDITA</User>
+ <FilePath>\\ASRVFiles\DMClient\yehudita\Preview\P_CLT-2045261-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84913711</PrimaryNum>
+   <DocType>1PL</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\21904\tmp_k4dd8upbouwm7icaey7yya\c4293e58-21b3-4eec-82a7-116e03248641.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>amuxlrbl9ucsunm+0sqfja00000000</FilingComId>
+   <FilingFileRef>SHR-1528796</FilingFileRef>
+   <FilingDesc>Packing List SHR</FilingDesc>
+   <User>YEHUDITA</User>
+   <Owner>YEHUDITA</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\amuxlrbl9ucsunm+0sqfja00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1PL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List SHR</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

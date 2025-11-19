@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82913970,
+   "COM_ID" : "f+34malqokwc+acndyea4g00000000",
+   "CREATE_DATE" : "2025080610181600",
+   "UPDATE_DATE" : "2025080610184500",
+   "CREATE_BY" : "RAVITM",
+   "UPDATE_BY" : "RAVITM",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "",
+   "INVOICE_NO" : "NO.:25YH10601",
+   "INVOICE_AMOUNT" : 13327.89,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "2245076",
+   "INCOTERMS" : "CIF",
+   "ORIGIN_ID" : "CN",
+   "MORE" : "",
+   "SELLER_ID" : "cbf765a1-5b55-49e5-8048-7d52d1ecd1ef",
+   "SELLER_NAME" : "WENZHOU YIHAI TRADE CO., LTD"
+ }
+}

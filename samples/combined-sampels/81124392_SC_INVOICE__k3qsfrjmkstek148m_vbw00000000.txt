@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 81124392,
+   "COM_ID" : "_k3qsfrjmkstek148m_vbw00000000",
+   "CREATE_DATE" : "2025080413354800",
+   "UPDATE_DATE" : "2025080413355800",
+   "CREATE_BY" : "SOPHIEK",
+   "UPDATE_BY" : "SOPHIEK",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025080400000000",
+   "INVOICE_NO" : "32",
+   "INVOICE_AMOUNT" : 104357,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "3630187",
+   "INCOTERMS" : "CIF",
+   "ORIGIN_ID" : "GR",
+   "MORE" : "",
+   "SELLER_ID" : "071dc5e0-9611-450f-adba-ddcc0f1300e5",
+   "SELLER_NAME" : "EAAHNIKA ????? A.E.B.E."
+ }
+}

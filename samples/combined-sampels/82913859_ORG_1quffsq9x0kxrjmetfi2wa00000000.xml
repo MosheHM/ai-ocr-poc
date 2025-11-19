@@ -1,0 +1,34 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>1quffsq9x0kxrjmetfi2wa00000000</ParentComId>
+ <Owner>RONIBR</Owner>
+ <User>RONIBR</User>
+ <FilePath>\\ASRVFiles\DMClient\RoniBR\Preview\P_SHR-1528890-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82913859</PrimaryNum>
+   <DocType>1IN</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\18848\tmp_ohgsxqiggeipz3rnm_1_gg\f050463b-7750-43f4-b5cf-b366494e474e.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>40mmzzxlfk2en+7j0sz8iw00000000</FilingComId>
+   <FilingFileRef>SHR-1528894</FilingFileRef>
+   <FilingDesc>Invoice SHR</FilingDesc>
+   <User>RONIBR</User>
+   <Owner>RONIBR</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\40mmzzxlfk2en+7j0sz8iw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1IN</FilingDocTypeCode>
+   <FilingDocTypeName>Invoice SHR</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

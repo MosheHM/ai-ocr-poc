@@ -1,0 +1,51 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>o8o5bjtvnuawt7gal043vq00000000</ParentComId>
+ <Owner>SARITN</Owner>
+ <User>SARITN</User>
+ <FilePath>\\ASRVFiles\DMClient\saritna\Preview\P_CLT-2046629-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82914308</PrimaryNum>
+   <DocType>1IN</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\8952\tmp_bftsldw_+umbvykajoz3vg\65b504bb-dcc2-494d-b6fd-38b9ac9d641b.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>rtgeayadveox6kc5lijl0q00000000</FilingComId>
+   <FilingFileRef>SHR-1530837</FilingFileRef>
+   <FilingDesc>Invoice SHR</FilingDesc>
+   <User>SARITN</User>
+   <Owner>SARITN</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D07\rtgeayadveox6kc5lijl0q00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1IN</FilingDocTypeCode>
+   <FilingDocTypeName>Invoice SHR</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82914308</PrimaryNum>
+   <DocType>1PL</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\8952\tmp_bftsldw_+umbvykajoz3vg\b71cd564-f5a2-4a7f-9317-5dc4154c93a9.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>msj3yi_ueukghnjezqyrkq00000000</FilingComId>
+   <FilingFileRef>SHR-1530838</FilingFileRef>
+   <FilingDesc>Packing List SHR</FilingDesc>
+   <User>SARITN</User>
+   <Owner>SARITN</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D07\msj3yi_ueukghnjezqyrkq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1PL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List SHR</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

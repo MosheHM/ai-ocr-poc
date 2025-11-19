@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84526874,
+   "COM_ID" : "huff55ugaeyd15ji6j9lqw00000000",
+   "CREATE_DATE" : "2025080414364400",
+   "UPDATE_DATE" : "2025080414372600",
+   "CREATE_BY" : "ALYAGONS",
+   "UPDATE_BY" : "ALYAGONS",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072200000000",
+   "INVOICE_NO" : "40454109",
+   "INVOICE_AMOUNT" : 1372.13,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "3011370",
+   "INCOTERMS" : "FCA",
+   "ORIGIN_ID" : "GB",
+   "MORE" : "",
+   "SELLER_ID" : "99588412-d21b-4b44-9bb1-e19846db2490",
+   "SELLER_NAME" : "TE Connectivity Solutions GmbH"
+ }
+}

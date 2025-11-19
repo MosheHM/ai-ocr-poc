@@ -1,0 +1,62 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>dpwvmmtuu0wzgirehlroyq00000000</ParentComId>
+ <Owner>ORIAN</Owner>
+ <User>LIATD</User>
+ <FilePath>\\ScansSrv\DMClients\LIATD\Preview\P_CGD-5091905-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526900</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\26656\tmp_a7uhyp_haeoh3upig7u0da\ccf89757-5111-425c-bafb-d81902984a37.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>eeahplgmuestz3mb665etq00000000</FilingComId>
+   <FilingFileRef>CGD-5091919</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>LIATD</User>
+   <Owner>LIATD</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\eeahplgmuestz3mb665etq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526900</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\26656\tmp_a7uhyp_haeoh3upig7u0da\95d6b495-1fa4-47c6-877e-ba74aced74d0.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>5</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>cimrotnmfuy9lertlc8e5g00000000</FilingComId>
+   <FilingFileRef>CGD-5091920</FilingFileRef>
+   <FilingDesc>Packing List</FilingDesc>
+   <User>LIATD</User>
+   <Owner>LIATD</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\cimrotnmfuy9lertlc8e5g00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

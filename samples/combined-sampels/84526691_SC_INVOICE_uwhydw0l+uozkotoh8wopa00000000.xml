@@ -1,0 +1,58 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>ucoav4_squ+cu7baitgocq00000000</ParentComId>
+ <Owner>ALEXANDERM</Owner>
+ <User>EFRATP</User>
+ <FilePath>\\ScansSrv\DMClients\efratp\Preview\P_CGD-5087228-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526691</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\26632\tmp_b9tftaj0guspzuxfy3vfqa\1113f59c-2416-4622-b135-0728bf3e25a9.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>379916</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>uwhydw0l+uozkotoh8wopa00000000</FilingComId>
+   <FilingFileRef>CGD-5087686</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>EFRATP</User>
+   <Owner>EFRATP</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\uwhydw0l+uozkotoh8wopa00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526691</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\26632\tmp_b9tftaj0guspzuxfy3vfqa\ce439b88-e9c0-46f3-8468-510d1a5e66e3.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>yruisbarw0qwjrwwyy4_1g00000000</FilingComId>
+   <FilingFileRef>CGD-5087689</FilingFileRef>
+   <FilingDesc>Packing List</FilingDesc>
+   <User>EFRATP</User>
+   <Owner>EFRATP</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\yruisbarw0qwjrwwyy4_1g00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

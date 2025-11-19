@@ -1,0 +1,62 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>+sgcj_zq_usxswqhqinu9w00000000</ParentComId>
+ <Owner>ORIAN</Owner>
+ <User>HANNAP</User>
+ <FilePath>\\ScansSrv\DMClients\hannap\Preview\P_CGD-5092574-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401392</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\30520\tmp_rnhiimjkvemtjjbrg5os1a\7996bfb6-2206-4ef5-ac94-a9bed5bcd330.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>20408</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>9ncsd3byk0qxpi6nqmjykg00000000</FilingComId>
+   <FilingFileRef>CGD-5092609</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>HANNAP</User>
+   <Owner>HANNAP</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\9ncsd3byk0qxpi6nqmjykg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401392</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\30520\tmp_rnhiimjkvemtjjbrg5os1a\f5d6759e-1290-4ac9-a8c0-20f378864355.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>5</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>j81+gej+a0mveo+pn9bv8a00000000</FilingComId>
+   <FilingFileRef>CGD-5092610</FilingFileRef>
+   <FilingDesc>Packing List</FilingDesc>
+   <User>HANNAP</User>
+   <Owner>HANNAP</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\j81+gej+a0mveo+pn9bv8a00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

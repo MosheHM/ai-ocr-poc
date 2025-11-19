@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>i2z2h27xckss7f79ibbzqq00000000</ParentComId>
+ <Owner>RACHELV</Owner>
+ <User>RACHELV</User>
+ <FilePath>\\ScansSrv\DMClients\RACHELV\Preview\P_CGD-5088262-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>81124147</PrimaryNum>
+   <DocType>FWA</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\26712\tmp_egf3vriksesdbeysaw+xtq\3765595e-0353-43f9-9859-18db7bc0069c.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>vjgvkzghq0+2iqet6lvpva00000000</FilingComId>
+   <FilingFileRef>CGD-5088338</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>RACHELV</User>
+   <Owner>RACHELV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\vjgvkzghq0+2iqet6lvpva00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FWA</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

@@ -1,0 +1,34 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>fufy4gvouu6xdwhh74efxw00000000</ParentComId>
+ <Owner>SYSTEM</Owner>
+ <User>LINT</User>
+ <FilePath>\\ASRVFiles\DMClient\lint\Preview\P_CLT-2045560-1_4.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82912434</PrimaryNum>
+   <DocType>PKD</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\17184\tmp_nqatv3iz9ugghsre2b3frg\05de9c5b-75af-4683-a100-56a2f7be8d3c.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>rojopjhbf0cp8flvaanbqa00000000</FilingComId>
+   <FilingFileRef>SHR-1528664</FilingFileRef>
+   <FilingDesc/>
+   <User/>
+   <Owner/>
+   <FilingMessage/>
+   <FilingDocTypeCode/>
+   <FilingDocTypeName/>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

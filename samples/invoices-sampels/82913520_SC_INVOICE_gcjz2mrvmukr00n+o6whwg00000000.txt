@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82913520,
+   "COM_ID" : "gcjz2mrvmukr00n+o6whwg00000000",
+   "CREATE_DATE" : "2025080408532900",
+   "UPDATE_DATE" : "2025080414591500",
+   "CREATE_BY" : "RAVITM",
+   "UPDATE_BY" : "RAVITM",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 3,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025063000000000",
+   "INVOICE_NO" : "FV10177",
+   "INVOICE_AMOUNT" : 137591.29,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "",
+   "INCOTERMS" : "",
+   "ORIGIN_ID" : "",
+   "MORE" : "",
+   "SELLER_ID" : "6ad891ca-024c-4930-af1a-6e86bd53b0a5",
+   "SELLER_NAME" : "ARCA Catenaria S.A."
+ }
+}

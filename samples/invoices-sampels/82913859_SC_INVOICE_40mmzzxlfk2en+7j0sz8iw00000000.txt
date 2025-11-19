@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82913859,
+   "COM_ID" : "40mmzzxlfk2en+7j0sz8iw00000000",
+   "CREATE_DATE" : "2025080513224100",
+   "UPDATE_DATE" : "2025080513231100",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 2,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025071400000000",
+   "INVOICE_NO" : "10061974",
+   "INVOICE_AMOUNT" : 4394.4,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "2470847",
+   "INCOTERMS" : "EXW",
+   "ORIGIN_ID" : "DE",
+   "MORE" : "",
+   "SELLER_ID" : "916c765b-0e83-432e-906b-4d5a883de066",
+   "SELLER_NAME" : "Hepco & Becker GmbH,"
+ }
+}

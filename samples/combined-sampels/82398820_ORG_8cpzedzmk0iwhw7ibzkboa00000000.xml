@@ -1,0 +1,64 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>8cpzedzmk0iwhw7ibzkboa00000000</ParentComId>
+ <Owner>LILACH</Owner>
+ <User>LILACH</User>
+ <FilePath>\\ScansSrv\DMClients\lilach\Preview\P_CGD-5093539-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82398820</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\52216\tmp_cdk2jy1jckoaji3zavnyoq\0b55255d-4111-4741-ba6e-2edb56b7344a.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>250305</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+    <MetaData>
+     <Id>55</Id>
+     <Name>תאריך החשבון</Name>
+     <Value>6/4/2025 12:00:00 AM</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>let3_xkmfukwqnc7t4hmmq00000000</FilingComId>
+   <FilingFileRef>CGD-5093540</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>LILACH</User>
+   <Owner>LILACH</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\let3_xkmfukwqnc7t4hmmq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82398820</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\52216\tmp_cdk2jy1jckoaji3zavnyoq\5d768abf-48b9-4b79-955a-e23d75f5abc6.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>caslfyufgey4s_l4uwv8mg00000000</FilingComId>
+   <FilingFileRef>CGD-5093544</FilingFileRef>
+   <FilingDesc>Packing List</FilingDesc>
+   <User>LILACH</User>
+   <Owner>LILACH</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\caslfyufgey4s_l4uwv8mg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

@@ -1,0 +1,43 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>doeczuexrk2axtopq0fv3q00000000</ParentComId>
+ <Owner>DANIELGR</Owner>
+ <User>ILANAG</User>
+ <FilePath>\\ScansSrv\DMClients\ilanag\Preview\P_CGD-5092033-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526854</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\26164\tmp_eunxyayfvumypnks_h1iug\97ff9e52-e8ac-4f11-a8ff-8d793cb5c4d2.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>25005</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+    <MetaData>
+     <Id>55</Id>
+     <Name>תאריך החשבון</Name>
+     <Value>8/4/2025 12:00:00 AM</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>+1_om4uxeeoxksk8cpmwfg00000000</FilingComId>
+   <FilingFileRef>CGD-5092037</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>ILANAG</User>
+   <Owner>ILANAG</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\+1_om4uxeeoxksk8cpmwfg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

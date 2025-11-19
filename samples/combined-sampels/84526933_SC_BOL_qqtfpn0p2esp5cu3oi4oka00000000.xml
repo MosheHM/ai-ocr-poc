@@ -1,0 +1,51 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>u53d50wztewgdspfx7lzgg00000000</ParentComId>
+ <Owner>DANIELGR</Owner>
+ <User>DANIELGR</User>
+ <FilePath>\\ScansSrv\DMClients\DANIELGR\Preview\P_CGD-5092971-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526933</PrimaryNum>
+   <DocType>OTH</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\41532\tmp_aqap8ye61uezvqkeo5kapq\0057ebfe-8887-4cf5-9c1b-3168ba12bc34.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>4zyvzdstm0gnjsdnodizjg00000000</FilingComId>
+   <FilingFileRef>CGD-5092987</FilingFileRef>
+   <FilingDesc>OTHER FOR CUSTOMS</FilingDesc>
+   <User>DANIELGR</User>
+   <Owner>DANIELGR</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\4zyvzdstm0gnjsdnodizjg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>OTH</FilingDocTypeCode>
+   <FilingDocTypeName>OTHER FOR CUSTOMS</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526933</PrimaryNum>
+   <DocType>FWA</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\41532\tmp_aqap8ye61uezvqkeo5kapq\2c1b94d0-dce1-44fe-8833-eb4c8e69ecfb.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>qqtfpn0p2esp5cu3oi4oka00000000</FilingComId>
+   <FilingFileRef>CGD-5092988</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>DANIELGR</User>
+   <Owner>DANIELGR</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\qqtfpn0p2esp5cu3oi4oka00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FWA</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

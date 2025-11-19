@@ -1,0 +1,50 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>ojwvwdxtbe+km29nxx+1hw00000000</ParentComId>
+ <Owner>SYSTEM</Owner>
+ <User>ORLYA</User>
+ <FilePath>\\ASRVFiles\DMClient\orlya\Preview\P_CLT-2046256-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>81914063</PrimaryNum>
+   <DocType>1OT</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\11804\tmp_p5mko75adkipo_5zhyonka\3501977a-9545-446f-a701-21fdac188057.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>5</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>6</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>qbd+kb3ptkoamjk0m6ajpg00000000</FilingComId>
+   <FilingFileRef>SHR-1530005</FilingFileRef>
+   <FilingDesc>Others SHR</FilingDesc>
+   <User>ORLYA</User>
+   <Owner>ORLYA</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D07\qbd+kb3ptkoamjk0m6ajpg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1OT</FilingDocTypeCode>
+   <FilingDocTypeName>Others SHR</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

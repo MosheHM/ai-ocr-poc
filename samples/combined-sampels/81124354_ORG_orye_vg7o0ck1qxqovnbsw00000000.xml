@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>orye_vg7o0ck1qxqovnbsw00000000</ParentComId>
+ <Owner>RACHELV</Owner>
+ <User>RACHELV</User>
+ <FilePath>\\ScansSrv\DMClients\RACHELV\Preview\P_CGD-5088121-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>81124354</PrimaryNum>
+   <DocType>FGE</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\23380\tmp_f+jrd4mo50exn7unllhpza\f45e2945-21ab-4bf3-b500-617147b96381.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>bfqmpan0nu6nxx0ugmj_fq00000000</FilingComId>
+   <FilingFileRef>CGD-5088200</FilingFileRef>
+   <FilingDesc>Analiza</FilingDesc>
+   <User>RACHELV</User>
+   <Owner>RACHELV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\bfqmpan0nu6nxx0ugmj_fq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FGE</FilingDocTypeCode>
+   <FilingDocTypeName>Analiza</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

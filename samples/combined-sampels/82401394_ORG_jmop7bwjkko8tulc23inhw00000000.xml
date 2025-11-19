@@ -1,0 +1,34 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>jmop7bwjkko8tulc23inhw00000000</ParentComId>
+ <Owner>SIMAD</Owner>
+ <User>SIMAD</User>
+ <FilePath>\\ScansSrv\DMClients\simad\Preview\P_CGD-5092628-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401394</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\55700\tmp_l__keqaby0epmdzmt88sog\2561266a-c9e7-45ba-a7c1-73c3780cdcdc.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>0fjrjtd0xugoveh_3pn8nq00000000</FilingComId>
+   <FilingFileRef>CGD-5092641</FilingFileRef>
+   <FilingDesc>Packing List</FilingDesc>
+   <User>SIMAD</User>
+   <Owner>SIMAD</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\0fjrjtd0xugoveh_3pn8nq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

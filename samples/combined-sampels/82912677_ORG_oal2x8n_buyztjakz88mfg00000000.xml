@@ -1,0 +1,58 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>oal2x8n_buyztjakz88mfg00000000</ParentComId>
+ <Owner>SYSTEM</Owner>
+ <User>SAPIRK</User>
+ <FilePath>\\ASRVFiles\DMClient\SapirK\Preview\P_CLT-2044923-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82912677</PrimaryNum>
+   <DocType>PKD</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\29852\tmp_cxjhtwmncuk8vr+vaxhrwa\7d0237a8-c331-4134-86dc-8afa895671e0.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>5</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>6</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>7</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>8</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>zgbkh1nv60i_4xpejdyl4w00000000</FilingComId>
+   <FilingFileRef>SHR-1527509</FilingFileRef>
+   <FilingDesc>Pkudat Mesira</FilingDesc>
+   <User>SAPIRK</User>
+   <Owner>SAPIRK</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\zgbkh1nv60i_4xpejdyl4w00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>PKD</FilingDocTypeCode>
+   <FilingDocTypeName>Pkudat Mesira</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

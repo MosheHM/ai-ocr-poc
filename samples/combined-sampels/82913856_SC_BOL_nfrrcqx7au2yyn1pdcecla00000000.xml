@@ -1,0 +1,38 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>hew41fneok+nxp0i3cz18q00000000</ParentComId>
+ <Owner>SYSTEM</Owner>
+ <User>ORLYA</User>
+ <FilePath>\\ASRVFiles\DMClient\orlya\Preview\P_CLT-2045678-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82913856</PrimaryNum>
+   <DocType>1BL</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\24192\tmp_ydxkptsnk06s_0vkjqo1qw\4d3ce1d4-1b45-487e-82e0-2142b7781bc5.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>nfrrcqx7au2yyn1pdcecla00000000</FilingComId>
+   <FilingFileRef>SHR-1528878</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>ORLYA</User>
+   <Owner>ORLYA</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\nfrrcqx7au2yyn1pdcecla00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1BL</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

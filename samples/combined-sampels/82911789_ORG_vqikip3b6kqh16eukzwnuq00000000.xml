@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>vqikip3b6kqh16eukzwnuq00000000</ParentComId>
+ <Owner>SYSTEM</Owner>
+ <User>YEHUDITA</User>
+ <FilePath>\\ASRVFiles\DMClient\yehudita\Preview\P_CLT-2044809-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82911789</PrimaryNum>
+   <DocType>PKD</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\51412\tmp_wljqcx6i50kjfbsdvymwja\201e819f-f5be-49a8-a0c9-57a3e16d44bf.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>jaivdqdhreuy6tv8oztgla00000000</FilingComId>
+   <FilingFileRef>SHR-1527311</FilingFileRef>
+   <FilingDesc>Pkudat Mesira</FilingDesc>
+   <User>YEHUDITA</User>
+   <Owner>YEHUDITA</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\jaivdqdhreuy6tv8oztgla00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>PKD</FilingDocTypeCode>
+   <FilingDocTypeName>Pkudat Mesira</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>_zn7nq_4re+y5yjjfbho5a00000000</ParentComId>
+ <Owner>AMITAL</Owner>
+ <User>HAGARC</User>
+ <FilePath>\\ASRVFiles\DMClient\hagarc\Preview\P_CLT-2045576-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82912953</PrimaryNum>
+   <DocType>1OT</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\2544\tmp_pnwkhxap20amlodjstsjnq\2c962e8e-716f-4c79-85c8-14975075ccc3.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>oomqzcf9nuaoaeza4fpgug00000000</FilingComId>
+   <FilingFileRef>SHR-1528704</FilingFileRef>
+   <FilingDesc>Others SHR</FilingDesc>
+   <User>HAGARC</User>
+   <Owner>HAGARC</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\oomqzcf9nuaoaeza4fpgug00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1OT</FilingDocTypeCode>
+   <FilingDocTypeName>Others SHR</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

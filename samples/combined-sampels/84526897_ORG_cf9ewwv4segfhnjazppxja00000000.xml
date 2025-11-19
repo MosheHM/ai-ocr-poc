@@ -1,0 +1,37 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>cf9ewwv4segfhnjazppxja00000000</ParentComId>
+ <Owner>ORIAN</Owner>
+ <User>HANNAP</User>
+ <FilePath>\\ScansSrv\DMClients\hannap\Preview\P_CGD-5091783-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526897</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\30520\tmp_sfmljrrhlewc1vl8jdsxiq\6e134386-08e4-41ac-ae67-568070c6c833.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>53-0825</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>roefitofsuewo7k7igovfg00000000</FilingComId>
+   <FilingFileRef>CGD-5091939</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>HANNAP</User>
+   <Owner>HANNAP</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\roefitofsuewo7k7igovfg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

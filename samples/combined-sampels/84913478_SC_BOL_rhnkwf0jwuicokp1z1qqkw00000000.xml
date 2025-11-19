@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>aevf0mzo9uuommcw3se4bg00000000</ParentComId>
+ <Owner>SYSTEM</Owner>
+ <User>YEHUDITA</User>
+ <FilePath>\\ASRVFiles\DMClient\yehudita\Preview\P_CLT-2044579-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84913478</PrimaryNum>
+   <DocType>1BL</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\51412\tmp_ta8xc6yth0+bxmmvvvllda\c45d0d36-450f-4083-a871-990d8e544654.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>rhnkwf0jwuicokp1z1qqkw00000000</FilingComId>
+   <FilingFileRef>SHR-1527263</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>YEHUDITA</User>
+   <Owner>YEHUDITA</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\rhnkwf0jwuicokp1z1qqkw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1BL</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

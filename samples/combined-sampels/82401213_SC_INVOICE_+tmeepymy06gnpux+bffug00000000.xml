@@ -1,0 +1,51 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>lxnzapa+zeib+5wwytdroq00000000</ParentComId>
+ <Owner>CHELIO</Owner>
+ <User>CHELIO</User>
+ <FilePath>\\ScansSrv\DMClients\CHELIO\Preview\P_CGD-5089110-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401213</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\24552\tmp_xoi7bezbqkcmozl2+vmmqq\79df2036-30ae-49d8-ac57-5ae8a930c047.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>171798894</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+    <MetaData>
+     <Id>55</Id>
+     <Name>תאריך החשבון</Name>
+     <Value>6/20/2025 12:00:00 AM</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>+tmeepymy06gnpux+bffug00000000</FilingComId>
+   <FilingFileRef>CGD-5089133</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>CHELIO</User>
+   <Owner>CHELIO</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\+tmeepymy06gnpux+bffug00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82913962,
+   "COM_ID" : "0yf8wcxaq0usq54dukznua00000000",
+   "CREATE_DATE" : "2025080609280700",
+   "UPDATE_DATE" : "2025080609281600",
+   "CREATE_BY" : "SHOSHG",
+   "UPDATE_BY" : "SHOSHG",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 2,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025060600000000",
+   "INVOICE_NO" : "EM\/2526\/EXP\/077",
+   "INVOICE_AMOUNT" : 39160,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "2709627",
+   "INCOTERMS" : "CIF",
+   "ORIGIN_ID" : "IN",
+   "MORE" : "",
+   "SELLER_ID" : "4fbfda01-be26-423a-bd6e-2071850227c1",
+   "SELLER_NAME" : "ESTEEM INDUSTRIES PVT.LTD."
+ }
+}

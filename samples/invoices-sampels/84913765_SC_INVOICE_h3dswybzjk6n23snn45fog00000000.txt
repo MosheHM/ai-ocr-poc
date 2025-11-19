@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84913765,
+   "COM_ID" : "h3dswybzjk6n23snn45fog00000000",
+   "CREATE_DATE" : "2025080515501200",
+   "UPDATE_DATE" : "2025081111550100",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072800000000",
+   "INVOICE_NO" : "883058374368",
+   "INVOICE_AMOUNT" : 365.48,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "",
+   "INCOTERMS" : "FCA",
+   "ORIGIN_ID" : "",
+   "MORE" : "",
+   "SELLER_ID" : "4daef72d-f9db-4ace-af18-a26c4df45f48",
+   "SELLER_NAME" : "Fresentos Visal S.A.S"
+ }
+}

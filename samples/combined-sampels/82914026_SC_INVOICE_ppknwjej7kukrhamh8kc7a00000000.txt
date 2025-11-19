@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82914026,
+   "COM_ID" : "ppknwjej7kukrhamh8kc7a00000000",
+   "CREATE_DATE" : "2025080611262500",
+   "UPDATE_DATE" : "2025080611264700",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025060800000000",
+   "INVOICE_NO" : "INLF00081521",
+   "INVOICE_AMOUNT" : 45820,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "2927888",
+   "INCOTERMS" : "FOB",
+   "ORIGIN_ID" : "CN",
+   "MORE" : "",
+   "SELLER_ID" : "bb75e38c-2f21-4f56-b916-6982939d172d",
+   "SELLER_NAME" : "LG ELECTRONICS LEVANT- JORDAN"
+ }
+}

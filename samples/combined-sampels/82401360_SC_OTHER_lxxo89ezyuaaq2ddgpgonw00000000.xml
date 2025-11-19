@@ -1,0 +1,120 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>zuaetppkweut3aor4f55hg00000000</ParentComId>
+ <Owner>RACHELV</Owner>
+ <User>RACHELV</User>
+ <FilePath>\\ScansSrv\DMClients\RACHELV\Preview\P_CGD-5091432-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401360</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\35660\tmp_tbzukwyscey2flo0pckroa\f1eb9dee-d360-46a0-bd63-e4874ae1d355.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>9600935326</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>b0fn_arzykets5e5t6qlyg00000000</FilingComId>
+   <FilingFileRef>CGD-5095036</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>RACHELV</User>
+   <Owner>RACHELV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D06\b0fn_arzykets5e5t6qlyg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401360</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\35660\tmp_tbzukwyscey2flo0pckroa\38dc108b-b3dd-4295-93ce-b5e6ab361842.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>5</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>6</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>kc2soal0qkqaesozzt5vcw00000000</FilingComId>
+   <FilingFileRef>CGD-5095038</FilingFileRef>
+   <FilingDesc>Packing List</FilingDesc>
+   <User>RACHELV</User>
+   <Owner>RACHELV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D06\kc2soal0qkqaesozzt5vcw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401360</PrimaryNum>
+   <DocType>OTH</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\35660\tmp_tbzukwyscey2flo0pckroa\7fcdf481-0d3f-4bfa-a3cd-41c1416b4dbf.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>lxxo89ezyuaaq2ddgpgonw00000000</FilingComId>
+   <FilingFileRef>CGD-5095039</FilingFileRef>
+   <FilingDesc>OTHER FOR CUSTOMS</FilingDesc>
+   <User>RACHELV</User>
+   <Owner>RACHELV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D06\lxxo89ezyuaaq2ddgpgonw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>OTH</FilingDocTypeCode>
+   <FilingDocTypeName>OTHER FOR CUSTOMS</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401360</PrimaryNum>
+   <DocType>FGE</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\35660\tmp_tbzukwyscey2flo0pckroa\f7cfdd4b-61a5-49c2-9e6e-962e129ee20f.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>7</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>8</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>9</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>lfejs8bv8ewkr6nfcndrag00000000</FilingComId>
+   <FilingFileRef>CGD-5095040</FilingFileRef>
+   <FilingDesc>Analiza</FilingDesc>
+   <User>RACHELV</User>
+   <Owner>RACHELV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D06\lfejs8bv8ewkr6nfcndrag00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FGE</FilingDocTypeCode>
+   <FilingDocTypeName>Analiza</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

@@ -1,0 +1,34 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>kyaj4uw7ru6e9s9do8akfg00000000</ParentComId>
+ <Owner>SYSTEM</Owner>
+ <User>ORLYA</User>
+ <FilePath>\\ASRVFiles\DMClient\orlya\Preview\P_CLT-2044966-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84913645</PrimaryNum>
+   <DocType>1IN</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\22752\tmp_to+xwnbrdk6k5jzuxyeefa\465e2280-4104-4e1d-a8c3-0723888553e0.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>jlokjy9u3k2i+dr_7utdpw00000000</FilingComId>
+   <FilingFileRef>SHR-1527593</FilingFileRef>
+   <FilingDesc>Invoice SHR</FilingDesc>
+   <User>ORLYA</User>
+   <Owner>ORLYA</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\jlokjy9u3k2i+dr_7utdpw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1IN</FilingDocTypeCode>
+   <FilingDocTypeName>Invoice SHR</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

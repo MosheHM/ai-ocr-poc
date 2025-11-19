@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82401390,
+   "COM_ID" : "8jk2+rsk0k2d87slfeuo2q00000000",
+   "CREATE_DATE" : "2025080516154600",
+   "UPDATE_DATE" : "2025080516171800",
+   "CREATE_BY" : "ALYAGONS",
+   "UPDATE_BY" : "ALYAGONS",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 2,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025052100000000",
+   "INVOICE_NO" : "PRF-A01-2505-00115",
+   "INVOICE_AMOUNT" : 7823.2,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "2227393",
+   "INCOTERMS" : "FCA",
+   "ORIGIN_ID" : "",
+   "MORE" : "",
+   "SELLER_ID" : "d8a37ef0-0d98-455e-b8cd-ab1ffbb4e8df",
+   "SELLER_NAME" : "SOCOMORE"
+ }
+}

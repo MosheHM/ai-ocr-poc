@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>jgjqoltoh0c8knajngpfoq00000000</ParentComId>
+ <Owner>SARITN</Owner>
+ <User>SARITN</User>
+ <FilePath>\\ASRVFiles\DMClient\saritna\Preview\P_CLT-2045238-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82913015</PrimaryNum>
+   <DocType>1PL</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\28472\tmp_aeqhi_tpaksqe_neyzemlw\ce337641-ba88-4927-aaf2-9dfee889584d.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>dvbu92a8seqzw3cdf6s6qw00000000</FilingComId>
+   <FilingFileRef>SHR-1528147</FilingFileRef>
+   <FilingDesc>Packing List SHR</FilingDesc>
+   <User>SARITN</User>
+   <Owner>SARITN</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\dvbu92a8seqzw3cdf6s6qw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1PL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List SHR</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

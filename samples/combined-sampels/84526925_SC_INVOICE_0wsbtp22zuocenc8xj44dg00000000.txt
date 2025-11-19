@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84526925,
+   "COM_ID" : "0wsbtp22zuocenc8xj44dg00000000",
+   "CREATE_DATE" : "2025080513170400",
+   "UPDATE_DATE" : "2025080513172400",
+   "CREATE_BY" : "ALYAGONS",
+   "UPDATE_BY" : "ALYAGONS",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025073100000000",
+   "INVOICE_NO" : "AWS-TLV70-31072025-4",
+   "INVOICE_AMOUNT" : 128985,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "3385849",
+   "INCOTERMS" : "FCA",
+   "ORIGIN_ID" : "HU",
+   "MORE" : "",
+   "SELLER_ID" : "ab2e5e85-e473-42ee-830a-0f8f03f97e7f",
+   "SELLER_NAME" : "CLOUD NETWORK TECHNOLOGY KFT."
+ }
+}

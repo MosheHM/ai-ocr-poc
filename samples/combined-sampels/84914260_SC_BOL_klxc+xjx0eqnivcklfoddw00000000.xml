@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>k2o6dzr9qusmjbrana+37w00000000</ParentComId>
+ <Owner>RONIBR</Owner>
+ <User>RONIBR</User>
+ <FilePath>\\ASRVFiles\DMClient\RoniBR\Preview\P_SHR-1530613-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84914260</PrimaryNum>
+   <DocType>1BL</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\2128\tmp_mdozwhrhfucn9_eu4r7zww\2eede895-1535-4c96-a004-5a30407834b8.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>klxc+xjx0eqnivcklfoddw00000000</FilingComId>
+   <FilingFileRef>SHR-1530622</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>RONIBR</User>
+   <Owner>RONIBR</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D07\klxc+xjx0eqnivcklfoddw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1BL</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

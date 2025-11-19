@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82913821,
+   "COM_ID" : "tetg+2jgyks58uaiuyuqhw00000000",
+   "CREATE_DATE" : "2025080510474900",
+   "UPDATE_DATE" : "2025080510482100",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025062300000000",
+   "INVOICE_NO" : "HFP19\/2025",
+   "INVOICE_AMOUNT" : 45990.25,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "2931266",
+   "INCOTERMS" : "FOB",
+   "ORIGIN_ID" : "TH",
+   "MORE" : "",
+   "SELLER_ID" : "6177de62-66b9-4239-bd6d-c7ef663e3a32",
+   "SELLER_NAME" : "HEALTHY FOOD PRODUCTS CO., LTD."
+ }
+}

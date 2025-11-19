@@ -1,0 +1,46 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>lrxxajioo02dzcxe4xfdtq00000000</ParentComId>
+ <Owner>SYSTEM</Owner>
+ <User>FADWAA</User>
+ <FilePath>\\ASRVFiles\DMClient\fadwaam\Preview\P_CLT-2045350-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82913162</PrimaryNum>
+   <DocType>PKD</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\39760\tmp_x0ucghpam02iqy5avn3o8g\87b724c4-c9f4-49a8-ac56-9b13a3ead6c1.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>5</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>sxupyj+bvuorat+oynowzw00000000</FilingComId>
+   <FilingFileRef>SHR-1528405</FilingFileRef>
+   <FilingDesc>Pkudat Mesira</FilingDesc>
+   <User>FADWAA</User>
+   <Owner>FADWAA</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\sxupyj+bvuorat+oynowzw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>PKD</FilingDocTypeCode>
+   <FilingDocTypeName>Pkudat Mesira</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

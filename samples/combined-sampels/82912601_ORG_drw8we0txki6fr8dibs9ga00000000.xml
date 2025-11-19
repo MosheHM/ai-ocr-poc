@@ -1,0 +1,71 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>drw8we0txki6fr8dibs9ga00000000</ParentComId>
+ <Owner>AMITAL</Owner>
+ <User>YULIAR</User>
+ <FilePath>\\ASRVFiles\DMClient\yuliar\Preview\P_CLT-2045082-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82912601</PrimaryNum>
+   <DocType>1IN</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\26248\tmp_dm81r8ibw06wbkdqwzk2cq\4123a105-0b9a-45be-a2ec-8bf115ec4887.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>i0jivcae+ek1vnu6olbuqa00000000</FilingComId>
+   <FilingFileRef>SHR-1529728</FilingFileRef>
+   <FilingDesc>Invoice SHR</FilingDesc>
+   <User>YULIAR</User>
+   <Owner>YULIAR</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D06\i0jivcae+ek1vnu6olbuqa00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1IN</FilingDocTypeCode>
+   <FilingDocTypeName>Invoice SHR</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82912601</PrimaryNum>
+   <DocType>1BL</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\26248\tmp_dm81r8ibw06wbkdqwzk2cq\2d880c23-e200-4efc-ba5d-3d488bf8c3d9.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>5</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>6</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>7</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>nscgjhiqze+q8r7c7vn2qa00000000</FilingComId>
+   <FilingFileRef>SHR-1529729</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>YULIAR</User>
+   <Owner>YULIAR</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D06\nscgjhiqze+q8r7c7vn2qa00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1BL</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

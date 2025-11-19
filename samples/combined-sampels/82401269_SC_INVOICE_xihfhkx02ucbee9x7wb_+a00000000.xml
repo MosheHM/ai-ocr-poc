@@ -1,0 +1,697 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>hpfdr_iciuseqboqwutjiq00000000</ParentComId>
+ <Owner>RACHELV</Owner>
+ <User>RACHELV</User>
+ <FilePath>\\ScansSrv\DMClients\RACHELV\Preview\P_CGD-5090693-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401269</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34332\tmp_jaax1oszxkw8zlhyk2r2mq\d8fbe0e8-1917-4e6a-8e05-eb6ee337a550.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>0034447</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>uyw4amqxeug5jfrqepw0aw00000000</FilingComId>
+   <FilingFileRef>CGD-5091455</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>RACHELV</User>
+   <Owner>RACHELV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\uyw4amqxeug5jfrqepw0aw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401269</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34332\tmp_jaax1oszxkw8zlhyk2r2mq\598b5e00-49fb-488a-bd64-aba32047ba18.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>0034446</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>b3wduxykzk+aba9rvt5xkq00000000</FilingComId>
+   <FilingFileRef>CGD-5091456</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>RACHELV</User>
+   <Owner>RACHELV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\b3wduxykzk+aba9rvt5xkq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401269</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34332\tmp_jaax1oszxkw8zlhyk2r2mq\e7db4f66-669d-4600-9925-0134974d4ed7.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>5</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>0034448</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>vuq1xrzdiuioboszeif_hq00000000</FilingComId>
+   <FilingFileRef>CGD-5091457</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>RACHELV</User>
+   <Owner>RACHELV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\vuq1xrzdiuioboszeif_hq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401269</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34332\tmp_jaax1oszxkw8zlhyk2r2mq\a77a32f3-e7df-4739-ad3a-90b1a076ad39.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>7</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>8</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>9</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>0034449</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>yt5v6xp2hekt2cyhgdokzg00000000</FilingComId>
+   <FilingFileRef>CGD-5091458</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>RACHELV</User>
+   <Owner>RACHELV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\yt5v6xp2hekt2cyhgdokzg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401269</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34332\tmp_jaax1oszxkw8zlhyk2r2mq\7a7a5784-3d37-44ad-be2a-65ec436551bd.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>11</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>12</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>13</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>0034551</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>nwo4vl6kse2e14odska+pg00000000</FilingComId>
+   <FilingFileRef>CGD-5091459</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>RACHELV</User>
+   <Owner>RACHELV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\nwo4vl6kse2e14odska+pg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401269</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34332\tmp_jaax1oszxkw8zlhyk2r2mq\3551e29b-00cf-4145-b36c-5f0c5d9ebac2.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>15</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>16</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>0034452</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>xihfhkx02ucbee9x7wb_+a00000000</FilingComId>
+   <FilingFileRef>CGD-5091460</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>RACHELV</User>
+   <Owner>RACHELV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\xihfhkx02ucbee9x7wb_+a00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401269</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34332\tmp_jaax1oszxkw8zlhyk2r2mq\6ffc9f2a-4764-41c8-9a53-760e2ce4a8ad.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>17</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>18</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>19</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>0034453</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>gociufiaxksciq5kqz9vww00000000</FilingComId>
+   <FilingFileRef>CGD-5091461</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>RACHELV</User>
+   <Owner>RACHELV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\gociufiaxksciq5kqz9vww00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401269</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34332\tmp_jaax1oszxkw8zlhyk2r2mq\b9530cec-63b8-475d-a98f-3b062f640ec6.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>21</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>22</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>23</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>0034454</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>gofo7d8k7kwpmjlwco6vsa00000000</FilingComId>
+   <FilingFileRef>CGD-5091462</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>RACHELV</User>
+   <Owner>RACHELV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\gofo7d8k7kwpmjlwco6vsa00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401269</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34332\tmp_jaax1oszxkw8zlhyk2r2mq\51ff75f4-6bda-405d-9e37-8c92f5cac5f9.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>25</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>26</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>0034455</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>k4yryk79i0+rby9irdqm_a00000000</FilingComId>
+   <FilingFileRef>CGD-5091464</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>RACHELV</User>
+   <Owner>RACHELV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\k4yryk79i0+rby9irdqm_a00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401269</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34332\tmp_jaax1oszxkw8zlhyk2r2mq\f90affcd-19ac-4c67-a256-21f5a14de69b.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>27</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>28</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>0034456</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>r1uj+cife0uvzcxxdizfna00000000</FilingComId>
+   <FilingFileRef>CGD-5091465</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>RACHELV</User>
+   <Owner>RACHELV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\r1uj+cife0uvzcxxdizfna00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401269</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34332\tmp_jaax1oszxkw8zlhyk2r2mq\cc119b59-18d4-48f5-b165-54e49ea3cf16.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>29</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>30</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>0034457</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>ijj9d52vgua5lealfoj8ng00000000</FilingComId>
+   <FilingFileRef>CGD-5091466</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>RACHELV</User>
+   <Owner>RACHELV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\ijj9d52vgua5lealfoj8ng00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401269</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34332\tmp_jaax1oszxkw8zlhyk2r2mq\c5f55bfd-7090-49bd-b041-d719cc051d74.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>31</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>32</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>33</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>0034458</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>elme8cdxgky8x182txtqhq00000000</FilingComId>
+   <FilingFileRef>CGD-5091467</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>RACHELV</User>
+   <Owner>RACHELV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\elme8cdxgky8x182txtqhq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401269</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34332\tmp_jaax1oszxkw8zlhyk2r2mq\7df825cb-4e08-4a9e-bcc0-48d5952bd34f.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>35</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>36</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>0034459</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>+iglvtgpw0m1vat7_lk2sq00000000</FilingComId>
+   <FilingFileRef>CGD-5091468</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>RACHELV</User>
+   <Owner>RACHELV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\+iglvtgpw0m1vat7_lk2sq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401269</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34332\tmp_jaax1oszxkw8zlhyk2r2mq\3bdda884-bdca-412f-8a2e-200b03d3a8db.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>37</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>38</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>39</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>0034460</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>3sh6g3fgmeum34jwx16mgg00000000</FilingComId>
+   <FilingFileRef>CGD-5091469</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>RACHELV</User>
+   <Owner>RACHELV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\3sh6g3fgmeum34jwx16mgg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401269</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34332\tmp_jaax1oszxkw8zlhyk2r2mq\b132bb12-2e1a-41e5-ba2d-4c8af4a48a71.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>41</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>42</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>0034461</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>8pfjb2l_gkmrqluik0udhg00000000</FilingComId>
+   <FilingFileRef>CGD-5091470</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>RACHELV</User>
+   <Owner>RACHELV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\8pfjb2l_gkmrqluik0udhg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401269</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34332\tmp_jaax1oszxkw8zlhyk2r2mq\34ebe94a-0a27-45a7-9812-c3d974be3c1d.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>43</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>44</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>0034462</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>sk+xpktsmuwvqkm0myziua00000000</FilingComId>
+   <FilingFileRef>CGD-5091472</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>RACHELV</User>
+   <Owner>RACHELV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\sk+xpktsmuwvqkm0myziua00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401269</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34332\tmp_jaax1oszxkw8zlhyk2r2mq\9c373c2b-f16d-49b7-acee-28175bb9987d.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>45</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>46</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>0034463</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>beeco29x10yyauiwsjzvla00000000</FilingComId>
+   <FilingFileRef>CGD-5091473</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>RACHELV</User>
+   <Owner>RACHELV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\beeco29x10yyauiwsjzvla00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401269</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34332\tmp_jaax1oszxkw8zlhyk2r2mq\7b3d4583-0c3f-46a0-8129-2daf3466510d.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>47</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>48</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>0034464</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>i6djtd8aj0aqtnaadzrnmg00000000</FilingComId>
+   <FilingFileRef>CGD-5091474</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>RACHELV</User>
+   <Owner>RACHELV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\i6djtd8aj0aqtnaadzrnmg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401269</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34332\tmp_jaax1oszxkw8zlhyk2r2mq\2dcd3b7c-69ec-48b1-85af-fa23a7c2f6b4.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>49</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>50</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>0034465</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>ue6xsibmuk6psp_iss4zma00000000</FilingComId>
+   <FilingFileRef>CGD-5091475</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>RACHELV</User>
+   <Owner>RACHELV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\ue6xsibmuk6psp_iss4zma00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401269</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34332\tmp_jaax1oszxkw8zlhyk2r2mq\428c9c75-c670-46eb-b83d-2db7e1ff30b5.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>51</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>0034466</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>+forcb0e7uk39y5uw9qcaw00000000</FilingComId>
+   <FilingFileRef>CGD-5091477</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>RACHELV</User>
+   <Owner>RACHELV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\+forcb0e7uk39y5uw9qcaw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401269</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34332\tmp_jaax1oszxkw8zlhyk2r2mq\f8791962-68fc-45f7-b135-f1b33736229e.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>53</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>54</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>55</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>0034450</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>9+9h6yt13uu4l0jta0xp2g00000000</FilingComId>
+   <FilingFileRef>CGD-5091478</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>RACHELV</User>
+   <Owner>RACHELV</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\9+9h6yt13uu4l0jta0xp2g00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

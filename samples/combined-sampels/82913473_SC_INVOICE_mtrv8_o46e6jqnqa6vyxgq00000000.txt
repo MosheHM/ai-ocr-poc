@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82913473,
+   "COM_ID" : "mtrv8_o46e6jqnqa6vyxgq00000000",
+   "CREATE_DATE" : "2025080310000300",
+   "UPDATE_DATE" : "2025080310000800",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025061700000000",
+   "INVOICE_NO" : "CQWZ202506381",
+   "INVOICE_AMOUNT" : 9757.35,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "",
+   "INCOTERMS" : "CIF",
+   "ORIGIN_ID" : "",
+   "MORE" : "",
+   "SELLER_ID" : "314356b3-3830-4acc-ac09-569c49805739",
+   "SELLER_NAME" : "Chongqing Wuzhou Zhida Technology Co., Ltd."
+ }
+}

@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84526829,
+   "COM_ID" : "ukljgusnpeyss72yll4rcg00000000",
+   "CREATE_DATE" : "2025080408350500",
+   "UPDATE_DATE" : "2025080408351500",
+   "CREATE_BY" : "ALYAGONS",
+   "UPDATE_BY" : "ALYAGONS",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 2,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025073100000000",
+   "INVOICE_NO" : "703369858",
+   "INVOICE_AMOUNT" : 1012.29,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "2931880",
+   "INCOTERMS" : "DAP",
+   "ORIGIN_ID" : "US",
+   "MORE" : "",
+   "SELLER_ID" : "0dd6737c-a7c0-4894-847e-0911bc698bb8",
+   "SELLER_NAME" : "Applied Materials S.E. Asia Pte Ltd"
+ }
+}

@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>m3v+khyjbu2fl8smogt+wq00000000</ParentComId>
+ <Owner>ORIAN</Owner>
+ <User>GILAG</User>
+ <FilePath>\\ScansSrv\DMClients\gilag\Preview\P_CGD-5087788-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401259</PrimaryNum>
+   <DocType>FCR</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\25016\tmp_guiw1qnfbkyv5j79hm5zaq\8820cf6e-01a4-4d7e-a5b2-c8f5150ab921.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>dozvhznekkukidpc7gbu2g00000000</FilingComId>
+   <FilingFileRef>CGD-5087793</FilingFileRef>
+   <FilingDesc>Certificate</FilingDesc>
+   <User>GILAG</User>
+   <Owner>GILAG</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\dozvhznekkukidpc7gbu2g00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FCR</FilingDocTypeCode>
+   <FilingDocTypeName>Certificate</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

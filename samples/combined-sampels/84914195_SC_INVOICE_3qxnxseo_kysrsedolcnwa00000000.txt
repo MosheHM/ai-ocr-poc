@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84914195,
+   "COM_ID" : "3qxnxseo_kysrsedolcnwa00000000",
+   "CREATE_DATE" : "2025080711275300",
+   "UPDATE_DATE" : "2025080711280100",
+   "CREATE_BY" : "SHOSHG",
+   "UPDATE_BY" : "SHOSHG",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 2,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025080100000000",
+   "INVOICE_NO" : "92",
+   "INVOICE_AMOUNT" : 16685,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "3595765",
+   "INCOTERMS" : "",
+   "ORIGIN_ID" : "IT",
+   "MORE" : "",
+   "SELLER_ID" : "b4cfbd5b-5081-4b47-8932-dd18f63b030a",
+   "SELLER_NAME" : "MY G BRANDS SRL"
+ }
+}

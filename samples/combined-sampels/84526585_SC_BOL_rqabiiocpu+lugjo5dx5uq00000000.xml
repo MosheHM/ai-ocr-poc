@@ -1,0 +1,62 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>gjlgm4d5buevnay9lbccug00000000</ParentComId>
+ <Owner>GEULAK</Owner>
+ <User>GEULAK</User>
+ <FilePath>\\ScansSrv\DMClients\geulak\Preview\P_CGD-5087547-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526585</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\29304\tmp_exy7tm9xue+xfiqslk+bjq\d413bf41-a1b9-437d-9d8e-9e8f0bc0f56a.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>798156</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>hwsukiblpk+b6zcixlsxmq00000000</FilingComId>
+   <FilingFileRef>CGD-5087557</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>GEULAK</User>
+   <Owner>GEULAK</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\hwsukiblpk+b6zcixlsxmq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526585</PrimaryNum>
+   <DocType>FWA</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\29304\tmp_exy7tm9xue+xfiqslk+bjq\42fffdf6-e9bf-4b9e-8e95-69d0e9c5150a.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>rqabiiocpu+lugjo5dx5uq00000000</FilingComId>
+   <FilingFileRef>CGD-5087559</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>GEULAK</User>
+   <Owner>GEULAK</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\rqabiiocpu+lugjo5dx5uq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FWA</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

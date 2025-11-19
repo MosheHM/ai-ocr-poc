@@ -1,0 +1,55 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>yzdgtytzu0ibemwjnfxr6w00000000</ParentComId>
+ <Owner>SIMAD</Owner>
+ <User>SIMAD</User>
+ <FilePath>\\ScansSrv\DMClients\simad\Preview\P_CGD-5090564-1_2.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526705</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\51460\tmp_2h5n+17nsecb93ises_wtg\440b4036-d1f6-45c5-9922-1938c2a09f04.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>mtjs7zg6je2fvfezwaq57a00000000</FilingComId>
+   <FilingFileRef>CGD-5090567</FilingFileRef>
+   <FilingDesc/>
+   <User/>
+   <Owner/>
+   <FilingMessage/>
+   <FilingDocTypeCode/>
+   <FilingDocTypeName/>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526705</PrimaryNum>
+   <DocType>FWA</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\51460\tmp_2h5n+17nsecb93ises_wtg\50e2c41d-8f76-4446-b7b6-edc794234e82.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>xx_afoia3e+nf73hwz6lwa00000000</FilingComId>
+   <FilingFileRef>CGD-5090573</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>SIMAD</User>
+   <Owner>SIMAD</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\xx_afoia3e+nf73hwz6lwa00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FWA</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

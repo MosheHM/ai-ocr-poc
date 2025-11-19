@@ -1,0 +1,87 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>as+af5kda0yv+ue50qw89w00000000</ParentComId>
+ <Owner>AMITAL</Owner>
+ <User>HODAYAI</User>
+ <FilePath>\\ASRVFiles\DMClient\HodayaI\Preview\P_CLT-2045907-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82912550</PrimaryNum>
+   <DocType>1IN</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\50984\tmp_qo_3jtau3uqoleplp2apzw\c19e04e3-f0d9-4411-adfe-571d2af5c2f1.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>5</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>6</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>7</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>8</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>9</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>0ed2phkfp0aujq6zimxoma00000000</FilingComId>
+   <FilingFileRef>SHR-1529752</FilingFileRef>
+   <FilingDesc>Invoice SHR</FilingDesc>
+   <User>HODAYAI</User>
+   <Owner>HODAYAI</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D06\0ed2phkfp0aujq6zimxoma00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1IN</FilingDocTypeCode>
+   <FilingDocTypeName>Invoice SHR</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82912550</PrimaryNum>
+   <DocType>1BL</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\50984\tmp_qo_3jtau3uqoleplp2apzw\ee3a588d-df68-44c5-945a-bb292ec79618.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>10</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>11</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>fa6n48owwkgrktdb5+aeqg00000000</FilingComId>
+   <FilingFileRef>SHR-1529753</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>HODAYAI</User>
+   <Owner>HODAYAI</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D06\fa6n48owwkgrktdb5+aeqg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1BL</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84526552,
+   "COM_ID" : "+71ck0veoekvsktbgbjwog00000000",
+   "CREATE_DATE" : "2025080315524200",
+   "UPDATE_DATE" : "2025080316030700",
+   "CREATE_BY" : "ALYAGONS",
+   "UPDATE_BY" : "ALYAGONS",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025071800000000",
+   "INVOICE_NO" : "50833651",
+   "INVOICE_AMOUNT" : 2523.87,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "2804650",
+   "INCOTERMS" : "FOB",
+   "ORIGIN_ID" : "US",
+   "MORE" : "",
+   "SELLER_ID" : "ff11cf74-2861-4277-a6c8-42f2114ac404",
+   "SELLER_NAME" : "MILITARY AFTERMARKET SERVICES"
+ }
+}

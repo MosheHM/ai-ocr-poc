@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>53ytemft9e2zc_mercookq00000000</ParentComId>
+ <Owner>ITZIKB</Owner>
+ <User>IRYNAH</User>
+ <FilePath>\\ASRVFiles\DMClient\IrynaH\Preview\P_CLT-2045926-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>81913217</PrimaryNum>
+   <DocType>1OT</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\11576\tmp_rhzxeuo1ekmwbsdtxfinzq\79934c12-3002-4932-9d86-3f25914eda2f.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>hvpeqktqv0wbpj7oqiz2qw00000000</FilingComId>
+   <FilingFileRef>SHR-1531353</FilingFileRef>
+   <FilingDesc>Others SHR</FilingDesc>
+   <User>IRYNAH</User>
+   <Owner>IRYNAH</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D10\hvpeqktqv0wbpj7oqiz2qw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1OT</FilingDocTypeCode>
+   <FilingDocTypeName>Others SHR</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

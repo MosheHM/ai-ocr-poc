@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84526875,
+   "COM_ID" : "j17ejevg1ee2opmpijevxg00000000",
+   "CREATE_DATE" : "2025080415000200",
+   "UPDATE_DATE" : "2025080415001100",
+   "CREATE_BY" : "SOPHIEK",
+   "UPDATE_BY" : "SOPHIEK",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025080100000000",
+   "INVOICE_NO" : "GJ03073",
+   "INVOICE_AMOUNT" : 730517.97,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "",
+   "INCOTERMS" : "",
+   "ORIGIN_ID" : "",
+   "MORE" : "",
+   "SELLER_ID" : "44e2878b-36a5-4b8a-b07e-94afa57dd1bc",
+   "SELLER_NAME" : "ALEXANDROVITZ ENGINEERING PLASTICS LTD"
+ }
+}

@@ -1,0 +1,70 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>mccdcjbaf02xp6kpeifxcw00000000</ParentComId>
+ <Owner>ORIAN</Owner>
+ <User>GILAG</User>
+ <FilePath>\\ScansSrv\DMClients\gilag\Preview\P_CGD-5087352-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526659</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\25016\tmp_jd+o5rpdz0aelrxwkze5ia\fe995149-1dee-4325-ad9c-eb236badda67.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>5389398</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>4+jd8llalkk5lcgm9h_60a00000000</FilingComId>
+   <FilingFileRef>CGD-5087393</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>GILAG</User>
+   <Owner>GILAG</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\4+jd8llalkk5lcgm9h_60a00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526659</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\25016\tmp_jd+o5rpdz0aelrxwkze5ia\1b7eef77-354f-41ab-b131-2374bf9f6685.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>5</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>hqjpjp6vck623ntva6ulpq00000000</FilingComId>
+   <FilingFileRef>CGD-5087394</FilingFileRef>
+   <FilingDesc>Packing List</FilingDesc>
+   <User>GILAG</User>
+   <Owner>GILAG</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\hqjpjp6vck623ntva6ulpq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

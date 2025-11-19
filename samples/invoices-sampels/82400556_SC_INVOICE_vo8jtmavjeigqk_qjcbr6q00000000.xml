@@ -1,0 +1,68 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>j96djaa_a0uda56s2mruaw00000000</ParentComId>
+ <Owner>LILACH</Owner>
+ <User>LILACH</User>
+ <FilePath>\\ScansSrv\DMClients\lilach\Preview\P_CGD-5093140-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82400556</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\52216\tmp_d5emtovaykstxykxt8wy4q\bf416329-359f-41ce-9364-b51f7ed8d23c.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>2325100870</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+    <MetaData>
+     <Id>55</Id>
+     <Name>תאריך החשבון</Name>
+     <Value>7/31/2025 12:00:00 AM</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>vo8jtmavjeigqk_qjcbr6q00000000</FilingComId>
+   <FilingFileRef>CGD-5093143</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>LILACH</User>
+   <Owner>LILACH</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\vo8jtmavjeigqk_qjcbr6q00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82400556</PrimaryNum>
+   <DocType>FWA</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\52216\tmp_d5emtovaykstxykxt8wy4q\e26d0021-f134-41ac-8941-b67eafe7c265.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>o8kwwq42lu2twu77hsnsqq00000000</FilingComId>
+   <FilingFileRef>CGD-5093144</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>LILACH</User>
+   <Owner>LILACH</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\o8kwwq42lu2twu77hsnsqq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FWA</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

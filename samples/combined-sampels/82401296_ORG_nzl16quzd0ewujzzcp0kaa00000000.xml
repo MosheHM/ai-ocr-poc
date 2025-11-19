@@ -1,0 +1,43 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>nzl16quzd0ewujzzcp0kaa00000000</ParentComId>
+ <Owner>ORIAN</Owner>
+ <User>YAFITK</User>
+ <FilePath>\\ScansSrv\DMClients\YAFITKR\Preview\P_CGD-5089376-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401296</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\42104\tmp_rvwdjmec+uyymg6yyypcfa\130a7028-0de0-4b42-b1cd-966b1d651e84.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>12802</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+    <MetaData>
+     <Id>55</Id>
+     <Name>תאריך החשבון</Name>
+     <Value>7/22/2025 12:00:00 AM</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>zlyfhde0muukwdtldqdqqa00000000</FilingComId>
+   <FilingFileRef>CGD-5089394</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>YAFITK</User>
+   <Owner>YAFITK</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\zlyfhde0muukwdtldqdqqa00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

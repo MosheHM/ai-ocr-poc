@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84526621,
+   "COM_ID" : "gb6vphsf8kqsbhxziwtzvw00000000",
+   "CREATE_DATE" : "2025080409024700",
+   "UPDATE_DATE" : "2025080409025100",
+   "CREATE_BY" : "SOPHIEK",
+   "UPDATE_BY" : "SOPHIEK",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 2,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072800000000",
+   "INVOICE_NO" : "X73718400",
+   "INVOICE_AMOUNT" : 2852.28,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "2952531",
+   "INCOTERMS" : "EXW",
+   "ORIGIN_ID" : "US",
+   "MORE" : "",
+   "SELLER_ID" : "654d3a81-d368-4b89-b1dc-a11f7b176474",
+   "SELLER_NAME" : "SPEARS MANUFACTURING CO."
+ }
+}

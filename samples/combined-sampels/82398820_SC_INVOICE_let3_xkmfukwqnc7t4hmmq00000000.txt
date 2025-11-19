@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82398820,
+   "COM_ID" : "let3_xkmfukwqnc7t4hmmq00000000",
+   "CREATE_DATE" : "2025080611303200",
+   "UPDATE_DATE" : "2025080612033600",
+   "CREATE_BY" : "CHENN",
+   "UPDATE_BY" : "CHENN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025060400000000",
+   "INVOICE_NO" : "HTP4513",
+   "INVOICE_AMOUNT" : 6848.4,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "",
+   "INCOTERMS" : "FOB",
+   "ORIGIN_ID" : "",
+   "MORE" : "",
+   "SELLER_ID" : "92368f69-222b-4edb-8c8d-bd94bdb07577",
+   "SELLER_NAME" : "ZIBO TOP-PEAK ENTERPRISES LTD."
+ }
+}

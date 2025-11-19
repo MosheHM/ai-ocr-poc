@@ -1,0 +1,34 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>kekq9kx6beyxgrfgq_pp9a00000000</ParentComId>
+ <Owner>SYSTEM</Owner>
+ <User>HAGARC</User>
+ <FilePath>\\ASRVFiles\DMClient\hagarc\Preview\P_CLT-2044714-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82912884</PrimaryNum>
+   <DocType>PKD</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\41020\tmp_f1twoup1h0gpaqk+hfujpg\a769a2f0-1084-477c-b37b-13b954530228.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>bk0fnhgf5uuzr0a_7vmrvq00000000</FilingComId>
+   <FilingFileRef>SHR-1527132</FilingFileRef>
+   <FilingDesc>Pkudat Mesira</FilingDesc>
+   <User>HAGARC</User>
+   <Owner>HAGARC</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\bk0fnhgf5uuzr0a_7vmrvq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>PKD</FilingDocTypeCode>
+   <FilingDocTypeName>Pkudat Mesira</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

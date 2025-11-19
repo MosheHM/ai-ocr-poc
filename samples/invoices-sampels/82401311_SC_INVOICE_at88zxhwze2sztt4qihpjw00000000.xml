@@ -1,0 +1,64 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>tsj38tozpeks+1xqwn5+na00000000</ParentComId>
+ <Owner>GALITKE</Owner>
+ <User>GALITKE</User>
+ <FilePath>\\ScansSrv\DMClients\GALITKE\Preview\P_CGD-5089704-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401311</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34928\tmp_3btozqgqg0euncjemg6kkw\96811aae-c51a-4e08-9ce8-ccfc59f9d1cc.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>256500897</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+    <MetaData>
+     <Id>55</Id>
+     <Name>תאריך החשבון</Name>
+     <Value>7/14/2025 12:00:00 AM</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>at88zxhwze2sztt4qihpjw00000000</FilingComId>
+   <FilingFileRef>CGD-5089705</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>GALITKE</User>
+   <Owner>GALITKE</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\at88zxhwze2sztt4qihpjw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401311</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34928\tmp_3btozqgqg0euncjemg6kkw\3227872a-0897-4e0e-9c54-2801c38dd8e2.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>lsmkqfcgak+ujlcs_rt+tq00000000</FilingComId>
+   <FilingFileRef>CGD-5089706</FilingFileRef>
+   <FilingDesc>Packing List</FilingDesc>
+   <User>GALITKE</User>
+   <Owner>GALITKE</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\lsmkqfcgak+ujlcs_rt+tq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

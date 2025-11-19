@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82913731,
+   "COM_ID" : "fnetihahougjcwdi_ns6yw00000000",
+   "CREATE_DATE" : "2025080415555200",
+   "UPDATE_DATE" : "2025080415555800",
+   "CREATE_BY" : "SHOSHG",
+   "UPDATE_BY" : "SHOSHG",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "",
+   "INVOICE_NO" : "NO.LO-250003",
+   "INVOICE_AMOUNT" : 17117.8,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "2790222",
+   "INCOTERMS" : "",
+   "ORIGIN_ID" : "CN",
+   "MORE" : "",
+   "SELLER_ID" : "3b5284c6-d697-4d50-8ae8-3ba9ec573d7c",
+   "SELLER_NAME" : "EINAT INTERNATIONAL TRADE LTD."
+ }
+}

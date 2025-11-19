@@ -1,0 +1,55 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>r4vnvbsz7umvxmcrfwh8zq00000000</ParentComId>
+ <Owner>AMITAL</Owner>
+ <User>HAGARC</User>
+ <FilePath>\\ASRVFiles\DMClient\hagarc\Preview\P_CLT-2044608-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82912569</PrimaryNum>
+   <DocType>1IN</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\6680\tmp_axgpxii7q0s481vbzjqdwq\4675e825-375c-4355-b649-385e74f519f3.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>2rmyqugiwkkmx1puwzmtka00000000</FilingComId>
+   <FilingFileRef>SHR-1528461</FilingFileRef>
+   <FilingDesc>Invoice SHR</FilingDesc>
+   <User>HAGARC</User>
+   <Owner>HAGARC</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\2rmyqugiwkkmx1puwzmtka00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1IN</FilingDocTypeCode>
+   <FilingDocTypeName>Invoice SHR</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82912569</PrimaryNum>
+   <DocType>1BL</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\6680\tmp_axgpxii7q0s481vbzjqdwq\2633f9e1-9607-456f-89e8-6714f37083ec.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>l9rr8gisf02kk_ksilz4eg00000000</FilingComId>
+   <FilingFileRef>SHR-1528462</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>HAGARC</User>
+   <Owner>HAGARC</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\l9rr8gisf02kk_ksilz4eg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1BL</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

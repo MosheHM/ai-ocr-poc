@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84913486,
+   "COM_ID" : "89hxcd+5iuaapx4rixqn+g00000000",
+   "CREATE_DATE" : "2025080314515700",
+   "UPDATE_DATE" : "2025080314521600",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025071700000000",
+   "INVOICE_NO" : "CCUK2140922",
+   "INVOICE_AMOUNT" : 703.65,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "2733892",
+   "INCOTERMS" : "EXW",
+   "ORIGIN_ID" : "GB",
+   "MORE" : "",
+   "SELLER_ID" : "8f88fa01-5848-4134-b8c5-9c6c2b82120c",
+   "SELLER_NAME" : "Registered Office, Colorcon Limited"
+ }
+}

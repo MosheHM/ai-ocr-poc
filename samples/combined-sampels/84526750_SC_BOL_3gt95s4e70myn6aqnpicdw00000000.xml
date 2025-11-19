@@ -1,0 +1,34 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>osfdgylcbuejev24nyuc9a00000000</ParentComId>
+ <Owner>MALIO</Owner>
+ <User>MALIO</User>
+ <FilePath>\\ScansSrv\DMClients\MALIO\Preview\P_CGD-5087814-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526750</PrimaryNum>
+   <DocType>FWA</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34732\tmp_1zn4ncc_kemudk16ce1u7q\0df80753-30af-4128-b8d1-ae25cd816ecc.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>3gt95s4e70myn6aqnpicdw00000000</FilingComId>
+   <FilingFileRef>CGD-5087831</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>MALIO</User>
+   <Owner>MALIO</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\3gt95s4e70myn6aqnpicdw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FWA</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

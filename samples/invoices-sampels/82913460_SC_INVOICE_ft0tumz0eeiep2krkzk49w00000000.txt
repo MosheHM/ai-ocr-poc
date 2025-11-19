@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82913460,
+   "COM_ID" : "ft0tumz0eeiep2krkzk49w00000000",
+   "CREATE_DATE" : "2025080516290500",
+   "UPDATE_DATE" : "2025080516300000",
+   "CREATE_BY" : "SHOSHG",
+   "UPDATE_BY" : "SHOSHG",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 2,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025071600000000",
+   "INVOICE_NO" : "1140016751",
+   "INVOICE_AMOUNT" : 10754,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "2942292",
+   "INCOTERMS" : "FCA",
+   "ORIGIN_ID" : "AT",
+   "MORE" : "",
+   "SELLER_ID" : "5136fc21-827d-4d98-bd23-87d289753355",
+   "SELLER_NAME" : "Puma Dassler GmbH"
+ }
+}

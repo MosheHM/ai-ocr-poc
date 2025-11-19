@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82909608,
+   "COM_ID" : "bdyybpv8+usx5ioz6bytwg00000000",
+   "CREATE_DATE" : "2025080313590500",
+   "UPDATE_DATE" : "2025080314084800",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025063000000000",
+   "INVOICE_NO" : "WJ250180",
+   "INVOICE_AMOUNT" : 72024.6,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "",
+   "INCOTERMS" : "FOB",
+   "ORIGIN_ID" : "",
+   "MORE" : "",
+   "SELLER_ID" : "86a31b24-963e-4424-9221-e36ef9e7b812",
+   "SELLER_NAME" : "HONGKONG WANCHANG INTERNATIONAL CO.,LIMITED"
+ }
+}

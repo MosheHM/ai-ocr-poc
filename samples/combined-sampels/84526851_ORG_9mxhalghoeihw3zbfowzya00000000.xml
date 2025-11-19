@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>9mxhalghoeihw3zbfowzya00000000</ParentComId>
+ <Owner>NAOMIEA</Owner>
+ <User>EFRATP</User>
+ <FilePath>\\ScansSrv\DMClients\EFRATP\Preview\P_CGD-5090338-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526851</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\6184\tmp_sjoka_y6c0ahru8bg0jqdw\2848849c-6531-4c2d-9a40-35995c9bd804.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>qccpmndiik+lxg_7sdq5ga00000000</FilingComId>
+   <FilingFileRef>CGD-5090339</FilingFileRef>
+   <FilingDesc>Packing List</FilingDesc>
+   <User>EFRATP</User>
+   <Owner>EFRATP</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\qccpmndiik+lxg_7sdq5ga00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84526880,
+   "COM_ID" : "iiregepmjugouspd7622ew00000000",
+   "CREATE_DATE" : "2025080508322100",
+   "UPDATE_DATE" : "2025080508323000",
+   "CREATE_BY" : "ALYAGONS",
+   "UPDATE_BY" : "ALYAGONS",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025080400000000",
+   "INVOICE_NO" : ":2000443076",
+   "INVOICE_AMOUNT" : 21130,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "3624223",
+   "INCOTERMS" : "CIF",
+   "ORIGIN_ID" : "BG",
+   "MORE" : "",
+   "SELLER_ID" : "d505174b-9096-49f3-a7ba-f199e8a91a9d",
+   "SELLER_NAME" : "MORSKI DAR 09 LTD"
+ }
+}

@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82913636,
+   "COM_ID" : "2xsug0hywecifehlmclpvq00000000",
+   "CREATE_DATE" : "2025080409254100",
+   "UPDATE_DATE" : "2025080409284300",
+   "CREATE_BY" : "SHOSHG",
+   "UPDATE_BY" : "SHOSHG",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025060800000000",
+   "INVOICE_NO" : "MDAJS2506090016",
+   "INVOICE_AMOUNT" : 115968,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "2448905",
+   "INCOTERMS" : "FOB",
+   "ORIGIN_ID" : "SG",
+   "MORE" : "",
+   "SELLER_ID" : "0db71874-2548-4e56-97ac-f50a8a29c4a0",
+   "SELLER_NAME" : "MIDEA ELECTRIC TRADING (SINGAPORE)\nCO. PTE. LTD."
+ }
+}

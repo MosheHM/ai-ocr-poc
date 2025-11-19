@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84526698,
+   "COM_ID" : "zxxiurw7ykwrsfmdw0lh9g00000000",
+   "CREATE_DATE" : "2025080313211700",
+   "UPDATE_DATE" : "2025080313212700",
+   "CREATE_BY" : "CHENN",
+   "UPDATE_BY" : "CHENN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 2,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025073100000000",
+   "INVOICE_NO" : "1560001793",
+   "INVOICE_AMOUNT" : 49450,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "2173278",
+   "INCOTERMS" : "FCA",
+   "ORIGIN_ID" : "HK",
+   "MORE" : "",
+   "SELLER_ID" : "a0ac3ffa-5ce2-45f8-af5f-1057a875aafe",
+   "SELLER_NAME" : "ZOTAC TECHNOLOGY PTE. LIMITED"
+ }
+}

@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82913650,
+   "COM_ID" : "5j+demv0rk+0n_d6bm_wdg00000000",
+   "CREATE_DATE" : "2025080411273500",
+   "UPDATE_DATE" : "2025080411282500",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 2,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072900000000",
+   "INVOICE_NO" : "90189684",
+   "INVOICE_AMOUNT" : 44592,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "2616790",
+   "INCOTERMS" : "EXW",
+   "ORIGIN_ID" : "US",
+   "MORE" : "",
+   "SELLER_ID" : "6a8ce4a7-5eb5-453b-b5d1-0bf53030b16b",
+   "SELLER_NAME" : "Snyder's-Lance, Inc."
+ }
+}

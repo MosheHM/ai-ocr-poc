@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82399730,
+   "COM_ID" : "y6n9qdtjx0ep9iypfdgh3a00000000",
+   "CREATE_DATE" : "2025080607400700",
+   "UPDATE_DATE" : "2025080607473900",
+   "CREATE_BY" : "ALYAGONS",
+   "UPDATE_BY" : "ALYAGONS",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025061700000000",
+   "INVOICE_NO" : "B10-14061702",
+   "INVOICE_AMOUNT" : 8160,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "2276087",
+   "INCOTERMS" : "EXW",
+   "ORIGIN_ID" : "TW",
+   "MORE" : "",
+   "SELLER_ID" : "f0bc46f2-f3a5-46c2-88ea-7a2933092dcb",
+   "SELLER_NAME" : "AKASA ASIA CORP."
+ }
+}

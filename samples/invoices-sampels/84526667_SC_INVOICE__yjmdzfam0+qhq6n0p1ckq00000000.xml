@@ -1,0 +1,322 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>qdoy0wxg4ecy5tnse0_ssw00000000</ParentComId>
+ <Owner>ORIAN</Owner>
+ <User>LIATD</User>
+ <FilePath>\\ScansSrv\DMClients\LIATD\Preview\P_CGD-5087388-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526667</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\24276\tmp_9__nnxlj+uggkkycm15iga\acc92225-00e9-4ad3-94a5-6431f993851e.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>w5sb8frrsu2ob98tvhzifg00000000</FilingComId>
+   <FilingFileRef>CGD-5087406</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>LIATD</User>
+   <Owner>LIATD</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\w5sb8frrsu2ob98tvhzifg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526667</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\24276\tmp_9__nnxlj+uggkkycm15iga\9e46cb85-98f2-4d3d-b6d8-0a42c117f5dc.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>6</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>7</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>gfchmnc0jkyn4qmx_kwkbw00000000</FilingComId>
+   <FilingFileRef>CGD-5087407</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>LIATD</User>
+   <Owner>LIATD</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\gfchmnc0jkyn4qmx_kwkbw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526667</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\24276\tmp_9__nnxlj+uggkkycm15iga\ca6ce8b4-0e52-4514-ba40-4c23c924bb8f.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>8</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>9</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>ycxymsf3aumqnyexw0dlsg00000000</FilingComId>
+   <FilingFileRef>CGD-5087408</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>LIATD</User>
+   <Owner>LIATD</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\ycxymsf3aumqnyexw0dlsg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526667</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\24276\tmp_9__nnxlj+uggkkycm15iga\df23fa8c-94ea-4c64-b2c3-fe7ff6d4da08.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>10</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>11</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>00zatv1wrkw7ndifohrhrq00000000</FilingComId>
+   <FilingFileRef>CGD-5087409</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>LIATD</User>
+   <Owner>LIATD</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\00zatv1wrkw7ndifohrhrq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526667</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\24276\tmp_9__nnxlj+uggkkycm15iga\57f2f29f-d16c-4057-b2bc-c9b5a80bc5e1.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>12</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>13</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>cx72c6nhg0kqxg9itidkgq00000000</FilingComId>
+   <FilingFileRef>CGD-5087410</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>LIATD</User>
+   <Owner>LIATD</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\cx72c6nhg0kqxg9itidkgq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526667</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\24276\tmp_9__nnxlj+uggkkycm15iga\43a12c57-b7f2-4a41-ae62-944d23588dac.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>14</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>15</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>16</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>xini8cpqie2k834so9pgxg00000000</FilingComId>
+   <FilingFileRef>CGD-5087411</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>LIATD</User>
+   <Owner>LIATD</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\xini8cpqie2k834so9pgxg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526667</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\24276\tmp_9__nnxlj+uggkkycm15iga\a15a364e-f3ff-4e37-be47-01b4626d1379.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>17</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>18</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>tz+a+3_id0w6aop_rnuguw00000000</FilingComId>
+   <FilingFileRef>CGD-5087412</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>LIATD</User>
+   <Owner>LIATD</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\tz+a+3_id0w6aop_rnuguw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526667</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\24276\tmp_9__nnxlj+uggkkycm15iga\90ee93b2-ede6-459a-b9d1-bd1b921ee349.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>19</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>20</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>bvnk2fynxkezl6de+qg3fw00000000</FilingComId>
+   <FilingFileRef>CGD-5087413</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>LIATD</User>
+   <Owner>LIATD</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\bvnk2fynxkezl6de+qg3fw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526667</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\24276\tmp_9__nnxlj+uggkkycm15iga\74855935-f5b0-4e83-a793-d008728ac0d0.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>21</PageNum>
+     <Rotate>90</Rotate>
+    </Page>
+    <Page>
+     <PageNum>22</PageNum>
+     <Rotate>90</Rotate>
+    </Page>
+    <Page>
+     <PageNum>23</PageNum>
+     <Rotate>90</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>_yjmdzfam0+qhq6n0p1ckq00000000</FilingComId>
+   <FilingFileRef>CGD-5087415</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>LIATD</User>
+   <Owner>LIATD</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\_yjmdzfam0+qhq6n0p1ckq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526667</PrimaryNum>
+   <DocType>FWA</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\24276\tmp_9__nnxlj+uggkkycm15iga\0e8436ba-fab9-42b4-a7f2-d8b024557276.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>h6m5w+io90o0xicdkmnguw00000000</FilingComId>
+   <FilingFileRef>CGD-5087416</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>LIATD</User>
+   <Owner>LIATD</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\h6m5w+io90o0xicdkmnguw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FWA</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

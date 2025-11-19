@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82913675,
+   "COM_ID" : "gskbevpu_ecqny8jzlsqja00000000",
+   "CREATE_DATE" : "2025080412551200",
+   "UPDATE_DATE" : "2025080412554600",
+   "CREATE_BY" : "SHOSHG",
+   "UPDATE_BY" : "SHOSHG",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025070800000000",
+   "INVOICE_NO" : "CR25070104371",
+   "INVOICE_AMOUNT" : 33388.2,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "3003188",
+   "INCOTERMS" : "FOB",
+   "ORIGIN_ID" : "CN",
+   "MORE" : "",
+   "SELLER_ID" : "a1d05cda-5915-4282-8cb2-f8f302f8b212",
+   "SELLER_NAME" : "CUORI ELECTRICAL APPLIANCES (GROUP) CO., LTD."
+ }
+}

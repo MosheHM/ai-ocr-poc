@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82914164,
+   "COM_ID" : "kbqxprhof0snoittgtakzw00000000",
+   "CREATE_DATE" : "2025080710593000",
+   "UPDATE_DATE" : "2025080710594000",
+   "CREATE_BY" : "SHOSHG",
+   "UPDATE_BY" : "SHOSHG",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072400000000",
+   "INVOICE_NO" : "TNG19015",
+   "INVOICE_AMOUNT" : 3067.36,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "2849284",
+   "INCOTERMS" : "EXW",
+   "ORIGIN_ID" : "VN",
+   "MORE" : "",
+   "SELLER_ID" : "bbd39e0f-0df3-4ec0-98d2-de0d7e51c114",
+   "SELLER_NAME" : "TNG INVESTMENT AND TRADING JSC"
+ }
+}

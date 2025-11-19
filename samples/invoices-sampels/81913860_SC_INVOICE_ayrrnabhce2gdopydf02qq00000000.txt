@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 81913860,
+   "COM_ID" : "ayrrnabhce2gdopydf02qq00000000",
+   "CREATE_DATE" : "2025080514035200",
+   "UPDATE_DATE" : "2025080514040000",
+   "CREATE_BY" : "SHOSHG",
+   "UPDATE_BY" : "SHOSHG",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072800000000",
+   "INVOICE_NO" : "1.394",
+   "INVOICE_AMOUNT" : 22470,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "2819839",
+   "INCOTERMS" : "EXW",
+   "ORIGIN_ID" : "IT",
+   "MORE" : "",
+   "SELLER_ID" : "ef9368b9-5b74-48ec-b188-4a3193519930",
+   "SELLER_NAME" : "Zschimmer & Schwarz\nItaliana S.p.A."
+ }
+}

@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84913553,
+   "COM_ID" : "+l6jrvsri0qudkjx7ynlaa00000000",
+   "CREATE_DATE" : "2025080313412100",
+   "UPDATE_DATE" : "2025080313512100",
+   "CREATE_BY" : "RAVITM",
+   "UPDATE_BY" : "RAVITM",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025073000000000",
+   "INVOICE_NO" : "147",
+   "INVOICE_AMOUNT" : 37946.52,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "2613924",
+   "INCOTERMS" : "",
+   "ORIGIN_ID" : "",
+   "MORE" : "",
+   "SELLER_ID" : "36b52f87-2ed6-4fad-b41a-2a40124a46bf",
+   "SELLER_NAME" : "LEV OR S.r.l."
+ }
+}

@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84526888,
+   "COM_ID" : "ifbo8kskjuk5lpcocmwyrw00000000",
+   "CREATE_DATE" : "2025080508345100",
+   "UPDATE_DATE" : "2025080508351300",
+   "CREATE_BY" : "ALYAGONS",
+   "UPDATE_BY" : "ALYAGONS",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072800000000",
+   "INVOICE_NO" : "S390-250728003C",
+   "INVOICE_AMOUNT" : 7300.66,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "2002426",
+   "INCOTERMS" : "FOB",
+   "ORIGIN_ID" : "TW",
+   "MORE" : "",
+   "SELLER_ID" : "5d88d3e1-d0cf-4c62-9a8e-9f557e2c3774",
+   "SELLER_NAME" : "ENG ELECTRIC CO., LTD."
+ }
+}

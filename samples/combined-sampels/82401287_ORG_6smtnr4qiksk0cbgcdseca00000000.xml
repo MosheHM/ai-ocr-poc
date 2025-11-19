@@ -1,0 +1,53 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>6smtnr4qiksk0cbgcdseca00000000</ParentComId>
+ <Owner>ORIAN</Owner>
+ <User>SIGALM</User>
+ <FilePath>\\ScansSrv\DMClients\sigalm\Preview\P_CGD-5089150-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401287</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\29072\tmp_ybryapxhbkcddlazo8dwxw\edb8f047-ff7d-4ac1-b60f-b293e8c41d87.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>2025-5</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+    <MetaData>
+     <Id>55</Id>
+     <Name>תאריך החשבון</Name>
+     <Value>7/27/2025 12:00:00 AM</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+    <MetaData>
+     <Id>VALU</Id>
+     <Name>סכום חשבון</Name>
+     <Value>550164</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>yjs2gkoyxkwj2tscnwdepw00000000</FilingComId>
+   <FilingFileRef>CGD-5089170</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>SIGALM</User>
+   <Owner>SIGALM</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\yjs2gkoyxkwj2tscnwdepw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

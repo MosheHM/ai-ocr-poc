@@ -1,0 +1,54 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>6ovznux2huwwrtxoqfprqa00000000</ParentComId>
+ <Owner>IRYNAH</Owner>
+ <User>IRYNAH</User>
+ <FilePath>\\ASRVFiles\DMClient\IrynaH\Preview\P_CLT-2046063-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82912240</PrimaryNum>
+   <DocType>1OT</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\13732\tmp_r2g3_7h_te6xv4gnxmhqaa\00a26467-7d81-4d0e-bc9d-9bcde7e5c7af.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>5</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>6</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>7</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>8</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>emudfxsfskcvhnsyku0gkq00000000</FilingComId>
+   <FilingFileRef>SHR-1529677</FilingFileRef>
+   <FilingDesc>Others SHR</FilingDesc>
+   <User>IRYNAH</User>
+   <Owner>IRYNAH</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D06\emudfxsfskcvhnsyku0gkq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1OT</FilingDocTypeCode>
+   <FilingDocTypeName>Others SHR</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

@@ -1,0 +1,76 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>vwpvtqrwbem6cq3anydz0w00000000</ParentComId>
+ <Owner>ORIAN</Owner>
+ <User>MAXF</User>
+ <FilePath>\\ScansSrv\DMClients\MAXF\Preview\P_CGD-5092254-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526913</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\23860\tmp_yny4vq5nxkgmjzt4lpluig\99b093e5-c582-4980-a949-5aaed7e2ed25.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>96413</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+    <MetaData>
+     <Id>55</Id>
+     <Name>תאריך החשבון</Name>
+     <Value>7/30/2025 12:00:00 AM</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>tklhaiv4zegiszn9qct3ga00000000</FilingComId>
+   <FilingFileRef>CGD-5092263</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>MAXF</User>
+   <Owner>MAXF</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\tklhaiv4zegiszn9qct3ga00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526913</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\23860\tmp_yny4vq5nxkgmjzt4lpluig\3bbe6c8c-68aa-457a-b04e-1e2ba7ec7aec.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>5</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>7rdccyrhyk2ovlwedz+msg00000000</FilingComId>
+   <FilingFileRef>CGD-5092264</FilingFileRef>
+   <FilingDesc>Packing List</FilingDesc>
+   <User>MAXF</User>
+   <Owner>MAXF</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\7rdccyrhyk2ovlwedz+msg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

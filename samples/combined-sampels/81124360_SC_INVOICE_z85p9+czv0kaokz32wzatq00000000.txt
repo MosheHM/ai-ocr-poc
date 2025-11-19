@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 81124360,
+   "COM_ID" : "z85p9+czv0kaokz32wzatq00000000",
+   "CREATE_DATE" : "2025080313565800",
+   "UPDATE_DATE" : "2025080313570400",
+   "CREATE_BY" : "ALYAGONS",
+   "UPDATE_BY" : "ALYAGONS",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025071100000000",
+   "INVOICE_NO" : "000025042",
+   "INVOICE_AMOUNT" : 54236,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "3467626",
+   "INCOTERMS" : "FOB",
+   "ORIGIN_ID" : "CN",
+   "MORE" : "",
+   "SELLER_ID" : "d8751646-d215-4ea8-9bfe-5fba30ec7ad2",
+   "SELLER_NAME" : "HANGZHOU RISING DISPLAY CO. , LTD."
+ }
+}

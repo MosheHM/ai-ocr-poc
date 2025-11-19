@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82914205,
+   "COM_ID" : "6ydz29zly0ya2t+ctz7klg00000000",
+   "CREATE_DATE" : "2025080711452700",
+   "UPDATE_DATE" : "2025080711460200",
+   "CREATE_BY" : "SHOSHG",
+   "UPDATE_BY" : "SHOSHG",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 2,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025063000000000",
+   "INVOICE_NO" : "SNE_GSHA25061328",
+   "INVOICE_AMOUNT" : 316,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "2918874",
+   "INCOTERMS" : "FOB",
+   "ORIGIN_ID" : "CA",
+   "MORE" : "",
+   "SELLER_ID" : "02365fdf-fcae-4add-9a2b-cc14d9356896",
+   "SELLER_NAME" : "SharkNinja (HongKong) Company Limited"
+ }
+}

@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82400563,
+   "COM_ID" : "jiqvest3zuqrn8mdhb97zg00000000",
+   "CREATE_DATE" : "2025080408144400",
+   "UPDATE_DATE" : "2025080408144800",
+   "CREATE_BY" : "ALYAGONS",
+   "UPDATE_BY" : "ALYAGONS",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025071700000000",
+   "INVOICE_NO" : "CH-20250717009",
+   "INVOICE_AMOUNT" : 304161.2,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "2896977",
+   "INCOTERMS" : "",
+   "ORIGIN_ID" : "CN",
+   "MORE" : "",
+   "SELLER_ID" : "d2f58fc9-4897-46e1-8e1b-48a971564d98",
+   "SELLER_NAME" : "CHARM S&H CO., LIMITED GUANGZHOU"
+ }
+}

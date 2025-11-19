@@ -1,0 +1,43 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>r6lu+zbyuuy8aox_fzmuia00000000</ParentComId>
+ <Owner>ZVIKAH</Owner>
+ <User>ZVIKAH</User>
+ <FilePath>\\ScansSrv\DMClients\zvikah\Preview\P_CGD-5088159-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>81124355</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\12800\tmp__q+hgqjlhkqlag8ul28dma\e2533127-c328-40ee-a5c3-9d7405b7bb50.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>25008</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+    <MetaData>
+     <Id>55</Id>
+     <Name>תאריך החשבון</Name>
+     <Value>7/27/2025 12:00:00 AM</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>fajh0m6tfe+vz0xv+yf_fg00000000</FilingComId>
+   <FilingFileRef>CGD-5089799</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>ZVIKAH</User>
+   <Owner>ZVIKAH</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\fajh0m6tfe+vz0xv+yf_fg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

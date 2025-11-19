@@ -1,0 +1,58 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>14ds5fnereidfeeoyywmhq00000000</ParentComId>
+ <Owner>MARGALITHB</Owner>
+ <User>MARGALITHB</User>
+ <FilePath>\\ScansSrv\DMClients\MARGALITHB\Preview\P_CGD-5090878-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526595</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\15800\tmp_4eslmr1iruuvcvuwwnuj7q\91e25c2a-d2f8-41f1-860c-4d94993b8328.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>24446099</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>gyruos0k_uwjnp7cygwewg00000000</FilingComId>
+   <FilingFileRef>CGD-5090883</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>MARGALITHB</User>
+   <Owner>MARGALITHB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\gyruos0k_uwjnp7cygwewg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526595</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\15800\tmp_4eslmr1iruuvcvuwwnuj7q\c52edf16-1717-40fe-81ee-cb6c4257e06a.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>8dfavqhsjuke4ax_rclwba00000000</FilingComId>
+   <FilingFileRef>CGD-5090885</FilingFileRef>
+   <FilingDesc>Packing List</FilingDesc>
+   <User>MARGALITHB</User>
+   <Owner>MARGALITHB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\8dfavqhsjuke4ax_rclwba00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

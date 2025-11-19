@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84526745,
+   "COM_ID" : "jj_jtgbfw0k4hktzahrbhq00000000",
+   "CREATE_DATE" : "2025080410521800",
+   "UPDATE_DATE" : "2025080410523700",
+   "CREATE_BY" : "ALYAGONS",
+   "UPDATE_BY" : "ALYAGONS",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072800000000",
+   "INVOICE_NO" : "TZKWL\/CI-126\/2025",
+   "INVOICE_AMOUNT" : 10237.5,
+   "CURRENCY_ID" : "CAD",
+   "CUSTOMS_SUPPLIER_ID" : "3280488",
+   "INCOTERMS" : "CPT",
+   "ORIGIN_ID" : "BD",
+   "MORE" : "",
+   "SELLER_ID" : "e0019d5a-3e6a-41c0-a5b6-7a8212750a5f",
+   "SELLER_NAME" : "TEX ZONE KNITWEAR LTD."
+ }
+}

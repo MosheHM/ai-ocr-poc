@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82911085,
+   "COM_ID" : "7yxgigaf7kaksvt_4oklza00000000",
+   "CREATE_DATE" : "2025080512075200",
+   "UPDATE_DATE" : "2025080512075900",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025070100000000",
+   "INVOICE_NO" : "HD31-004-FW25",
+   "INVOICE_AMOUNT" : 102441.1,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "",
+   "INCOTERMS" : "FOB",
+   "ORIGIN_ID" : "",
+   "MORE" : "",
+   "SELLER_ID" : "e57f846b-cd9a-4bce-a085-5b744573f7e5",
+   "SELLER_NAME" : "Chengdu Keynes Supply Chain Management Co., Ltd."
+ }
+}

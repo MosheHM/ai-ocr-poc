@@ -1,0 +1,110 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>emmr46ll_kye1tetxmfgsg00000000</ParentComId>
+ <Owner>ZVIKAH</Owner>
+ <User>ZVIKAH</User>
+ <FilePath>\\ScansSrv\DMClients\zvikah\Preview\P_CGD-5092475-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>81124416</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\17344\tmp_irg4z4hys0ev7ar2b6prcw\693c4435-f832-4ec4-be3d-8afb549edfb9.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>18948</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+    <MetaData>
+     <Id>55</Id>
+     <Name>תאריך החשבון</Name>
+     <Value>8/1/2025 12:00:00 AM</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>udjbhqsjeesfmb2cr7dquq00000000</FilingComId>
+   <FilingFileRef>CGD-5092479</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>ZVIKAH</User>
+   <Owner>ZVIKAH</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\udjbhqsjeesfmb2cr7dquq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>81124416</PrimaryNum>
+   <DocType>FCR</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\17344\tmp_irg4z4hys0ev7ar2b6prcw\115ecbd0-9a0b-41a4-9a5d-33fcfa68a853.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>6</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>pmre4y74ruk8ymkvg0epca00000000</FilingComId>
+   <FilingFileRef>CGD-5092480</FilingFileRef>
+   <FilingDesc>Certificate</FilingDesc>
+   <User>ZVIKAH</User>
+   <Owner>ZVIKAH</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\pmre4y74ruk8ymkvg0epca00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FCR</FilingDocTypeCode>
+   <FilingDocTypeName>Certificate</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>81124416</PrimaryNum>
+   <DocType>OTH</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\17344\tmp_irg4z4hys0ev7ar2b6prcw\aed672da-b858-475a-89c4-568f61e17c7a.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>5</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>ye_bx0g_uewzpgo3wql3va00000000</FilingComId>
+   <FilingFileRef>CGD-5092481</FilingFileRef>
+   <FilingDesc>OTHER FOR CUSTOMS</FilingDesc>
+   <User>ZVIKAH</User>
+   <Owner>ZVIKAH</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\ye_bx0g_uewzpgo3wql3va00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>OTH</FilingDocTypeCode>
+   <FilingDocTypeName>OTHER FOR CUSTOMS</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>81124416</PrimaryNum>
+   <DocType>FWA</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\17344\tmp_irg4z4hys0ev7ar2b6prcw\a854415b-4971-4f9f-84d3-4f3d493f2f63.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>vtgujapvm0aufnfptrf_8g00000000</FilingComId>
+   <FilingFileRef>CGD-5092483</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>ZVIKAH</User>
+   <Owner>ZVIKAH</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\vtgujapvm0aufnfptrf_8g00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FWA</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

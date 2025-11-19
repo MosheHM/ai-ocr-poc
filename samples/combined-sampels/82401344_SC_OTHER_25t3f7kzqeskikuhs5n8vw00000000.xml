@@ -1,0 +1,148 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>au2i+vs4+eaqchromkfddq00000000</ParentComId>
+ <Owner>OFEKBS</Owner>
+ <User>OFEKBS</User>
+ <FilePath>\\ScansSrv\DMClients\OfekBS\Preview\P_CGD-5090894-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401344</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34172\tmp_+2a1zzzbckkzwb3jxzseng\c04f2a4d-63c1-4701-8690-5182ee9a15e9.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>6091</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+    <MetaData>
+     <Id>55</Id>
+     <Name>תאריך החשבון</Name>
+     <Value>7/11/2025 12:00:00 AM</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>70pc1d6sre+laxu_86+mda00000000</FilingComId>
+   <FilingFileRef>CGD-5090899</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>OFEKBS</User>
+   <Owner>OFEKBS</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\70pc1d6sre+laxu_86+mda00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401344</PrimaryNum>
+   <DocType>FPL</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34172\tmp_+2a1zzzbckkzwb3jxzseng\25a667fe-4e30-4708-bf8f-261ac43371d7.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>0msr7hvrmekliqyo2n_bxw00000000</FilingComId>
+   <FilingFileRef>CGD-5090900</FilingFileRef>
+   <FilingDesc>Packing List</FilingDesc>
+   <User>OFEKBS</User>
+   <Owner>OFEKBS</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\0msr7hvrmekliqyo2n_bxw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FPL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401344</PrimaryNum>
+   <DocType>FCR</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34172\tmp_+2a1zzzbckkzwb3jxzseng\9dbdf8dd-a050-463d-8e80-26647ba2a525.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>4lffda6tg0yp8k_oc6jvrw00000000</FilingComId>
+   <FilingFileRef>CGD-5090902</FilingFileRef>
+   <FilingDesc>Certificate</FilingDesc>
+   <User>OFEKBS</User>
+   <Owner>OFEKBS</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\4lffda6tg0yp8k_oc6jvrw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FCR</FilingDocTypeCode>
+   <FilingDocTypeName>Certificate</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401344</PrimaryNum>
+   <DocType>FGE</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34172\tmp_+2a1zzzbckkzwb3jxzseng\9082292d-4812-4db7-87b0-70b4db902f94.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>6hzknuet002z3qk39ewumg00000000</FilingComId>
+   <FilingFileRef>CGD-5090903</FilingFileRef>
+   <FilingDesc>Analiza</FilingDesc>
+   <User>OFEKBS</User>
+   <Owner>OFEKBS</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\6hzknuet002z3qk39ewumg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FGE</FilingDocTypeCode>
+   <FilingDocTypeName>Analiza</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401344</PrimaryNum>
+   <DocType>FGE</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34172\tmp_+2a1zzzbckkzwb3jxzseng\eedae7b7-e9ef-43f6-b3f3-39535284e418.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>5</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>25t3f7kzqeskikuhs5n8vw00000000</FilingComId>
+   <FilingFileRef>CGD-5090904</FilingFileRef>
+   <FilingDesc>Analiza</FilingDesc>
+   <User>OFEKBS</User>
+   <Owner>OFEKBS</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\25t3f7kzqeskikuhs5n8vw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FGE</FilingDocTypeCode>
+   <FilingDocTypeName>Analiza</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401344</PrimaryNum>
+   <DocType>FGE</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34172\tmp_+2a1zzzbckkzwb3jxzseng\70d4266a-5ad1-41ea-b8b3-5a80242ff1c0.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>6</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>0biwdwhm3eg0zg_hfyh_mg00000000</FilingComId>
+   <FilingFileRef>CGD-5090905</FilingFileRef>
+   <FilingDesc>Analiza</FilingDesc>
+   <User>OFEKBS</User>
+   <Owner>OFEKBS</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D04\0biwdwhm3eg0zg_hfyh_mg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FGE</FilingDocTypeCode>
+   <FilingDocTypeName>Analiza</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

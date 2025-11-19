@@ -1,0 +1,118 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>4bryabtimkokdfq+n71jlg00000000</ParentComId>
+ <Owner>RACHELE</Owner>
+ <User>RACHELE</User>
+ <FilePath>\\ASRVFiles\DMClient\rachele\Preview\P_CLT-2044699-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82913552</PrimaryNum>
+   <DocType>1IN</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\30220\tmp_lmq4qk74+ewsb+catbchrg\1790b699-b26f-41f7-8659-829115cd7ffa.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>pxw0vo2tsugnvwvtryc2vw00000000</FilingComId>
+   <FilingFileRef>SHR-1527048</FilingFileRef>
+   <FilingDesc>Invoice SHR</FilingDesc>
+   <User>RACHELE</User>
+   <Owner>RACHELE</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\pxw0vo2tsugnvwvtryc2vw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1IN</FilingDocTypeCode>
+   <FilingDocTypeName>Invoice SHR</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82913552</PrimaryNum>
+   <DocType>1PL</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\30220\tmp_lmq4qk74+ewsb+catbchrg\08c77284-1564-43f6-892f-3cc757b9eee0.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>oxq9yrmkmuucoedmu1vqhw00000000</FilingComId>
+   <FilingFileRef>SHR-1527049</FilingFileRef>
+   <FilingDesc>Packing List SHR</FilingDesc>
+   <User>RACHELE</User>
+   <Owner>RACHELE</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\oxq9yrmkmuucoedmu1vqhw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1PL</FilingDocTypeCode>
+   <FilingDocTypeName>Packing List SHR</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82913552</PrimaryNum>
+   <DocType>1OT</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\30220\tmp_lmq4qk74+ewsb+catbchrg\c2338342-3578-49e3-b383-1dd7d44ddd5c.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>vk+21phdeuwgiky0k_edra00000000</FilingComId>
+   <FilingFileRef>SHR-1527050</FilingFileRef>
+   <FilingDesc>Others SHR</FilingDesc>
+   <User>RACHELE</User>
+   <Owner>RACHELE</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\vk+21phdeuwgiky0k_edra00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1OT</FilingDocTypeCode>
+   <FilingDocTypeName>Others SHR</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82913552</PrimaryNum>
+   <DocType>1BL</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\30220\tmp_lmq4qk74+ewsb+catbchrg\46f804ca-8381-4632-af75-9cbea9cf6427.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>3dqx5qmfgeisdzzvlxikka00000000</FilingComId>
+   <FilingFileRef>SHR-1527051</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>RACHELE</User>
+   <Owner>RACHELE</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\3dqx5qmfgeisdzzvlxikka00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1BL</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82913552</PrimaryNum>
+   <DocType>1PR</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\30220\tmp_lmq4qk74+ewsb+catbchrg\90bd6407-3049-44f9-9a89-290a6af72b34.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>5</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>6</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>crkjlxxsm0c64pj1te9+gw00000000</FilingComId>
+   <FilingFileRef>SHR-1527052</FilingFileRef>
+   <FilingDesc>Permit</FilingDesc>
+   <User>RACHELE</User>
+   <Owner>RACHELE</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\crkjlxxsm0c64pj1te9+gw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1PR</FilingDocTypeCode>
+   <FilingDocTypeName>Permit</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

@@ -1,0 +1,75 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>un5cblmxuekqnbmkel9x1g00000000</ParentComId>
+ <Owner>AMITAL</Owner>
+ <User>AGAME</User>
+ <FilePath>\\ASRVFiles\DMClient\agame\Preview\P_CLT-2046605-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82913446</PrimaryNum>
+   <DocType>1IN</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\81808\tmp_epaeous2ru+mrgie7gun7g\a3d1d930-3f0a-4b97-988b-5243ebbc130a.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>5</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>6</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>toqi+9admumdpop9zqlthq00000000</FilingComId>
+   <FilingFileRef>SHR-1532578</FilingFileRef>
+   <FilingDesc>Invoice SHR</FilingDesc>
+   <User>AGAME</User>
+   <Owner>AGAME</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D11\toqi+9admumdpop9zqlthq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1IN</FilingDocTypeCode>
+   <FilingDocTypeName>Invoice SHR</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82913446</PrimaryNum>
+   <DocType>1BL</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\81808\tmp_epaeous2ru+mrgie7gun7g\a4833ec6-78fe-49f6-b7e6-90db5dc53863.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>7</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>8</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>f3ocrb46luczheoiymi8ha00000000</FilingComId>
+   <FilingFileRef>SHR-1532579</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>AGAME</User>
+   <Owner>AGAME</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D11\f3ocrb46luczheoiymi8ha00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1BL</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

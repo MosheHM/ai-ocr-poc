@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84913512,
+   "COM_ID" : "xvubtefhxemwd8ga8qemeg00000000",
+   "CREATE_DATE" : "2025080313294100",
+   "UPDATE_DATE" : "2025080313331000",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 4,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072400000000",
+   "INVOICE_NO" : "2564933",
+   "INVOICE_AMOUNT" : 11479.98,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "3458985",
+   "INCOTERMS" : "",
+   "ORIGIN_ID" : "CH",
+   "MORE" : "",
+   "SELLER_ID" : "b32c5502-ff63-4cc5-ab74-e44e6c3221e5",
+   "SELLER_NAME" : "Printavia Aviation AG"
+ }
+}

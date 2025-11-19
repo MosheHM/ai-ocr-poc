@@ -1,0 +1,45 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>i+ssv1j6x0cpql3ibdffjq00000000</ParentComId>
+ <Owner>DANIELS</Owner>
+ <User>DANIELS</User>
+ <FilePath>\\ScansSrv\DMClients\daniels\Preview\P_CGD-5088496-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526735</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\31472\tmp_arjilbimrksnn5io+w2fga\88e3bdfd-451e-4d2b-a7c8-c67177385f80.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>2053663041</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>lfirmafkhussmxpkahjnbg00000000</FilingComId>
+   <FilingFileRef>CGD-5088726</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>DANIELS</User>
+   <Owner>DANIELS</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D03\lfirmafkhussmxpkahjnbg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

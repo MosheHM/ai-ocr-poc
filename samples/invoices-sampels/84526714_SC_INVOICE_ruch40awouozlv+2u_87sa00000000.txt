@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84526714,
+   "COM_ID" : "ruch40awouozlv+2u_87sa00000000",
+   "CREATE_DATE" : "2025080308501100",
+   "UPDATE_DATE" : "2025080308501600",
+   "CREATE_BY" : "ALYAGONS",
+   "UPDATE_BY" : "ALYAGONS",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 4,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072800000000",
+   "INVOICE_NO" : "85604415",
+   "INVOICE_AMOUNT" : 13587.04,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "2232087",
+   "INCOTERMS" : "FCA",
+   "ORIGIN_ID" : "DE",
+   "MORE" : "",
+   "SELLER_ID" : "2c1b9ce1-bd8b-469f-9d83-7af38aae13a9",
+   "SELLER_NAME" : "EBARA PRECISION MACHINERY EUROPE"
+ }
+}

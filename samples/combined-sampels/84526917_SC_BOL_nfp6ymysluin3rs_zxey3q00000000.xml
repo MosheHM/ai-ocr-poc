@@ -1,0 +1,62 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>na6ssz8lrkknoxredt7hhq00000000</ParentComId>
+ <Owner>INBARB</Owner>
+ <User>INBARB</User>
+ <FilePath>\\ScansSrv\DMClients\inbarb\Preview\P_CGD-5092949-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526917</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\39020\tmp_tt3lnc+smkubuqw42k108q\478d665d-cded-47f6-b9d3-5e47f731c380.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>1</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>sptvpt6yeeuto0rynsa9qg00000000</FilingComId>
+   <FilingFileRef>CGD-5092956</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\sptvpt6yeeuto0rynsa9qg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>84526917</PrimaryNum>
+   <DocType>FWA</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\39020\tmp_tt3lnc+smkubuqw42k108q\d0109e2f-9f41-4568-9fa1-bfcb5cc1e78d.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>nfp6ymysluin3rs_zxey3q00000000</FilingComId>
+   <FilingFileRef>CGD-5092958</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>INBARB</User>
+   <Owner>INBARB</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\nfp6ymysluin3rs_zxey3q00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FWA</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

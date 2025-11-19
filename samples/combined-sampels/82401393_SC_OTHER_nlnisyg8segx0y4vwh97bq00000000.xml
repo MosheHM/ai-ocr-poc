@@ -1,0 +1,34 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>uz9zpybewecfrxdhgjzn6g00000000</ParentComId>
+ <Owner>DANIELS</Owner>
+ <User>DANIELS</User>
+ <FilePath>\\ScansSrv\DMClients\daniels\Preview\P_CGD-5092755-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401393</PrimaryNum>
+   <DocType>OTH</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\34336\tmp_msnqcqe4yuu4ep0nmjfd5w\fe656f02-0573-4685-abef-c75636ef8d03.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>nlnisyg8segx0y4vwh97bq00000000</FilingComId>
+   <FilingFileRef>CGD-5092795</FilingFileRef>
+   <FilingDesc>OTHER FOR CUSTOMS</FilingDesc>
+   <User>DANIELS</User>
+   <Owner>DANIELS</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\nlnisyg8segx0y4vwh97bq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>OTH</FilingDocTypeCode>
+   <FilingDocTypeName>OTHER FOR CUSTOMS</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

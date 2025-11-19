@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 84526881,
+   "COM_ID" : "zkwi58aise+uoj_xmga8ba00000000",
+   "CREATE_DATE" : "2025080508324400",
+   "UPDATE_DATE" : "2025080508330700",
+   "CREATE_BY" : "ALYAGONS",
+   "UPDATE_BY" : "ALYAGONS",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025080400000000",
+   "INVOICE_NO" : "777697",
+   "INVOICE_AMOUNT" : 557643.42,
+   "CURRENCY_ID" : "NOK",
+   "CUSTOMS_SUPPLIER_ID" : "2326723",
+   "INCOTERMS" : "DPU",
+   "ORIGIN_ID" : "NO",
+   "MORE" : "",
+   "SELLER_ID" : "48811440-707d-4a8c-9270-f419707c06d1",
+   "SELLER_NAME" : "SalMar AS"
+ }
+}

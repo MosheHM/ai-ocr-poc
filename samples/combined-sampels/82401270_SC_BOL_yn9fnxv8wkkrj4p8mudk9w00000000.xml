@@ -1,0 +1,55 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>3i+y7qjtquuox6sewelpig00000000</ParentComId>
+ <Owner>ZVIKAH</Owner>
+ <User>ZVIKAH</User>
+ <FilePath>\\ScansSrv\DMClients\zvikah\Preview\P_CGD-5091712-1_1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401270</PrimaryNum>
+   <DocType>FCR</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\17344\tmp_lns6+akcvk2cvuogltbktg\a47fec55-19af-4f2e-a1c7-1380c2b41b4f.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>4muluamhve6kgu8edeos3g00000000</FilingComId>
+   <FilingFileRef>CGD-5091713</FilingFileRef>
+   <FilingDesc>Certificate</FilingDesc>
+   <User>ZVIKAH</User>
+   <Owner>ZVIKAH</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\4muluamhve6kgu8edeos3g00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FCR</FilingDocTypeCode>
+   <FilingDocTypeName>Certificate</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401270</PrimaryNum>
+   <DocType>FWA</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\17344\tmp_lns6+akcvk2cvuogltbktg\bf33b64a-a2aa-472d-b5db-d6251b8008a2.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>yn9fnxv8wkkrj4p8mudk9w00000000</FilingComId>
+   <FilingFileRef>CGD-5091714</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>ZVIKAH</User>
+   <Owner>ZVIKAH</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D05\yn9fnxv8wkkrj4p8mudk9w00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FWA</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

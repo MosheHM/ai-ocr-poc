@@ -1,0 +1,121 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>gqcmq5okf0ksdouwu-vbjw00000000</ParentComId>
+ <Owner>HYBRID</Owner>
+ <User>AVIVAC</User>
+ <FilePath>\\ScansSrv\DMClients\AVIVAC\Preview\P_591642-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401404</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\27896\tmp_no9uh6r31ucelm7tis_ngg\bfb8bc08-80b3-4eb5-a0c8-a1b22208e839.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>9859705713</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>2wf88axwok+9j_bp7+_reg00000000</FilingComId>
+   <FilingFileRef>CGD-5094082</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>AVIVAC</User>
+   <Owner>AVIVAC</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D06\2wf88axwok+9j_bp7+_reg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401404</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\27896\tmp_no9uh6r31ucelm7tis_ngg\d4aaa23f-8e35-4c57-8854-aeff4c272c18.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>9859705714</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>ldbi2ioku0s6klrqaoznzg00000000</FilingComId>
+   <FilingFileRef>CGD-5094083</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>AVIVAC</User>
+   <Owner>AVIVAC</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D06\ldbi2ioku0s6klrqaoznzg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401404</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\27896\tmp_no9uh6r31ucelm7tis_ngg\45dcdaa3-f2ce-41e9-bbe1-145f713d2c68.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>9859705715</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>d1y8fqucmu6eb4ldxfevqq00000000</FilingComId>
+   <FilingFileRef>CGD-5094084</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>AVIVAC</User>
+   <Owner>AVIVAC</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D06\d1y8fqucmu6eb4ldxfevqq00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82401404</PrimaryNum>
+   <DocType>FSI</DocType>
+   <ProcessedFile>\\uni-fs\unifreight\work_dir\27896\tmp_no9uh6r31ucelm7tis_ngg\f0b38c0a-08fa-4abb-bf3b-e72d8651c5a2.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References>
+    <MetaData>
+     <Id>39</Id>
+     <Name>מספר חשבון</Name>
+     <Value>9859705716</Value>
+     <Mandatory>false</Mandatory>
+    </MetaData>
+   </References>
+   <FilingComId>8axmrrnzses2qxekfd7qdw00000000</FilingComId>
+   <FilingFileRef>CGD-5094086</FilingFileRef>
+   <FilingDesc>Supplier Invoice</FilingDesc>
+   <User>AVIVAC</User>
+   <Owner>AVIVAC</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D06\8axmrrnzses2qxekfd7qdw00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>FSI</FilingDocTypeCode>
+   <FilingDocTypeName>Supplier Invoice</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

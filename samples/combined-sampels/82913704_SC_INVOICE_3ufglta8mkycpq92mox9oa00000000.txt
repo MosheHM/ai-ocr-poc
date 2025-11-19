@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82913704,
+   "COM_ID" : "3ufglta8mkycpq92mox9oa00000000",
+   "CREATE_DATE" : "2025080612395900",
+   "UPDATE_DATE" : "2025080612554400",
+   "CREATE_BY" : "KALANITN",
+   "UPDATE_BY" : "KALANITN",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072800000000",
+   "INVOICE_NO" : "IT002-25-V02-00285",
+   "INVOICE_AMOUNT" : 17168,
+   "CURRENCY_ID" : "EUR",
+   "CUSTOMS_SUPPLIER_ID" : "3345609",
+   "INCOTERMS" : "EXW",
+   "ORIGIN_ID" : "IT",
+   "MORE" : "",
+   "SELLER_ID" : "95898abd-8de5-4747-a3f3-463dc0ee79c5",
+   "SELLER_NAME" : "SEDE LEGALE"
+ }
+}

@@ -1,0 +1,75 @@
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<SplittedResult>
+ <ParentComId>3obhd0al5egjln6igodk6q00000000</ParentComId>
+ <Owner>AMITAL</Owner>
+ <User>YULIAR</User>
+ <FilePath>\\ASRVFiles\DMClient\yuliar\Preview\P_CLT-2045925-1.PDF</FilePath>
+ <SplittedDocs>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82912969</PrimaryNum>
+   <DocType>1IN</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\21844\tmp_4khxsjqp0kyabqbljkdz5w\d95e6414-b18d-4638-92df-cc2dcbc5799c.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>1</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>2</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>3</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>4</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>5</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>6</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>cahugm5v4u+wkf+7o7wpxg00000000</FilingComId>
+   <FilingFileRef>SHR-1530694</FilingFileRef>
+   <FilingDesc>Invoice SHR</FilingDesc>
+   <User>YULIAR</User>
+   <Owner>YULIAR</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D07\cahugm5v4u+wkf+7o7wpxg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1IN</FilingDocTypeCode>
+   <FilingDocTypeName>Invoice SHR</FilingDocTypeName>
+  </SplitDoc>
+  <SplitDoc>
+   <Entname>CFIFILEM</Entname>
+   <PrimaryNum>82912969</PrimaryNum>
+   <DocType>1BL</DocType>
+   <ProcessedFile>\\ASRVUNIFREIGHT\Unifreight\work_dir\21844\tmp_4khxsjqp0kyabqbljkdz5w\c8626840-8036-4fac-9204-9c54983e04bf.pdf</ProcessedFile>
+   <Pages>
+    <Page>
+     <PageNum>7</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+    <Page>
+     <PageNum>8</PageNum>
+     <Rotate>0</Rotate>
+    </Page>
+   </Pages>
+   <References/>
+   <FilingComId>pdittp8knuo9vrkvz6u1xg00000000</FilingComId>
+   <FilingFileRef>SHR-1530696</FilingFileRef>
+   <FilingDesc>Waybill</FilingDesc>
+   <User>YULIAR</User>
+   <Owner>YULIAR</Owner>
+   <FilingMessage>Document Y2025-BLOB\M08\D07\pdittp8knuo9vrkvz6u1xg00000000-1.PDF successfully scanned</FilingMessage>
+   <FilingDocTypeCode>1BL</FilingDocTypeCode>
+   <FilingDocTypeName>Waybill</FilingDocTypeName>
+  </SplitDoc>
+ </SplittedDocs>
+</SplittedResult>

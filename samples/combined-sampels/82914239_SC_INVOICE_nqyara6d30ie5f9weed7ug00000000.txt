@@ -1,0 +1,30 @@
+
+ { 
+  "OCC" : { 
+   "FILE_NO" : 82914239,
+   "COM_ID" : "nqyara6d30ie5f9weed7ug00000000",
+   "CREATE_DATE" : "2025080716045500",
+   "UPDATE_DATE" : "2025080716052200",
+   "CREATE_BY" : "SHOSHG",
+   "UPDATE_BY" : "SHOSHG",
+   "STATUS" : 4,
+   "REMARK" : "",
+   "TOTAL_PAGES" : 1,
+   "CUSTOMER_ID" : "",
+   "HAS_CHANGED" : 2,
+   "QUE_TYPE" : "SYS",
+   "GSTRING1" : "",
+   "GSTRING2" : "",
+   "GSTRING3" : "",
+   "INVOICE_DATE" : "2025072700000000",
+   "INVOICE_NO" : "INBS250724",
+   "INVOICE_AMOUNT" : 14460,
+   "CURRENCY_ID" : "USD",
+   "CUSTOMS_SUPPLIER_ID" : "",
+   "INCOTERMS" : "FOB",
+   "ORIGIN_ID" : "",
+   "MORE" : "",
+   "SELLER_ID" : "08b7ac36-e922-47b1-9d16-992d8aa81b65",
+   "SELLER_NAME" : "Best Success Enterprise (Thailand) Limited"
+ }
+}
