@@ -72,23 +72,23 @@ TYPE 4: PACKING LIST
 [
     {
         "DOC_TYPE": "INVOICE",
-        "DOC_TYPE_CONFIDENCE": 0.95,
         "INVOICE_NO": "0004833/E",
         "INVOICE_DATE": "2025073000000000",
         "CURRENCY_ID": "EUR",
         "INCOTERMS": "FCA",
         "INVOICE_AMOUNT": 7632.00,
         "CUSTOMER_ID": "D004345",
+        "DOC_TYPE_CONFIDENCE": 0.95,
         "TOTAL_PAGES": 2,
         "START_PAGE_NO": 1,
         "END_PAGE_NO": 2
     },
     {
         "DOC_TYPE": "PACKING_LIST",
-        "DOC_TYPE_CONFIDENCE": 0.88,
         "CUSTOMER_NAME": "DEF Manufacturing",
         "PIECES": 100,
         "WEIGHT": 2500.0,
+        "DOC_TYPE_CONFIDENCE": 0.88,
         "TOTAL_PAGES": 1,
         "START_PAGE_NO": 3,
         "END_PAGE_NO": 3
