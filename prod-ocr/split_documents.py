@@ -1,11 +1,10 @@
 """Script to split a PDF into separate documents by type."""
 import os
-import sys
 import argparse
 from pathlib import Path
+from dotenv import load_dotenv
 
-# Add parent directory to path for imports
-sys.path.insert(0, str(Path(__file__).parent.parent))
+load_dotenv(Path(__file__).parent / '.env')
 
 from modules import split_and_extract_documents
 
@@ -40,7 +39,7 @@ def main():
     if args.output_dir:
         output_dir = Path(args.output_dir)
     else:
-        output_dir = Path(__file__).parent.parent / 'samples' / 'split_output'
+        output_dir = Path(__file__).parent / 'split_output'
 
     if not os.getenv('GEMINI_API_KEY'):
         print("Error: GEMINI_API_KEY environment variable not set")

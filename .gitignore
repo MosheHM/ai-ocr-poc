@@ -22,6 +22,7 @@ wheels/
 
 # Virtual environments
 venv/
+.env
 ENV/
 env/
 
@@ -45,3 +46,5 @@ htmlcov/
 results_*.json
 extraction_results_*.json
 /samples/split_output/
+prod-ocr/.env
+prod-ocr/split_output/
