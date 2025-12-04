@@ -1,0 +1,145 @@
+"""Example client script to send a processing task to the queue."""
+import os
+import sys
+import uuid
+import json
+import argparse
+from pathlib import Path
+from dotenv import load_dotenv
+from azure.storage.queue import QueueClient
+
+from modules.azure import AzureStorageClient
+from modules.validators import validate_correlation_key, validate_pdf_file, ValidationError
+
+# Load environment variables
+load_dotenv(Path(__file__).parent / '.env')
+
+
+def main():
+    """Send a processing task to the queue."""
+    parser = argparse.ArgumentParser(
+        description='Send a document processing task to Azure Queue'
+    )
+    parser.add_argument(
+        'pdf_path',
+        help='Path to the PDF file to process'
+    )
+    parser.add_argument(
+        '--container',
+        help='Azure Blob container for input PDFs',
+        default='processing-input'
+    )
+    parser.add_argument(
+        '--queue',
+        help='Name of the tasks queue',
+        default='processing-tasks'
+    )
+    parser.add_argument(
+        '--correlation-key',
+        help='Correlation key (default: generated UUID)',
+        default=None
+    )
+
+    args = parser.parse_args()
+
+    # Validate required environment variables
+    storage_account_name = os.getenv('AZURE_STORAGE_ACCOUNT_NAME')
+    storage_access_key = os.getenv('AZURE_STORAGE_ACCESS_KEY')
+
+    if not storage_account_name or not storage_access_key:
+        print("Error: AZURE_STORAGE_ACCOUNT_NAME and AZURE_STORAGE_ACCESS_KEY environment variables not set")
+        print("Please set them in your .env file")
+        sys.exit(1)
+
+    # Validate PDF file exists
+    pdf_path = Path(args.pdf_path)
+    if not pdf_path.exists():
+        print(f"Error: File not found: {pdf_path}")
+        sys.exit(1)
+
+    if not pdf_path.is_file():
+        print(f"Error: Not a file: {pdf_path}")
+        sys.exit(1)
+
+    # Generate and validate correlation key
+    if args.correlation_key:
+        try:
+            correlation_key = validate_correlation_key(args.correlation_key)
+        except ValidationError as e:
+            print(f"Error: Invalid correlation key: {e}")
+            sys.exit(1)
+    else:
+        correlation_key = str(uuid.uuid4())
+
+    # Validate PDF file
+    try:
+        validate_pdf_file(str(pdf_path))
+    except ValidationError as e:
+        print(f"Error: Invalid PDF file: {e}")
+        sys.exit(1)
+
+    print("=" * 60)
+    print("SENDING PROCESSING TASK")
+    print("=" * 60)
+    print(f"Correlation Key: {correlation_key}")
+    print(f"PDF File: {pdf_path.name}")
+    print(f"File Size: {pdf_path.stat().st_size / (1024*1024):.2f} MB")
+    print(f"Container: {args.container}")
+    print(f"Queue: {args.queue}")
+    print()
+
+    try:
+        # Initialize clients
+        storage_client = AzureStorageClient(storage_account_name, storage_access_key)
+
+        # Create queue client using account URL
+        account_url = f"https://{storage_account_name}.queue.core.windows.net"
+        queue_client = QueueClient(
+            account_url=account_url,
+            queue_name=args.queue,
+            credential=storage_access_key
+        )
+
+        # Upload PDF to Azure Storage
+        print(f"Uploading PDF to Azure Storage...")
+        blob_name = f"{correlation_key}/{pdf_path.name}"
+        pdf_url = storage_client.upload_file(
+            args.container,
+            blob_name,
+            str(pdf_path)
+        )
+        print(f"PDF uploaded successfully")
+        print()
+
+        # Create task message
+        task_message = {
+            "correlationKey": correlation_key,
+            "pdfBlobUrl": pdf_url
+        }
+
+        # Send message to queue
+        print(f"Sending task message to queue '{args.queue}'...")
+        queue_client.send_message(json.dumps(task_message))
+        print("Task message sent successfully!")
+        print()
+
+        print("=" * 60)
+        print("TASK SUBMITTED SUCCESSFULLY!")
+        print("=" * 60)
+        print(f"Correlation Key: {correlation_key}")
+        print()
+        print("Use this correlation key to retrieve results:")
+        print(f"  python get_results.py --correlation-key={correlation_key}")
+        print()
+        print("Results will appear in the 'processing-tasks-results' queue")
+        print("after processing completes.")
+        print("=" * 60)
+
+    except Exception as e:
+        print()
+        print(f"Error: {e}")
+        sys.exit(1)
+
+
+if __name__ == "__main__":
+    main()

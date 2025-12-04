@@ -4,17 +4,123 @@ This folder contains a self-contained version of the document splitting workflow
 
 ## Structure
 
-- `split_documents.py` – CLI entry point for splitting PDFs.
-- `modules/` – minimal subset of modules required to run the splitter (document splitter + PDF utilities).
+- `split_documents.py` – CLI entry point for splitting PDFs locally.
+- `function_app.py` – Azure Function with queue trigger for processing tasks.
+- `send_task.py` – Client script for sending tasks to Azure Queue.
+- `get_results.py` – Client script for retrieving results from Azure Queue.
+- `modules/` – Core modules including document splitter and Azure storage helpers.
 - `requirements.txt` – runtime dependencies.
-- `.env` – **not committed**. Copy `.env.example` and set `GEMINI_API_KEY`.
+- `host.json` / `local.settings.json` – Azure Functions configuration.
+- `.env` – **not committed**. Copy `.env.example` and configure credentials.
 
 ## Usage
 
+### Local Mode (Direct Processing)
+
 ```bash
 pip install -r requirements.txt
-cp .env.example .env  # or create manually
+cp .env.example .env  # Set GEMINI_API_KEY
 python split_documents.py "path/to/file.pdf" --output-dir="out"
 ```
 
 The script defaults to writing results into `prod-ocr/split_output` when no `--output-dir` is provided.
+
+### Queue Mode (Azure Functions)
+
+This mode enables serverless processing using Azure Functions with queue triggers.
+
+#### Setup
+
+1. Install Azure Functions Core Tools:
+```bash
+npm install -g azure-functions-core-tools@4
+```
+
+2. Configure environment:
+```bash
+# Edit local.settings.json and set:
+# - AzureWebJobsStorage (connection string)
+# - GEMINI_API_KEY
+```
+
+3. Create Azure resources:
+   - Storage Account with two queues: `processing-tasks` and `processing-tasks-results`
+   - Two blob containers: `processing-input` and `processing-results`
+
+#### Running Locally
+
+Test the Azure Function locally:
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Start the function
+func start
+```
+
+The function will automatically trigger when messages are added to `processing-tasks` queue.
+
+#### Deploying to Azure
+
+```bash
+# Create Function App in Azure
+az functionapp create --resource-group <group> --name <app-name> --runtime python --functions-version 4
+
+# Deploy
+func azure functionapp publish <app-name>
+
+# Configure app settings
+az functionapp config appsettings set --name <app-name> --resource-group <group> --settings "GEMINI_API_KEY=your_key"
+```
+
+#### Sending Tasks (Client)
+
+Use the example client to send processing tasks:
+
+```bash
+# Upload PDF and send task message
+python send_task.py "path/to/document.pdf"
+
+# Custom container and correlation key
+python send_task.py "document.pdf" --container=my-input --correlation-key=custom-id-123
+```
+
+#### Message Flow
+
+1. **Client**: Uploads PDF to `processing-input` blob container
+2. **Client**: Sends task message to `processing-tasks` queue
+3. **Azure Function**: Automatically triggered by queue message
+4. **Azure Function**: Downloads PDF, processes it, creates ZIP
+5. **Azure Function**: Uploads ZIP to `processing-results` container
+6. **Azure Function**: Sends result message to `processing-tasks-results` queue
+
+#### Message Structures
+
+**Task Message** (sent to `processing-tasks`):
+```json
+{
+  "correlationKey": "unique-id",
+  "pdfBlobUrl": "https://storage.blob.core.windows.net/..."
+}
+```
+
+**Result Message** (sent to `processing-tasks-results`):
+
+Success:
+```json
+{
+  "correlationKey": "unique-id",
+  "status": "success",
+  "resultsBlobUrl": "https://storage.blob.core.windows.net/..."
+}
+```
+
+Failure:
+```json
+{
+  "correlationKey": "unique-id",
+  "status": "failure",
+  "errorMessage": "Error details..."
+}
+```

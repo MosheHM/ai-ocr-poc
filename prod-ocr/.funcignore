@@ -1,0 +1,13 @@
+.git*
+.vscode
+.venv
+__pycache__
+*.pyc
+.python_version
+local.settings.json
+.env
+split_output/
+results/
+samples/
+*.md
+.gitignore

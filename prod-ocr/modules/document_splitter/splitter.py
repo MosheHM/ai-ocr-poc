@@ -8,10 +8,92 @@ from dataclasses import dataclass
 from google import genai
 from google.genai import types
 
-from ..system_prompts import UNIFIED_EXTRACTION_PROMPT
 from ..utils import extract_pdf_pages
 
 logger = logging.getLogger(__name__)
+
+UNIFIED_EXTRACTION_PROMPT = """You are an AI assistant specialized in analyzing unclassified PDF documents. Your task is to identify distinct documents within the file, classify them, and extract structured data.
+
+The input PDF may contain a single document or multiple documents of different types merged together. You must detect the boundaries of each document.
+
+Supported Document Types:
+1. Invoice
+2. OBL (Ocean Bill of Lading)
+3. HAWB (House Air Waybill)
+4. Packing List
+
+For each detected document, extract the data according to the specific schema below and return a JSON ARRAY of objects.
+
+--- SCHEMAS & EXTRACTION RULES ---
+
+COMMON FIELDS (Required for ALL types):
+- DOC_TYPE: One of ["INVOICE", "OBL", "HAWB", "PACKING_LIST"]
+- DOC_TYPE_CONFIDENCE: Float between 0 and 1 indicating confidence in the document type classification (e.g., 0.95 for high confidence, 0.6 for uncertain)
+- TOTAL_PAGES: Integer (count of pages for this specific document)
+- START_PAGE_NO: Integer (1-based page number where this document starts in the PDF)
+- END_PAGE_NO: Integer (1-based page number where this document ends in the PDF)
+
+TYPE 1: INVOICE
+- INVOICE_NO: Extract as-is, preserving all characters (e.g., "0004833/E")
+- INVOICE_DATE: Format as YYYYMMDDHHMMSSSS (16 digits). Example: "30.07.2025" -> "2025073000000000"
+- CURRENCY_ID: 3-letter currency code (e.g., "EUR")
+- INCOTERMS: Code only, uppercase (e.g., "FCA"). No location text.
+- INVOICE_AMOUNT: Number (float/int), no symbols.
+- CUSTOMER_ID: Extract as-is.
+
+TYPE 2: OBL
+- CUSTOMER_NAME: String
+- WEIGHT: Number
+- VOLUME: Number
+- INCOTERMS: Code only, uppercase.
+
+TYPE 3: HAWB
+- CUSTOMER_NAME: String
+- CURRENCY: String
+- CARRIER: String
+- HAWB_NUMBER: String
+- PIECES: Integer
+- WEIGHT: Number
+
+TYPE 4: PACKING LIST
+- CUSTOMER_NAME: String
+- PIECES: Integer
+- WEIGHT: Number
+
+--- CRITICAL RULES ---
+1. Return ONLY a valid JSON list.
+2. If a field is not found, omit it.
+3. Ensure START_PAGE_NO and END_PAGE_NO reflect the specific location of the document.
+4. Date format must be exactly 16 digits: YYYYMMDD00000000.
+5. INCOTERMS must be ONLY the code (3 letters usually), no location or extra text.
+
+--- EXAMPLE OUTPUT ---
+[
+    {
+        "DOC_TYPE": "INVOICE",
+        "INVOICE_NO": "0004833/E",
+        "INVOICE_DATE": "2025073000000000",
+        "CURRENCY_ID": "EUR",
+        "INCOTERMS": "FCA",
+        "INVOICE_AMOUNT": 7632.00,
+        "CUSTOMER_ID": "D004345",
+        "DOC_TYPE_CONFIDENCE": 0.95,
+        "TOTAL_PAGES": 2,
+        "START_PAGE_NO": 1,
+        "END_PAGE_NO": 2
+    },
+    {
+        "DOC_TYPE": "PACKING_LIST",
+        "CUSTOMER_NAME": "DEF Manufacturing",
+        "PIECES": 100,
+        "WEIGHT": 2500.0,
+        "DOC_TYPE_CONFIDENCE": 0.88,
+        "TOTAL_PAGES": 1,
+        "START_PAGE_NO": 3,
+        "END_PAGE_NO": 3
+    }
+]
+"""
 
 @dataclass
 class SplitResult:
@@ -27,15 +109,17 @@ class SplitResult:
 class DocumentSplitter:
     """Splits PDFs into individual documents based on AI classification."""
 
-    def __init__(self, api_key: str, model: str = 'gemini-2.5-flash'):
+    def __init__(self, api_key: str, model: str = 'gemini-2.5-flash', timeout_seconds: int = 300):
         """Initialize the document splitter.
 
         Args:
             api_key: Google Gemini API key
             model: Gemini model to use
+            timeout_seconds: Timeout for Gemini API calls in seconds (default: 300)
         """
         self.client = genai.Client(api_key=api_key)
         self.model = model
+        self.timeout_seconds = timeout_seconds
 
     def extract_documents(self, pdf_path: str) -> List[Dict[str, Any]]:
         """Extract document information from a PDF using Gemini.
@@ -45,25 +129,36 @@ class DocumentSplitter:
 
         Returns:
             List of document dictionaries with extraction data
+
+        Raises:
+            ValueError: If Gemini response is invalid
+            TimeoutError: If API call exceeds timeout
         """
         with open(pdf_path, 'rb') as f:
             pdf_data = f.read()
 
-        response = self.client.models.generate_content(
-            model=self.model,
-            contents=[
-                types.Content(
-                    role="user",
-                    parts=[
-                        types.Part.from_bytes(
-                            data=pdf_data,
-                            mime_type="application/pdf"
-                        ),
-                        types.Part.from_text(text=UNIFIED_EXTRACTION_PROMPT)
-                    ]
+        try:
+            response = self.client.models.generate_content(
+                model=self.model,
+                contents=[
+                    types.Content(
+                        role="user",
+                        parts=[
+                            types.Part.from_bytes(
+                                data=pdf_data,
+                                mime_type="application/pdf"
+                            ),
+                            types.Part.from_text(text=UNIFIED_EXTRACTION_PROMPT)
+                        ]
+                    )
+                ],
+                config=types.GenerateContentConfig(
+                    timeout=self.timeout_seconds
                 )
-            ]
-        )
+            )
+        except Exception as e:
+            logger.error(f"Gemini API call failed: {e}")
+            raise
 
         result_text = response.text.strip()
         result_text = self._clean_json_response(result_text)
@@ -72,6 +167,13 @@ class DocumentSplitter:
             documents = json.loads(result_text)
             if not isinstance(documents, list):
                 documents = [documents]
+
+            MAX_OUTPUT_FILES = 100
+            if len(documents) > MAX_OUTPUT_FILES:
+                raise ValueError(
+                    f"Too many documents returned by AI: {len(documents)} (max: {MAX_OUTPUT_FILES})"
+                )
+
             return documents
         except json.JSONDecodeError as e:
             logger.error(f"Failed to parse JSON response: {e}")
