@@ -12,7 +12,7 @@ from ..utils import extract_pdf_pages
 
 logger = logging.getLogger(__name__)
 
-UNIFIED_EXTRACTION_PROMPT = """You are an AI assistant specialized in analyzing unclassified PDF documents. Your task is to identify distinct documents within the file, classify them, and extract structured data.
+DOCUMENT_EXTRACTION_PROMPT = """You are an AI assistant specialized in analyzing unclassified PDF documents. Your task is to identify distinct documents within the file, classify them, and extract structured data.
 
 The input PDF may contain a single document or multiple documents of different types merged together. You must detect the boundaries of each document.
 
@@ -148,7 +148,7 @@ class DocumentSplitter:
                                 data=pdf_data,
                                 mime_type="application/pdf"
                             ),
-                            types.Part.from_text(text=UNIFIED_EXTRACTION_PROMPT)
+                            types.Part.from_text(text=DOCUMENT_EXTRACTION_PROMPT)
                         ]
                     )
                 ],
