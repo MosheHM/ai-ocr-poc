@@ -12,6 +12,7 @@ from typing import Optional
 from modules.azure import AzureStorageClient
 from modules.document_splitter.splitter import DocumentSplitter
 from modules.utils import create_results_zip
+from modules.config import get_app_config, AppConfig
 from modules.validators import (
     ValidatedRequest,
     ValidationError,
@@ -25,13 +26,35 @@ from modules.validators import (
 
 app = func.FunctionApp()
 
-ALLOWED_INPUT_CONTAINERS = ['processing-input', 'trusted-uploads']
-RESULTS_CONTAINER = os.getenv('RESULTS_CONTAINER', 'processing-results')
-GEMINI_MODEL = os.getenv('GEMINI_MODEL', 'gemini-2.5-flash')
-GEMINI_TIMEOUT_SECONDS = int(os.getenv('GEMINI_TIMEOUT_SECONDS', '300'))
-
+_app_config: Optional[AppConfig] = None
 _storage_client: Optional[AzureStorageClient] = None
 _document_splitter: Optional[DocumentSplitter] = None
+
+
+def get_config() -> AppConfig:
+    """Get or create application configuration singleton.
+
+    Returns:
+        Application configuration
+
+    Raises:
+        ConfigurationError: If configuration is invalid
+    """
+    global _app_config
+
+    if _app_config is None:
+        try:
+            _app_config = get_app_config()
+            logging.info(
+                f"Application configured for {_app_config.environment} environment: "
+                f"blob_storage={_app_config.storage.account_name}, "
+                f"queue_storage={_app_config.queue_storage.account_name}, "
+                f"model={_app_config.gemini_model}"
+            )
+        except Exception as e:
+            raise ConfigurationError(f"Failed to load application configuration: {e}")
+
+    return _app_config
 
 
 
@@ -47,16 +70,18 @@ def get_storage_client() -> AzureStorageClient:
     global _storage_client
 
     if _storage_client is None:
-        account_name = os.getenv('AZURE_STORAGE_ACCOUNT_NAME')
-        access_key = os.getenv('AZURE_STORAGE_ACCESS_KEY')
-
-        if not account_name or not access_key:
-            raise ConfigurationError("AZURE_STORAGE_ACCOUNT_NAME and AZURE_STORAGE_ACCESS_KEY not configured")
+        config = get_config()
 
         try:
-            _storage_client = AzureStorageClient(account_name, access_key)
+            _storage_client = AzureStorageClient(
+                config.storage.account_name,
+                config.storage.access_key
+            )
             _storage_client.blob_service_client.get_service_properties()
-            logging.info("Storage client initialized successfully")
+            logging.info(
+                f"Storage client initialized for {config.environment} environment: "
+                f"{config.storage.account_name}"
+            )
         except Exception as e:
             raise ConfigurationError(f"Failed to initialize storage client: {e}")
 
@@ -75,13 +100,18 @@ def get_document_splitter() -> DocumentSplitter:
     global _document_splitter
 
     if _document_splitter is None:
-        api_key = os.getenv('GEMINI_API_KEY')
-        if not api_key:
-            raise ConfigurationError("GEMINI_API_KEY not configured")
+        config = get_config()
 
         try:
-            _document_splitter = DocumentSplitter(api_key, GEMINI_MODEL, GEMINI_TIMEOUT_SECONDS)
-            logging.info(f"Document splitter initialized with model: {GEMINI_MODEL}")
+            _document_splitter = DocumentSplitter(
+                config.gemini_api_key,
+                config.gemini_model,
+                config.gemini_timeout_seconds
+            )
+            logging.info(
+                f"Document splitter initialized for {config.environment} environment: "
+                f"model={config.gemini_model}, timeout={config.gemini_timeout_seconds}s"
+            )
         except Exception as e:
             raise ConfigurationError(f"Failed to initialize document splitter: {e}")
 
@@ -322,11 +352,11 @@ def send_error_result(
 
 @app.queue_trigger(
     arg_name="msg",
-    queue_name="processing-tasks",
+    queue_name="tasks",
     connection="AzureWebJobsStorage")
 @app.queue_output(
     arg_name="outputQueue",
-    queue_name="processing-tasks-results",
+    queue_name="results",
     connection="AzureWebJobsStorage")
 def process_pdf_file(msg: func.QueueMessage, outputQueue: func.Out[str]) -> None:
     """Process PDF document from queue trigger.
@@ -353,12 +383,13 @@ def process_pdf_file(msg: func.QueueMessage, outputQueue: func.Out[str]) -> None
     correlation_key = "UNKNOWN"
 
     try:
+        config = get_config()
         storage_client = get_storage_client()
         document_splitter = get_document_splitter()
 
         validated_request = ValidatedRequest.from_queue_message(
             msg.get_body(),
-            ALLOWED_INPUT_CONTAINERS
+            config.storage.input_container
         )
         correlation_key = validated_request.correlation_key
 
@@ -388,7 +419,7 @@ def process_pdf_file(msg: func.QueueMessage, outputQueue: func.Out[str]) -> None
             storage_client,
             zip_path,
             correlation_key,
-            RESULTS_CONTAINER
+            config.storage.results_container
         )
 
         send_success_result(outputQueue, correlation_key, zip_url)

@@ -55,7 +55,7 @@ def validate_correlation_key(key: str) -> str:
     return key
 
 
-def validate_blob_url(url: str, allowed_containers: List[str]) -> str:
+def validate_blob_url(url: str, allowed_container: str) -> str:
     """Validate blob URL is from authorized Azure Storage account.
 
     Prevents SSRF attacks by ensuring URL points to Azure Blob Storage
@@ -63,7 +63,7 @@ def validate_blob_url(url: str, allowed_containers: List[str]) -> str:
 
     Args:
         url: Blob URL to validate
-        allowed_containers: List of allowed container names
+        allowed_container: Allowed container name
 
     Returns:
         Validated blob URL
@@ -103,10 +103,10 @@ def validate_blob_url(url: str, allowed_containers: List[str]) -> str:
         raise ValidationError(f"Invalid blob URL path format: {parsed.path}")
 
     container = path_parts[0]
-    if container not in allowed_containers:
+    if container != allowed_container:
         raise ValidationError(
             f"Unauthorized container: {container}. "
-            f"Allowed containers: {', '.join(allowed_containers)}"
+            f"Allowed container: {allowed_container}"
         )
 
     return url

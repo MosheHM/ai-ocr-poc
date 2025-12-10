@@ -1,0 +1,31 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=YOUR_STORAGE_ACCOUNT;AccountKey=YOUR_STORAGE_KEY;EndpointSuffix=core.windows.net",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+
+    "ENVIRONMENT": "production",
+
+    "GEMINI_API_KEY": "your-gemini-api-key-here",
+    "GEMINI_MODEL": "gemini-2.5-flash",
+    "GEMINI_TIMEOUT_SECONDS": "300",
+
+    "AZURE_STORAGE_ACCOUNT_NAME": "YOUR_STORAGE_ACCOUNT",
+    "AZURE_STORAGE_ACCESS_KEY": "YOUR_STORAGE_KEY",
+
+    "INPUT_CONTAINER": "input-files",
+    "RESULTS_CONTAINER": "processing-results",
+
+    "COMMENT_QUEUE_STORAGE": "Optional: Use separate storage account for queues (defaults to same as blob storage)",
+    "QUEUE_STORAGE_ACCOUNT_NAME": "YOUR_QUEUE_STORAGE_ACCOUNT",
+    "QUEUE_STORAGE_ACCESS_KEY": "YOUR_QUEUE_STORAGE_KEY",
+    "TASKS_QUEUE": "processing-tasks",
+    "RESULTS_QUEUE": "processing-tasks-results"
+  },
+  "Host": {
+    "LocalHttpPort": 7071,
+    "CORS": "*",
+    "CORSCredentials": false
+  },
+  "ConnectionStrings": {}
+}

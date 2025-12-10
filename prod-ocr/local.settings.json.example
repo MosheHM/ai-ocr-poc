@@ -1,0 +1,31 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+
+    "ENVIRONMENT": "development",
+
+    "GEMINI_API_KEY": "your-gemini-api-key-here",
+    "GEMINI_MODEL": "gemini-2.5-flash",
+    "GEMINI_TIMEOUT_SECONDS": "300",
+
+    "AZURE_STORAGE_ACCOUNT_NAME": "devstoreaccount1",
+    "AZURE_STORAGE_ACCESS_KEY": "example/K1SZFPtwoNMlqhKBSwCD/bA==",
+
+    "INPUT_CONTAINER": "dev-input-files",
+    "RESULTS_CONTAINER": "dev-processing-results",
+
+    "COMMENT_QUEUE_STORAGE": "Optional: Use separate storage account for queues (defaults to same as blob storage)",
+    "QUEUE_STORAGE_ACCOUNT_NAME": "",
+    "QUEUE_STORAGE_ACCESS_KEY": "",
+    "TASKS_QUEUE": "processing-tasks",
+    "RESULTS_QUEUE": "processing-tasks-results"
+  },
+  "Host": {
+    "LocalHttpPort": 7071,
+    "CORS": "*",
+    "CORSCredentials": false
+  },
+  "ConnectionStrings": {}
+}

@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 from azure.storage.queue import QueueClient
 
 from modules.azure import AzureStorageClient
+from modules.config import get_storage_config, get_queue_storage_config
 from modules.validators import validate_correlation_key, ValidationError
 
 # Load environment variables
@@ -46,16 +47,16 @@ def main():
 
     args = parser.parse_args()
 
-    # Validate required environment variables
-    storage_account_name = os.getenv('AZURE_STORAGE_ACCOUNT_NAME')
-    storage_access_key = os.getenv('AZURE_STORAGE_ACCESS_KEY')
-
-    if not storage_account_name or not storage_access_key:
-        print("Error: AZURE_STORAGE_ACCOUNT_NAME and AZURE_STORAGE_ACCESS_KEY environment variables not set")
-        print("Please set them in your .env file")
+    try:
+        storage_config = get_storage_config()
+        queue_storage_config = get_queue_storage_config()
+        print(f"Using blob storage: {storage_config.account_name}")
+        print(f"Using queue storage: {queue_storage_config.account_name}")
+    except ValueError as e:
+        print(f"Error: {e}")
+        print("Please set the required environment variables in your .env file")
         sys.exit(1)
 
-    # Validate correlation key if provided
     if args.correlation_key:
         try:
             args.correlation_key = validate_correlation_key(args.correlation_key)
@@ -72,15 +73,18 @@ def main():
     print()
 
     try:
-        # Initialize clients
-        # Create queue client using account URL
-        account_url = f"https://{storage_account_name}.queue.core.windows.net"
+
+        # Use queue-specific storage config for queue operations
+        account_url = f"https://{queue_storage_config.account_name}.queue.core.windows.net"
         queue_client = QueueClient(
             account_url=account_url,
             queue_name=args.queue,
-            credential=storage_access_key
+            credential=queue_storage_config.access_key
         )
-        storage_client = AzureStorageClient(storage_account_name, storage_access_key) if args.download else None
+        storage_client = AzureStorageClient(
+            storage_config.account_name,
+            storage_config.access_key
+        ) if args.download else None
 
         # Check messages
         found_count = 0

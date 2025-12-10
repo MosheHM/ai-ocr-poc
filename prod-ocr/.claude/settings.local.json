@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(findstr:*)",
-      "Bash(dir /b /s \"C:\\Users\\MosheHM\\OneDrive - amital.co.il\\Desktop\\ocr resources\\ai-ocr-poc\\prod-ocr\\modules\\*.py\")"
+      "Bash(dir /b /s \"C:\\Users\\MosheHM\\OneDrive - amital.co.il\\Desktop\\ocr resources\\ai-ocr-poc\\prod-ocr\\modules\\*.py\")",
+      "Bash(chmod:*)"
     ],
     "deny": [],
     "ask": []
