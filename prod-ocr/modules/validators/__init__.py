@@ -1,4 +1,5 @@
 """Input validation and sanitization."""
+from .errors import ProcessingError, ErrorSeverity, ConfigurationError, ValidationError
 from .input_validator import (
     validate_correlation_key,
     validate_blob_url,
@@ -7,7 +8,6 @@ from .input_validator import (
     sanitize_url_for_logging,
     sanitize_error_message
 )
-from .errors import ProcessingError, ErrorSeverity, ConfigurationError
 
 __all__ = [
     'validate_correlation_key',
@@ -18,5 +18,7 @@ __all__ = [
     'sanitize_error_message',
     'ProcessingError',
     'ErrorSeverity',
-    'ConfigurationError'
+    'ConfigurationError',
+    'ValidationError'
 ]
+

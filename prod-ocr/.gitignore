@@ -16,6 +16,11 @@ local.settings.json
 bin/
 obj/
 
+# Azurite (local Azure Storage emulator)
+__azurite_db_*.json
+__blobstorage__/
+__queuestorage__/
+
 # Environment
 .env
 
@@ -24,7 +29,7 @@ split_output/
 results/
 
 # IDE
-.vscode/
+
 .idea/
 *.swp
 *.swo
@@ -33,3 +38,8 @@ results/
 # OS
 .DS_Store
 Thumbs.db
+
+# azurite
+__azurite_db_*.json
+__blobstorage__/
+__queuestorage__/

@@ -10,9 +10,9 @@ from pypdf import PdfReader
 from .errors import ValidationError
 
 CORRELATION_KEY_PATTERN = re.compile(r'^[a-zA-Z0-9\-_]{1,128}$')
-MAX_PDF_SIZE_BYTES = 100 * 1024 * 1024  # 100 MB
+MAX_PDF_SIZE_BYTES = 10000 * 1024 * 1024  # 10000 MB
 MAX_PAGES = 500
-MAX_OUTPUT_FILES = 100
+MAX_OUTPUT_FILES = 1000
 ALLOWED_BLOB_DOMAINS = ['.blob.core.windows.net']
 
 

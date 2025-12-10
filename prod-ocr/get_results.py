@@ -103,13 +103,11 @@ def main():
             try:
                 result = json.loads(message.content)
 
-                # Extract correlation key
                 correlation_key = result.get('correlationKey')
                 if not correlation_key:
                     print(f"Warning: Message missing correlationKey, skipping")
                     continue
 
-                # Filter by correlation key if specified
                 if args.correlation_key and correlation_key != args.correlation_key:
                     continue
 
@@ -146,7 +144,6 @@ def main():
 
                             except Exception as e:
                                 print(f"Error downloading results: {e}")
-                                # Don't delete message on download error
                                 continue
 
                 else:
@@ -155,7 +152,6 @@ def main():
 
                 print()
 
-                # Delete message after successful processing
                 try:
                     queue_client.delete_message(message.id, message.pop_receipt)
                     print("Message removed from queue")
@@ -164,7 +160,6 @@ def main():
 
                 print()
 
-                # If we found the specific correlation key, we're done
                 if args.correlation_key and correlation_key == args.correlation_key:
                     break
 

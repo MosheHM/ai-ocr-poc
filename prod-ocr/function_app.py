@@ -34,6 +34,7 @@ _storage_client: Optional[AzureStorageClient] = None
 _document_splitter: Optional[DocumentSplitter] = None
 
 
+
 def get_storage_client() -> AzureStorageClient:
     """Get or create storage client singleton.
 
