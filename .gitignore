@@ -49,3 +49,8 @@ extraction_results_*.json
 /samples/split_output/
 prod-ocr/.env
 prod-ocr/split_output/
+
+# azurite
+__azurite_db_*.json
+__blobstorage__/
+__queuestorage__/

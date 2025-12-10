@@ -47,3 +47,8 @@ __queuestorage__/
 #claude
 
 .CLAUDE.md
+
+# uv
+.venv/
+uv.lock
+.python-version

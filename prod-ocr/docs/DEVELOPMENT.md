@@ -26,6 +26,9 @@ python --version
 # Azure Functions Core Tools v4
 func --version
 
+# uv (Python package manager)
+uv --version
+
 # Git
 git --version
 ```
@@ -33,32 +36,28 @@ git --version
 ### 2. Clone and Setup
 
 ```bash
+git clone <repository-url>
 # Clone repository
 git clone <repository-url>
 cd ai-ocr-poc/prod-ocr
 
-# Create virtual environment
-python -m venv .venv
+# Install dependencies (creates .venv automatically)
+uv sync --extra dev --active
 
-# Activate virtual environment
+# Optional: activate the virtual environment if you want to run python directly
 # Windows PowerShell
 .venv\Scripts\Activate.ps1
 # Windows CMD
 .venv\Scripts\activate.bat
 # macOS/Linux
 source .venv/bin/activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Install dev dependencies (if available)
-pip install pytest pytest-cov black flake8
 ```
 
 ### 3. Configure Environment
 
 ```bash
 # Copy example env file
+```bash
 cp .env.example .env
 
 # Edit .env with your credentials
@@ -70,11 +69,13 @@ cp .env.example .env
 ### 4. IDE Setup (VS Code)
 
 Recommended extensions:
+
 - Python (ms-python.python)
 - Azure Functions (ms-azuretools.vscode-azurefunctions)
 - Pylance (ms-python.vscode-pylance)
 
 Settings (`.vscode/settings.json`):
+
 ```json
 {
   "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
@@ -89,7 +90,7 @@ Settings (`.vscode/settings.json`):
 
 ## Project Structure
 
-```
+```text
 prod-ocr/
 ├── function_app.py           # Azure Function entry point (queue trigger)
 ├── send_task.py              # Client script: upload PDF & send task to queue
@@ -259,21 +260,21 @@ logger.critical(f"Configuration error: {error}")
 
 ```bash
 # Run all tests
-pytest
+uv run pytest
 
 # Run with coverage
-pytest --cov=modules --cov-report=html
+uv run pytest --cov=modules --cov-report=html
 
 # Run specific test file
-pytest tests/test_splitter.py
+uv run pytest tests/test_splitter.py
 
 # Run specific test
-pytest tests/test_splitter.py::test_extract_documents
+uv run pytest tests/test_splitter.py::test_extract_documents
 ```
 
 ### Test Structure
 
-```
+```text
 tests/
 ├── __init__.py
 ├── conftest.py           # Shared fixtures
@@ -322,23 +323,23 @@ class TestDocumentSplitter:
 
 1. Update the extraction prompt in `splitter.py`:
 
-```python
-UNIFIED_EXTRACTION_PROMPT = """
-...
-Supported Document Types:
-1. Invoice
-2. OBL (Ocean Bill of Lading)
-3. HAWB (House Air Waybill)
-4. Packing List
-5. NEW_TYPE (Description)  # Add new type
+    ```python
+    UNIFIED_EXTRACTION_PROMPT = """
+    ...
+    Supported Document Types:
+    1. Invoice
+    2. OBL (Ocean Bill of Lading)
+    3. HAWB (House Air Waybill)
+    4. Packing List
+    5. NEW_TYPE (Description)  # Add new type
 
-...
-TYPE 5: NEW_TYPE
-- FIELD_1: Description
-- FIELD_2: Description
-...
-"""
-```
+    ...
+    TYPE 5: NEW_TYPE
+    - FIELD_1: Description
+    - FIELD_2: Description
+    ...
+    """
+    ```
 
 2. Update documentation with new schema
 
@@ -348,24 +349,24 @@ TYPE 5: NEW_TYPE
 
 1. Add validation function in `input_validator.py`:
 
-```python
-def validate_new_field(value: str) -> str:
-    """Validate new field.
-    
-    Args:
-        value: Field value to validate
-        
-    Returns:
-        Validated value
-        
-    Raises:
-        ValidationError: If validation fails
-    """
-    if not value:
-        raise ValidationError("Field is required")
-    # Add validation logic
-    return value
-```
+   ```python
+   def validate_new_field(value: str) -> str:
+       """Validate new field.
+       
+       Args:
+           value: Field value to validate
+           
+       Returns:
+           Validated value
+           
+       Raises:
+           ValidationError: If validation fails
+       """
+       if not value:
+           raise ValidationError("Field is required")
+       # Add validation logic
+       return value
+   ```
 
 2. Export in `validators/__init__.py`
 

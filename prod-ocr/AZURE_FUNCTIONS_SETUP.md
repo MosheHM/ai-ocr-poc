@@ -21,7 +21,10 @@ npm install -g azure-functions-core-tools@4
 ### 2. Install Python Dependencies
 
 ```bash
-pip install -r requirements.txt
+uv sync --extra dev --active
+
+# Keep requirements.txt in sync for Azure Functions packaging
+uv export --format requirements-txt --no-hashes --output requirements.txt
 ```
 
 ### 3. Configure Local Settings
@@ -52,6 +55,7 @@ func start
 ```
 
 The function will:
+
 - Listen to `processing-tasks` queue
 - Process messages automatically when they arrive
 - Send results to `processing-tasks-results` queue
@@ -62,10 +66,10 @@ In another terminal:
 
 ```bash
 # Send a task
-python send_task.py "path/to/document.pdf"
+uv run python send_task.py "path/to/document.pdf"
 
 # Check results
-python get_results.py --correlation-key=<key-from-previous-command>
+uv run python get_results.py --correlation-key=<key-from-previous-command>
 ```
 
 ## Azure Deployment
@@ -183,14 +187,15 @@ AZURE_STORAGE_ACCESS_KEY="<storage-access-key>"
 Then use the client scripts as normal:
 
 ```bash
-python send_task.py "document.pdf"
-python get_results.py --correlation-key=<key>
+uv run python send_task.py "document.pdf"
+uv run python get_results.py --correlation-key=<key>
 ```
 
 ## Message Format
 
 ### Input Message (processing-tasks queue)
 
+ 
 ```json
 {
   "correlationKey": "unique-identifier",
@@ -201,6 +206,7 @@ python get_results.py --correlation-key=<key>
 ### Output Message (processing-tasks-results queue)
 
 Success:
+ 
 ```json
 {
   "correlationKey": "unique-identifier",
@@ -210,6 +216,7 @@ Success:
 ```
 
 Failure:
+ 
 ```json
 {
   "correlationKey": "unique-identifier",
@@ -221,11 +228,13 @@ Failure:
 ## Scaling Configuration
 
 ### Consumption Plan (Default)
+
 - Automatic scaling based on queue length
 - Cost-effective for variable workloads
 - Cold start ~5-10 seconds
 
 ### Premium Plan (For Higher Performance)
+
 ```bash
 az functionapp plan create \
   --resource-group $RESOURCE_GROUP \
@@ -242,6 +251,7 @@ az functionapp update \
 ```
 
 Benefits:
+
 - No cold starts
 - Faster execution
 - VNet integration available
@@ -282,17 +292,21 @@ func azure functionapp logstream $FUNCTION_APP
 ### Common Issues
 
 **Function not triggering:**
+
 - Check queue exists: `az storage queue list --connection-string "$STORAGE_CONNECTION"`
 - Verify AzureWebJobsStorage setting
 - Check Application Insights for errors
 
 **Processing failures:**
+
 - Check GEMINI_API_KEY is set correctly
 - Verify blob container permissions
 - Review function logs for specific errors
 
 **Timeout issues:**
+
 - Increase function timeout in host.json:
+
   ```json
   {
     "functionTimeout": "00:10:00"
@@ -308,18 +322,19 @@ func azure functionapp logstream $FUNCTION_APP
 
 ## Security Best Practices
 
-1. **Store secrets in Azure Key Vault:**
-```bash
-az keyvault create --name ocr-keyvault --resource-group $RESOURCE_GROUP --location $LOCATION
-az keyvault secret set --vault-name ocr-keyvault --name gemini-api-key --value "your-key"
+- **Store secrets in Azure Key Vault:**
 
-# Reference in Function App
-az functionapp config appsettings set \
-  --name $FUNCTION_APP \
-  --resource-group $RESOURCE_GROUP \
-  --settings "GEMINI_API_KEY=@Microsoft.KeyVault(SecretUri=https://ocr-keyvault.vault.azure.net/secrets/gemini-api-key/)"
-```
+  ```bash
+  az keyvault create --name ocr-keyvault --resource-group $RESOURCE_GROUP --location $LOCATION
+  az keyvault secret set --vault-name ocr-keyvault --name gemini-api-key --value "your-key"
 
-2. **Enable Managed Identity for blob access**
-3. **Use private endpoints for storage account**
-4. **Enable Azure Defender for Storage**
+  # Reference in Function App
+  az functionapp config appsettings set \
+    --name $FUNCTION_APP \
+    --resource-group $RESOURCE_GROUP \
+    --settings "GEMINI_API_KEY=@Microsoft.KeyVault(SecretUri=https://ocr-keyvault.vault.azure.net/secrets/gemini-api-key/)"
+  ```
+
+- **Enable Managed Identity for blob access**
+- **Use private endpoints for storage account**
+- **Enable Azure Defender for Storage**

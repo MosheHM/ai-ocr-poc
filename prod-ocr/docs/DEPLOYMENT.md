@@ -24,7 +24,7 @@ This guide covers setup, configuration, and deployment of the AI Document Proces
 | Python | 3.9+ | Runtime environment |
 | Azure Functions Core Tools | 4.x | Local development and deployment |
 | Azure CLI | 2.x | Azure resource management |
-| pip | Latest | Package management |
+| uv | Latest | Python dependency management |
 
 ### Required Accounts
 
@@ -60,17 +60,14 @@ az --version
 # Navigate to project directory
 cd prod-ocr
 
-# Create virtual environment
-python -m venv .venv
+# Install dependencies (creates .venv automatically)
+uv sync --extra dev
 
-# Activate virtual environment
+# Optional: activate virtual environment
 # Windows
 .venv\Scripts\activate
 # macOS/Linux
 source .venv/bin/activate
-
-# Install dependencies
-pip install -r requirements.txt
 ```
 
 ### 2. Configure Environment
@@ -297,10 +294,16 @@ jobs:
       with:
         python-version: '3.11'
     
+    - name: Install uv
+      run: python -m pip install uv
+
     - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r prod-ocr/requirements.txt
+      working-directory: prod-ocr
+      run: uv sync --frozen
+
+    - name: Export requirements for Azure Functions packaging
+      working-directory: prod-ocr
+      run: uv export --format requirements-txt --no-hashes --output requirements.txt
     
     - name: Deploy to Azure Functions
       uses: Azure/functions-action@v1
@@ -348,12 +351,12 @@ az functionapp log tail \
 cd prod-ocr
 
 # Send a test task
-python send_task.py "test_document.pdf"
+uv run python send_task.py "test_document.pdf"
 
 # Wait for processing (check logs)
 
 # Retrieve results
-python get_results.py --correlation-key=<key_from_send_task>
+uv run python get_results.py --correlation-key=<key_from_send_task>
 ```
 
 ### 4. Monitor in Azure Portal

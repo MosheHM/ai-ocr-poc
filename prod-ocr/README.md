@@ -9,7 +9,7 @@ This folder contains a self-contained version of the document splitting workflow
 - `send_task.py` – Client script for sending tasks to Azure Queue.
 - `get_results.py` – Client script for retrieving results from Azure Queue.
 - `modules/` – Core modules including document splitter and Azure storage helpers.
-- `requirements.txt` – runtime dependencies.
+- `requirements.txt` – runtime dependencies (exported from uv for Azure Functions tooling).
 - `host.json` / `local.settings.json` – Azure Functions configuration.
 - `.env` – **not committed**. Copy `.env.example` and configure credentials.
 
@@ -18,9 +18,9 @@ This folder contains a self-contained version of the document splitting workflow
 ### Local Mode (Direct Processing)
 
 ```bash
-pip install -r requirements.txt
+uv sync --extra dev
 cp .env.example .env  # Set GEMINI_API_KEY
-python split_documents.py "path/to/file.pdf" --output-dir="out"
+uv run python split_documents.py "path/to/file.pdf" --output-dir="out"
 ```
 
 The script defaults to writing results into `prod-ocr/split_output` when no `--output-dir` is provided.
@@ -53,13 +53,16 @@ Test the Azure Function locally:
 
 ```bash
 # Install dependencies
-pip install -r requirements.txt
+uv sync --extra dev
 
 # Start the function
-func start
+uv run func start
 ```
 
 The function will automatically trigger when messages are added to `processing-tasks` queue.
+
+> Keep `requirements.txt` in sync for Azure Functions tooling by running:
+> `uv export --format requirements-txt --no-hashes --output requirements.txt`
 
 #### Deploying to Azure
 
@@ -80,10 +83,10 @@ Use the example client to send processing tasks:
 
 ```bash
 # Upload PDF and send task message
-python send_task.py "path/to/document.pdf"
+uv run python send_task.py "path/to/document.pdf"
 
 # Custom container and correlation key
-python send_task.py "document.pdf" --container=my-input --correlation-key=custom-id-123
+uv run python send_task.py "document.pdf" --container=my-input --correlation-key=custom-id-123
 ```
 
 #### Message Flow
@@ -98,6 +101,7 @@ python send_task.py "document.pdf" --container=my-input --correlation-key=custom
 #### Message Structures
 
 **Task Message** (sent to `processing-tasks`):
+
 ```json
 {
   "correlationKey": "unique-id",
@@ -108,6 +112,7 @@ python send_task.py "document.pdf" --container=my-input --correlation-key=custom
 **Result Message** (sent to `processing-tasks-results`):
 
 Success:
+
 ```json
 {
   "correlationKey": "unique-id",
@@ -117,6 +122,7 @@ Success:
 ```
 
 Failure:
+
 ```json
 {
   "correlationKey": "unique-id",

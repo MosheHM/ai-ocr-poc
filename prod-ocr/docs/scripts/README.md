@@ -15,13 +15,13 @@ Command-line scripts for interacting with the document processing system.
 
 Upload a PDF to Azure Storage and send a processing task to the queue.
 
-### Usage
+### Usage (get_results.py)
 
 ```bash
-python send_task.py <pdf_path> [options]
+uv run python send_task.py <pdf_path> [options]
 ```
 
-### Arguments
+### Arguments (get_results.py)
 
 | Argument | Required | Default | Description |
 |----------|----------|---------|-------------|
@@ -30,22 +30,22 @@ python send_task.py <pdf_path> [options]
 | `--queue` | ❌ | processing-tasks | Queue name for tasks |
 | `--correlation-key` | ❌ | Generated UUID | Custom correlation key |
 
-### Examples
+### Examples (get_results.py)
 
 ```bash
 # Basic usage (generates correlation key)
-python send_task.py "document.pdf"
+uv run python send_task.py "document.pdf"
 
 # Custom correlation key
-python send_task.py "document.pdf" --correlation-key=task-2024-001
+uv run python send_task.py "document.pdf" --correlation-key=task-2024-001
 
 # Custom container
-python send_task.py "document.pdf" --container=my-uploads
+uv run python send_task.py "document.pdf" --container=my-uploads
 ```
 
-### Output
+### Output (get_results.py)
 
-```
+```text
 ============================================================
 SENDING PROCESSING TASK
 ============================================================
@@ -68,10 +68,11 @@ Correlation Key: a1b2c3d4-e5f6-7890-abcd-ef1234567890
 
 Use this correlation key to retrieve results:
   python get_results.py --correlation-key=a1b2c3d4-e5f6-7890-abcd-ef1234567890
+  uv run python get_results.py --correlation-key=a1b2c3d4-e5f6-7890-abcd-ef1234567890
 ============================================================
 ```
 
-### What It Does
+### What It Does (get_results.py)
 
 1. Validates the PDF file (size, pages, format)
 2. Validates/generates correlation key
@@ -87,7 +88,7 @@ Poll the results queue and optionally download processed files.
 ### Usage
 
 ```bash
-python get_results.py [options]
+uv run python get_results.py [options]
 ```
 
 ### Arguments
@@ -103,16 +104,16 @@ python get_results.py [options]
 
 ```bash
 # Check all results
-python get_results.py
+uv run python get_results.py
 
 # Filter by correlation key
-python get_results.py --correlation-key=a1b2c3d4-e5f6-7890-abcd-ef1234567890
+uv run python get_results.py --correlation-key=a1b2c3d4-e5f6-7890-abcd-ef1234567890
 
 # Download results
-python get_results.py --correlation-key=task-001 --download=./results
+uv run python get_results.py --correlation-key=task-001 --download=./results
 
 # Check more messages
-python get_results.py --max-messages=50
+uv run python get_results.py --max-messages=50
 ```
 
 ### Output
@@ -169,7 +170,7 @@ Scripts automatically load from `.env` file in the project directory.
 
 ## Message Flow
 
-```
+```text
 send_task.py                          Azure                          get_results.py
      │                                  │                                  │
      │  1. Upload PDF                   │                                  │
@@ -189,4 +190,4 @@ send_task.py                          Azure                          get_results
      │                                  │                                  │
      │                                  │  6. Download ZIP                 │
      │                                  │─────────────────────────────────▶│
-```
+  ```
