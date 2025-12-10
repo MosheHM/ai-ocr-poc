@@ -4,3 +4,9 @@ python-dotenv
 azure-storage-blob
 azure-storage-queue
 azure-functions
+
+# Testing dependencies
+pytest>=7.0.0
+pytest-mock>=3.10.0
+pytest-cov>=4.0.0
+responses>=0.23.0
