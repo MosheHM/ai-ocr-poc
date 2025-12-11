@@ -11,11 +11,9 @@ from modules.azure import AzureStorageClient
 from modules.config import get_storage_config, get_queue_storage_config
 from modules.validators import validate_correlation_key, ValidationError
 
-# Load environment variables
 load_dotenv(Path(__file__).parent / '.env')
 
-# Queue configuration
-VISIBILITY_TIMEOUT_SECONDS = 300  # 5 minutes
+VISIBILITY_TIMEOUT_SECONDS = 300
 
 
 def main():

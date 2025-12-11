@@ -1,4 +1,35 @@
 """Azure Function for processing document tasks from queue."""
+import sys
+import os
+from pathlib import Path
+
+# Workaround for Azure Functions worker shadowing google package
+# Prioritize local .venv site-packages to ensure google-genai is found
+try:
+    current_dir = Path(__file__).parent
+    
+    # 1. Try local .venv (Linux/Mac structure)
+    venv_site_packages = current_dir / ".venv" / "lib" / f"python{sys.version_info.major}.{sys.version_info.minor}" / "site-packages"
+    if venv_site_packages.exists():
+        sys.path.insert(0, str(venv_site_packages))
+        logging.info(f"Added to sys.path: {venv_site_packages}")
+        
+    else:
+        # 2. Try local .venv (Windows structure)
+        venv_site_packages_win = current_dir / ".venv" / "Lib" / "site-packages"
+        if venv_site_packages_win.exists():
+            sys.path.insert(0, str(venv_site_packages_win))
+            logging.info(f"Added to sys.path: {venv_site_packages_win}")
+            
+    # 3. Try Azure's .python_packages (Production / --build-native-deps)
+    azure_site_packages = current_dir / ".python_packages" / "lib" / "site-packages"
+    if azure_site_packages.exists():
+        sys.path.insert(0, str(azure_site_packages))
+        logging.info(f"Added to sys.path: {azure_site_packages}")
+        
+except Exception:
+    pass
+
 import azure.functions as func
 import logging
 import json
@@ -350,13 +381,16 @@ def send_error_result(
     logging.error(f"Error result sent for: {correlation_key[:8]}...")
 
 
+config = get_config()
+
+
 @app.queue_trigger(
     arg_name="msg",
-    queue_name="tasks",
+    queue_name=config.queue_storage.tasks_queue,
     connection="AzureWebJobsStorage")
 @app.queue_output(
     arg_name="outputQueue",
-    queue_name="results",
+    queue_name=config.queue_storage.results_queue,
     connection="AzureWebJobsStorage")
 def process_pdf_file(msg: func.QueueMessage, outputQueue: func.Out[str]) -> None:
     """Process PDF document from queue trigger.
@@ -383,7 +417,6 @@ def process_pdf_file(msg: func.QueueMessage, outputQueue: func.Out[str]) -> None
     correlation_key = "UNKNOWN"
 
     try:
-        config = get_config()
         storage_client = get_storage_client()
         document_splitter = get_document_splitter()
 

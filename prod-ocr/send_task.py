@@ -12,7 +12,6 @@ from modules.azure import AzureStorageClient
 from modules.config import get_storage_config, get_queue_storage_config
 from modules.validators import validate_correlation_key, validate_pdf_file, ValidationError
 
-# Load environment variables
 load_dotenv(Path(__file__).parent / '.env')
 
 
@@ -28,7 +27,7 @@ def main():
     parser.add_argument(
         '--container',
         help='Azure Blob container for input PDFs',
-        default='processing-input'
+        default='ocr-processing-input'
     )
     parser.add_argument(
         '--queue',

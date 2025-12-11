@@ -141,23 +141,14 @@ def get_queue_storage_config(environment: Optional[Environment] = None) -> Queue
     logger.info(f"Loading queue storage configuration for environment: {environment}")
 
     if environment == 'development':
-        # For development, check if separate queue storage is configured
-        # Otherwise use same as blob storage (Azurite)
         account_name = os.getenv('DEV_QUEUE_STORAGE_ACCOUNT_NAME')
-
         access_key = os.getenv('DEV_QUEUE_STORAGE_ACCESS_KEY')
         connection_string = os.getenv('DEV_QUEUE_STORAGE_CONNECTION_STRING')
         tasks_queue = os.getenv('DEV_TASKS_QUEUE')
         results_queue = os.getenv('DEV_RESULTS_QUEUE')
-    else:  # production
-        # For production, check if separate queue storage is configured
-        # Otherwise use same as blob storage
-        account_name = (
-            os.getenv('PROD_QUEUE_STORAGE_ACCOUNT_NAME')
-        )
-        access_key = (
-            os.getenv('PROD_QUEUE_STORAGE_ACCESS_KEY')
-        )
+    else:
+        account_name = os.getenv('PROD_QUEUE_STORAGE_ACCOUNT_NAME')
+        access_key = os.getenv('PROD_QUEUE_STORAGE_ACCESS_KEY')
         connection_string = os.getenv('PROD_QUEUE_STORAGE_CONNECTION_STRING')
         tasks_queue = os.getenv('PROD_TASKS_QUEUE')
         results_queue = os.getenv('PROD_RESULTS_QUEUE')
