@@ -93,19 +93,19 @@ if (-not $azCliAvailable) {
     Write-Host "  https://docs.microsoft.com/en-us/cli/azure/install-azure-cli"
     Write-Host
     Write-Host "Or use Azure Storage Explorer to manually create:"
-    Write-Host "  Containers: dev-input-files, dev-processing-results"
+    Write-Host "  Containers: ocr-processing-input, ocr-processing-result"
     Write-Host "  Queues: processing-tasks, processing-tasks-results"
 } else {
     Write-Host "Creating blob containers..." -ForegroundColor Yellow
 
     try {
-        az storage container create --name dev-input-files --connection-string $connectionString 2>&1 | Out-Null
+        az storage container create --name ocr-processing-input --connection-string $connectionString 2>&1 | Out-Null
     } catch {
         Write-Host "  (container may already exist)" -ForegroundColor Gray
     }
 
     try {
-        az storage container create --name dev-processing-results --connection-string $connectionString 2>&1 | Out-Null
+        az storage container create --name ocr-processing-result --connection-string $connectionString 2>&1 | Out-Null
     } catch {
         Write-Host "  (container may already exist)" -ForegroundColor Gray
     }

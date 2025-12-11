@@ -83,26 +83,39 @@ def validate_blob_url(url: str, allowed_container: str) -> str:
         raise ValidationError(f"Invalid URL format: {e}")
 
     if parsed.scheme != 'https':
-        raise ValidationError(f"Blob URL must use HTTPS, got: {parsed.scheme}")
+        # Allow http for local development
+        if parsed.hostname not in ('127.0.0.1', 'localhost'):
+            raise ValidationError(f"Blob URL must use HTTPS, got: {parsed.scheme}")
 
     if not parsed.hostname:
         raise ValidationError("Blob URL missing hostname")
 
-    is_valid_domain = any(
-        parsed.hostname.endswith(domain)
-        for domain in ALLOWED_BLOB_DOMAINS
-    )
-    if not is_valid_domain:
-        raise ValidationError(
-            f"URL must be Azure Blob Storage (*.blob.core.windows.net), "
-            f"got: {parsed.hostname}"
+    # Allow local devstoreaccount1
+    if parsed.hostname in ('127.0.0.1', 'localhost'):
+        pass
+    else:
+        is_valid_domain = any(
+            parsed.hostname.endswith(domain)
+            for domain in ALLOWED_BLOB_DOMAINS
         )
+        if not is_valid_domain:
+            raise ValidationError(
+                f"URL must be Azure Blob Storage (*.blob.core.windows.net), "
+                f"got: {parsed.hostname}"
+            )
 
     path_parts = parsed.path.strip('/').split('/')
-    if len(path_parts) < 2:
-        raise ValidationError(f"Invalid blob URL path format: {parsed.path}")
 
-    container = path_parts[0]
+    # Handle Azurite local emulator path format
+    if parsed.hostname in ('127.0.0.1', 'localhost') and len(path_parts) > 0 and path_parts[0] == 'devstoreaccount1':
+        if len(path_parts) < 3:
+            raise ValidationError(f"Invalid blob URL path format for local emulator: {parsed.path}")
+        container = path_parts[1]
+    else:
+        if len(path_parts) < 2:
+            raise ValidationError(f"Invalid blob URL path format: {parsed.path}")
+        container = path_parts[0]
+
     if container != allowed_container:
         raise ValidationError(
             f"Unauthorized container: {container}. "

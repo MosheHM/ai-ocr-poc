@@ -3,16 +3,21 @@ import os
 import sys
 import uuid
 import json
+import base64
 import argparse
 from pathlib import Path
 from dotenv import load_dotenv
+
+# Add root directory to sys.path to allow importing modules
+sys.path.append(str(Path(__file__).parent.parent.parent))
+
 from azure.storage.queue import QueueClient
 
 from modules.azure import AzureStorageClient
 from modules.config import get_storage_config, get_queue_storage_config
 from modules.validators import validate_correlation_key, validate_pdf_file, ValidationError
 
-load_dotenv(Path(__file__).parent / '.env')
+load_dotenv(Path(__file__).parent.parent.parent / '.env')
 
 
 def main():
@@ -139,9 +144,13 @@ def main():
             "pdfBlobUrl": pdf_url
         }
 
+        message_content = json.dumps(task_message)
+        # Encode to base64
+        encoded_message = base64.b64encode(message_content.encode('utf-8')).decode('utf-8')
+
         # Send message to queue
         print(f"Sending task message to queue '{args.queue}'...")
-        queue_client.send_message(json.dumps(task_message))
+        queue_client.send_message(encoded_message)
         print("Task message sent successfully!")
         print()
 

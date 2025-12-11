@@ -52,3 +52,16 @@ CLAUDE.md
 .venv/
 uv.lock
 .python-version
+
+# Logs
+*.log
+debug.log
+func.log
+
+# Coverage
+htmlcov/
+.coverage
+.coverage.*
+
+# Azurite Config
+AzuriteConfig

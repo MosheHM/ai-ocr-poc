@@ -2,16 +2,21 @@
 import os
 import sys
 import json
+import base64
 import argparse
 from pathlib import Path
 from dotenv import load_dotenv
+
+# Add root directory to sys.path to allow importing modules
+sys.path.append(str(Path(__file__).parent.parent.parent))
+
 from azure.storage.queue import QueueClient
 
 from modules.azure import AzureStorageClient
 from modules.config import get_storage_config, get_queue_storage_config
 from modules.validators import validate_correlation_key, ValidationError
 
-load_dotenv(Path(__file__).parent / '.env')
+load_dotenv(Path(__file__).parent.parent.parent / '.env')
 
 VISIBILITY_TIMEOUT_SECONDS = 300
 
@@ -111,7 +116,17 @@ def main():
                 break
 
             try:
-                result = json.loads(message.content)
+                content = message.content
+                try:
+                    result = json.loads(content)
+                except json.JSONDecodeError:
+                    # Try base64 decoding
+                    try:
+                        decoded = base64.b64decode(content).decode('utf-8')
+                        result = json.loads(decoded)
+                    except Exception:
+                        print(f"Failed to decode message content: {content[:100]}...")
+                        raise
 
                 correlation_key = result.get('correlationKey')
                 if not correlation_key:

@@ -106,7 +106,8 @@ def get_storage_client() -> AzureStorageClient:
         try:
             _storage_client = AzureStorageClient(
                 config.storage.account_name,
-                config.storage.access_key
+                config.storage.access_key,
+                config.storage.connection_string
             )
             _storage_client.blob_service_client.get_service_properties()
             logging.info(

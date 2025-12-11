@@ -91,14 +91,14 @@ if ! command -v az &> /dev/null; then
     echo "  https://docs.microsoft.com/en-us/cli/azure/install-azure-cli"
     echo
     echo "Or use Azure Storage Explorer to manually create:"
-    echo "  Containers: dev-input-files, dev-processing-results"
+    echo "  Containers: ocr-processing-input, ocr-processing-result"
     echo "  Queues: processing-tasks, processing-tasks-results"
 else
     echo "Creating blob containers..."
-    az storage container create --name dev-input-files \
+    az storage container create --name ocr-processing-input \
         --connection-string "$CONNECTION_STRING" || echo "  (container may already exist)"
 
-    az storage container create --name dev-processing-results \
+    az storage container create --name ocr-processing-result \
         --connection-string "$CONNECTION_STRING" || echo "  (container may already exist)"
 
     echo

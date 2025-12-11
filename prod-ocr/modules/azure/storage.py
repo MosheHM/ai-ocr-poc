@@ -20,19 +20,25 @@ RETRY_DELAY_SECONDS = 2
 class AzureStorageClient:
     """Client for Azure Blob Storage operations with automatic retry."""
 
-    def __init__(self, account_name: str, access_key: str):
+    def __init__(self, account_name: str, access_key: str, connection_string: str = None):
         """Initialize Azure Storage client.
 
         Args:
             account_name: Azure Storage account name
             access_key: Azure Storage access key
+            connection_string: Optional connection string (overrides account_name/key)
         """
-        account_url = f"https://{account_name}.blob.core.windows.net"
-
-        self.blob_service_client = BlobServiceClient(
-            account_url=account_url,
-            credential=access_key
-        )
+        self.account_name = account_name
+        self.access_key = access_key
+        
+        if connection_string:
+            self.blob_service_client = BlobServiceClient.from_connection_string(connection_string)
+        else:
+            account_url = f"https://{account_name}.blob.core.windows.net"
+            self.blob_service_client = BlobServiceClient(
+                account_url=account_url,
+                credential=access_key
+            )
 
     def _sanitize_path_for_logging(self, path: str) -> str:
         """Sanitize file path for logging (show only filename).
@@ -67,7 +73,7 @@ class AzureStorageClient:
 
         for attempt in range(MAX_RETRIES):
             try:
-                blob_client = BlobClient.from_blob_url(blob_url)
+                blob_client = BlobClient.from_blob_url(blob_url, credential=self.access_key)
 
                 logger.info(
                     f"Downloading blob (attempt {attempt + 1}/{MAX_RETRIES}): "

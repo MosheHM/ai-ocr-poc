@@ -153,12 +153,15 @@ class DocumentSplitter:
                     )
                 ],
                 config=types.GenerateContentConfig(
-                    timeout=self.timeout_seconds
                 )
             )
         except Exception as e:
             logger.error(f"Gemini API call failed: {e}")
             raise
+
+        if not response.text:
+            logger.error(f"Gemini returned empty response. Finish reason: {response.candidates[0].finish_reason if response.candidates else 'Unknown'}")
+            raise ValueError("Gemini returned empty response")
 
         result_text = response.text.strip()
         result_text = self._clean_json_response(result_text)
