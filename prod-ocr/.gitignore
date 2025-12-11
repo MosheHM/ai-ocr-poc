@@ -65,3 +65,7 @@ htmlcov/
 
 # Azurite Config
 AzuriteConfig
+
+# Debug files and scripts
+tests/debug/
+debug_func/

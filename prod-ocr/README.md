@@ -4,15 +4,14 @@ This folder contains a self-contained version of the document splitting workflow
 
 ## Structure
 
-- `split_documents.py` – CLI entry point for splitting PDFs locally.
-- `function_app.py` – Azure Function with queue trigger for processing tasks.
-- `send_task.py` – Client script for sending tasks to Azure Queue.
-- `get_results.py` – Client script for retrieving results from Azure Queue.
-- `modules/` – Core modules including document splitter and Azure storage helpers.
-- `modules/config.py` – Environment-based configuration management.
-- `requirements.txt` – runtime dependencies (exported from uv for Azure Functions tooling).
-- `host.json` / `local.settings.json` – Azure Functions configuration.
-- `.env` – **not committed**. Copy `.env.example` and configure credentials.
+- `function_app.py` – Azure Function with queue trigger for processing tasks
+- `send_task.py` – Client script for sending tasks to Azure Queue
+- `get_results.py` – Client script for retrieving results from Azure Queue
+- `modules/` – Core modules including document splitter and Azure storage helpers
+- `modules/config.py` – Environment-based configuration management
+- `requirements.txt` – Runtime dependencies (exported from uv for Azure Functions tooling)
+- `host.json` / `local.settings.json` – Azure Functions configuration
+- `.env` – **Not committed**. Copy `.env.example` and configure credentials
 
 ## Environment Configuration
 
@@ -67,13 +66,23 @@ cp local.settings.json.production.example local.settings.json.production
 
 ### Local Mode (Direct Processing)
 
-```bash
-uv sync --extra dev
-cp .env.example .env  # Set GEMINI_API_KEY
-uv run python split_documents.py "path/to/file.pdf" --output-dir="out"
+Process PDFs directly using Python code:
+
+```python
+from modules.document_splitter import split_and_extract_documents
+
+# Split a PDF into separate documents
+result = split_and_extract_documents(
+    pdf_path="path/to/file.pdf",
+    output_dir="split_output"
+)
+
+print(f"Found {result['total_documents']} documents")
+for doc in result['documents']:
+    print(f"  {doc['DOC_TYPE']}: {doc['FILE_PATH']}")
 ```
 
-The script defaults to writing results into `prod-ocr/split_output` when no `--output-dir` is provided.
+Make sure to set `GEMINI_API_KEY` in your `.env` file first.
 
 ### Queue Mode (Azure Functions)
 

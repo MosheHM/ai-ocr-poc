@@ -180,7 +180,6 @@ class DocumentSplitter:
             return documents
         except json.JSONDecodeError as e:
             logger.error(f"Failed to parse JSON response: {e}")
-            logger.debug(f"Raw response: {result_text}")
             raise ValueError(f"Invalid JSON response from Gemini: {e}")
 
     def split_and_save(

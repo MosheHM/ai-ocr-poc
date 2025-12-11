@@ -5,7 +5,8 @@
       "Bash(dir /b /s \"C:\\Users\\MosheHM\\OneDrive - amital.co.il\\Desktop\\ocr resources\\ai-ocr-poc\\prod-ocr\\modules\\*.py\")",
       "Bash(chmod:*)",
       "Bash(cd:*)",
-      "Bash(uv run pytest:*)"
+      "Bash(uv run pytest:*)",
+      "Bash(cd /mnt/c/Users/MosheHM/OneDrive\\ -\\ amital.co.il/Desktop/ocr\\ resources/ai-ocr-poc/prod-ocr:*)"
     ],
     "deny": [],
     "ask": []
