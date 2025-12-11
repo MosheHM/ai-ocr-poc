@@ -3,7 +3,7 @@ import os
 import json
 import logging
 from pathlib import Path
-from typing import Dict, List, Any, Optional
+from typing import Dict, List, Any, Optional, TypedDict
 from dataclasses import dataclass
 from google import genai
 from google.genai import types
@@ -11,6 +11,13 @@ from google.genai import types
 from ..utils import extract_pdf_pages
 
 logger = logging.getLogger(__name__)
+
+
+class PageInfo(TypedDict):
+    """Type definition for page rotation information."""
+    PAGE_NO: int
+    ROTATION: int  # 0, 90, 180, or 270 degrees clockwise
+
 
 DOCUMENT_EXTRACTION_PROMPT = """You are an AI assistant specialized in analyzing unclassified PDF documents. Your task is to identify distinct documents within the file, classify them, and extract structured data.
 
@@ -32,6 +39,9 @@ COMMON FIELDS (Required for ALL types):
 - TOTAL_PAGES: Integer (count of pages for this specific document)
 - START_PAGE_NO: Integer (1-based page number where this document starts in the PDF)
 - END_PAGE_NO: Integer (1-based page number where this document ends in the PDF)
+- PAGES_INFO: Array of objects for each page in this document with:
+  - PAGE_NO: Integer (1-based page number in the original PDF)
+  - ROTATION: Integer representing the clockwise rotation needed to make the page upright (0, 90, 180, or 270 degrees). Use 0 if the page is already correctly oriented.
 
 TYPE 1: INVOICE
 - INVOICE_NO: Extract as-is, preserving all characters (e.g., "0004833/E")
@@ -66,6 +76,7 @@ TYPE 4: PACKING LIST
 3. Ensure START_PAGE_NO and END_PAGE_NO reflect the specific location of the document.
 4. Date format must be exactly 16 digits: YYYYMMDD00000000.
 5. INCOTERMS must be ONLY the code (3 letters usually), no location or extra text.
+6. PAGES_INFO must include an entry for every page in the document with its rotation. ROTATION values must be 0, 90, 180, or 270.
 
 --- EXAMPLE OUTPUT ---
 [
@@ -80,7 +91,11 @@ TYPE 4: PACKING LIST
         "DOC_TYPE_CONFIDENCE": 0.95,
         "TOTAL_PAGES": 2,
         "START_PAGE_NO": 1,
-        "END_PAGE_NO": 2
+        "END_PAGE_NO": 2,
+        "PAGES_INFO": [
+            {"PAGE_NO": 1, "ROTATION": 0},
+            {"PAGE_NO": 2, "ROTATION": 90}
+        ]
     },
     {
         "DOC_TYPE": "PACKING_LIST",
@@ -90,7 +105,10 @@ TYPE 4: PACKING LIST
         "DOC_TYPE_CONFIDENCE": 0.88,
         "TOTAL_PAGES": 1,
         "START_PAGE_NO": 3,
-        "END_PAGE_NO": 3
+        "END_PAGE_NO": 3,
+        "PAGES_INFO": [
+            {"PAGE_NO": 3, "ROTATION": 0}
+        ]
     }
 ]
 """
@@ -104,6 +122,7 @@ class SplitResult:
     total_pages: int
     extracted_data: Dict[str, Any]
     output_file_path: str
+    pages_info: List[PageInfo]
 
 
 class DocumentSplitter:

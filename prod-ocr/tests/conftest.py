@@ -128,7 +128,11 @@ def mock_gemini_invoice_response() -> List[Dict[str, Any]]:
             "DOC_TYPE_CONFIDENCE": 0.95,
             "TOTAL_PAGES": 2,
             "START_PAGE_NO": 1,
-            "END_PAGE_NO": 2
+            "END_PAGE_NO": 2,
+            "PAGES_INFO": [
+                {"PAGE_NO": 1, "ROTATION": 0},
+                {"PAGE_NO": 2, "ROTATION": 0}
+            ]
         }
     ]
 
@@ -146,7 +150,10 @@ def mock_gemini_obl_response() -> List[Dict[str, Any]]:
             "DOC_TYPE_CONFIDENCE": 0.9,
             "TOTAL_PAGES": 1,
             "START_PAGE_NO": 1,
-            "END_PAGE_NO": 1
+            "END_PAGE_NO": 1,
+            "PAGES_INFO": [
+                {"PAGE_NO": 1, "ROTATION": 0}
+            ]
         }
     ]
 
@@ -166,7 +173,10 @@ def mock_gemini_hawb_response() -> List[Dict[str, Any]]:
             "DOC_TYPE_CONFIDENCE": 0.92,
             "TOTAL_PAGES": 1,
             "START_PAGE_NO": 1,
-            "END_PAGE_NO": 1
+            "END_PAGE_NO": 1,
+            "PAGES_INFO": [
+                {"PAGE_NO": 1, "ROTATION": 0}
+            ]
         }
     ]
 
@@ -183,7 +193,10 @@ def mock_gemini_packing_list_response() -> List[Dict[str, Any]]:
             "DOC_TYPE_CONFIDENCE": 0.88,
             "TOTAL_PAGES": 1,
             "START_PAGE_NO": 1,
-            "END_PAGE_NO": 1
+            "END_PAGE_NO": 1,
+            "PAGES_INFO": [
+                {"PAGE_NO": 1, "ROTATION": 0}
+            ]
         }
     ]
 
@@ -203,7 +216,11 @@ def mock_gemini_multi_document_response() -> List[Dict[str, Any]]:
             "DOC_TYPE_CONFIDENCE": 0.95,
             "TOTAL_PAGES": 2,
             "START_PAGE_NO": 1,
-            "END_PAGE_NO": 2
+            "END_PAGE_NO": 2,
+            "PAGES_INFO": [
+                {"PAGE_NO": 1, "ROTATION": 0},
+                {"PAGE_NO": 2, "ROTATION": 90}
+            ]
         },
         {
             "DOC_TYPE": "OBL",
@@ -213,7 +230,10 @@ def mock_gemini_multi_document_response() -> List[Dict[str, Any]]:
             "DOC_TYPE_CONFIDENCE": 0.9,
             "TOTAL_PAGES": 1,
             "START_PAGE_NO": 3,
-            "END_PAGE_NO": 3
+            "END_PAGE_NO": 3,
+            "PAGES_INFO": [
+                {"PAGE_NO": 3, "ROTATION": 0}
+            ]
         },
         {
             "DOC_TYPE": "PACKING_LIST",
@@ -223,7 +243,11 @@ def mock_gemini_multi_document_response() -> List[Dict[str, Any]]:
             "DOC_TYPE_CONFIDENCE": 0.88,
             "TOTAL_PAGES": 2,
             "START_PAGE_NO": 4,
-            "END_PAGE_NO": 5
+            "END_PAGE_NO": 5,
+            "PAGES_INFO": [
+                {"PAGE_NO": 4, "ROTATION": 180},
+                {"PAGE_NO": 5, "ROTATION": 0}
+            ]
         }
     ]
 

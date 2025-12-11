@@ -141,6 +141,34 @@ class TestDocumentSchemaValidation:
         assert doc["END_PAGE_NO"] >= doc["START_PAGE_NO"]
         assert doc["TOTAL_PAGES"] > 0
 
+    def test_pages_info_structure(self, mock_gemini_invoice_response):
+        """Test PAGES_INFO has correct structure with page numbers and rotations."""
+        doc = mock_gemini_invoice_response[0]
+        
+        assert "PAGES_INFO" in doc
+        pages_info = doc["PAGES_INFO"]
+        assert isinstance(pages_info, list)
+        assert len(pages_info) == doc["TOTAL_PAGES"]
+        
+        for page_info in pages_info:
+            assert "PAGE_NO" in page_info
+            assert "ROTATION" in page_info
+            assert isinstance(page_info["PAGE_NO"], int)
+            assert isinstance(page_info["ROTATION"], int)
+            assert page_info["ROTATION"] in [0, 90, 180, 270]
+
+    def test_pages_info_covers_all_pages(self, mock_gemini_multi_document_response):
+        """Test PAGES_INFO covers all pages for each document."""
+        for doc in mock_gemini_multi_document_response:
+            pages_info = doc["PAGES_INFO"]
+            start_page = doc["START_PAGE_NO"]
+            end_page = doc["END_PAGE_NO"]
+            
+            # Check we have info for all pages in the document
+            page_numbers = [p["PAGE_NO"] for p in pages_info]
+            expected_pages = list(range(start_page, end_page + 1))
+            assert sorted(page_numbers) == expected_pages
+
     def test_invoice_date_format(self, mock_gemini_invoice_response):
         """Test INVOICE_DATE is 16-digit format YYYYMMDDHHMMSSSS."""
         doc = mock_gemini_invoice_response[0]
