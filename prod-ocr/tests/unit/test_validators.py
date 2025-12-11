@@ -80,40 +80,40 @@ class TestValidateBlobUrl:
     """Tests for validate_blob_url function."""
 
     @pytest.fixture
-    def allowed_containers(self):
-        """Default allowed containers."""
-        return ["processing-input", "trusted-uploads"]
+    def allowed_container(self):
+        """Default allowed container."""
+        return "processing-input"
 
-    def test_valid_url(self, allowed_containers):
+    def test_valid_url(self, allowed_container):
         """Test valid Azure Blob URL."""
         url = "https://myaccount.blob.core.windows.net/processing-input/test.pdf"
-        result = validate_blob_url(url, allowed_containers)
+        result = validate_blob_url(url, allowed_container)
         assert result == url
 
-    def test_valid_url_trusted_container(self, allowed_containers):
+    def test_valid_url_trusted_container(self):
         """Test valid URL with trusted-uploads container."""
         url = "https://myaccount.blob.core.windows.net/trusted-uploads/docs/file.pdf"
-        result = validate_blob_url(url, allowed_containers)
+        result = validate_blob_url(url, "trusted-uploads")
         assert result == url
 
-    def test_empty_url_raises_error(self, allowed_containers):
+    def test_empty_url_raises_error(self, allowed_container):
         """Test empty URL raises error."""
         with pytest.raises(ValidationError, match="Blob URL is required"):
-            validate_blob_url("", allowed_containers)
+            validate_blob_url("", allowed_container)
 
-    def test_url_too_long_raises_error(self, allowed_containers):
+    def test_url_too_long_raises_error(self, allowed_container):
         """Test URL exceeding 2048 characters raises error."""
         url = "https://a.blob.core.windows.net/processing-input/" + "x" * 2050
         with pytest.raises(ValidationError, match="Blob URL too long"):
-            validate_blob_url(url, allowed_containers)
+            validate_blob_url(url, allowed_container)
 
-    def test_http_url_raises_error(self, allowed_containers):
+    def test_http_url_raises_error(self, allowed_container):
         """Test HTTP (non-HTTPS) URL raises error."""
         url = "http://myaccount.blob.core.windows.net/processing-input/test.pdf"
         with pytest.raises(ValidationError, match="must use HTTPS"):
-            validate_blob_url(url, allowed_containers)
+            validate_blob_url(url, allowed_container)
 
-    def test_non_azure_domain_raises_error(self, allowed_containers):
+    def test_non_azure_domain_raises_error(self, allowed_container):
         """Test non-Azure Blob domain raises error (SSRF protection)."""
         urls = [
             "https://evil.com/malware.pdf",
@@ -123,19 +123,19 @@ class TestValidateBlobUrl:
         ]
         for url in urls:
             with pytest.raises(ValidationError, match="must be Azure Blob Storage"):
-                validate_blob_url(url, allowed_containers)
+                validate_blob_url(url, allowed_container)
 
-    def test_unauthorized_container_raises_error(self, allowed_containers):
+    def test_unauthorized_container_raises_error(self, allowed_container):
         """Test unauthorized container raises error."""
         url = "https://myaccount.blob.core.windows.net/unauthorized-container/test.pdf"
         with pytest.raises(ValidationError, match="Unauthorized container"):
-            validate_blob_url(url, allowed_containers)
+            validate_blob_url(url, allowed_container)
 
-    def test_missing_blob_path_raises_error(self, allowed_containers):
+    def test_missing_blob_path_raises_error(self, allowed_container):
         """Test URL without blob path raises error."""
         url = "https://myaccount.blob.core.windows.net/processing-input"
         with pytest.raises(ValidationError, match="Invalid blob URL path format"):
-            validate_blob_url(url, allowed_containers)
+            validate_blob_url(url, allowed_container)
 
 
 @pytest.mark.unit
@@ -223,23 +223,23 @@ class TestValidatedRequest:
 
     def test_from_queue_message_valid(self, valid_queue_message_bytes):
         """Test creating ValidatedRequest from valid message."""
-        allowed = ["processing-input", "trusted-uploads"]
+        allowed = "processing-input"
         request = ValidatedRequest.from_queue_message(valid_queue_message_bytes, allowed)
-        
+
         assert request.correlation_key == "test-correlation-key-123"
         assert "processing-input" in request.pdf_blob_url
 
     def test_from_queue_message_invalid_container(self, valid_queue_message_bytes):
         """Test ValidatedRequest rejects unauthorized container."""
-        allowed = ["other-container"]
+        allowed = "other-container"
         with pytest.raises(ValidationError, match="Unauthorized container"):
             ValidatedRequest.from_queue_message(valid_queue_message_bytes, allowed)
 
     def test_immutability(self, valid_queue_message_bytes):
         """Test ValidatedRequest properties are read-only."""
-        allowed = ["processing-input"]
+        allowed = "processing-input"
         request = ValidatedRequest.from_queue_message(valid_queue_message_bytes, allowed)
-        
+
         # Attempting to modify should raise AttributeError
         with pytest.raises(AttributeError):
             request.correlation_key = "new-key"

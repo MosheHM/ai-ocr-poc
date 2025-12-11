@@ -4,7 +4,7 @@ import json
 import os
 from pathlib import Path, PurePosixPath
 from urllib.parse import urlparse
-from typing import List, TypedDict
+from typing import TypedDict
 from pypdf import PdfReader
 
 from .errors import ValidationError
@@ -246,13 +246,13 @@ class ValidatedRequest:
     def from_queue_message(
         cls,
         message_body: bytes,
-        allowed_containers: List[str]
+        allowed_container: str
     ) -> 'ValidatedRequest':
         """Parse, validate, and create validated request from queue message.
 
         Args:
             message_body: Raw message bytes from queue
-            allowed_containers: List of allowed blob containers
+            allowed_container: Allowed blob container name
 
         Returns:
             Validated and immutable request object
@@ -263,7 +263,7 @@ class ValidatedRequest:
         request = parse_queue_message(message_body)
 
         correlation_key = validate_correlation_key(request['correlationKey'])
-        pdf_blob_url = validate_blob_url(request['pdfBlobUrl'], allowed_containers)
+        pdf_blob_url = validate_blob_url(request['pdfBlobUrl'], allowed_container)
 
         return cls(correlation_key, pdf_blob_url)
 
@@ -277,11 +277,15 @@ def sanitize_url_for_logging(url: str) -> str:
         url: URL to sanitize
 
     Returns:
-        Sanitized URL without query parameters
+        Sanitized URL without query parameters (max 100 chars + "...")
     """
     try:
         parsed = urlparse(url)
-        return f"{parsed.scheme}://{parsed.netloc}{parsed.path}"
+        sanitized = f"{parsed.scheme}://{parsed.netloc}{parsed.path}"
+        # Truncate if too long (even after sanitizing)
+        if len(sanitized) > 100:
+            return sanitized[:100] + "..."
+        return sanitized
     except Exception:
         return url[:100] + "..." if len(url) > 100 else url
 

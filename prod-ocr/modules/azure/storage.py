@@ -49,8 +49,17 @@ class AzureStorageClient:
         Returns:
             Sanitized path with only filename
         """
+        if not path:
+            return ""
+
         try:
-            return Path(path).name
+            # Handle both Unix and Windows path separators
+            # Use the rightmost separator (/ or \) to extract filename
+            if '/' in path or '\\' in path:
+                # Split by both separators and get the last part
+                parts = path.replace('\\', '/').split('/')
+                return parts[-1] if parts[-1] else ""
+            return path
         except Exception:
             return "***REDACTED***"
 

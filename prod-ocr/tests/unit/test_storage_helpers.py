@@ -33,7 +33,7 @@ class TestSanitizePathForLogging:
     def test_handles_empty_string(self, storage_client):
         """Test handling empty string."""
         result = storage_client._sanitize_path_for_logging("")
-        assert result == "."  # Path("").name returns "."
+        assert result == ""  # Empty input returns empty string
 
     def test_handles_nested_path(self, storage_client):
         """Test handling deeply nested path."""
