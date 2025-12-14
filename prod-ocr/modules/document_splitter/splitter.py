@@ -359,8 +359,7 @@ class DocumentSplitter:
 
             common_fields = {
                 'DOC_TYPE', 'DOC_TYPE_CONFIDENCE', 'TOTAL_PAGES',
-                'START_PAGE_NO', 'END_PAGE_NO', 'PAGES_INFO',
-                'FILE_PATH', 'FILE_NAME'
+                'START_PAGE_NO', 'END_PAGE_NO', 'PAGES_INFO'
             }
             
             doc_data = []
@@ -373,7 +372,6 @@ class DocumentSplitter:
                     del doc[field_id]
             
             doc['DOC_DATA'] = doc_data
-            doc['FILE_NAME'] = output_filename
 
             results.append(doc)
 
