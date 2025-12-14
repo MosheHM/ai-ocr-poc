@@ -39,9 +39,6 @@ COMMON FIELDS (Required for ALL types):
 - TOTAL_PAGES: Integer (count of pages for this specific document)
 - START_PAGE_NO: Integer (1-based page number where this document starts in the PDF)
 - END_PAGE_NO: Integer (1-based page number where this document ends in the PDF)
-- PAGES_INFO: Array of objects for each page in this document with:
-  - PAGE_NO: Integer (1-based page number in the original PDF)
-  - ROTATION: Integer representing the clockwise rotation needed to make the page upright (0, 90, 180, or 270 degrees). Use 0 if the page is already correctly oriented.
 
 TYPE 1: INVOICE
 - INVOICE_NO: Extract as-is, preserving all characters (e.g., "0004833/E")
@@ -76,7 +73,6 @@ TYPE 4: PACKING LIST
 3. Ensure START_PAGE_NO and END_PAGE_NO reflect the specific location of the document.
 4. Date format must be exactly 16 digits: YYYYMMDD00000000.
 5. INCOTERMS must be ONLY the code (3 letters usually), no location or extra text.
-6. PAGES_INFO must include an entry for every page in the document with its rotation. ROTATION values must be 0, 90, 180, or 270.
 
 --- EXAMPLE OUTPUT ---
 [
@@ -91,11 +87,7 @@ TYPE 4: PACKING LIST
         "DOC_TYPE_CONFIDENCE": 0.95,
         "TOTAL_PAGES": 2,
         "START_PAGE_NO": 1,
-        "END_PAGE_NO": 2,
-        "PAGES_INFO": [
-            {"PAGE_NO": 1, "ROTATION": 0},
-            {"PAGE_NO": 2, "ROTATION": 90}
-        ]
+        "END_PAGE_NO": 2
     },
     {
         "DOC_TYPE": "PACKING_LIST",
@@ -105,11 +97,36 @@ TYPE 4: PACKING LIST
         "DOC_TYPE_CONFIDENCE": 0.88,
         "TOTAL_PAGES": 1,
         "START_PAGE_NO": 3,
-        "END_PAGE_NO": 3,
-        "PAGES_INFO": [
-            {"PAGE_NO": 3, "ROTATION": 0}
-        ]
+        "END_PAGE_NO": 3
     }
+]
+"""
+
+ROTATION_EXTRACTION_PROMPT = """You are an AI assistant specialized in analyzing PDF document page orientation. Your task is to detect the rotation needed for each page to be correctly oriented (upright for reading).
+
+For each page in the provided PDF document, determine the clockwise rotation in degrees needed to make the page upright and readable.
+
+Return a JSON ARRAY with one object per page containing:
+- PAGE_NO: Integer (1-based page number in the PDF)
+- ROTATION: Integer representing clockwise rotation needed (must be one of: 0, 90, 180, or 270 degrees)
+
+--- ROTATION GUIDELINES ---
+- 0 degrees: Page is already correctly oriented (text reads normally)
+- 90 degrees: Page needs 90° clockwise rotation (text currently reads from bottom to top)
+- 180 degrees: Page is upside down (text reads right to left, upside down)
+- 270 degrees: Page needs 270° clockwise rotation (same as 90° counter-clockwise, text currently reads from top to bottom)
+
+--- CRITICAL RULES ---
+1. Return ONLY a valid JSON array.
+2. Include an entry for EVERY page in the document.
+3. ROTATION values MUST be exactly one of: 0, 90, 180, or 270.
+4. Analyze each page independently.
+
+--- EXAMPLE OUTPUT ---
+[
+    {"PAGE_NO": 1, "ROTATION": 0},
+    {"PAGE_NO": 2, "ROTATION": 90},
+    {"PAGE_NO": 3, "ROTATION": 0}
 ]
 """
 
@@ -133,12 +150,63 @@ class DocumentSplitter:
 
         Args:
             api_key: Google Gemini API key
-            model: Gemini model to use
+            model: Gemini model to use for document extraction (default: 'gemini-2.5-flash')
             timeout_seconds: Timeout for Gemini API calls in seconds (default: 300)
         """
         self.client = genai.Client(api_key=api_key)
         self.model = model
+        self.rotation_model = 'gemini-3-pro-preview'
         self.timeout_seconds = timeout_seconds
+
+    def _call_gemini_with_pdf(
+        self,
+        pdf_data: bytes,
+        prompt: str,
+        model: Optional[str] = None
+    ) -> str:
+        """Call Gemini API with PDF data and prompt.
+
+        Args:
+            pdf_data: PDF file content as bytes
+            prompt: Text prompt for the model
+            model: Model to use (default: self.model)
+
+        Returns:
+            Response text from Gemini
+
+        Raises:
+            ValueError: If Gemini response is invalid
+            Exception: If API call fails
+        """
+        if model is None:
+            model = self.model
+
+        try:
+            response = self.client.models.generate_content(
+                model=model,
+                contents=[
+                    types.Content(
+                        role="user",
+                        parts=[
+                            types.Part.from_bytes(
+                                data=pdf_data,
+                                mime_type="application/pdf"
+                            ),
+                            types.Part.from_text(text=prompt)
+                        ]
+                    )
+                ],
+                config=types.GenerateContentConfig()
+            )
+        except Exception as e:
+            logger.error(f"Gemini API call failed (model={model}): {e}")
+            raise
+
+        if not response.text:
+            logger.error(f"Gemini returned empty response. Finish reason: {response.candidates[0].finish_reason if response.candidates else 'Unknown'}")
+            raise ValueError("Gemini returned empty response")
+
+        return response.text.strip()
 
     def extract_documents(self, pdf_path: str) -> List[Dict[str, Any]]:
         """Extract document information from a PDF using Gemini.
@@ -156,33 +224,11 @@ class DocumentSplitter:
         with open(pdf_path, 'rb') as f:
             pdf_data = f.read()
 
-        try:
-            response = self.client.models.generate_content(
-                model=self.model,
-                contents=[
-                    types.Content(
-                        role="user",
-                        parts=[
-                            types.Part.from_bytes(
-                                data=pdf_data,
-                                mime_type="application/pdf"
-                            ),
-                            types.Part.from_text(text=DOCUMENT_EXTRACTION_PROMPT)
-                        ]
-                    )
-                ],
-                config=types.GenerateContentConfig(
-                )
-            )
-        except Exception as e:
-            logger.error(f"Gemini API call failed: {e}")
-            raise
-
-        if not response.text:
-            logger.error(f"Gemini returned empty response. Finish reason: {response.candidates[0].finish_reason if response.candidates else 'Unknown'}")
-            raise ValueError("Gemini returned empty response")
-
-        result_text = response.text.strip()
+        result_text = self._call_gemini_with_pdf(
+            pdf_data,
+            DOCUMENT_EXTRACTION_PROMPT,
+            model=self.model
+        )
         result_text = self._clean_json_response(result_text)
 
         try:
@@ -200,6 +246,48 @@ class DocumentSplitter:
         except json.JSONDecodeError as e:
             logger.error(f"Failed to parse JSON response: {e}")
             raise ValueError(f"Invalid JSON response from Gemini: {e}")
+
+    def extract_rotation_info(self, pdf_path: str) -> List[PageInfo]:
+        """Extract page rotation information from a PDF using Gemini.
+
+        This method uses a dedicated LLM call with gemini-3-pro-preview to analyze
+        page orientations and determine the rotation needed for each page.
+
+        Args:
+            pdf_path: Path to the PDF file (can be a single page or multi-page document)
+
+        Returns:
+            List of PageInfo dictionaries with PAGE_NO and ROTATION for each page
+
+        Raises:
+            ValueError: If Gemini response is invalid
+        """
+        with open(pdf_path, 'rb') as f:
+            pdf_data = f.read()
+
+        logger.info(f"Extracting rotation info for: {pdf_path}")
+
+        result_text = self._call_gemini_with_pdf(
+            pdf_data,
+            ROTATION_EXTRACTION_PROMPT,
+            model=self.rotation_model
+        )
+        result_text = self._clean_json_response(result_text)
+
+        try:
+            rotation_data = json.loads(result_text)
+            if not isinstance(rotation_data, list):
+                rotation_data = [rotation_data]
+
+            for page_info in rotation_data:
+                if 'ROTATION' in page_info and page_info['ROTATION'] not in [0, 90, 180, 270]:
+                    logger.warning(f"Invalid rotation value {page_info['ROTATION']} for page {page_info.get('PAGE_NO')}, defaulting to 0")
+                    page_info['ROTATION'] = 0
+
+            return rotation_data
+        except json.JSONDecodeError as e:
+            logger.error(f"Failed to parse rotation JSON response: {e}")
+            raise ValueError(f"Invalid JSON response from Gemini rotation extraction: {e}")
 
     def split_and_save(
         self,
@@ -246,6 +334,32 @@ class DocumentSplitter:
                 f.write(pdf_bytes)
 
             logger.info(f"  Saved {doc_type} (pages {start_page}-{end_page}) to {output_filename}")
+
+
+            if doc_type != 'UNKNOWN':
+                try:
+                    rotation_info = self.extract_rotation_info(str(output_path))
+
+                    pages_info = []
+                    for page_data in rotation_info:
+                        pages_info.append({
+                            'PAGE_NO': start_page + page_data.get('PAGE_NO', 1) - 1,
+                            'ROTATION': page_data.get('ROTATION', 0)
+                        })
+
+                    doc['PAGES_INFO'] = pages_info
+                    logger.info(f"  Extracted rotation info for {len(pages_info)} pages")
+                except Exception as e:
+                    logger.warning(f"  Failed to extract rotation info for {doc_type}: {e}")
+                    doc['PAGES_INFO'] = [
+                        {'PAGE_NO': page_no, 'ROTATION': 0}
+                        for page_no in range(start_page, end_page + 1)
+                    ]
+            else:
+                doc['PAGES_INFO'] = [
+                    {'PAGE_NO': page_no, 'ROTATION': 0}
+                    for page_no in range(start_page, end_page + 1)
+                ]
 
             doc['FILE_PATH'] = str(output_path)
             doc['FILE_NAME'] = output_filename
