@@ -6,29 +6,32 @@ from pathlib import Path
 # Workaround for Azure Functions worker shadowing google package
 # Prioritize local .venv site-packages to ensure google-genai is found
 try:
+    import logging as _temp_logging
     current_dir = Path(__file__).parent
-    
+
     # 1. Try local .venv (Linux/Mac structure)
     venv_site_packages = current_dir / ".venv" / "lib" / f"python{sys.version_info.major}.{sys.version_info.minor}" / "site-packages"
     if venv_site_packages.exists():
         sys.path.insert(0, str(venv_site_packages))
-        logging.info(f"Added to sys.path: {venv_site_packages}")
-        
+        _temp_logging.info(f"Added to sys.path: {venv_site_packages.name}")
+
     else:
         # 2. Try local .venv (Windows structure)
         venv_site_packages_win = current_dir / ".venv" / "Lib" / "site-packages"
         if venv_site_packages_win.exists():
             sys.path.insert(0, str(venv_site_packages_win))
-            logging.info(f"Added to sys.path: {venv_site_packages_win}")
-            
+            _temp_logging.info(f"Added to sys.path: {venv_site_packages_win.name}")
+
     # 3. Try Azure's .python_packages (Production / --build-native-deps)
     azure_site_packages = current_dir / ".python_packages" / "lib" / "site-packages"
     if azure_site_packages.exists():
         sys.path.insert(0, str(azure_site_packages))
-        logging.info(f"Added to sys.path: {azure_site_packages}")
-        
-except Exception:
-    pass
+        _temp_logging.info(f"Added to sys.path: {azure_site_packages.name}")
+
+except Exception as e:
+    # Write to stderr for visibility if logging fails
+    import sys as _sys
+    _sys.stderr.write(f"Warning: Failed to configure Python path: {e}\n")
 
 import azure.functions as func
 import logging
@@ -57,13 +60,12 @@ from modules.validators import (
 
 app = func.FunctionApp()
 
-_app_config: Optional[AppConfig] = None
-_storage_client: Optional[AzureStorageClient] = None
-_document_splitter: Optional[DocumentSplitter] = None
+from functools import lru_cache
 
 
+@lru_cache(maxsize=1)
 def get_config() -> AppConfig:
-    """Get or create application configuration singleton.
+    """Get or create application configuration singleton (thread-safe).
 
     Returns:
         Application configuration
@@ -71,26 +73,22 @@ def get_config() -> AppConfig:
     Raises:
         ConfigurationError: If configuration is invalid
     """
-    global _app_config
-
-    if _app_config is None:
-        try:
-            _app_config = get_app_config()
-            logging.info(
-                f"Application configured for {_app_config.environment} environment: "
-                f"blob_storage={_app_config.storage.account_name}, "
-                f"queue_storage={_app_config.queue_storage.account_name}, "
-                f"model={_app_config.gemini_model}"
-            )
-        except Exception as e:
-            raise ConfigurationError(f"Failed to load application configuration: {e}")
-
-    return _app_config
+    try:
+        app_config = get_app_config()
+        logging.info(
+            f"Application configured for {app_config.environment} environment: "
+            f"blob_storage={app_config.storage.account_name}, "
+            f"queue_storage={app_config.queue_storage.account_name}, "
+            f"model={app_config.gemini_model}"
+        )
+        return app_config
+    except Exception as e:
+        raise ConfigurationError(f"Failed to load application configuration: {e}")
 
 
-
+@lru_cache(maxsize=1)
 def get_storage_client() -> AzureStorageClient:
-    """Get or create storage client singleton.
+    """Get or create storage client singleton (thread-safe).
 
     Returns:
         Initialized storage client
@@ -98,30 +96,27 @@ def get_storage_client() -> AzureStorageClient:
     Raises:
         ConfigurationError: If configuration is invalid
     """
-    global _storage_client
+    config = get_config()
 
-    if _storage_client is None:
-        config = get_config()
-
-        try:
-            _storage_client = AzureStorageClient(
-                config.storage.account_name,
-                config.storage.access_key,
-                config.storage.connection_string
-            )
-            _storage_client.blob_service_client.get_service_properties()
-            logging.info(
-                f"Storage client initialized for {config.environment} environment: "
-                f"{config.storage.account_name}"
-            )
-        except Exception as e:
-            raise ConfigurationError(f"Failed to initialize storage client: {e}")
-
-    return _storage_client
+    try:
+        storage_client = AzureStorageClient(
+            config.storage.account_name,
+            config.storage.access_key,
+            config.storage.connection_string
+        )
+        storage_client.blob_service_client.get_service_properties()
+        logging.info(
+            f"Storage client initialized for {config.environment} environment: "
+            f"{config.storage.account_name}"
+        )
+        return storage_client
+    except Exception as e:
+        raise ConfigurationError(f"Failed to initialize storage client: {e}")
 
 
+@lru_cache(maxsize=1)
 def get_document_splitter() -> DocumentSplitter:
-    """Get or create document splitter singleton.
+    """Get or create document splitter singleton (thread-safe).
 
     Returns:
         Initialized document splitter
@@ -129,25 +124,21 @@ def get_document_splitter() -> DocumentSplitter:
     Raises:
         ConfigurationError: If configuration is invalid
     """
-    global _document_splitter
+    config = get_config()
 
-    if _document_splitter is None:
-        config = get_config()
-
-        try:
-            _document_splitter = DocumentSplitter(
-                config.gemini_api_key,
-                config.gemini_model,
-                config.gemini_timeout_seconds
-            )
-            logging.info(
-                f"Document splitter initialized for {config.environment} environment: "
-                f"model={config.gemini_model}, timeout={config.gemini_timeout_seconds}s"
-            )
-        except Exception as e:
-            raise ConfigurationError(f"Failed to initialize document splitter: {e}")
-
-    return _document_splitter
+    try:
+        document_splitter = DocumentSplitter(
+            config.gemini_api_key,
+            config.gemini_model,
+            config.gemini_timeout_seconds
+        )
+        logging.info(
+            f"Document splitter initialized for {config.environment} environment: "
+            f"model={config.gemini_model}, timeout={config.gemini_timeout_seconds}s"
+        )
+        return document_splitter
+    except Exception as e:
+        raise ConfigurationError(f"Failed to initialize document splitter: {e}")
 
 
 def create_secure_temp_dir() -> Path:

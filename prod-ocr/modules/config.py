@@ -32,9 +32,9 @@ def _load_env_file():
 _load_env_file()
 
 
-@dataclass
+@dataclass(frozen=True)
 class StorageConfig:
-    """Azure Blob Storage configuration."""
+    """Azure Blob Storage configuration (immutable)."""
     account_name: str
     access_key: str
     input_container: str
@@ -42,9 +42,9 @@ class StorageConfig:
     connection_string: Optional[str] = None
 
 
-@dataclass
+@dataclass(frozen=True)
 class QueueStorageConfig:
-    """Azure Queue Storage configuration."""
+    """Azure Queue Storage configuration (immutable)."""
     account_name: str
     access_key: str
     tasks_queue: str
@@ -52,9 +52,9 @@ class QueueStorageConfig:
     connection_string: Optional[str] = None
 
 
-@dataclass
+@dataclass(frozen=True)
 class AppConfig:
-    """Application configuration."""
+    """Application configuration (immutable)."""
     environment: Environment
     storage: StorageConfig
     queue_storage: QueueStorageConfig
@@ -212,7 +212,7 @@ def get_app_config(environment: Optional[Environment] = None) -> AppConfig:
         raise ValueError("GEMINI_API_KEY environment variable not set")
 
     gemini_model = os.getenv('GEMINI_MODEL', 'gemini-2.5-flash')
-    gemini_timeout = int(os.getenv('GEMINI_TIMEOUT_SECONDS'))
+    gemini_timeout = int(os.getenv('GEMINI_TIMEOUT_SECONDS', '300'))  # Default: 5 minutes
     return AppConfig(
         environment=environment,
         storage=storage_config,

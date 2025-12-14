@@ -3,12 +3,13 @@ import os
 import json
 import logging
 from pathlib import Path
-from typing import Dict, List, Any, Optional, TypedDict
+from typing import Dict, List, Any, Optional, TypedDict, Literal
 from dataclasses import dataclass
 from google import genai
 from google.genai import types
 
 from ..utils import extract_pdf_pages
+from ..result_types import Result, success, failure, is_success
 
 logger = logging.getLogger(__name__)
 
@@ -16,7 +17,31 @@ logger = logging.getLogger(__name__)
 class PageInfo(TypedDict):
     """Type definition for page rotation information."""
     PAGE_NO: int
-    ROTATION: int  # 0, 90, 180, or 270 degrees clockwise
+    ROTATION: Literal[0, 90, 180, 270]  # 0, 90, 180, or 270 degrees clockwise
+
+
+class DocumentField(TypedDict):
+    """Type definition for extracted document field."""
+    field_id: str
+    field_value: Any
+
+
+class ExtractedDocument(TypedDict):
+    """Type definition for a single extracted document."""
+    DOC_TYPE: str
+    DOC_TYPE_CONFIDENCE: float
+    TOTAL_PAGES: int
+    START_PAGE_NO: int
+    END_PAGE_NO: int
+    PAGES_INFO: List[PageInfo]
+    DOC_DATA: List[DocumentField]
+
+
+class ExtractionResult(TypedDict):
+    """Type definition for complete extraction result."""
+    source_pdf: str
+    total_documents: int
+    documents: List[ExtractedDocument]
 
 
 DOCUMENT_EXTRACTION_PROMPT = """You are an AI assistant specialized in analyzing unclassified PDF documents. Your task is to identify distinct documents within the file, classify them, and extract structured data.
@@ -121,9 +146,9 @@ RULES:
 3. ROTATION must be exactly: 0, 90, 180, or 270
 """
 
-@dataclass
+@dataclass(frozen=True)
 class SplitResult:
-    """Result of splitting a single document from a PDF."""
+    """Result of splitting a single document from a PDF (immutable)."""
     doc_type: str
     start_page: int
     end_page: int
@@ -131,6 +156,73 @@ class SplitResult:
     extracted_data: Dict[str, Any]
     output_file_path: str
     pages_info: List[PageInfo]
+
+
+def _create_pages_info(start_page: int, end_page: int, rotation_map: Dict[int, int]) -> List[PageInfo]:
+    """Pure function: Create pages info list from rotation map.
+
+    Args:
+        start_page: First page number (inclusive)
+        end_page: Last page number (inclusive)
+        rotation_map: Mapping from page number to rotation degrees
+
+    Returns:
+        List of PageInfo with page numbers and rotations
+    """
+    return [
+        {'PAGE_NO': page_no, 'ROTATION': rotation_map.get(page_no, 0)}
+        for page_no in range(start_page, end_page + 1)
+    ]
+
+
+def _extract_doc_fields(doc: Dict[str, Any], common_fields: set) -> List[DocumentField]:
+    """Pure function: Extract non-common fields from document.
+
+    Args:
+        doc: Document dictionary
+        common_fields: Set of field names to exclude
+
+    Returns:
+        List of DocumentField with field_id and field_value
+    """
+    return [
+        {'field_id': field_id, 'field_value': field_value}
+        for field_id, field_value in doc.items()
+        if field_id not in common_fields
+    ]
+
+
+def _transform_document(
+    doc: Dict[str, Any],
+    rotation_map: Dict[int, int],
+    common_fields: set
+) -> ExtractedDocument:
+    """Pure function: Transform raw document dict to ExtractedDocument.
+
+    Args:
+        doc: Raw document dictionary from extraction
+        rotation_map: Mapping from page number to rotation
+        common_fields: Set of common field names
+
+    Returns:
+        Transformed ExtractedDocument with PAGES_INFO and DOC_DATA
+    """
+    start_page = doc.get('START_PAGE_NO', 1)
+    end_page = doc.get('END_PAGE_NO', 1)
+
+    pages_info = _create_pages_info(start_page, end_page, rotation_map)
+
+    doc_data = _extract_doc_fields(doc, common_fields)
+
+    return {
+        'DOC_TYPE': doc.get('DOC_TYPE', 'UNKNOWN'),
+        'DOC_TYPE_CONFIDENCE': doc.get('DOC_TYPE_CONFIDENCE', 0.0),
+        'TOTAL_PAGES': doc.get('TOTAL_PAGES', end_page - start_page + 1),
+        'START_PAGE_NO': start_page,
+        'END_PAGE_NO': end_page,
+        'PAGES_INFO': pages_info,
+        'DOC_DATA': doc_data
+    }
 
 
 class DocumentSplitter:
@@ -206,7 +298,7 @@ class DocumentSplitter:
             pdf_path: Path to the PDF file
 
         Returns:
-            List of document dictionaries with extraction data
+            List of raw document dictionaries with extraction data (before transformation)
 
         Raises:
             ValueError: If Gemini response is invalid
@@ -285,12 +377,41 @@ class DocumentSplitter:
             logger.error(f"Failed to parse rotation JSON response: {e}. Response text: {result_text[:200]}")
             raise ValueError(f"Invalid JSON response from Gemini rotation extraction: {e}")
 
+    def extract_rotation_info_safe(self, pdf_path: str) -> Result[List[PageInfo]]:
+        """Safely extract page rotation information with explicit error handling.
+
+        This is a safe wrapper around extract_rotation_info that returns a Result type
+        instead of raising exceptions, following functional programming patterns.
+
+        Args:
+            pdf_path: Path to the PDF file (can be a single page or multi-page document)
+
+        Returns:
+            Result containing either:
+            - Success with List[PageInfo] if extraction succeeded
+            - Failure with error message if extraction failed
+
+        Example:
+            >>> result = splitter.extract_rotation_info_safe("doc.pdf")
+            >>> if result['status'] == 'success':
+            ...     pages = result['data']
+            >>> else:
+            ...     logger.error(f"Rotation extraction failed: {result['error']}")
+        """
+        try:
+            rotation_info = self.extract_rotation_info(pdf_path)
+            return success(rotation_info)
+        except Exception as e:
+            error_msg = f"Failed to extract rotation info: {type(e).__name__}: {str(e)}"
+            logger.warning(error_msg)
+            return failure(error_msg)
+
     def split_and_save(
         self,
         pdf_path: str,
         output_dir: str,
         base_filename: Optional[str] = None
-    ) -> Dict[str, Any]:
+    ) -> ExtractionResult:
         """Extract documents from PDF, split into separate files, and save results.
 
         Args:
@@ -299,7 +420,7 @@ class DocumentSplitter:
             base_filename: Base name for output files (default: input filename)
 
         Returns:
-            Dictionary with extraction results and file locations
+            ExtractionResult with structured extraction results and file locations
         """
         pdf_path = Path(pdf_path)
         output_dir = Path(output_dir)
@@ -315,65 +436,38 @@ class DocumentSplitter:
 
         logger.info(f"Found {len(documents)} documents in PDF")
 
+        all_rotations_result = self.extract_rotation_info_safe(str(pdf_path))
+        all_rotations: Dict[int, int] = {}
+
+        if is_success(all_rotations_result):
+            rotation_data = all_rotations_result['data']
+            all_rotations = {page['PAGE_NO']: page['ROTATION'] for page in rotation_data}
+            logger.info(f"Successfully extracted rotation info for {len(all_rotations)} pages")
+        else:
+            logger.warning(f"Failed to extract rotation info for source PDF: {all_rotations_result['error']}")
+            logger.info("Will use default rotation (0°) for all pages")
+
+        common_fields = {
+            'DOC_TYPE', 'DOC_TYPE_CONFIDENCE', 'TOTAL_PAGES',
+            'START_PAGE_NO', 'END_PAGE_NO', 'PAGES_INFO'
+        }
+
         results = []
         for i, doc in enumerate(documents):
             doc_type = doc.get('DOC_TYPE', 'UNKNOWN')
             start_page = doc.get('START_PAGE_NO', 1)
             end_page = doc.get('END_PAGE_NO', 1)
-            total_pages = doc.get('TOTAL_PAGES', end_page - start_page + 1)
 
             output_filename = f"{base_filename}_{doc_type}_{i+1}_pages_{start_page}-{end_page}.pdf"
             output_path = output_dir / output_filename
-
             pdf_bytes = extract_pdf_pages(str(pdf_path), start_page, end_page)
             with open(output_path, 'wb') as f:
                 f.write(pdf_bytes)
 
             logger.info(f"  Saved {doc_type} (pages {start_page}-{end_page}) to {output_filename}")
 
-
-            if doc_type != 'UNKNOWN':
-                try:
-                    rotation_info = self.extract_rotation_info(str(output_path))
-
-                    pages_info = []
-                    for page_data in rotation_info:
-                        pages_info.append({
-                            'PAGE_NO': start_page + page_data.get('PAGE_NO', 1) - 1,
-                            'ROTATION': page_data.get('ROTATION', 0)
-                        })
-
-                    doc['PAGES_INFO'] = pages_info
-                    logger.info(f"  Extracted rotation info for {len(pages_info)} pages")
-                except Exception as e:
-                    logger.warning(f"  Failed to extract rotation info for {doc_type}: {e}")
-                    doc['PAGES_INFO'] = [
-                        {'PAGE_NO': page_no, 'ROTATION': 0}
-                        for page_no in range(start_page, end_page + 1)
-                    ]
-            else:
-                doc['PAGES_INFO'] = [
-                    {'PAGE_NO': page_no, 'ROTATION': 0}
-                    for page_no in range(start_page, end_page + 1)
-                ]
-
-            common_fields = {
-                'DOC_TYPE', 'DOC_TYPE_CONFIDENCE', 'TOTAL_PAGES',
-                'START_PAGE_NO', 'END_PAGE_NO', 'PAGES_INFO'
-            }
-            
-            doc_data = []
-            for field_id, field_value in list(doc.items()):
-                if field_id not in common_fields:
-                    doc_data.append({
-                        'field_id': field_id,
-                        'field_value': field_value
-                    })
-                    del doc[field_id]
-            
-            doc['DOC_DATA'] = doc_data
-
-            results.append(doc)
+            transformed_doc = _transform_document(doc, all_rotations, common_fields)
+            results.append(transformed_doc)
 
         final_result = {
             'source_pdf': str(pdf_path),
@@ -409,7 +503,7 @@ def split_and_extract_documents(
     api_key: Optional[str] = None,
     model: str = 'gemini-2.5-flash',
     base_filename: Optional[str] = None
-) -> Dict[str, Any]:
+) -> ExtractionResult:
     """Convenience function to extract and split documents from a PDF.
 
     Args:
@@ -420,7 +514,7 @@ def split_and_extract_documents(
         base_filename: Base name for output files (default: input filename)
 
     Returns:
-        Dictionary with extraction results and file locations
+        ExtractionResult with structured extraction results and file locations
 
     Example:
         >>> result = split_and_extract_documents(
@@ -429,7 +523,7 @@ def split_and_extract_documents(
         ... )
         >>> print(f"Found {result['total_documents']} documents")
         >>> for doc in result['documents']:
-        ...     print(f"  {doc['DOC_TYPE']}: {doc['FILE_PATH']}")
+        ...     print(f"  {doc['DOC_TYPE']}: pages {doc['START_PAGE_NO']}-{doc['END_PAGE_NO']}")
     """
     if api_key is None:
         api_key = os.getenv('GEMINI_API_KEY')
