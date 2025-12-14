@@ -4,10 +4,25 @@ This guide explains how to set up separate development and production environmen
 
 ## Overview
 
-The system supports two distinct environments:
+The system supports two distinct environments with **environment-specific configuration files**:
 
-- **Development**: Uses local Azurite emulator for Azure Storage
-- **Production**: Uses real Azure Storage accounts in the cloud
+- **Development**: Uses local Azurite emulator for Azure Storage (`.env.development`)
+- **Production**: Uses real Azure Storage accounts in the cloud (`.env.production`)
+
+## New Configuration Approach
+
+The system now uses environment-specific files instead of prefixed variables:
+
+- **`.env.development`** - Development configuration (Azurite)
+- **`.env.production`** - Production configuration (Azure Cloud)
+- **`ENVIRONMENT`** variable - Determines which file to load
+
+### Key Benefits
+
+✅ Cleaner variable names (no `DEV_` or `PROD_` prefixes)
+✅ Easy environment switching (change one variable)
+✅ Better organization (separate files per environment)
+✅ Standard industry practice
 
 ## Quick Start
 
@@ -22,24 +37,37 @@ The system supports two distinct environments:
    npx azurite
    ```
 
-2. **Copy configuration templates**:
+2. **Create environment configuration**:
    ```bash
-   cp .env.example .env
-   cp local.settings.json.example local.settings.json
+   # Copy the development template
+   cp .env.development .env.development.local
+
+   # Or create a minimal .env file to set environment
+   echo "ENVIRONMENT=development" > .env
    ```
 
-3. **Edit `.env` file**:
+3. **Edit `.env.development`** (or `.env.development.local`):
    ```bash
-   ENVIRONMENT=development
+   # Gemini AI Configuration
    GEMINI_API_KEY=your-gemini-api-key-here
+   GEMINI_MODEL=gemini-2.5-flash
+   GEMINI_TIMEOUT_SECONDS=300
 
-   # Development settings are pre-configured for Azurite
-   # No need to change DEV_AZURE_STORAGE_* values
+   # Azure Blob Storage (Azurite - already configured)
+   AZURE_STORAGE_ACCOUNT_NAME=devstoreaccount1
+   AZURE_STORAGE_ACCESS_KEY=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPtwoNMlqhKBSwCD/bA==
+
+   # Containers
+   INPUT_CONTAINER=dev-input-files
+   RESULTS_CONTAINER=dev-processing-results
+
+   # Queue Names
+   TASKS_QUEUE=processing-tasks
+   RESULTS_QUEUE=processing-tasks-results
    ```
 
 4. **Create blob containers** (one-time setup):
    ```bash
-   # Install Azure CLI or use Azure Storage Explorer
    az storage container create --name dev-input-files \
      --connection-string "UseDevelopmentStorage=true"
 
@@ -78,14 +106,35 @@ The system supports two distinct environments:
      --query '[0].value' -o tsv
    ```
 
-3. **Copy production configuration template**:
+3. **Create production configuration**:
    ```bash
-   cp local.settings.json.production.example local.settings.json.production
+   # Copy the production template
+   cp .env.production .env.production.local
+
+   # Create .env file to specify production environment
+   echo "ENVIRONMENT=production" > .env
    ```
 
-4. **Edit production configuration**:
-   - Update `local.settings.json.production` with your Azure Storage credentials
-   - Update `.env` with production values
+4. **Edit `.env.production`** (or `.env.production.local`):
+   ```bash
+   # Gemini AI Configuration
+   GEMINI_API_KEY=your-production-gemini-api-key
+   GEMINI_MODEL=gemini-2.5-flash
+   GEMINI_TIMEOUT_SECONDS=300
+
+   # Azure Blob Storage (Production)
+   AZURE_STORAGE_ACCOUNT_NAME=yourprodstorageaccount
+   AZURE_STORAGE_ACCESS_KEY=your-storage-access-key
+   AZURE_STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=yourprodstorageaccount;AccountKey=your-storage-key;EndpointSuffix=core.windows.net
+
+   # Containers
+   INPUT_CONTAINER=input-files
+   RESULTS_CONTAINER=processing-results
+
+   # Queue Names
+   TASKS_QUEUE=processing-tasks
+   RESULTS_QUEUE=processing-tasks-results
+   ```
 
 5. **Create production containers**:
    ```bash
@@ -111,7 +160,7 @@ The system supports using a separate Azure Storage account for queue operations 
 - **Security boundaries** between storage types
 - **Performance isolation**
 
-By default, the system uses the same storage account for both blobs and queues. To use a separate queue storage account, configure the `QUEUE_STORAGE_*` variables.
+By default, the system uses the same storage account for both blobs and queues. To use a separate queue storage account, configure the `QUEUE_STORAGE_*` variables in your environment file.
 
 See [Queue Storage Setup Guide](QUEUE_STORAGE_SETUP.md) for detailed configuration instructions.
 
@@ -126,93 +175,50 @@ See [Queue Storage Setup Guide](QUEUE_STORAGE_SETUP.md) for detailed configurati
 | `GEMINI_MODEL` | Gemini model to use | `gemini-2.5-flash` |
 | `GEMINI_TIMEOUT_SECONDS` | API timeout in seconds | `300` |
 
-### Development Environment
+### Storage Configuration (All Environments)
 
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `DEV_AZURE_STORAGE_ACCOUNT_NAME` | Azurite account name | `devstoreaccount1` |
-| `DEV_AZURE_STORAGE_ACCESS_KEY` | Azurite access key | *Pre-configured* |
-| `DEV_AZURE_STORAGE_CONNECTION_STRING` | Azurite connection string | *Pre-configured* |
-| `DEV_INPUT_CONTAINER` | Input files container | `dev-input-files` |
-| `DEV_RESULTS_CONTAINER` | Results container | `dev-processing-results` |
+These variables are defined in `.env.development` or `.env.production`:
 
-### Production Environment
-
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `PROD_AZURE_STORAGE_ACCOUNT_NAME` | Azure Storage account name | *Required* |
-| `PROD_AZURE_STORAGE_ACCESS_KEY` | Azure Storage access key | *Required* |
-| `PROD_AZURE_STORAGE_CONNECTION_STRING` | Azure Storage connection string | *Optional* |
-| `PROD_INPUT_CONTAINER` | Input files container | `input-files` |
-| `PROD_RESULTS_CONTAINER` | Results container | `processing-results` |
+| Variable | Description | Required |
+|----------|-------------|----------|
+| `AZURE_STORAGE_ACCOUNT_NAME` | Azure Storage account name | Yes |
+| `AZURE_STORAGE_ACCESS_KEY` | Azure Storage access key | Yes |
+| `AZURE_STORAGE_CONNECTION_STRING` | Azure Storage connection string | Optional |
+| `INPUT_CONTAINER` | Input files container | Yes |
+| `RESULTS_CONTAINER` | Results container | Yes |
 
 ### Queue Storage (Optional - Separate Account)
 
-For development:
+If using a separate storage account for queues:
 
 | Variable | Description | Default |
 |----------|-------------|---------|
-| `DEV_QUEUE_STORAGE_ACCOUNT_NAME` | Queue storage account name | Same as blob storage |
-| `DEV_QUEUE_STORAGE_ACCESS_KEY` | Queue storage access key | Same as blob storage |
-| `DEV_TASKS_QUEUE` | Tasks queue name | `tasks` |
-| `DEV_RESULTS_QUEUE` | Results queue name | `results` |
-
-For production:
-
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `PROD_QUEUE_STORAGE_ACCOUNT_NAME` | Queue storage account name | Same as blob storage |
-| `PROD_QUEUE_STORAGE_ACCESS_KEY` | Queue storage access key | Same as blob storage |
-| `PROD_TASKS_QUEUE` | Tasks queue name | `tasks` |
-| `PROD_RESULTS_QUEUE` | Results queue name | `results` |
-
-Generic (applies if environment-specific not set):
-
-| Variable | Description |
-|----------|-------------|
-| `QUEUE_STORAGE_ACCOUNT_NAME` | Queue storage account name |
-| `QUEUE_STORAGE_ACCESS_KEY` | Queue storage access key |
-| `TASKS_QUEUE` | Tasks queue name |
-| `RESULTS_QUEUE` | Results queue name |
-
-### Backward Compatibility
-
-The system also supports non-prefixed variables for backward compatibility:
-
-- `AZURE_STORAGE_ACCOUNT_NAME`
-- `AZURE_STORAGE_ACCESS_KEY`
-- `INPUT_CONTAINER`
-- `RESULTS_CONTAINER`
-
-These will be used as fallback values if environment-specific variables are not set.
+| `QUEUE_STORAGE_ACCOUNT_NAME` | Queue storage account name | Same as blob storage |
+| `QUEUE_STORAGE_ACCESS_KEY` | Queue storage access key | Same as blob storage |
+| `QUEUE_STORAGE_CONNECTION_STRING` | Queue storage connection string | Same as blob storage |
+| `TASKS_QUEUE` | Tasks queue name | *Required* |
+| `RESULTS_QUEUE` | Results queue name | *Required* |
 
 ## Configuration Files
 
-### `.env` File
+### Environment-Specific Files (NEW)
 
-The `.env` file is used for:
-- Local Python scripts (`send_task.py`, `get_results.py`)
-- Environment variable loading via `python-dotenv`
+- **`.env.development`** - Development configuration (checked into git as template)
+- **`.env.production`** - Production configuration (checked into git as template)
+- **`.env.development.local`** - Your local development overrides (not in git)
+- **`.env.production.local`** - Your local production overrides (not in git)
+- **`.env`** - Sets `ENVIRONMENT` variable (not in git)
 
-Example development `.env`:
+### `.env` File (Environment Selector)
+
+The `.env` file is used to select which environment to load:
+
 ```bash
+# For development
 ENVIRONMENT=development
-GEMINI_API_KEY=your-api-key-here
 
-# Development uses Azurite (pre-configured)
-DEV_INPUT_CONTAINER=dev-input-files
-DEV_RESULTS_CONTAINER=dev--results
-```
-
-Example production `.env`:
-```bash
+# For production
 ENVIRONMENT=production
-GEMINI_API_KEY=your-api-key-here
-
-PROD_AZURE_STORAGE_ACCOUNT_NAME=yourprodaccount
-PROD_AZURE_STORAGE_ACCESS_KEY=your-access-key-here
-PROD_INPUT_CONTAINER=input-files
-PROD_RESULTS_CONTAINER=-results
 ```
 
 ### `local.settings.json` File
@@ -227,11 +233,19 @@ Development configuration (`local.settings.json`):
     "AzureWebJobsStorage": "UseDevelopmentStorage=true",
     "FUNCTIONS_WORKER_RUNTIME": "python",
     "ENVIRONMENT": "development",
+
     "GEMINI_API_KEY": "your-api-key-here",
+    "GEMINI_MODEL": "gemini-2.5-flash",
+    "GEMINI_TIMEOUT_SECONDS": "300",
+
     "AZURE_STORAGE_ACCOUNT_NAME": "devstoreaccount1",
-    "AZURE_STORAGE_ACCESS_KEY": "example/K1SZFPtwoNMlqhKBSwCD/bA==",
+    "AZURE_STORAGE_ACCESS_KEY": "Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPtwoNMlqhKBSwCD/bA==",
+
     "INPUT_CONTAINER": "dev-input-files",
-    "RESULTS_CONTAINER": "dev--results"
+    "RESULTS_CONTAINER": "dev-processing-results",
+
+    "TASKS_QUEUE": "processing-tasks",
+    "RESULTS_QUEUE": "processing-tasks-results"
   }
 }
 ```
@@ -244,27 +258,35 @@ Production configuration (`local.settings.json.production`):
     "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=YOUR_ACCOUNT;...",
     "FUNCTIONS_WORKER_RUNTIME": "python",
     "ENVIRONMENT": "production",
-    "GEMINI_API_KEY": "your-api-key-here",
+
+    "GEMINI_API_KEY": "your-production-api-key",
+    "GEMINI_MODEL": "gemini-2.5-flash",
+    "GEMINI_TIMEOUT_SECONDS": "300",
+
     "AZURE_STORAGE_ACCOUNT_NAME": "yourprodaccount",
     "AZURE_STORAGE_ACCESS_KEY": "your-access-key-here",
+
     "INPUT_CONTAINER": "input-files",
-    "RESULTS_CONTAINER": "-results"
+    "RESULTS_CONTAINER": "processing-results",
+
+    "TASKS_QUEUE": "processing-tasks",
+    "RESULTS_QUEUE": "processing-tasks-results"
   }
 }
 ```
 
 ## Switching Between Environments
 
-### Method 1: Change ENVIRONMENT variable
+### Method 1: Change ENVIRONMENT variable (Recommended)
 
-Simply update the `ENVIRONMENT` variable in your `.env` or `local.settings.json`:
+Simply update the `ENVIRONMENT` variable in your `.env` file:
 
 ```bash
-# .env or local.settings.json
+# .env file
 ENVIRONMENT=development  # or production
 ```
 
-The system will automatically load the appropriate configuration.
+The system will automatically load the corresponding `.env.{environment}` file.
 
 ### Method 2: Use different configuration files
 
@@ -277,6 +299,33 @@ cp local.settings.json.production local.settings.json
 # Switch to development
 cp local.settings.json.example local.settings.json
 ```
+
+### Method 3: Set environment variable directly
+
+```bash
+# Linux/Mac
+export ENVIRONMENT=production
+python your_script.py
+
+# Windows PowerShell
+$env:ENVIRONMENT="production"
+python your_script.py
+
+# Windows CMD
+set ENVIRONMENT=production
+python your_script.py
+```
+
+## How It Works
+
+When the `modules.config` module is imported:
+
+1. It loads the base `.env` file (if exists) to get the `ENVIRONMENT` variable
+2. Determines the environment (defaults to `development` if not set)
+3. Loads the environment-specific file `.env.{environment}`
+4. All configuration functions (`get_storage_config()`, etc.) use the loaded variables
+
+This happens automatically - you don't need to manually load the files.
 
 ## Azure Functions Deployment
 
@@ -297,6 +346,9 @@ AZURE_STORAGE_ACCESS_KEY=your-access-key-here
 
 INPUT_CONTAINER=input-files
 RESULTS_CONTAINER=processing-results
+
+TASKS_QUEUE=processing-tasks
+RESULTS_QUEUE=processing-tasks-results
 ```
 
 **Note**: `AzureWebJobsStorage` is automatically configured by Azure Functions.
@@ -334,26 +386,81 @@ az storage account keys list --account-name yourprodaccount
 
 ### Issue: Environment not switching
 
-**Solution**: Restart the Azure Functions runtime or Python process to reload environment variables.
+**Solution**:
+1. Check that the `ENVIRONMENT` variable is set correctly
+2. Verify the corresponding `.env.{environment}` file exists
+3. Restart the Azure Functions runtime or Python process to reload environment variables
+
+### Issue: Configuration not loading
+
+**Solution**:
+1. Ensure `python-dotenv` is installed: `pip install python-dotenv`
+2. Check that `.env.{environment}` file exists and is readable
+3. Verify the file paths are correct
+4. Check the logs for any warnings about missing files
 
 ## Best Practices
 
-1. **Never commit credentials**: Keep `.env` and `local.settings.json` in `.gitignore`
+1. **Never commit credentials**: Keep `.env`, `.env.*.local`, and `local.settings.json` in `.gitignore`
 
-2. **Use separate storage accounts**: Use distinct Azure Storage accounts for dev/test/prod
+2. **Use `.local` suffix for personal overrides**:
+   - `.env.development.local` overrides `.env.development`
+   - Keeps your personal settings separate from team defaults
 
-3. **Container naming**: Use clear prefixes (`dev-`, `test-`, `prod-`) for containers
+3. **Use separate storage accounts**: Use distinct Azure Storage accounts for dev/test/prod
 
-4. **Access control**: Use different access keys or SAS tokens per environment
+4. **Container naming**: Use clear prefixes (`dev-`, `test-`, `prod-`) for containers
 
-5. **Monitoring**: Enable Azure Monitor for production environments
+5. **Access control**: Use different access keys or SAS tokens per environment
 
-6. **Cost management**: Use Azurite for development to avoid Azure costs
+6. **Monitoring**: Enable Azure Monitor for production environments
 
-7. **Testing**: Always test in development before deploying to production
+7. **Cost management**: Use Azurite for development to avoid Azure costs
+
+8. **Testing**: Always test in development before deploying to production
+
+9. **Environment-specific files**: Check in template files (`.env.development`, `.env.production`) but not actual credentials
+
+## Migration from Old Approach
+
+If you're migrating from the old prefix-based approach (`DEV_*`, `PROD_*` variables):
+
+1. **Backup your current `.env` file**:
+   ```bash
+   cp .env .env.backup
+   ```
+
+2. **Create environment-specific files**:
+   ```bash
+   # Extract development config
+   grep "^DEV_" .env.backup | sed 's/^DEV_//' > .env.development
+
+   # Extract production config
+   grep "^PROD_" .env.backup | sed 's/^PROD_//' > .env.production
+
+   # Add shared config to both files
+   grep "^GEMINI_" .env.backup >> .env.development
+   grep "^GEMINI_" .env.backup >> .env.production
+   ```
+
+3. **Create simple .env file**:
+   ```bash
+   echo "ENVIRONMENT=development" > .env
+   ```
+
+4. **Test the new configuration**:
+   ```bash
+   python -c "from modules.config import get_app_config; print(get_app_config())"
+   ```
+
+5. **Remove old backup once verified**:
+   ```bash
+   rm .env.backup
+   ```
 
 ## Additional Resources
 
 - [Azurite Documentation](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azurite)
 - [Azure Functions Local Development](https://learn.microsoft.com/en-us/azure/azure-functions/functions-develop-local)
 - [Azure Storage Security](https://learn.microsoft.com/en-us/azure/storage/common/storage-security-guide)
+- [python-dotenv Documentation](https://pypi.org/project/python-dotenv/)

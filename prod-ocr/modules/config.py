@@ -1,12 +1,35 @@
 """Environment-based configuration management."""
 import os
 import logging
+from pathlib import Path
 from typing import Optional, Literal
 from dataclasses import dataclass
 
 logger = logging.getLogger(__name__)
 
 Environment = Literal["development", "production"]
+
+def _load_env_file():
+    """Load the appropriate .env file based on ENVIRONMENT variable."""
+    try:
+        from dotenv import load_dotenv
+
+        base_env = Path(__file__).parent.parent / '.env'
+        if base_env.exists():
+            load_dotenv(base_env, override=False)
+
+        env = os.getenv('ENVIRONMENT', 'development').lower()
+
+        env_file = Path(__file__).parent.parent / f'.env.{env}'
+        if env_file.exists():
+            load_dotenv(env_file, override=True)
+            logger.info(f"Loaded environment configuration from: {env_file}")
+        else:
+            logger.warning(f"Environment file not found: {env_file}")
+    except ImportError:
+        logger.debug("python-dotenv not installed, skipping .env file loading")
+
+_load_env_file()
 
 
 @dataclass
@@ -79,31 +102,22 @@ def get_storage_config(environment: Optional[Environment] = None) -> StorageConf
 
     logger.info(f"Loading storage configuration for environment: {environment}")
 
-    if environment == 'development':
-        account_name = os.getenv('DEV_AZURE_STORAGE_ACCOUNT_NAME')
-        access_key = os.getenv('DEV_AZURE_STORAGE_ACCESS_KEY')
-        connection_string = os.getenv('DEV_AZURE_STORAGE_CONNECTION_STRING')
-        input_container = os.getenv('DEV_INPUT_CONTAINER')
-        results_container = os.getenv('DEV_RESULTS_CONTAINER')
-    else:
-        account_name = os.getenv('PROD_AZURE_STORAGE_ACCOUNT_NAME')
-        access_key = os.getenv('PROD_AZURE_STORAGE_ACCESS_KEY')
-        connection_string = os.getenv('PROD_AZURE_STORAGE_CONNECTION_STRING')
-        input_container = os.getenv('PROD_INPUT_CONTAINER')
-        results_container = os.getenv('PROD_RESULTS_CONTAINER')
-    override_input_container = os.getenv('INPUT_CONTAINER')
-    if override_input_container:
-        input_container = override_input_container
-    override_results_container = os.getenv('RESULTS_CONTAINER')
-    if override_results_container:
-        results_container = override_results_container
+    account_name = os.getenv('AZURE_STORAGE_ACCOUNT_NAME')
+    access_key = os.getenv('AZURE_STORAGE_ACCESS_KEY')
+    connection_string = os.getenv('AZURE_STORAGE_CONNECTION_STRING')
+    input_container = os.getenv('INPUT_CONTAINER')
+    results_container = os.getenv('RESULTS_CONTAINER')
 
     if not account_name or not access_key:
         raise ValueError(
             f"Missing required storage configuration for {environment} environment. "
-            f"Required: AZURE_STORAGE_ACCOUNT_NAME and AZURE_STORAGE_ACCESS_KEY "
-            f"or {environment.upper()}_AZURE_STORAGE_ACCOUNT_NAME and "
-            f"{environment.upper()}_AZURE_STORAGE_ACCESS_KEY"
+            f"Required: AZURE_STORAGE_ACCOUNT_NAME and AZURE_STORAGE_ACCESS_KEY"
+        )
+
+    if not input_container or not results_container:
+        raise ValueError(
+            f"Missing required container configuration for {environment} environment. "
+            f"Required: INPUT_CONTAINER and RESULTS_CONTAINER"
         )
 
     config = StorageConfig(
@@ -140,32 +154,23 @@ def get_queue_storage_config(environment: Optional[Environment] = None) -> Queue
 
     logger.info(f"Loading queue storage configuration for environment: {environment}")
 
-    if environment == 'development':
-        account_name = os.getenv('DEV_QUEUE_STORAGE_ACCOUNT_NAME')
-        access_key = os.getenv('DEV_QUEUE_STORAGE_ACCESS_KEY')
-        connection_string = os.getenv('DEV_QUEUE_STORAGE_CONNECTION_STRING')
-        tasks_queue = os.getenv('DEV_TASKS_QUEUE')
-        results_queue = os.getenv('DEV_RESULTS_QUEUE')
-    else:
-        account_name = os.getenv('PROD_QUEUE_STORAGE_ACCOUNT_NAME')
-        access_key = os.getenv('PROD_QUEUE_STORAGE_ACCESS_KEY')
-        connection_string = os.getenv('PROD_QUEUE_STORAGE_CONNECTION_STRING')
-        tasks_queue = os.getenv('PROD_TASKS_QUEUE')
-        results_queue = os.getenv('PROD_RESULTS_QUEUE')
-
-    override_tasks_queue = os.getenv('TASKS_QUEUE')
-    if override_tasks_queue:
-        tasks_queue = override_tasks_queue
-    override_results_queue = os.getenv('RESULTS_QUEUE')
-    if override_results_queue:
-        results_queue = override_results_queue
+    account_name = os.getenv('QUEUE_STORAGE_ACCOUNT_NAME') or os.getenv('AZURE_STORAGE_ACCOUNT_NAME')
+    access_key = os.getenv('QUEUE_STORAGE_ACCESS_KEY') or os.getenv('AZURE_STORAGE_ACCESS_KEY')
+    connection_string = os.getenv('QUEUE_STORAGE_CONNECTION_STRING') or os.getenv('AZURE_STORAGE_CONNECTION_STRING')
+    tasks_queue = os.getenv('TASKS_QUEUE')
+    results_queue = os.getenv('RESULTS_QUEUE')
 
     if not account_name or not access_key:
         raise ValueError(
             f"Missing required queue storage configuration for {environment} environment. "
             f"Required: QUEUE_STORAGE_ACCOUNT_NAME and QUEUE_STORAGE_ACCESS_KEY "
-            f"or {environment.upper()}_QUEUE_STORAGE_ACCOUNT_NAME and "
-            f"{environment.upper()}_QUEUE_STORAGE_ACCESS_KEY"
+            f"(or AZURE_STORAGE_ACCOUNT_NAME and AZURE_STORAGE_ACCESS_KEY as fallback)"
+        )
+
+    if not tasks_queue or not results_queue:
+        raise ValueError(
+            f"Missing required queue names for {environment} environment. "
+            f"Required: TASKS_QUEUE and RESULTS_QUEUE"
         )
 
     config = QueueStorageConfig(

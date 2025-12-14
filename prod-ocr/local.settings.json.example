@@ -4,21 +4,23 @@
     "AzureWebJobsStorage": "UseDevelopmentStorage=true",
     "FUNCTIONS_WORKER_RUNTIME": "python",
 
+    "COMMENT_1": "Set ENVIRONMENT to 'development' or 'production'",
+    "COMMENT_2": "This will load the corresponding .env.development or .env.production file",
     "ENVIRONMENT": "development",
+
+    "COMMENT_3": "All other settings are loaded from .env.development or .env.production",
+    "COMMENT_4": "You can override specific values here if needed",
 
     "GEMINI_API_KEY": "your-gemini-api-key-here",
     "GEMINI_MODEL": "gemini-2.5-flash",
     "GEMINI_TIMEOUT_SECONDS": "300",
 
     "AZURE_STORAGE_ACCOUNT_NAME": "devstoreaccount1",
-    "AZURE_STORAGE_ACCESS_KEY": "example/K1SZFPtwoNMlqhKBSwCD/bA==",
+    "AZURE_STORAGE_ACCESS_KEY": "Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPtwoNMlqhKBSwCD/bA==",
 
     "INPUT_CONTAINER": "dev-input-files",
     "RESULTS_CONTAINER": "dev-processing-results",
 
-    "COMMENT_QUEUE_STORAGE": "Optional: Use separate storage account for queues (defaults to same as blob storage)",
-    "QUEUE_STORAGE_ACCOUNT_NAME": "",
-    "QUEUE_STORAGE_ACCESS_KEY": "",
     "TASKS_QUEUE": "processing-tasks",
     "RESULTS_QUEUE": "processing-tasks-results"
   },
