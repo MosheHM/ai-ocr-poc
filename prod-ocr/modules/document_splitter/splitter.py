@@ -102,32 +102,23 @@ TYPE 4: PACKING LIST
 ]
 """
 
-ROTATION_EXTRACTION_PROMPT = """You are an AI assistant specialized in analyzing PDF document page orientation. Your task is to detect the rotation needed for each page to be correctly oriented (upright for reading).
+ROTATION_EXTRACTION_PROMPT = """Analyze page orientation and return JSON only.
 
-For each page in the provided PDF document, determine the clockwise rotation in degrees needed to make the page upright and readable.
+For each page, determine the clockwise rotation needed to make text upright.
 
-Return a JSON ARRAY with one object per page containing:
-- PAGE_NO: Integer (1-based page number in the PDF)
-- ROTATION: Integer representing clockwise rotation needed (must be one of: 0, 90, 180, or 270 degrees)
+OUTPUT FORMAT - Return ONLY this JSON array, no explanations:
+[{"PAGE_NO": 1, "ROTATION": 0}, {"PAGE_NO": 2, "ROTATION": 90}]
 
---- ROTATION GUIDELINES ---
-- 0 degrees: Page is already correctly oriented (text reads normally)
-- 90 degrees: Page needs 90° clockwise rotation (text currently reads from bottom to top)
-- 180 degrees: Page is upside down (text reads right to left, upside down)
-- 270 degrees: Page needs 270° clockwise rotation (same as 90° counter-clockwise, text currently reads from top to bottom)
+ROTATION VALUES (clockwise degrees to fix orientation):
+- 0: Already upright
+- 90: Text reads bottom-to-top, rotate 90° clockwise
+- 180: Upside down, rotate 180°
+- 270: Text reads top-to-bottom, rotate 270° clockwise
 
---- CRITICAL RULES ---
-1. Return ONLY a valid JSON array.
-2. Include an entry for EVERY page in the document.
-3. ROTATION values MUST be exactly one of: 0, 90, 180, or 270.
-4. Analyze each page independently.
-
---- EXAMPLE OUTPUT ---
-[
-    {"PAGE_NO": 1, "ROTATION": 0},
-    {"PAGE_NO": 2, "ROTATION": 90},
-    {"PAGE_NO": 3, "ROTATION": 0}
-]
+RULES:
+1. Output ONLY the JSON array - no text before or after
+2. One entry per page
+3. ROTATION must be exactly: 0, 90, 180, or 270
 """
 
 @dataclass
@@ -272,7 +263,12 @@ class DocumentSplitter:
             ROTATION_EXTRACTION_PROMPT,
             model=self.rotation_model
         )
+        logger.debug(f"Rotation extraction raw response: {result_text[:500] if result_text else 'EMPTY'}")
         result_text = self._clean_json_response(result_text)
+
+        if not result_text:
+            logger.warning("Empty response from Gemini for rotation extraction")
+            raise ValueError("Empty response from Gemini rotation extraction")
 
         try:
             rotation_data = json.loads(result_text)
@@ -286,7 +282,7 @@ class DocumentSplitter:
 
             return rotation_data
         except json.JSONDecodeError as e:
-            logger.error(f"Failed to parse rotation JSON response: {e}")
+            logger.error(f"Failed to parse rotation JSON response: {e}. Response text: {result_text[:200]}")
             raise ValueError(f"Invalid JSON response from Gemini rotation extraction: {e}")
 
     def split_and_save(
@@ -361,14 +357,28 @@ class DocumentSplitter:
                     for page_no in range(start_page, end_page + 1)
                 ]
 
-            doc['FILE_PATH'] = str(output_path)
+            common_fields = {
+                'DOC_TYPE', 'DOC_TYPE_CONFIDENCE', 'TOTAL_PAGES',
+                'START_PAGE_NO', 'END_PAGE_NO', 'PAGES_INFO',
+                'FILE_PATH', 'FILE_NAME'
+            }
+            
+            doc_data = []
+            for field_id, field_value in list(doc.items()):
+                if field_id not in common_fields:
+                    doc_data.append({
+                        'field_id': field_id,
+                        'field_value': field_value
+                    })
+                    del doc[field_id]
+            
+            doc['DOC_DATA'] = doc_data
             doc['FILE_NAME'] = output_filename
 
             results.append(doc)
 
         final_result = {
             'source_pdf': str(pdf_path),
-            'output_directory': str(output_dir),
             'total_documents': len(results),
             'documents': results
         }
@@ -384,7 +394,8 @@ class DocumentSplitter:
 
     @staticmethod
     def _clean_json_response(text: str) -> str:
-        """Remove markdown code blocks from response text."""
+        """Extract JSON from response text, handling markdown and explanatory text."""
+
         if text.startswith("```json"):
             text = text[7:]
         elif text.startswith("```"):

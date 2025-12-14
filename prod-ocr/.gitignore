@@ -51,6 +51,9 @@ __queuestorage__/
 
 CLAUDE.md
 
+# copilot
+.github
+
 # uv
 .venv/
 uv.lock
