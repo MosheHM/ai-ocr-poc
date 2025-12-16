@@ -1,9 +1,9 @@
 [project]
 name = "prod-ocr"
 version = "0.1.0"
-description = "AI-powered document classification and data extraction POC using Google Gemini API"
+description = "AI-powered document classification and data extraction MVP using Google Gemini API"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.12"
 dependencies = [
     "google-genai",
     "pypdf",

@@ -454,7 +454,6 @@ def process_pdf_file(msg: func.QueueMessage, outputQueue: func.Out[str]) -> None
     except ConfigurationError as e:
         logging.critical(f"Configuration error: {e}")
         send_error_result(outputQueue, correlation_key, str(e))
-        raise
 
     except ValidationError as e:
         logging.error(f"Validation error for {correlation_key[:8]}...: {e}")
@@ -467,11 +466,10 @@ def process_pdf_file(msg: func.QueueMessage, outputQueue: func.Out[str]) -> None
                 exc_info=e.original
             )
             send_error_result(outputQueue, correlation_key, str(e))
-            raise
 
         elif e.severity == ErrorSeverity.TRANSIENT:
             logging.warning(
-                f"Transient error for {correlation_key[:8]}...: {e}"
+                f"Transient error for {correlation_key[:8]}...: {e} (will retry)"
             )
             send_error_result(outputQueue, correlation_key, str(e))
             raise
@@ -482,8 +480,10 @@ def process_pdf_file(msg: func.QueueMessage, outputQueue: func.Out[str]) -> None
 
     except Exception as e:
         sanitized_error = sanitize_error_message(str(e))
-        logging.exception(f"Unexpected error for {correlation_key[:8]}...: {sanitized_error}")
-        send_error_result(outputQueue, correlation_key, sanitized_error)
+        logging.exception(
+            f"Unexpected error for {correlation_key[:8]}...: {sanitized_error} (will retry)"
+        )
+        send_error_result(outputQueue, correlation_key, f"Unexpected error: {sanitized_error}")
         raise
 
     finally:

@@ -1,0 +1,56 @@
+# Docker Compose for local development and testing
+version: '3.8'
+
+services:
+  prod-ocr:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: prod-ocr-function
+    ports:
+      - "8080:80"
+    environment:
+      # Azure Storage Configuration (replace with actual values or use .env file)
+      - AZURE_STORAGE_ACCOUNT_NAME=${AZURE_STORAGE_ACCOUNT_NAME}
+      - AZURE_STORAGE_ACCESS_KEY=${AZURE_STORAGE_ACCESS_KEY}
+      - AZURE_STORAGE_CONNECTION_STRING=${AZURE_STORAGE_CONNECTION_STRING}
+      
+      # Queue Storage Configuration (optional - if different from blob storage)
+      - QUEUE_STORAGE_ACCOUNT_NAME=${QUEUE_STORAGE_ACCOUNT_NAME:-}
+      - QUEUE_STORAGE_ACCESS_KEY=${QUEUE_STORAGE_ACCESS_KEY:-}
+      - QUEUE_STORAGE_CONNECTION_STRING=${QUEUE_STORAGE_CONNECTION_STRING:-}
+      
+      # Gemini AI Configuration
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - GEMINI_MODEL=${GEMINI_MODEL:-gemini-2.0-flash}
+      - GEMINI_TIMEOUT_SECONDS=${GEMINI_TIMEOUT_SECONDS:-120}
+      
+      # Container/Queue Names
+      - INPUT_CONTAINER=${INPUT_CONTAINER:-input-documents}
+      - RESULTS_CONTAINER=${RESULTS_CONTAINER:-results}
+      - TASKS_QUEUE=${TASKS_QUEUE:-document-tasks}
+      - RESULTS_QUEUE=${RESULTS_QUEUE:-document-results}
+      
+      # Azure Functions Connection String (required for queue triggers)
+      - AzureWebJobsStorage=${AZURE_STORAGE_CONNECTION_STRING}
+    volumes:
+      # Mount for local development (optional)
+      - ./local-data:/data
+    restart: unless-stopped
+
+  # Azurite emulator for local development (optional)
+  azurite:
+    image: mcr.microsoft.com/azure-storage/azurite
+    container_name: azurite
+    ports:
+      - "10000:10000"  # Blob
+      - "10001:10001"  # Queue
+      - "10002:10002"  # Table
+    volumes:
+      - azurite-data:/data
+    command: "azurite --blobHost 0.0.0.0 --queueHost 0.0.0.0 --tableHost 0.0.0.0"
+    profiles:
+      - dev  # Only start with: docker-compose --profile dev up
+
+volumes:
+  azurite-data:

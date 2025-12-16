@@ -1,0 +1,73 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+.eggs/
+*.egg-info/
+*.egg
+*venv*/
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# Testing
+tests/
+pytest.ini
+.pytest_cache
+htmlcov/
+.coverage
+coverage.xml
+
+# Local development files
+local.settings.json
+local.settings.json.*
+*.local.*
+
+# Azurite (local storage emulator)
+__azurite_*
+__blobstorage__
+__queuestorage__
+AzuriteConfig
+
+# Documentation
+docs/
+*.md
+!README.md
+
+# Development scripts
+send_task.py
+get_results.py
+test_local_run.py
+setup_dev_environment.*
+
+# Build artifacts
+dist/
+build/
+*.whl
+
+# Temp files
+*.tmp
+*.temp
+split_output/
+
+# UV/uv specific (keep pyproject.toml for dependency installation)
+.python-version
+uv.lock
+
+# Cache directories  
+CUsersMosheHMOneDrive*
+C\:*
+*OneDrive*venv*

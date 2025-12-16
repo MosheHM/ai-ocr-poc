@@ -119,14 +119,54 @@ def get_document_splitter() -> DocumentSplitter
 
 ## Error Handling
 
-| Error Type | Severity | Action |
-|------------|----------|--------|
-| ConfigurationError | Critical | Send error, raise (stop function) |
-| ValidationError | Permanent | Send error, don't retry |
-| ProcessingError (TRANSIENT) | Transient | Send error, raise (allows retry) |
-| ProcessingError (PERMANENT) | Permanent | Send error, don't retry |
-| ProcessingError (CRITICAL) | Critical | Send error, raise |
-| Exception | Unknown | Send error, raise |
+The function implements a sophisticated error handling strategy that prevents duplicate failure notifications while enabling automatic retries for transient issues.
+
+### Error Handling Strategy
+
+| Error Type | Severity | Send to Queue? | Raise Exception? | Behavior |
+|------------|----------|----------------|------------------|----------|
+| ConfigurationError | Critical/Permanent | ✅ Yes | ❌ No | Notify immediately, don't retry (config won't fix itself) |
+| ValidationError | Permanent | ✅ Yes | ❌ No | Notify immediately, don't retry (bad input) |
+| ProcessingError (TRANSIENT) | Transient | ❌ No | ✅ Yes | **Silent retry** - Azure retries automatically, notification only from poison queue |
+| ProcessingError (PERMANENT) | Permanent | ✅ Yes | ❌ No | Notify immediately, don't retry (bad data) |
+| ProcessingError (CRITICAL) | Critical/Permanent | ✅ Yes | ❌ No | Notify immediately, don't retry (system failure) |
+| Exception (unknown) | Transient | ❌ No | ✅ Yes | **Silent retry** - treat as transient, notification only from poison queue |
+
+### Key Design Principle: Avoid Duplicate Notifications
+
+**Problem:** If we send a failure message AND raise an exception for transient errors:
+- Message sent on attempt #1 → raises → Azure retries
+- Message sent on attempt #2 → raises → Azure retries
+- Message sent on attempt #3 → raises → moves to poison queue
+- **Result: User receives 3 identical failure messages** ❌
+
+**Solution:** For transient errors (TRANSIENT, unknown exceptions):
+- **Don't send to output queue** - Let Azure retry silently
+- **Only send notification from poison queue handler** after all retries are exhausted
+- **Result: User receives exactly 1 failure message** ✅
+
+### Functions
+
+#### Main Function: `process_pdf_file`
+
+Processes documents from the tasks queue with intelligent retry logic.
+
+#### Poison Queue Handler: `handle_poison_message`
+
+Processes messages that failed after exceeding `maxDequeueCount` retries.
+
+**Queue:** `{tasks_queue}-poison`
+
+**Behavior:**
+- Extracts correlation key from failed message
+- Sends single final failure notification to results queue
+- Never raises exceptions (prevents poison queue loops)
+- Logs dequeue count for diagnostics
+
+**Example Log:**
+```
+Message failed after all retry attempts: 1a2b3c4d... (dequeue_count: 3)
+```
 
 ## Temporary File Handling
 

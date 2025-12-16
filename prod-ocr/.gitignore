@@ -26,6 +26,7 @@ __queuestorage__/
 .env.development
 .env.production
 .env.local
+.env.docker
 
 # Output directories
 split_output/

@@ -56,7 +56,6 @@ def main():
             print()
 
         print(f"Output directory: {output_dir.absolute()}")
-        print(f"Results JSON: {result['output_directory']}")
 
     except Exception as e:
         print(f"\n✗ Error: {e}")
