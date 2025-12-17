@@ -17,6 +17,7 @@ This application uses Google's Gemini API to:
 - **Document Summary**: Clear reporting of how many documents of each type exist and which pages they occupy
 - **Type-specific Extraction**: Specialized extractors for each document type with tailored schemas
 - **Performance Validation**: Compares extracted data against ground truth with detailed scoring
+- **PDF Splitting Validation**: Validates document splitting results against XML ground truth files (see [SPLITTING_VALIDATION.md](SPLITTING_VALIDATION.md))
 - **Error Handling**: Comprehensive error handling with detailed feedback
 - **Modular Architecture**: Clean, maintainable code structure with reusable components
 
@@ -114,6 +115,19 @@ python invoice_extractor.py
 ```
 
 This processes all PDFs in the `invoices-sampels` folder.
+
+### PDF Splitting Validation
+
+Validate PDF splitting results against XML ground truth files:
+```bash
+# Validate all PDFs in sampels/combined-sampels directory
+python validate_splitting.py
+
+# Validate a specific PDF
+python validate_splitting.py --pdf sampels/combined-sampels/81124047_ORG_pxutqxvrveky75v6dwhymg00000000.PDF
+```
+
+See [SPLITTING_VALIDATION.md](SPLITTING_VALIDATION.md) for detailed documentation on PDF splitting validation.
 
 ## Processing Pipeline
 
