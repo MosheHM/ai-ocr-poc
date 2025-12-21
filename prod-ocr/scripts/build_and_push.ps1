@@ -4,7 +4,7 @@ param (
 )
 
 $ImageName = "prod-ocr"
-$DockerUsername = "moshehmakias"
+$DockerUsername = "cramital.azurecr.io"
 $FullImageName = "$DockerUsername/$ImageName`:$Version"
 
 Write-Host "Building Docker image: $FullImageName..."

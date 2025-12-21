@@ -56,7 +56,6 @@ class AzureStorageClient:
             # Handle both Unix and Windows path separators
             # Use the rightmost separator (/ or \) to extract filename
             if '/' in path or '\\' in path:
-                # Split by both separators and get the last part
                 parts = path.replace('\\', '/').split('/')
                 return parts[-1] if parts[-1] else ""
             return path
@@ -80,9 +79,23 @@ class AzureStorageClient:
         local_path_obj = Path(local_path)
         local_path_obj.parent.mkdir(parents=True, exist_ok=True)
 
+        try:
+            tmp_client = BlobClient.from_blob_url(blob_url)
+            container_name = tmp_client.container_name
+            blob_name = tmp_client.blob_name
+        except Exception:
+            container_name = None
+            blob_name = None
+
         for attempt in range(MAX_RETRIES):
             try:
-                blob_client = BlobClient.from_blob_url(blob_url, credential=self.access_key)
+                if container_name and blob_name:
+                    blob_client = self.blob_service_client.get_blob_client(
+                        container=container_name,
+                        blob=blob_name
+                    )
+                else:
+                    blob_client = BlobClient.from_blob_url(blob_url, credential=self.access_key)
 
                 logger.info(
                     f"Downloading blob (attempt {attempt + 1}/{MAX_RETRIES}): "
@@ -193,73 +206,22 @@ class AzureStorageClient:
                 )
                 time.sleep(wait_time)
 
+            except ResourceNotFoundError as e:
+                # If container not found, try to create it
+                if "ContainerNotFound" in str(e):
+                    try:
+                        logger.info(f"Container {container_name} not found, creating it...")
+                        self.blob_service_client.create_container(container_name)
+                        # Retry the upload immediately
+                        continue
+                    except Exception as create_error:
+                        logger.error(f"Failed to create container {container_name}: {create_error}")
+                        raise e
+                else:
+                    raise e
+
             except Exception as e:
                 logger.error(f"Unexpected error uploading file: {type(e).__name__}: {e}")
-                raise
-
-        raise AzureError("Upload failed after all retries")
-
-    def upload_bytes(
-        self,
-        container_name: str,
-        blob_name: str,
-        data: bytes,
-        overwrite: bool = True
-    ) -> str:
-        """Upload bytes data to Azure Blob Storage with retry logic.
-
-        Args:
-            container_name: Name of the blob container
-            blob_name: Name for the blob
-            data: Bytes data to upload
-            overwrite: Whether to overwrite existing blob
-
-        Returns:
-            URL of the uploaded blob
-
-        Raises:
-            AzureError: If upload fails after retries
-        """
-        data_size = len(data)
-
-        for attempt in range(MAX_RETRIES):
-            try:
-                blob_client = self.blob_service_client.get_blob_client(
-                    container=container_name,
-                    blob=blob_name
-                )
-
-                logger.info(
-                    f"Uploading bytes (attempt {attempt + 1}/{MAX_RETRIES}): "
-                    f"{data_size / (1024*1024):.2f} MB "
-                    f"to {container_name}/{blob_name[:50]}"
-                )
-
-                blob_client.upload_blob(data, overwrite=overwrite)
-
-                blob_url = blob_client.url
-                logger.info(
-                    f"Successfully uploaded bytes to {container_name}/{blob_name[:50]}"
-                )
-
-                return blob_url
-
-            except (ServiceRequestError, ServiceResponseError) as e:
-                if attempt == MAX_RETRIES - 1:
-                    logger.error(
-                        f"Failed to upload bytes after {MAX_RETRIES} attempts: {e}"
-                    )
-                    raise
-
-                wait_time = RETRY_DELAY_SECONDS * (2 ** attempt)
-                logger.warning(
-                    f"Upload failed (attempt {attempt + 1}/{MAX_RETRIES}), "
-                    f"retrying in {wait_time}s: {type(e).__name__}"
-                )
-                time.sleep(wait_time)
-
-            except Exception as e:
-                logger.error(f"Unexpected error uploading bytes: {type(e).__name__}: {e}")
                 raise
 
         raise AzureError("Upload failed after all retries")

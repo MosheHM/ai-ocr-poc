@@ -20,6 +20,8 @@ class ProcessingRequest(TypedDict):
     """Schema for processing request message."""
     correlationKey: str
     pdfBlobUrl: str
+    entName: str
+    fileNo: str
 
 
 def validate_correlation_key(key: str) -> str:
@@ -198,11 +200,17 @@ def parse_queue_message(message_body: bytes) -> ProcessingRequest:
 
     correlation_key = data.get('correlationKey') or data.get('correlation_key')
     pdf_blob_url = data.get('pdfBlobUrl') or data.get('pdf_blob_url')
+    ent_name = data.get('entName') or data.get('ent_name')
+    file_no = data.get('fileNo') or data.get('file_no')
 
     if not correlation_key:
         raise ValidationError("Missing required field: correlationKey")
     if not pdf_blob_url:
         raise ValidationError("Missing required field: pdfBlobUrl")
+    if not ent_name:
+        raise ValidationError("Missing required field: entName")
+    if not file_no:
+        raise ValidationError("Missing required field: fileNo")
 
     if not isinstance(correlation_key, str):
         raise ValidationError(
@@ -212,25 +220,39 @@ def parse_queue_message(message_body: bytes) -> ProcessingRequest:
         raise ValidationError(
             f"pdfBlobUrl must be string, got {type(pdf_blob_url).__name__}"
         )
+    if not isinstance(ent_name, str):
+        raise ValidationError(
+            f"entName must be string, got {type(ent_name).__name__}"
+        )
+    if not isinstance(file_no, str):
+        raise ValidationError(
+            f"fileNo must be string, got {type(file_no).__name__}"
+        )
 
     return ProcessingRequest(
         correlationKey=correlation_key,
-        pdfBlobUrl=pdf_blob_url
+        pdfBlobUrl=pdf_blob_url,
+        entName=ent_name,
+        fileNo=file_no
     )
 
 
 class ValidatedRequest:
     """Immutable validated processing request."""
 
-    def __init__(self, correlation_key: str, pdf_blob_url: str):
+    def __init__(self, correlation_key: str, pdf_blob_url: str, ent_name: str, file_no: str):
         """Initialize validated request.
 
         Args:
             correlation_key: Validated correlation key
             pdf_blob_url: Validated blob URL
+            ent_name: Entity name
+            file_no: File number
         """
         self._correlation_key = correlation_key
         self._pdf_blob_url = pdf_blob_url
+        self._ent_name = ent_name
+        self._file_no = file_no
 
     @property
     def correlation_key(self) -> str:
@@ -241,6 +263,16 @@ class ValidatedRequest:
     def pdf_blob_url(self) -> str:
         """Get PDF blob URL."""
         return self._pdf_blob_url
+
+    @property
+    def ent_name(self) -> str:
+        """Get entity name."""
+        return self._ent_name
+
+    @property
+    def file_no(self) -> str:
+        """Get file number."""
+        return self._file_no
 
     @classmethod
     def from_queue_message(
@@ -264,8 +296,10 @@ class ValidatedRequest:
 
         correlation_key = validate_correlation_key(request['correlationKey'])
         pdf_blob_url = validate_blob_url(request['pdfBlobUrl'], allowed_container)
+        ent_name = request['entName']
+        file_no = request['fileNo']
 
-        return cls(correlation_key, pdf_blob_url)
+        return cls(correlation_key, pdf_blob_url, ent_name, file_no)
 
 
 def sanitize_url_for_logging(url: str) -> str:
@@ -282,7 +316,6 @@ def sanitize_url_for_logging(url: str) -> str:
     try:
         parsed = urlparse(url)
         sanitized = f"{parsed.scheme}://{parsed.netloc}{parsed.path}"
-        # Truncate if too long (even after sanitizing)
         if len(sanitized) > 100:
             return sanitized[:100] + "..."
         return sanitized

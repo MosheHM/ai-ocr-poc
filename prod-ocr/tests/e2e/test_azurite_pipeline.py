@@ -301,7 +301,7 @@ class TestFullProcessingPipeline:
             results = splitter.split_and_save(str(local_pdf), str(output_dir))
         
         assert results["total_documents"] == 1
-        assert results["documents"][0]["DOC_TYPE"] == "INVOICE"
+        assert results["documents"][0]["doc_type"] == "invoice"
         
         # Step 3: Create and upload results ZIP
         from modules.utils.zip_utils import create_results_zip

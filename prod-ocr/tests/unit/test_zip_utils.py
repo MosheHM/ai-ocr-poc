@@ -25,20 +25,25 @@ class TestCreateResultsZip:
         
         results = {
             "source_pdf": "/original/input.pdf",
-            "output_directory": str(output_dir),
             "total_documents": 2,
             "documents": [
                 {
-                    "DOC_TYPE": "INVOICE",
-                    "INVOICE_NO": "INV-001",
-                    "FILE_PATH": str(pdf1_path),
-                    "FILE_NAME": "doc_INVOICE_1_pages_1-2.pdf"
+                    "doc_type": "invoice",
+                    "doc_type_confidence": 0.95,
+                    "total_pages": 2,
+                    "start_page_no": 1,
+                    "end_page_no": 2,
+                    "pages_info": [],
+                    "doc_data": [{"field_id": "invoice_no", "field_value": "INV-001"}]
                 },
                 {
-                    "DOC_TYPE": "OBL",
-                    "CUSTOMER_NAME": "Test Corp",
-                    "FILE_PATH": str(pdf2_path),
-                    "FILE_NAME": "doc_OBL_2_pages_3-3.pdf"
+                    "doc_type": "obl",
+                    "doc_type_confidence": 0.90,
+                    "total_pages": 1,
+                    "start_page_no": 3,
+                    "end_page_no": 3,
+                    "pages_info": [],
+                    "doc_data": [{"field_id": "customer_name", "field_value": "Test Corp"}]
                 }
             ]
         }
@@ -106,13 +111,16 @@ class TestCreateResultsZip:
         
         results = {
             "source_pdf": "/input.pdf",
-            "output_directory": str(output_dir),
             "total_documents": 1,
             "documents": [
                 {
-                    "DOC_TYPE": "INVOICE",
-                    "FILE_PATH": str(output_dir / "nonexistent.pdf"),
-                    "FILE_NAME": "nonexistent.pdf"
+                    "doc_type": "invoice",
+                    "doc_type_confidence": 0.95,
+                    "total_pages": 1,
+                    "start_page_no": 1,
+                    "end_page_no": 1,
+                    "pages_info": [],
+                    "doc_data": []
                 }
             ]
         }
@@ -177,13 +185,16 @@ class TestCreateResultsZip:
         
         results = {
             "source_pdf": "/input.pdf",
-            "output_directory": str(output_dir),
             "total_documents": 1,
             "documents": [
                 {
-                    "DOC_TYPE": "INVOICE",
-                    "CUSTOMER_NAME": "日本語テスト 中文测试 עברית",
-                    "FILE_PATH": str(pdf_path),
+                    "doc_type": "invoice",
+                    "doc_type_confidence": 0.95,
+                    "total_pages": 1,
+                    "start_page_no": 1,
+                    "end_page_no": 1,
+                    "pages_info": [],
+                    "doc_data": [{"field_id": "customer_name", "field_value": "日本語テスト 中文测试 עברית"}],
                     "FILE_NAME": "doc.pdf"
                 }
             ]

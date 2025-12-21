@@ -29,7 +29,6 @@ try:
         _temp_logging.info(f"Added to sys.path: {azure_site_packages.name}")
 
 except Exception as e:
-    # Write to stderr for visibility if logging fails
     import sys as _sys
     _sys.stderr.write(f"Warning: Failed to configure Python path: {e}\n")
 
@@ -47,6 +46,7 @@ from modules.azure import AzureStorageClient
 from modules.document_splitter.splitter import DocumentSplitter
 from modules.utils import create_results_zip
 from modules.config import get_app_config, AppConfig
+from modules.request_metadata import RequestMetadata
 from modules.validators import (
     ValidatedRequest,
     ValidationError,
@@ -250,6 +250,13 @@ def process_pdf(
 
     except ValidationError as e:
         raise ProcessingError(str(e), ErrorSeverity.PERMANENT, e)
+    except ValueError as e:
+
+        raise ProcessingError(
+            f"Failed to process PDF: {sanitize_error_message(str(e))}",
+            ErrorSeverity.PERMANENT,
+            e
+        )
     except Exception as e:
         raise ProcessingError(
             f"Failed to process PDF: {sanitize_error_message(str(e))}",
@@ -333,58 +340,53 @@ def upload_results(
 
 def send_success_result(
     output_queue: func.Out[str],
-    correlation_key: str,
     results_url: str
 ) -> None:
     """Send success result message to output queue.
 
     Args:
         output_queue: Output queue binding
-        correlation_key: Correlation key
         results_url: URL to results blob
     """
+    metadata = RequestMetadata()
     result = {
-        "correlationKey": correlation_key,
+        **metadata.to_result_dict(),
         "status": "success",
         "resultsBlobUrl": results_url
     }
     output_queue.set(json.dumps(result))
-    logging.info(f"Success result sent for: {correlation_key[:8]}...")
+    logging.info(f"Success result sent for: {metadata.correlation_key[:8]}...")
 
 
 def send_error_result(
     output_queue: func.Out[str],
-    correlation_key: str,
     error_message: str
 ) -> None:
     """Send error result message to output queue.
 
     Args:
         output_queue: Output queue binding
-        correlation_key: Correlation key
         error_message: Error description
     """
+    metadata = RequestMetadata()
     result = {
-        "correlationKey": correlation_key,
+        **metadata.to_result_dict(),
         "status": "failure",
         "errorMessage": sanitize_error_message(error_message)
     }
     output_queue.set(json.dumps(result))
-    logging.error(f"Error result sent for: {correlation_key[:8]}...")
+    logging.error(f"Error result sent for: {metadata.correlation_key[:8]}...")
 
 
-config = get_config()
-
-
-@app.queue_trigger(
+@app.service_bus_queue_trigger(
     arg_name="msg",
-    queue_name=config.queue_storage.tasks_queue,
-    connection="AzureWebJobsStorage")
-@app.queue_output(
+    queue_name=os.environ.get('TASKS_QUEUE', 'processing-tasks'),
+    connection="ServiceBusConnection")
+@app.service_bus_queue_output(
     arg_name="outputQueue",
-    queue_name=config.queue_storage.results_queue,
-    connection="AzureWebJobsStorage")
-def process_pdf_file(msg: func.QueueMessage, outputQueue: func.Out[str]) -> None:
+    queue_name=os.environ.get('RESULTS_QUEUE', 'processing-tasks-results'),
+    connection="ServiceBusConnection")
+def process_pdf_file(msg: func.ServiceBusMessage, outputQueue: func.Out[str]) -> None:
     """Process PDF document from queue trigger.
 
     This function orchestrates the document processing pipeline:
@@ -407,8 +409,10 @@ def process_pdf_file(msg: func.QueueMessage, outputQueue: func.Out[str]) -> None
 
     temp_dir: Optional[Path] = None
     correlation_key = "UNKNOWN"
+    pdf_blob_url = "UNKNOWN"
 
     try:
+        config = get_config()
         storage_client = get_storage_client()
         document_splitter = get_document_splitter()
 
@@ -417,6 +421,14 @@ def process_pdf_file(msg: func.QueueMessage, outputQueue: func.Out[str]) -> None
             config.storage.input_container
         )
         correlation_key = validated_request.correlation_key
+        pdf_blob_url = validated_request.pdf_blob_url
+
+        RequestMetadata.initialize(
+            correlation_key=validated_request.correlation_key,
+            pdf_blob_url=validated_request.pdf_blob_url,
+            ent_name=validated_request.ent_name,
+            file_no=validated_request.file_no
+        )
 
         logging.info(f"Processing correlation key: {correlation_key[:8]}...")
 
@@ -447,43 +459,46 @@ def process_pdf_file(msg: func.QueueMessage, outputQueue: func.Out[str]) -> None
             config.storage.results_container
         )
 
-        send_success_result(outputQueue, correlation_key, zip_url)
+        send_success_result(outputQueue, zip_url)
 
         logging.info(f"Successfully processed task: {correlation_key[:8]}...")
 
     except ConfigurationError as e:
         logging.critical(f"Configuration error: {e}")
-        send_error_result(outputQueue, correlation_key, str(e))
+        send_error_result(outputQueue, str(e))
 
     except ValidationError as e:
         logging.error(f"Validation error for {correlation_key[:8]}...: {e}")
-        send_error_result(outputQueue, correlation_key, str(e))
+        send_error_result(outputQueue, str(e))
 
     except ProcessingError as e:
+        error_with_url = f"{e} [PDF: {sanitize_url_for_logging(pdf_blob_url)}]"
+
         if e.severity == ErrorSeverity.CRITICAL:
             logging.critical(
-                f"Critical error for {correlation_key[:8]}...: {e}",
+                f"Critical error for {correlation_key[:8]}...: {error_with_url}",
                 exc_info=e.original
             )
-            send_error_result(outputQueue, correlation_key, str(e))
+            send_error_result(outputQueue, error_with_url)
 
         elif e.severity == ErrorSeverity.TRANSIENT:
             logging.warning(
-                f"Transient error for {correlation_key[:8]}...: {e} (will retry)"
+                f"Transient error for {correlation_key[:8]}...: {error_with_url} (will retry)"
             )
-            send_error_result(outputQueue, correlation_key, str(e))
+            send_error_result(outputQueue, error_with_url)
             raise
 
         else:
-            logging.error(f"Permanent error for {correlation_key[:8]}...: {e}")
-            send_error_result(outputQueue, correlation_key, str(e))
+            logging.error(f"Permanent error for {correlation_key[:8]}...: {error_with_url}")
+            send_error_result(outputQueue, error_with_url)
 
     except Exception as e:
         sanitized_error = sanitize_error_message(str(e))
+        error_with_url = f"Unexpected error: {sanitized_error} [PDF: {sanitize_url_for_logging(pdf_blob_url)}]"
         logging.exception(
-            f"Unexpected error for {correlation_key[:8]}...: {sanitized_error} (will retry)"
+            f"Unexpected error for {correlation_key[:8]}...: {error_with_url} (will retry)"
         )
-        send_error_result(outputQueue, correlation_key, f"Unexpected error: {sanitized_error}")
+        send_error_result(outputQueue, error_with_url)
         raise
 
     finally:

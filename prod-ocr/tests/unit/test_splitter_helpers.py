@@ -10,44 +10,44 @@ class TestCleanJsonResponse:
 
     def test_clean_json_without_markdown(self):
         """Test cleaning JSON without any markdown wrapping."""
-        raw = '[{"DOC_TYPE": "INVOICE"}]'
+        raw = '[{"doc_type": "invoice"}]'
         result = DocumentSplitter._clean_json_response(raw)
-        assert result == '[{"DOC_TYPE": "INVOICE"}]'
+        assert result == '[{"doc_type": "invoice"}]'
 
     def test_clean_json_with_json_markdown_block(self):
         """Test removing ```json ... ``` markdown blocks."""
-        raw = '```json\n[{"DOC_TYPE": "INVOICE"}]\n```'
+        raw = '```json\n[{"doc_type": "invoice"}]\n```'
         result = DocumentSplitter._clean_json_response(raw)
-        assert result == '[{"DOC_TYPE": "INVOICE"}]'
+        assert result == '[{"doc_type": "invoice"}]'
 
     def test_clean_json_with_plain_markdown_block(self):
         """Test removing ``` ... ``` markdown blocks."""
-        raw = '```\n[{"DOC_TYPE": "OBL"}]\n```'
+        raw = '```\n[{"doc_type": "obl"}]\n```'
         result = DocumentSplitter._clean_json_response(raw)
-        assert result == '[{"DOC_TYPE": "OBL"}]'
+        assert result == '[{"doc_type": "obl"}]'
 
     def test_clean_json_with_whitespace(self):
         """Test stripping whitespace from response."""
-        raw = '  \n\n[{"DOC_TYPE": "HAWB"}]  \n  '
+        raw = '  \n\n[{"doc_type": "hawb"}]  \n  '
         result = DocumentSplitter._clean_json_response(raw)
-        assert result == '[{"DOC_TYPE": "HAWB"}]'
+        assert result == '[{"doc_type": "hawb"}]'
 
     def test_clean_json_complex_markdown(self):
         """Test cleaning complex markdown-wrapped JSON."""
         raw = '''```json
 [
     {
-        "DOC_TYPE": "INVOICE",
-        "INVOICE_NO": "0004833/E",
-        "INVOICE_DATE": "2025073000000000",
-        "CURRENCY_ID": "EUR"
+        "doc_type": "invoice",
+        "invoice_no": "0004833/E",
+        "invoice_date": "2025073000000000",
+        "currency_id": "EUR"
     }
 ]
 ```'''
         result = DocumentSplitter._clean_json_response(raw)
         parsed = json.loads(result)
         assert len(parsed) == 1
-        assert parsed[0]["DOC_TYPE"] == "INVOICE"
+        assert parsed[0]["doc_type"] == "invoice"
 
     def test_clean_json_empty_string(self):
         """Test handling empty string."""
@@ -56,10 +56,10 @@ class TestCleanJsonResponse:
 
     def test_clean_json_preserves_internal_backticks(self):
         """Test that internal backticks in JSON values are preserved."""
-        raw = '```json\n[{"DOC_TYPE": "INVOICE", "NOTE": "code `sample`"}]\n```'
+        raw = '```json\n[{"doc_type": "invoice", "note": "code `sample`"}]\n```'
         result = DocumentSplitter._clean_json_response(raw)
         parsed = json.loads(result)
-        assert "code `sample`" in parsed[0]["NOTE"]
+        assert "code `sample`" in parsed[0]["note"]
 
     def test_clean_json_multiple_documents(self, mock_gemini_multi_document_response):
         """Test cleaning response with multiple documents."""
@@ -67,9 +67,9 @@ class TestCleanJsonResponse:
         result = DocumentSplitter._clean_json_response(raw)
         parsed = json.loads(result)
         assert len(parsed) == 3
-        assert parsed[0]["DOC_TYPE"] == "INVOICE"
-        assert parsed[1]["DOC_TYPE"] == "OBL"
-        assert parsed[2]["DOC_TYPE"] == "PACKING_LIST"
+        assert parsed[0]["doc_type"] == "invoice"
+        assert parsed[1]["doc_type"] == "obl"
+        assert parsed[2]["doc_type"] == "packing_list"
 
 
 @pytest.mark.unit
@@ -79,101 +79,101 @@ class TestDocumentSchemaValidation:
     def test_invoice_schema_has_required_fields(self, mock_gemini_invoice_response):
         """Test invoice schema has all required fields."""
         doc = mock_gemini_invoice_response[0]
-        
+
         # Common required fields
-        assert "DOC_TYPE" in doc
-        assert "DOC_TYPE_CONFIDENCE" in doc
-        assert "TOTAL_PAGES" in doc
-        assert "START_PAGE_NO" in doc
-        assert "END_PAGE_NO" in doc
-        
+        assert "doc_type" in doc
+        assert "doc_type_confidence" in doc
+        assert "total_pages" in doc
+        assert "start_page_no" in doc
+        assert "end_page_no" in doc
+
         # Invoice-specific fields
-        assert "INVOICE_NO" in doc
-        assert "INVOICE_DATE" in doc
-        assert "CURRENCY_ID" in doc
+        assert "invoice_no" in doc
+        assert "invoice_date" in doc
+        assert "currency_id" in doc
 
     def test_obl_schema_has_required_fields(self, mock_gemini_obl_response):
         """Test OBL schema has all required fields."""
         doc = mock_gemini_obl_response[0]
-        
-        assert doc["DOC_TYPE"] == "OBL"
-        assert "CUSTOMER_NAME" in doc
-        assert "WEIGHT" in doc
-        assert "VOLUME" in doc
+
+        assert doc["doc_type"] == "obl"
+        assert "customer_name" in doc
+        assert "weight" in doc
+        assert "volume" in doc
 
     def test_hawb_schema_has_required_fields(self, mock_gemini_hawb_response):
         """Test HAWB schema has all required fields."""
         doc = mock_gemini_hawb_response[0]
-        
-        assert doc["DOC_TYPE"] == "HAWB"
-        assert "CUSTOMER_NAME" in doc
-        assert "CURRENCY" in doc
-        assert "CARRIER" in doc
-        assert "HAWB_NUMBER" in doc
-        assert "PIECES" in doc
-        assert "WEIGHT" in doc
+
+        assert doc["doc_type"] == "hawb"
+        assert "customer_name" in doc
+        assert "currency" in doc
+        assert "carrier" in doc
+        assert "hawb_number" in doc
+        assert "pieces" in doc
+        assert "weight" in doc
 
     def test_packing_list_schema_has_required_fields(self, mock_gemini_packing_list_response):
         """Test packing list schema has all required fields."""
         doc = mock_gemini_packing_list_response[0]
-        
-        assert doc["DOC_TYPE"] == "PACKING_LIST"
-        assert "CUSTOMER_NAME" in doc
-        assert "PIECES" in doc
-        assert "WEIGHT" in doc
+
+        assert doc["doc_type"] == "packing_list"
+        assert "customer_name" in doc
+        assert "pieces" in doc
+        assert "weight" in doc
 
     def test_confidence_is_valid_float(self, mock_gemini_invoice_response):
-        """Test DOC_TYPE_CONFIDENCE is a valid float between 0 and 1."""
+        """Test doc_type_confidence is a valid float between 0 and 1."""
         doc = mock_gemini_invoice_response[0]
-        confidence = doc["DOC_TYPE_CONFIDENCE"]
-        
+        confidence = doc["doc_type_confidence"]
+
         assert isinstance(confidence, float)
         assert 0 <= confidence <= 1
 
     def test_page_numbers_are_positive_integers(self, mock_gemini_invoice_response):
         """Test page numbers are positive integers."""
         doc = mock_gemini_invoice_response[0]
-        
-        assert isinstance(doc["START_PAGE_NO"], int)
-        assert isinstance(doc["END_PAGE_NO"], int)
-        assert isinstance(doc["TOTAL_PAGES"], int)
-        assert doc["START_PAGE_NO"] > 0
-        assert doc["END_PAGE_NO"] >= doc["START_PAGE_NO"]
-        assert doc["TOTAL_PAGES"] > 0
+
+        assert isinstance(doc["start_page_no"], int)
+        assert isinstance(doc["end_page_no"], int)
+        assert isinstance(doc["total_pages"], int)
+        assert doc["start_page_no"] > 0
+        assert doc["end_page_no"] >= doc["start_page_no"]
+        assert doc["total_pages"] > 0
 
     def test_pages_info_structure(self, mock_gemini_invoice_response):
-        """Test PAGES_INFO has correct structure with page numbers and rotations."""
+        """Test pages_info has correct structure with page numbers and rotations."""
         doc = mock_gemini_invoice_response[0]
-        
-        assert "PAGES_INFO" in doc
-        pages_info = doc["PAGES_INFO"]
+
+        assert "pages_info" in doc
+        pages_info = doc["pages_info"]
         assert isinstance(pages_info, list)
-        assert len(pages_info) == doc["TOTAL_PAGES"]
-        
+        assert len(pages_info) == doc["total_pages"]
+
         for page_info in pages_info:
-            assert "PAGE_NO" in page_info
-            assert "ROTATION" in page_info
-            assert isinstance(page_info["PAGE_NO"], int)
-            assert isinstance(page_info["ROTATION"], int)
-            assert page_info["ROTATION"] in [0, 90, 180, 270]
+            assert "page_no" in page_info
+            assert "rotation" in page_info
+            assert isinstance(page_info["page_no"], int)
+            assert isinstance(page_info["rotation"], int)
+            assert page_info["rotation"] in [0, 90, 180, 270]
 
     def test_pages_info_covers_all_pages(self, mock_gemini_multi_document_response):
-        """Test PAGES_INFO covers all pages for each document."""
+        """Test pages_info covers all pages for each document."""
         for doc in mock_gemini_multi_document_response:
-            pages_info = doc["PAGES_INFO"]
-            start_page = doc["START_PAGE_NO"]
-            end_page = doc["END_PAGE_NO"]
-            
+            pages_info = doc["pages_info"]
+            start_page = doc["start_page_no"]
+            end_page = doc["end_page_no"]
+
             # Check we have info for all pages in the document
-            page_numbers = [p["PAGE_NO"] for p in pages_info]
+            page_numbers = [p["page_no"] for p in pages_info]
             expected_pages = list(range(start_page, end_page + 1))
             assert sorted(page_numbers) == expected_pages
 
     def test_invoice_date_format(self, mock_gemini_invoice_response):
-        """Test INVOICE_DATE is 16-digit format YYYYMMDDHHMMSSSS."""
+        """Test invoice_date is 16-digit format YYYYMMDDHHMMSSSS."""
         doc = mock_gemini_invoice_response[0]
-        date = doc["INVOICE_DATE"]
-        
+        date = doc["invoice_date"]
+
         assert isinstance(date, str)
         assert len(date) == 16
         assert date.isdigit()

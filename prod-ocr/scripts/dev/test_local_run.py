@@ -16,9 +16,8 @@ def main():
     if not pdf_files:
         print("No PDF files found in samples directory")
         return
-
     # Use the first PDF file
-    pdf_path = pdf_files[0]
+    pdf_path = Path("../samples/combined-sampels/84526616_ORG_arzlhvywte2zczalgoitew00000000.PDF")
     print(f"Processing: {pdf_path.name}")
     print(f"File size: {pdf_path.stat().st_size / 1024:.2f} KB\n")
 

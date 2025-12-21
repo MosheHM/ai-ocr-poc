@@ -2,7 +2,7 @@
 
 # Default variables
 IMAGE_NAME="prod-ocr"
-DOCKER_USERNAME="moshehmakias"
+DOCKER_USERNAME="cramital.azurecr.io"
 
 # Check if version is provided
 if [ -z "$1" ]; then

@@ -11,7 +11,11 @@
       "Bash(uv run python -c \"\nfrom pathlib import Path\nfrom dotenv import load_dotenv\nimport os\n\nload_dotenv(Path(''.env''))\nenv = os.getenv(''ENVIRONMENT'')\nprint(f''ENVIRONMENT={env}'')\nprint(f''DEV_AZURE_STORAGE_ACCOUNT_NAME={os.getenv(\"\"DEV_AZURE_STORAGE_ACCOUNT_NAME\"\")}'')\nprint(f''PROD_AZURE_STORAGE_ACCOUNT_NAME={os.getenv(\"\"PROD_AZURE_STORAGE_ACCOUNT_NAME\"\")}'')\n\")",
       "Bash(uv run python send_task.py \"/mnt/c/Users/MosheHM/OneDrive - amital.co.il/Desktop/ocr resources/ai-ocr-poc/samples/combined-sampels/84526881_ORG_ya7mh71vf0+m8xq_9tnlqw00000000.PDF\")",
       "Bash(uv run python -c \"\nfrom azure.storage.blob import BlobServiceClient\n\nconn_str = ''DefaultEndpointsProtocol=http;AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;BlobEndpoint=http://127.0.0.1:10000/devstoreaccount1;QueueEndpoint=http://127.0.0.1:10001/devstoreaccount1;''\nblob_service = BlobServiceClient.from_connection_string(conn_str)\n\n# Test with small content\ncontainer_client = blob_service.get_container_client(''ocr-processing-input'')\nblob_client = container_client.get_blob_client(''test.txt'')\nblob_client.upload_blob(b''Test content'', overwrite=True)\nprint(''✓ Successfully uploaded test file to Azurite'')\n\n# Try to read it back\ndata = blob_client.download_blob().readall()\nprint(f''✓ Successfully downloaded test file: {data.decode()}'')\n\")",
-      "Bash(pkill:*)"
+      "Bash(pkill:*)",
+      "Bash(grep:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(pip show azure-functions)"
     ],
     "deny": [],
     "ask": []

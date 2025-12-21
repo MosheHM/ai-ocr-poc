@@ -111,7 +111,18 @@ def main():
                 break
 
             try:
-                result = json.loads(message.content)
+                content = message.content
+                try:
+                    result = json.loads(content)
+                except json.JSONDecodeError:
+                    # Try Base64 decoding
+                    import base64
+                    try:
+                        decoded_content = base64.b64decode(content).decode('utf-8')
+                        result = json.loads(decoded_content)
+                    except Exception:
+                        print(f"Error: Invalid JSON in message (and not valid Base64): {content[:50]}...")
+                        continue
 
                 correlation_key = result.get('correlationKey')
                 if not correlation_key:

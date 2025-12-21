@@ -54,3 +54,8 @@ prod-ocr/split_output/
 __azurite_db_*.json
 __blobstorage__/
 __queuestorage__/
+
+# samples
+samples/
+samples/split_output/
+samples/large-files/

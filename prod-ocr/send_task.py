@@ -3,6 +3,7 @@ import os
 import sys
 import uuid
 import json
+import base64
 import argparse
 from pathlib import Path
 from dotenv import load_dotenv
@@ -139,9 +140,14 @@ def main():
             "pdfBlobUrl": pdf_url
         }
 
+        # Encode message to Base64 (required by Azure Functions Queue Trigger)
+        message_content = json.dumps(task_message)
+        message_bytes = message_content.encode('utf-8')
+        base64_message = base64.b64encode(message_bytes).decode('utf-8')
+
         # Send message to queue
         print(f"Sending task message to queue '{args.queue}'...")
-        queue_client.send_message(json.dumps(task_message))
+        queue_client.send_message(base64_message)
         print("Task message sent successfully!")
         print()
 

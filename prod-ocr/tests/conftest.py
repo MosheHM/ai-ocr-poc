@@ -118,20 +118,20 @@ def mock_gemini_invoice_response() -> List[Dict[str, Any]]:
     """Mock Gemini response for an invoice document."""
     return [
         {
-            "DOC_TYPE": "INVOICE",
-            "INVOICE_NO": "0004833/E",
-            "INVOICE_DATE": "2025073000000000",
-            "CURRENCY_ID": "EUR",
-            "INCOTERMS": "FCA",
-            "INVOICE_AMOUNT": 7632.00,
-            "CUSTOMER_ID": "D004345",
-            "DOC_TYPE_CONFIDENCE": 0.95,
-            "TOTAL_PAGES": 2,
-            "START_PAGE_NO": 1,
-            "END_PAGE_NO": 2,
-            "PAGES_INFO": [
-                {"PAGE_NO": 1, "ROTATION": 0},
-                {"PAGE_NO": 2, "ROTATION": 0}
+            "doc_type": "invoice",
+            "invoice_no": "0004833/E",
+            "invoice_date": "2025073000000000",
+            "currency_id": "EUR",
+            "incoterms": "FCA",
+            "invoice_amount": 7632.00,
+            "customer_id": "D004345",
+            "doc_type_confidence": 0.95,
+            "total_pages": 2,
+            "start_page_no": 1,
+            "end_page_no": 2,
+            "pages_info": [
+                {"page_no": 1, "rotation": 0},
+                {"page_no": 2, "rotation": 0}
             ]
         }
     ]
@@ -142,17 +142,17 @@ def mock_gemini_obl_response() -> List[Dict[str, Any]]:
     """Mock Gemini response for an OBL document."""
     return [
         {
-            "DOC_TYPE": "OBL",
-            "CUSTOMER_NAME": "LAPIDOTH CAPITAL LTD.",
-            "WEIGHT": 115000.0,
-            "VOLUME": 1.116,
-            "INCOTERMS": "CIF",
-            "DOC_TYPE_CONFIDENCE": 0.9,
-            "TOTAL_PAGES": 1,
-            "START_PAGE_NO": 1,
-            "END_PAGE_NO": 1,
-            "PAGES_INFO": [
-                {"PAGE_NO": 1, "ROTATION": 0}
+            "doc_type": "obl",
+            "customer_name": "LAPIDOTH CAPITAL LTD.",
+            "weight": 115000.0,
+            "volume": 1.116,
+            "incoterms": "CIF",
+            "doc_type_confidence": 0.9,
+            "total_pages": 1,
+            "start_page_no": 1,
+            "end_page_no": 1,
+            "pages_info": [
+                {"page_no": 1, "rotation": 0}
             ]
         }
     ]
@@ -163,19 +163,19 @@ def mock_gemini_hawb_response() -> List[Dict[str, Any]]:
     """Mock Gemini response for a HAWB document."""
     return [
         {
-            "DOC_TYPE": "HAWB",
-            "CUSTOMER_NAME": "Example Corp",
-            "CURRENCY": "USD",
-            "CARRIER": "Emirates",
-            "HAWB_NUMBER": "176-12345678",
-            "PIECES": 10,
-            "WEIGHT": 500.5,
-            "DOC_TYPE_CONFIDENCE": 0.92,
-            "TOTAL_PAGES": 1,
-            "START_PAGE_NO": 1,
-            "END_PAGE_NO": 1,
-            "PAGES_INFO": [
-                {"PAGE_NO": 1, "ROTATION": 0}
+            "doc_type": "hawb",
+            "customer_name": "Example Corp",
+            "currency": "USD",
+            "carrier": "Emirates",
+            "hawb_number": "176-12345678",
+            "pieces": 10,
+            "weight": 500.5,
+            "doc_type_confidence": 0.92,
+            "total_pages": 1,
+            "start_page_no": 1,
+            "end_page_no": 1,
+            "pages_info": [
+                {"page_no": 1, "rotation": 0}
             ]
         }
     ]
@@ -186,16 +186,16 @@ def mock_gemini_packing_list_response() -> List[Dict[str, Any]]:
     """Mock Gemini response for a packing list document."""
     return [
         {
-            "DOC_TYPE": "PACKING_LIST",
-            "CUSTOMER_NAME": "DEF Manufacturing",
-            "PIECES": 100,
-            "WEIGHT": 2500.0,
-            "DOC_TYPE_CONFIDENCE": 0.88,
-            "TOTAL_PAGES": 1,
-            "START_PAGE_NO": 1,
-            "END_PAGE_NO": 1,
-            "PAGES_INFO": [
-                {"PAGE_NO": 1, "ROTATION": 0}
+            "doc_type": "packing_list",
+            "customer_name": "DEF Manufacturing",
+            "pieces": 100,
+            "weight": 2500.0,
+            "doc_type_confidence": 0.88,
+            "total_pages": 1,
+            "start_page_no": 1,
+            "end_page_no": 1,
+            "pages_info": [
+                {"page_no": 1, "rotation": 0}
             ]
         }
     ]
@@ -206,47 +206,47 @@ def mock_gemini_multi_document_response() -> List[Dict[str, Any]]:
     """Mock Gemini response for a PDF with multiple documents."""
     return [
         {
-            "DOC_TYPE": "INVOICE",
-            "INVOICE_NO": "0004833/E",
-            "INVOICE_DATE": "2025073000000000",
-            "CURRENCY_ID": "EUR",
-            "INCOTERMS": "FCA",
-            "INVOICE_AMOUNT": 7632.00,
-            "CUSTOMER_ID": "D004345",
-            "DOC_TYPE_CONFIDENCE": 0.95,
-            "TOTAL_PAGES": 2,
-            "START_PAGE_NO": 1,
-            "END_PAGE_NO": 2,
-            "PAGES_INFO": [
-                {"PAGE_NO": 1, "ROTATION": 0},
-                {"PAGE_NO": 2, "ROTATION": 90}
+            "doc_type": "invoice",
+            "invoice_no": "0004833/E",
+            "invoice_date": "2025073000000000",
+            "currency_id": "EUR",
+            "incoterms": "FCA",
+            "invoice_amount": 7632.00,
+            "customer_id": "D004345",
+            "doc_type_confidence": 0.95,
+            "total_pages": 2,
+            "start_page_no": 1,
+            "end_page_no": 2,
+            "pages_info": [
+                {"page_no": 1, "rotation": 0},
+                {"page_no": 2, "rotation": 90}
             ]
         },
         {
-            "DOC_TYPE": "OBL",
-            "CUSTOMER_NAME": "LAPIDOTH CAPITAL LTD.",
-            "WEIGHT": 115000.0,
-            "VOLUME": 1.116,
-            "DOC_TYPE_CONFIDENCE": 0.9,
-            "TOTAL_PAGES": 1,
-            "START_PAGE_NO": 3,
-            "END_PAGE_NO": 3,
-            "PAGES_INFO": [
-                {"PAGE_NO": 3, "ROTATION": 0}
+            "doc_type": "obl",
+            "customer_name": "LAPIDOTH CAPITAL LTD.",
+            "weight": 115000.0,
+            "volume": 1.116,
+            "doc_type_confidence": 0.9,
+            "total_pages": 1,
+            "start_page_no": 3,
+            "end_page_no": 3,
+            "pages_info": [
+                {"page_no": 3, "rotation": 0}
             ]
         },
         {
-            "DOC_TYPE": "PACKING_LIST",
-            "CUSTOMER_NAME": "DEF Manufacturing",
-            "PIECES": 100,
-            "WEIGHT": 2500.0,
-            "DOC_TYPE_CONFIDENCE": 0.88,
-            "TOTAL_PAGES": 2,
-            "START_PAGE_NO": 4,
-            "END_PAGE_NO": 5,
-            "PAGES_INFO": [
-                {"PAGE_NO": 4, "ROTATION": 180},
-                {"PAGE_NO": 5, "ROTATION": 0}
+            "doc_type": "packing_list",
+            "customer_name": "DEF Manufacturing",
+            "pieces": 100,
+            "weight": 2500.0,
+            "doc_type_confidence": 0.88,
+            "total_pages": 2,
+            "start_page_no": 4,
+            "end_page_no": 5,
+            "pages_info": [
+                {"page_no": 4, "rotation": 180},
+                {"page_no": 5, "rotation": 0}
             ]
         }
     ]
@@ -258,12 +258,12 @@ def mock_gemini_response_with_markdown() -> str:
     return '''```json
 [
     {
-        "DOC_TYPE": "INVOICE",
-        "INVOICE_NO": "TEST-001",
-        "DOC_TYPE_CONFIDENCE": 0.95,
-        "TOTAL_PAGES": 1,
-        "START_PAGE_NO": 1,
-        "END_PAGE_NO": 1
+        "doc_type": "invoice",
+        "invoice_no": "TEST-001",
+        "doc_type_confidence": 0.95,
+        "total_pages": 1,
+        "start_page_no": 1,
+        "end_page_no": 1
     }
 ]
 ```'''
@@ -369,18 +369,17 @@ def mock_gemini_client(mock_gemini_invoice_response):
 def mock_document_splitter(mock_gemini_client, mock_gemini_invoice_response):
     """Mock DocumentSplitter."""
     from modules.document_splitter.splitter import DocumentSplitter
-    
+
     splitter = MagicMock(spec=DocumentSplitter)
     splitter.extract_documents.return_value = mock_gemini_invoice_response
     splitter.split_and_save.return_value = {
         'source_pdf': '/tmp/input.pdf',
-        'output_directory': '/tmp/output',
         'total_documents': 1,
         'documents': [
             {
                 **mock_gemini_invoice_response[0],
-                'FILE_PATH': '/tmp/output/doc_INVOICE_1_pages_1-2.pdf',
-                'FILE_NAME': 'doc_INVOICE_1_pages_1-2.pdf'
+                'file_path': '/tmp/output/doc_invoice_1_pages_1-2.pdf',
+                'file_name': 'doc_invoice_1_pages_1-2.pdf'
             }
         ]
     }
