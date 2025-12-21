@@ -22,6 +22,15 @@ if [ $? -eq 0 ]; then
     docker tag $IMAGE_NAME:$VERSION $FULL_IMAGE_NAME
 
     if [ $? -eq 0 ]; then
+
+        #check if logged in to azure container registry
+        echo "Logging in to Azure Container Registry..."
+        if ! az acr login --name cramital &> /dev/null; then
+            echo "Not logged in. Please log in to Azure."
+            az login
+        fi
+        az acr login --name cramital
+
         echo "Pushing image to Docker Hub..."
         docker push $FULL_IMAGE_NAME
         
