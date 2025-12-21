@@ -23,7 +23,6 @@ if [ $? -eq 0 ]; then
 
     if [ $? -eq 0 ]; then
 
-        #check if logged in to azure container registry
         echo "Logging in to Azure Container Registry..."
         if ! az acr login --name cramital &> /dev/null; then
             echo "Not logged in. Please log in to Azure."
