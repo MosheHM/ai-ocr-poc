@@ -530,8 +530,9 @@ class DocumentSplitter:
             'start_page_no', 'end_page_no', 'pages_info'
         }
 
-        results = []
-        for i, doc in enumerate(documents):
+        def process_document(idx_doc: tuple) -> ExtractedDocument:
+            """Process a single document: extract pages, save to file, and transform."""
+            i, doc = idx_doc
             doc_type = doc.get('doc_type', 'unknown')
             start_page = doc.get('start_page_no', 1)
             end_page = doc.get('end_page_no', 1)
@@ -544,8 +545,9 @@ class DocumentSplitter:
 
             logger.info(f"  Saved {doc_type} (pages {start_page}-{end_page}) to {output_filename}")
 
-            transformed_doc = _transform_document(doc, all_rotations, common_fields)
-            results.append(transformed_doc)
+            return _transform_document(doc, all_rotations, common_fields)
+
+        results = list(map(process_document, enumerate(documents)))
 
         final_result = {
             'source_pdf': str(pdf_path),
