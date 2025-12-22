@@ -1,42 +1,36 @@
-"""Thread-safe singleton for storing all request metadata throughout processing lifecycle."""
-import threading
+"""Thread-safe context storage for request metadata."""
+import contextvars
 from typing import Optional
-from dataclasses import dataclass, field
+
+_correlation_key = contextvars.ContextVar('correlation_key', default=None)
+_pdf_blob_url = contextvars.ContextVar('pdf_blob_url', default=None)
+_ent_name = contextvars.ContextVar('ent_name', default=None)
+_file_no = contextvars.ContextVar('file_no', default=None)
 
 
-@dataclass
 class RequestMetadata:
     """
-    Singleton class to store all request metadata throughout the processing lifecycle.
-
-    This class maintains all fields from the incoming queue message and makes them
-    available throughout the processing pipeline until they are included in the
-    result message.
-
-    Thread-safe singleton implementation using double-checked locking pattern.
-
-    Attributes:
-        correlation_key: Unique identifier for the processing request
-        pdf_blob_url: URL to the PDF blob in Azure Storage
-        ent_name: Entity name (customer/organization identifier)
-        file_no: File number (document reference number)
+    Accessor class for request metadata stored in context variables.
+    
+    This replaces the Singleton pattern with ContextVars to ensure thread-safety
+    and correct behavior in concurrent Azure Functions executions.
     """
 
-    correlation_key: Optional[str] = None
-    pdf_blob_url: Optional[str] = None
-    ent_name: Optional[str] = None
-    file_no: Optional[str] = None
+    @property
+    def correlation_key(self) -> Optional[str]:
+        return _correlation_key.get()
 
-    _instance: Optional['RequestMetadata'] = None
-    _lock: threading.Lock = field(default_factory=threading.Lock, init=False, repr=False)
+    @property
+    def pdf_blob_url(self) -> Optional[str]:
+        return _pdf_blob_url.get()
 
-    def __new__(cls):
-        """Implement singleton pattern with thread-safe double-checked locking."""
-        if cls._instance is None:
-            with threading.Lock():
-                if cls._instance is None:
-                    cls._instance = super().__new__(cls)
-        return cls._instance
+    @property
+    def ent_name(self) -> Optional[str]:
+        return _ent_name.get()
+
+    @property
+    def file_no(self) -> Optional[str]:
+        return _file_no.get()
 
     @classmethod
     def initialize(
@@ -47,7 +41,7 @@ class RequestMetadata:
         file_no: Optional[str] = None
     ) -> 'RequestMetadata':
         """
-        Initialize or update the singleton instance with all metadata values.
+        Initialize context variables for the current request.
 
         Args:
             correlation_key: Unique identifier for the processing request
@@ -56,14 +50,13 @@ class RequestMetadata:
             file_no: File number from the request
 
         Returns:
-            The singleton instance with updated values
+            An instance of RequestMetadata accessor
         """
-        instance = cls()
-        instance.correlation_key = correlation_key
-        instance.pdf_blob_url = pdf_blob_url
-        instance.ent_name = ent_name
-        instance.file_no = file_no
-        return instance
+        _correlation_key.set(correlation_key)
+        _pdf_blob_url.set(pdf_blob_url)
+        _ent_name.set(ent_name)
+        _file_no.set(file_no)
+        return cls()
 
     def to_result_dict(self) -> dict:
         """
