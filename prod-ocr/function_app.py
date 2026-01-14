@@ -57,6 +57,9 @@ from modules.validators import (
     sanitize_url_for_logging,
     sanitize_error_message
 )
+from modules.transformation.data_processor import DataProcessor
+from modules.validators.validation_engine import ValidationEngine
+from modules.utils.report_builder import ExcelReportBuilder
 
 app = func.FunctionApp()
 
@@ -446,6 +449,18 @@ def process_pdf_file(msg: func.ServiceBusMessage, outputQueue: func.Out[str]) ->
             temp_dir / "output"
         )
 
+        dataframes = DataProcessor.process_extraction_results(results)
+        
+        validator = ValidationEngine()
+        validated_dfs, validation_errors = validator.validate_all(dataframes)
+        
+        report_builder = ExcelReportBuilder()
+        report_builder.build_report(
+            validated_dfs, 
+            validation_errors, 
+            temp_dir / "output" / "extraction_report.xlsx"
+        )
+    
         zip_path = package_results(
             temp_dir / "output",
             results,

@@ -11,6 +11,11 @@ dependencies = [
     "azure-functions",
     "azure-storage-blob",
     "azure-storage-queue",
+    "azure-servicebus>=7.11.0",
+    "pandas",
+    "openpyxl",
+    "pandera[pandas]>=0.18.0",
+    "pydantic>=2.5.0",
 ]
 
 [project.optional-dependencies]

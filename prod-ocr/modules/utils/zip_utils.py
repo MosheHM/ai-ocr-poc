@@ -44,6 +44,16 @@ def create_results_zip(
                 zipf.write(source_pdf, arcname=source_filename)
                 logger.info(f"Added source file {source_filename} to ZIP")
 
+            for file_path in output_dir.iterdir():
+                if file_path.name == zip_filename:
+                    continue
+                if file_path.name == 'extraction_results.json':
+                    continue
+                
+                if file_path.is_file():
+                    zipf.write(file_path, arcname=file_path.name)
+                    logger.info(f"Added {file_path.name} to ZIP")
+
         file_size_in_kb = os.path.getsize(zip_path) / 1024
         logger.info(f"Successfully created ZIP file: {zip_path} ({file_size_in_kb:.2f} KB)")
 
