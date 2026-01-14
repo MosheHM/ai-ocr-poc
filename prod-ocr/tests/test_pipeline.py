@@ -6,6 +6,9 @@ import json
 import logging
 import pandas as pd
 from modules.transformation.data_processor import DataProcessor
+
+# Add project root to sys.path
+sys.path.append(str(Path(__file__).parents[1]))
 from modules.validators.validation_engine import ValidationEngine
 from modules.utils.report_builder import ExcelReportBuilder
 
@@ -95,6 +98,7 @@ def test_pipeline():
     logger.info("Running ExcelReportBuilder...")
     builder = ExcelReportBuilder()
     output_path = Path("test_output/processing_report.xlsx")
+    output_path.parent.mkdir(parents=True, exist_ok=True)
     builder.build_report(validated_dfs, errors, output_path)
     
     assert output_path.exists()

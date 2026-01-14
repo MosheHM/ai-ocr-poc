@@ -9,11 +9,14 @@ from pathlib import Path
 from dotenv import load_dotenv
 from azure.storage.queue import QueueClient
 
+# Add project root to sys.path
+sys.path.append(str(Path(__file__).parents[2]))
+
 from modules.azure import AzureStorageClient
 from modules.config import get_storage_config, get_queue_storage_config
 from modules.validators import validate_correlation_key, validate_pdf_file, ValidationError
 
-load_dotenv(Path(__file__).parent / '.env')
+load_dotenv(Path(__file__).parents[2] / '.env')
 
 
 def main():

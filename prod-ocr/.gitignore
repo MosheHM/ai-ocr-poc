@@ -76,3 +76,6 @@ AzuriteConfig
 # Debug files and scripts
 tests/debug/
 debug_func/
+
+#test files
+tests/tests_resource/
