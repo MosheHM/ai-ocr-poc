@@ -53,13 +53,14 @@ Supported Document Types:
 2. OBL (Ocean Bill of Lading)
 3. HAWB (House Air Waybill)
 4. Packing List
+5. External Freight Invoice
 
 For each detected document, extract the data according to the specific schema below and return a JSON ARRAY of objects.
 
 --- SCHEMAS & EXTRACTION RULES ---
 
 COMMON FIELDS (Required for ALL types):
-- doc_type: One of ["invoice", "obl", "hawb", "packing_list"]
+- doc_type: One of ["invoice", "obl", "hawb", "packing_list", "external_freight_invoice"]
 - doc_type_confidence: Float between 0 and 1 indicating confidence in the document type classification (e.g., 0.95 for high confidence, 0.6 for uncertain)
 - total_pages: Integer (count of pages for this specific document)
 - start_page_no: Integer (1-based page number where this document starts in the PDF)
@@ -92,12 +93,20 @@ TYPE 4: PACKING LIST
 - pieces: Integer
 - weight: Number
 
+TYPE 5: EXTERNAL FREIGHT INVOICE
+- dealnumber: String. Extract the unique Deal Number using this priority:
+    1. Search for Hebrew label "מזהה עסקה" - value is usually immediately after.
+    2. Regex Match: `\bI\d{15}\b` (Starts with 'I' followed by 15 digits).
+
 --- CRITICAL RULES ---
 1. Return ONLY a valid JSON list.
 2. If a field is not found, omit it.
 3. Ensure start_page_no and end_page_no reflect the specific location of the document.
 4. Date format must be exactly 16 digits: YYYYMMDD00000000.
 5. incoterms must be ONLY the code (3 letters usually), no location or extra text.
+6. **NEGATIVE CLASSIFICATION RULES**:
+    - If document contains "תעודת שער" (Gate Pass), DO NOT classify as OBL or any other type. Just ignore it.
+    - If document contains "חשבון מטענים" (Cargo Account), classify as "external_freight_invoice".
 
 --- EXAMPLE OUTPUT ---
 [
@@ -115,11 +124,9 @@ TYPE 4: PACKING LIST
         "end_page_no": 2
     },
     {
-        "doc_type": "packing_list",
-        "customer_name": "DEF Manufacturing",
-        "pieces": 100,
-        "weight": 2500.0,
-        "doc_type_confidence": 0.88,
+        "doc_type": "external_freight_invoice",
+        "dealnumber": "I123456789012345",
+        "doc_type_confidence": 0.98,
         "total_pages": 1,
         "start_page_no": 3,
         "end_page_no": 3
