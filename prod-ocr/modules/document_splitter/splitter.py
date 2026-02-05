@@ -44,7 +44,7 @@ class ExtractionResult(TypedDict):
     documents: List[ExtractedDocument]
 
 
-DOCUMENT_EXTRACTION_PROMPT = """You are an AI assistant specialized in analyzing unclassified PDF documents. Your task is to identify distinct documents within the file, classify them, and extract structured data.
+DOCUMENT_EXTRACTION_PROMPT = r"""You are an AI assistant specialized in analyzing unclassified PDF documents. Your task is to identify distinct documents within the file, classify them, and extract structured data.
 
 The input PDF may contain a single document or multiple documents of different types merged together. You must detect the boundaries of each document.
 
@@ -96,7 +96,8 @@ TYPE 4: PACKING LIST
 TYPE 5: EXTERNAL FREIGHT INVOICE
 - dealnumber: String. Extract the unique Deal Number using this priority:
     1. Search for Hebrew label "מזהה עסקה" - value is usually immediately after.
-    2. Regex Match: `\bI\d{15}\b` (Starts with 'I' followed by 15 digits).
+    2. Regex Match: `\b[I1]\d{15}\b` (Starts with 'I' or '1' followed by 15 digits).
+    Note: If unsure between 'I' and '1', extract what you see.
 
 --- CRITICAL RULES ---
 1. Return ONLY a valid JSON list.
@@ -376,6 +377,15 @@ class DocumentSplitter:
         
         raise ValueError(f"Gemini returned empty response ({error_details})")
 
+    def _normalize_document(self, doc: Dict[str, Any]) -> Dict[str, Any]:
+        """Normalize document fields (e.g., dealnumber)."""
+        if 'dealnumber' in doc and isinstance(doc['dealnumber'], str):
+            val = doc['dealnumber']
+            if len(val) == 16 and val.startswith('1') and val[1:].isdigit():
+                doc['dealnumber'] = 'I' + val[1:]
+                logger.info(f"Normalized dealnumber {val} to {doc['dealnumber']}")
+        return doc
+
     def extract_documents(self, pdf_path: str) -> List[Dict[str, Any]]:
         """Extract document information from a PDF using Gemini.
 
@@ -410,7 +420,7 @@ class DocumentSplitter:
                     f"Too many documents returned by AI: {len(documents)} (max: {MAX_OUTPUT_FILES})"
                 )
 
-            return documents
+            return [self._normalize_document(doc) for doc in documents]
         except json.JSONDecodeError as e:
             logger.error(f"Failed to parse JSON response: {e}")
             raise ValueError(f"Invalid JSON response from Gemini: {e}")
