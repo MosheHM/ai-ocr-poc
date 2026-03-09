@@ -108,6 +108,8 @@ TYPE 5: EXTERNAL FREIGHT INVOICE
 6. **NEGATIVE CLASSIFICATION RULES**:
     - If document contains "תעודת שער" (Gate Pass), DO NOT classify as OBL or any other type. Just ignore it.
     - If document contains "חשבון מטענים" (Cargo Account), classify as "external_freight_invoice".
+    - If evidence is insufficient for supported types, ignore the page/document (do not output an item for it).
+    - For HAWB, require clear HAWB evidence (e.g., HAWB number and/or carrier details). Do NOT classify as HAWB based only on generic fields like customer_name, pieces, or weight. Ignore such cases.
 
 --- EXAMPLE OUTPUT ---
 [
